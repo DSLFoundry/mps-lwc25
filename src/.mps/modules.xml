@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/BaseLanguageExt/BaseLanguageExt.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/CSS.core/CSS.core.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/CSS.selectors/CSS.selectors.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/CSS.values/CSS.values.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/CSS/CSS.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/HTML/HTML.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/JSON/JSON.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/JavaScript/JavaScript.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/placeholder/placeholder.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ql.javagen/ql.javagen.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ql.modularisation/ql.modularisation.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ql.simple/ql.simple.mpl" folder="BST" />
+      <modulePath path="$PROJECT_DIR$/languages/ql.webgen/ql.webgen.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/ql/ql.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/qls/qls.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/BST.Generator/BST.Generator.msd" folder="BST" />
+      <modulePath path="$PROJECT_DIR$/solutions/BST.MultiModel/BST.MultiModel.msd" folder="BST" />
+      <modulePath path="$PROJECT_DIR$/solutions/BST.OneModel/BST.OneModel.msd" folder="BST" />
+      <modulePath path="$PROJECT_DIR$/solutions/BinarySearchTrees/BinarySearchTrees.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/CSSTry/CSSTry.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/QlRuntime/QlRuntime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/QuestionnaireOfLife/QuestionnaireOfLife.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/QuestionnaireOfLifeWithStyle/QuestionnaireOfLifeWithStyle.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ql.simple.runtime/ql.simple.runtime.msd" folder="BST" />
+      <modulePath path="$PROJECT_DIR$/solutions/zandbak/zandbak.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
+
