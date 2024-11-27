@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="QuestionnaireLanguage.build" uuid="10f275e3-1a9c-4414-acab-c5b801f5560b" moduleVersion="0">
+<solution name="QuestionnaireLanguage.buildAllScripts" uuid="e6ca667c-6285-4b1c-972c-df7bf51f117d" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot path="${module}/models" />
@@ -22,7 +22,7 @@
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="10f275e3-1a9c-4414-acab-c5b801f5560b(QuestionnaireLanguage.build)" version="0" />
+    <module reference="e6ca667c-6285-4b1c-972c-df7bf51f117d(QuestionnaireLanguage.buildAllScripts)" version="0" />
     <module reference="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" version="0" />
     <module reference="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />

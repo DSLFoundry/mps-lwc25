@@ -97,7 +97,7 @@ task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArt
 }
 
 task buildQuestionnaireLanguage(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts, buildAllScripts]) {
-    script rootProject.file('build/QuestionnairLangauge/build.xml')
+    script rootProject.file('build/QuestionnaireLanguage/build.xml')
     scriptArgs = buildScriptArgs
     scriptClasspath = buildScriptClasspath
 }

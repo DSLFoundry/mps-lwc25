@@ -2,9 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/QuestionnaireLanguage.sandbox/QuestionnaireLanguage.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/QuestionnaireLanguage/QuestionnaireLanguage.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/QuestionnaireLanguage.build/QuestionnaireLanguage.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/QuestionnaireLanguage.buildAllScripts/QuestionnaireLanguage.buildAllScripts.msd" folder="" />
     </projectModules>
   </component>
 </project>
