@@ -11,8 +11,8 @@ buildscript {
 
 // ------------- DEPENDENCY VERSIONS ------------- 
 // Dependency versions
-ext.mpsVersion = '2023.2'
-ext.iets3OpenSourceVersion = '2023.2.+'
+ext.mpsVersion = '2024.1.+'
+ext.iets3OpenSourceVersion = '2024.1.+'
 // ------------- /DEPENDENCY VERSIONS -------------
 
 
@@ -91,13 +91,13 @@ ext.buildScriptClasspath = project.configurations.junitAnt.fileCollection({ true
 
 // ------------- BUILD TASKS -------------
 task buildAllScripts(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts]) {
-    script rootProject.file('build/mpsintrocourse.allScripts/build.xml')
+    script rootProject.file('build/QuestionnaireLanguage.allScripts/build.xml')
     scriptArgs = buildScriptArgs
     scriptClasspath = buildScriptClasspath
 }
 
-task buildMpsIntroCourse(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts, buildAllScripts]) {
-    script rootProject.file('build/mpsintrocourse/build.xml')
+task buildQuestionnaireLanguage(type: BuildLanguages, dependsOn: [resolveMps, resolveMpsArtifacts, buildAllScripts]) {
+    script rootProject.file('build/QuestionnairLangauge/build.xml')
     scriptArgs = buildScriptArgs
     scriptClasspath = buildScriptClasspath
 }
@@ -116,6 +116,6 @@ task setup {
     description 'Set up MPS project libraries. Libraries are read in from projectlibraries.properties file.'
 }
 
-defaultTasks "setup", "buildMpsIntroCourse"
+defaultTasks "setup", "buildQuestionnaireLanguage"
 
 // ------------- /BUILD TASKS -------------
