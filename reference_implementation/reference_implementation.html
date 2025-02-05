@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Questionnaire</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+<body class="valign-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m8 offset-m2">
+        <div class="card z-depth-4">
+          <div class="card-content">
+            <span class="card-title center-align">Box1HouseOwning</span>
+            <form>
+              <!-- Question 1 -->
+              <p>
+                <label>
+                  <input id="hasSoldHouse" type="checkbox" onchange="toggleSoldHouseFields()" />
+                  <span>Did you sell a house in 2010?</span>
+                </label>
+              </p>
+
+              <!-- Question 2 -->
+              <p>
+                <label>
+                  <input id="hasBoughtHouse" type="checkbox" />
+                  <span>Did you buy a house in 2010?</span>
+                </label>
+              </p>
+
+              <!-- Question 3 -->
+              <p>
+                <label>
+                  <input id="hasMaintLoan" type="checkbox" />
+                  <span>Did you enter a loan for maintenance/reconstruction?</span>
+                </label>
+              </p>
+
+              <!-- Conditional Fields -->
+              <div id="soldHouseFields" style="display: none;">
+                <div class="input-field">
+                  <input id="sellingPrice" type="number" oninput="calculateValueResidue()">
+                  <label for="sellingPrice">Price the house was sold for:</label>
+                </div>
+
+                <div class="input-field">
+                  <input id="privateDebt" type="number" oninput="calculateValueResidue()">
+                  <label for="privateDebt">Private debts for the sold house:</label>
+                </div>
+
+                <div class="input-field">
+                  <input id="valueResidue" type="number" readonly>
+                  <label for="valueResidue">Value residue:</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSoldHouseFields() {
+      const hasSoldHouse = document.getElementById('hasSoldHouse').checked;
+      const soldHouseFields = document.getElementById('soldHouseFields');
+      soldHouseFields.style.display = hasSoldHouse ? 'block' : 'none';
+
+      // Reset values if hidden
+      if (!hasSoldHouse) {
+        document.getElementById('sellingPrice').value = '';
+        document.getElementById('privateDebt').value = '';
+        document.getElementById('valueResidue').value = '';
+      }
+    }
+
+    function calculateValueResidue() {
+      const sellingPrice = parseFloat(document.getElementById('sellingPrice').value) || 0;
+      const privateDebt = parseFloat(document.getElementById('privateDebt').value) || 0;
+      const valueResidue = sellingPrice - privateDebt;
+      document.getElementById('valueResidue').value = valueResidue;
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
