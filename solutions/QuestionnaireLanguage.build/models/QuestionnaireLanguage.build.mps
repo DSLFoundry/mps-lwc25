@@ -153,9 +153,9 @@
       </node>
     </node>
     <node concept="2sgV4H" id="3OiB6Qt3dqn" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" />
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="3OiB6Qt3dqo" role="2JcizS">
-        <ref role="398BVh" node="3OiB6Qt3dqm" resolve="mps_home" />
+        <ref role="398BVh" node="3OiB6Qt3dqm" resolve="mps.home" />
       </node>
     </node>
     <node concept="2sgV4H" id="3OiB6Qt3dte" role="1l3spa">
@@ -220,7 +220,7 @@
         <ref role="m$f5T" node="3OiB6Qt3dqA" resolve="QuestionnaireLanguage" />
       </node>
       <node concept="m$_yC" id="3OiB6Qt3dqH" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" />
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="3_J27D" id="3OiB6Qt3dqI" role="m_cZH">
         <node concept="3Mxwew" id="3OiB6Qt3dqJ" role="3MwsjC">

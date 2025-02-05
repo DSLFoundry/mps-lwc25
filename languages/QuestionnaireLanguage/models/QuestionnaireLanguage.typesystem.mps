@@ -90,5 +90,65 @@
       <ref role="1YaFvo" to="zg3i:257K23PuuqZ" resolve="QuestionReference" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4FCftMPqH_3">
+    <property role="TrG5h" value="typeof_DerivedValueReference" />
+    <node concept="3clFbS" id="4FCftMPqH_4" role="18ibNy">
+      <node concept="1Z5TYs" id="4FCftMPqKL_" role="3cqZAp">
+        <node concept="mw_s8" id="4FCftMPqKLC" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4FCftMPqH_A" role="mwGJk">
+            <node concept="1YBJjd" id="4FCftMPqHBx" role="1Z2MuG">
+              <ref role="1YBMHb" node="4FCftMPqH_6" resolve="derivedValueReference" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4FCftMPqNEm" role="1ZfhKB">
+          <node concept="1Z2H0r" id="4FCftMPqNEi" role="mwGJk">
+            <node concept="2OqwBi" id="4FCftMPqNQo" role="1Z2MuG">
+              <node concept="1YBJjd" id="4FCftMPqNE$" role="2Oq$k0">
+                <ref role="1YBMHb" node="4FCftMPqH_6" resolve="derivedValueReference" />
+              </node>
+              <node concept="3TrEf2" id="4FCftMPqO9u" role="2OqNvi">
+                <ref role="3Tt5mk" to="zg3i:4FCftMPq_h5" resolve="derivedValue" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4FCftMPqH_6" role="1YuTPh">
+      <property role="TrG5h" value="derivedValueReference" />
+      <ref role="1YaFvo" to="zg3i:4FCftMPq_h4" resolve="DerivedValueReference" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4FCftMPqHEr">
+    <property role="TrG5h" value="typeof_DerivedValue" />
+    <node concept="3clFbS" id="4FCftMPqHEs" role="18ibNy">
+      <node concept="1Z5TYs" id="4FCftMPqI5L" role="3cqZAp">
+        <node concept="mw_s8" id="4FCftMPqI5O" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4FCftMPqHFn" role="mwGJk">
+            <node concept="1YBJjd" id="4FCftMPqHHi" role="1Z2MuG">
+              <ref role="1YBMHb" node="4FCftMPqHEu" resolve="derivedValue" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4FCftMPqMVF" role="1ZfhKB">
+          <node concept="1Z2H0r" id="4FCftMPqMVB" role="mwGJk">
+            <node concept="2OqwBi" id="4FCftMPqN8O" role="1Z2MuG">
+              <node concept="1YBJjd" id="4FCftMPqMVT" role="2Oq$k0">
+                <ref role="1YBMHb" node="4FCftMPqHEu" resolve="derivedValue" />
+              </node>
+              <node concept="3TrEf2" id="4FCftMPqNv3" role="2OqNvi">
+                <ref role="3Tt5mk" to="zg3i:257K23PveTO" resolve="expectedType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4FCftMPqHEu" role="1YuTPh">
+      <property role="TrG5h" value="derivedValue" />
+      <ref role="1YaFvo" to="zg3i:257K23Pv8vo" resolve="DerivedValue" />
+    </node>
+  </node>
 </model>
 

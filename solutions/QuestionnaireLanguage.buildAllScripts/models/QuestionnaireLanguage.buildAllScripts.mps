@@ -114,9 +114,9 @@
       </node>
     </node>
     <node concept="2sgV4H" id="3OiB6Qt3drG" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" />
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="3OiB6Qt3drH" role="2JcizS">
-        <ref role="398BVh" node="3OiB6Qt3drF" resolve="mps_home" />
+        <ref role="398BVh" node="3OiB6Qt3drF" resolve="mps.home" />
       </node>
     </node>
     <node concept="2sgV4H" id="3OiB6Qt3dt0" role="1l3spa">

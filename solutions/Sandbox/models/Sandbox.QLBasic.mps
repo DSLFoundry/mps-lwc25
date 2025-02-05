@@ -8,6 +8,7 @@
   <imports />
   <registry>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
       <concept id="5115872837156652453" name="org.iets3.core.expr.base.structure.MinusExpression" flags="ng" index="30dvUo" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
@@ -24,6 +25,9 @@
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
+      <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
+        <property id="5115872837157054173" name="value" index="30bXRw" />
+      </concept>
     </language>
     <language id="83a543da-6367-4b94-9df8-b626b1b2132c" name="QuestionnaireLanguage">
       <concept id="7492283165220486899" name="QuestionnaireLanguage.structure.Question" flags="ng" index="2GoH4$">
@@ -45,6 +49,9 @@
       <concept id="2398096574387920283" name="QuestionnaireLanguage.structure.ConditionalBlock" flags="ng" index="3kfHQV">
         <child id="2398096574387920286" name="condition" index="3kfHQY" />
         <child id="2398096574387920287" name="body" index="3kfHQZ" />
+      </concept>
+      <concept id="5397632171549283396" name="QuestionnaireLanguage.structure.DerivedValueReference" flags="ng" index="3ZwAAo">
+        <reference id="5397632171549283397" name="derivedValue" index="3ZwAAp" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -118,6 +125,16 @@
           </node>
           <node concept="3kfyqv" id="257K23PvA0i" role="30dEsF">
             <ref role="3kfyrw" node="257K23PuBYZ" resolve="sellingPrice" />
+          </node>
+        </node>
+      </node>
+      <node concept="3kfHQV" id="4FCftMPq$L5" role="3kfHQZ">
+        <node concept="30d7iD" id="4FCftMPqH$J" role="3kfHQY">
+          <node concept="30bXRB" id="4FCftMPqH$P" role="30dEs_">
+            <property role="30bXRw" value="5" />
+          </node>
+          <node concept="3ZwAAo" id="4FCftMPqH$F" role="30dEsF">
+            <ref role="3ZwAAp" node="257K23Pv8QD" resolve="valueResidue" />
           </node>
         </node>
       </node>

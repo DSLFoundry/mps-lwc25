@@ -213,7 +213,7 @@
       <node concept="1sVBvm" id="257K23Puur3" role="1sWHZn">
         <node concept="3F0A7n" id="257K23Puur4" role="2wV5jI">
           <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
     </node>
@@ -259,6 +259,18 @@
         <property role="3F0ifm" value=")" />
         <node concept="11L4FC" id="257K23PveU0" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4FCftMPq_h6">
+    <ref role="1XX52x" to="zg3i:4FCftMPq_h4" resolve="DerivedValueReference" />
+    <node concept="1iCGBv" id="4FCftMPq_h7" role="2wV5jI">
+      <ref role="1NtTu8" to="zg3i:4FCftMPq_h5" resolve="derivedValue" />
+      <node concept="1sVBvm" id="4FCftMPq_h8" role="1sWHZn">
+        <node concept="3F0A7n" id="4FCftMPq_h9" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" />
         </node>
       </node>
     </node>
