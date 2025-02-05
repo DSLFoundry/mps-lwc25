@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="zg3i" ref="r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)" implicit="true" />
+    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -16,6 +17,14 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+    </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -43,6 +52,7 @@
         <child id="1174660783413" name="leftExpression" index="1ZfhK$" />
         <child id="1174660783414" name="rightExpression" index="1ZfhKB" />
       </concept>
+      <concept id="1174663118805" name="jetbrains.mps.lang.typesystem.structure.CreateLessThanInequationStatement" flags="nn" index="1ZobV4" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
@@ -158,6 +168,38 @@
     <node concept="1YaCAy" id="4FCftMPqHEu" role="1YuTPh">
       <property role="TrG5h" value="derivedValue" />
       <ref role="1YaFvo" to="zg3i:257K23Pv8vo" resolve="DerivedValue" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="6_fuithNPsD">
+    <property role="TrG5h" value="typeof_ConditionalBlock" />
+    <node concept="3clFbS" id="6_fuithNPsE" role="18ibNy">
+      <node concept="1ZobV4" id="6_fuithNRXY" role="3cqZAp">
+        <node concept="mw_s8" id="6_fuithNRYa" role="1ZfhKB">
+          <node concept="1Z2H0r" id="6_fuithNRY6" role="mwGJk">
+            <node concept="2pJPEk" id="6_fuithNRYo" role="1Z2MuG">
+              <node concept="2pJPED" id="6_fuithNRYq" role="2pJPEn">
+                <ref role="2pJxaS" to="5qo5:6sdnDbSlcHm" resolve="BooleanLiteral" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6_fuithNRY1" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6_fuithNPsO" role="mwGJk">
+            <node concept="2OqwBi" id="6_fuithNPBW" role="1Z2MuG">
+              <node concept="1YBJjd" id="6_fuithNPuJ" role="2Oq$k0">
+                <ref role="1YBMHb" node="6_fuithNPsG" resolve="conditionalBlock" />
+              </node>
+              <node concept="3TrEf2" id="6_fuithNRv5" role="2OqNvi">
+                <ref role="3Tt5mk" to="zg3i:257K23PuhQu" resolve="condition" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6_fuithNPsG" role="1YuTPh">
+      <property role="TrG5h" value="conditionalBlock" />
+      <ref role="1YaFvo" to="zg3i:257K23PuhQr" resolve="ConditionalBlock" />
     </node>
   </node>
 </model>
