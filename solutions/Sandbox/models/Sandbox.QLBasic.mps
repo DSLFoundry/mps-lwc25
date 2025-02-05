@@ -119,12 +119,12 @@
           </node>
         </node>
         <node concept="3keXPw" id="257K23PvlkB" role="3keMTk" />
-        <node concept="30dvUo" id="4FCftMPq$J8" role="3keOvY">
-          <node concept="3kfyqv" id="4FCftMPq$Jl" role="30dEs_">
-            <ref role="3kfyrw" node="257K23Pv858" resolve="privateDebt" />
-          </node>
+        <node concept="30dvUo" id="4FCftMPqTI8" role="3keOvY">
           <node concept="3kfyqv" id="257K23PvA0i" role="30dEsF">
             <ref role="3kfyrw" node="257K23PuBYZ" resolve="sellingPrice" />
+          </node>
+          <node concept="3kfyqv" id="4FCftMPq$Jl" role="30dEs_">
+            <ref role="3kfyrw" node="257K23Pv858" resolve="privateDebt" />
           </node>
         </node>
       </node>

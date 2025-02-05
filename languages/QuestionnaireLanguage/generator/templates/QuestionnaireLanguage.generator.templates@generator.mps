@@ -201,7 +201,7 @@
                       <node concept="2OqwBi" id="4D$GIrwZTCc" role="2Oq$k0">
                         <node concept="30H73N" id="4D$GIrwZT8R" role="2Oq$k0" />
                         <node concept="3TrEf2" id="4D$GIrwZTRY" role="2OqNvi">
-                          <ref role="3Tt5mk" to="zg3i:257K23Puur0" />
+                          <ref role="3Tt5mk" to="zg3i:257K23Puur0" resolve="question" />
                         </node>
                       </node>
                       <node concept="3TrcHB" id="4D$GIrwZV0G" role="2OqNvi">
@@ -263,7 +263,7 @@
     </node>
     <node concept="3lhOvk" id="4D$GIrwX3It" role="3lj3bC">
       <ref role="30HIoZ" to="zg3i:6vTVXvbAy8x" resolve="Form" />
-      <ref role="3lhOvi" node="4D$GIrwX3Iu" resolve="map_Form" />
+      <ref role="3lhOvi" node="4D$GIrwX3Iu" resolve="questionnaire" />
     </node>
   </node>
   <node concept="356sEV" id="4D$GIrwX3Iu">
@@ -872,7 +872,7 @@
                             <node concept="2OqwBi" id="4D$GIrwYHRG" role="2Oq$k0">
                               <node concept="30H73N" id="4D$GIrwYHRa" role="2Oq$k0" />
                               <node concept="3TrEf2" id="4D$GIrwYHYL" role="2OqNvi">
-                                <ref role="3Tt5mk" to="zg3i:6vTVXvbANVS" />
+                                <ref role="3Tt5mk" to="zg3i:6vTVXvbANVS" resolve="label" />
                               </node>
                             </node>
                             <node concept="2qgKlT" id="4D$GIrwYIDZ" role="2OqNvi">
@@ -913,7 +913,7 @@
                 <node concept="2OqwBi" id="4D$GIrwYvCH" role="2Oq$k0">
                   <node concept="30H73N" id="4D$GIrwYvrv" role="2Oq$k0" />
                   <node concept="3TrEf2" id="4D$GIrwYw9v" role="2OqNvi">
-                    <ref role="3Tt5mk" to="zg3i:257K23PtZmx" />
+                    <ref role="3Tt5mk" to="zg3i:257K23PtZmx" resolve="type" />
                   </node>
                 </node>
                 <node concept="2yIwOk" id="4D$GIrwYx0$" role="2OqNvi" />
