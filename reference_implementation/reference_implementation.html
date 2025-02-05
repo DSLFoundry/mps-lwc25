@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive Questionnaire</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
 </head>
-<body class="valign-wrapper">
+
+<body class="valign-wrapper" onload="update()">
   <div class="container">
     <div class="row">
       <div class="col s12 m8 offset-m2">
@@ -15,7 +17,7 @@
             <span class="card-title center-align">Box1HouseOwning</span>
             <form>
               <!-- Question 1 -->
-              <p>
+              <p id="hasSoldHouse_container" style="display: none;">
                 <label>
                   <input id="hasSoldHouse" type="checkbox" oninput="update()" />
                   <span>Did you sell a house in 2010?</span>
@@ -23,7 +25,7 @@
               </p>
 
               <!-- Question 2 -->
-              <p>
+              <p id="hasBoughtHouse_container" style="display: none;">
                 <label>
                   <input id="hasBoughtHouse" type="checkbox" oninput="update()" />
                   <span>Did you buy a house in 2010?</span>
@@ -31,28 +33,28 @@
               </p>
 
               <!-- Question 3 -->
-              <p>
+              <p id="hasMaintLoan_container" style="display: none;">
                 <label>
                   <input id="hasMaintLoan" type="checkbox" oninput="update()" />
                   <span>Did you enter a loan for maintenance/reconstruction?</span>
                 </label>
               </p>
 
-              <div class="input-field" id="sellingPrice_container">
-                <input id="sellingPrice" type="number" oninput="update()" />
+              <div class="input-field" id="sellingPrice_container" style="display: none;">
+                <input placeholder="" id="sellingPrice" type="number" oninput="update()" />
                 <label for="sellingPrice">Price the house was sold for:</label>
               </div>
 
-              <div class="input-field" id="privateDebt_container">
-                <input id="privateDebt" type="number" oninput="update()" />
+              <div class="input-field" id="privateDebt_container" style="display: none;">
+                <input placeholder="" id="privateDebt" type="number" oninput="update()" />
                 <label for="privateDebt">Private debts for the sold house:</label>
               </div>
 
-              <div class="input-field" id="valueResidue_container">
-                <input id="valueResidue" type="number" readonly>
+              <div class="input-field" id="valueResidue_container" style="display: none;">
+                <input placeholder="" id="valueResidue" type="number" readonly>
                 <label for="valueResidue">Value residue:</label>
               </div>
-              
+
             </form>
           </div>
         </div>
@@ -85,6 +87,9 @@
     }
 
     function update() {
+      showIf('hasSoldHouse', true)
+      showIf('hasBoughtHouse', true)
+      showIf('hasMaintLoan', true)
       showIf('sellingPrice', val('hasSoldHouse'))
       showIf('privateDebt', val('hasSoldHouse'))
       showIf('valueResidue', val('hasSoldHouse'))
@@ -95,4 +100,5 @@
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
+
 </html>
