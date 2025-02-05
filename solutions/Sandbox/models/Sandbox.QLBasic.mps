@@ -7,6 +7,13 @@
   </languages>
   <imports />
   <registry>
+    <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="5115872837156652453" name="org.iets3.core.expr.base.structure.MinusExpression" flags="ng" index="30dvUo" />
+      <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
+        <child id="5115872837156576280" name="right" index="30dEs_" />
+        <child id="5115872837156576278" name="left" index="30dEsF" />
+      </concept>
+    </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
@@ -105,8 +112,13 @@
           </node>
         </node>
         <node concept="3keXPw" id="257K23PvlkB" role="3keMTk" />
-        <node concept="3kfyqv" id="257K23PvA0i" role="3keOvY">
-          <ref role="3kfyrw" node="257K23PuBYZ" resolve="sellingPrice" />
+        <node concept="30dvUo" id="4FCftMPq$J8" role="3keOvY">
+          <node concept="3kfyqv" id="4FCftMPq$Jl" role="30dEs_">
+            <ref role="3kfyrw" node="257K23Pv858" resolve="privateDebt" />
+          </node>
+          <node concept="3kfyqv" id="257K23PvA0i" role="30dEsF">
+            <ref role="3kfyrw" node="257K23PuBYZ" resolve="sellingPrice" />
+          </node>
         </node>
       </node>
     </node>
