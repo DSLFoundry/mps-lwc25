@@ -17,7 +17,7 @@
               <!-- Question 1 -->
               <p>
                 <label>
-                  <input id="hasSoldHouse" type="checkbox" onchange="toggleSoldHouseFields()" />
+                  <input id="hasSoldHouse" type="checkbox" oninput="update()" />
                   <span>Did you sell a house in 2010?</span>
                 </label>
               </p>
@@ -25,7 +25,7 @@
               <!-- Question 2 -->
               <p>
                 <label>
-                  <input id="hasBoughtHouse" type="checkbox" />
+                  <input id="hasBoughtHouse" type="checkbox" oninput="update()" />
                   <span>Did you buy a house in 2010?</span>
                 </label>
               </p>
@@ -33,28 +33,26 @@
               <!-- Question 3 -->
               <p>
                 <label>
-                  <input id="hasMaintLoan" type="checkbox" />
+                  <input id="hasMaintLoan" type="checkbox" oninput="update()" />
                   <span>Did you enter a loan for maintenance/reconstruction?</span>
                 </label>
               </p>
 
-              <!-- Conditional Fields -->
-              <div id="soldHouseFields" style="display: none;">
-                <div class="input-field">
-                  <input id="sellingPrice" type="number" oninput="calculateValueResidue()">
-                  <label for="sellingPrice">Price the house was sold for:</label>
-                </div>
-
-                <div class="input-field">
-                  <input id="privateDebt" type="number" oninput="calculateValueResidue()">
-                  <label for="privateDebt">Private debts for the sold house:</label>
-                </div>
-
-                <div class="input-field">
-                  <input id="valueResidue" type="number" readonly>
-                  <label for="valueResidue">Value residue:</label>
-                </div>
+              <div class="input-field" id="sellingPrice_container">
+                <input id="sellingPrice" type="number" oninput="update()" />
+                <label for="sellingPrice">Price the house was sold for:</label>
               </div>
+
+              <div class="input-field" id="privateDebt_container">
+                <input id="privateDebt" type="number" oninput="update()" />
+                <label for="privateDebt">Private debts for the sold house:</label>
+              </div>
+
+              <div class="input-field" id="valueResidue_container">
+                <input id="valueResidue" type="number" readonly>
+                <label for="valueResidue">Value residue:</label>
+              </div>
+              
             </form>
           </div>
         </div>
@@ -63,25 +61,37 @@
   </div>
 
   <script>
-    function toggleSoldHouseFields() {
-      const hasSoldHouse = document.getElementById('hasSoldHouse').checked;
-      const soldHouseFields = document.getElementById('soldHouseFields');
-      soldHouseFields.style.display = hasSoldHouse ? 'block' : 'none';
-
-      // Reset values if hidden
-      if (!hasSoldHouse) {
-        document.getElementById('sellingPrice').value = '';
-        document.getElementById('privateDebt').value = '';
-        document.getElementById('valueResidue').value = '';
+    function val(id) {
+      const elem = document.getElementById(id)
+      if (elem.type === 'checkbox') {
+        return elem.checked;
+      }
+      else if (elem.type === 'number') {
+        return parseFloat(elem.value) || 0;
+      }
+      else {
+        console.log('Unknown value.', elem);
       }
     }
 
-    function calculateValueResidue() {
-      const sellingPrice = parseFloat(document.getElementById('sellingPrice').value) || 0;
-      const privateDebt = parseFloat(document.getElementById('privateDebt').value) || 0;
-      const valueResidue = sellingPrice - privateDebt;
-      document.getElementById('valueResidue').value = valueResidue;
+    function showIf(id, condition) {
+      var container_elm = document.getElementById(id + '_container');
+      container_elm.style.display = condition ? 'block' : 'none';
     }
+
+    function updateValue(id, value) {
+      var elm = document.getElementById(id);
+      elm.value = value;
+    }
+
+    function update() {
+      showIf('sellingPrice', val('hasSoldHouse'))
+      showIf('privateDebt', val('hasSoldHouse'))
+      showIf('valueResidue', val('hasSoldHouse'))
+
+      updateValue('valueResidue', val('sellingPrice') - val('privateDebt'))
+    }
+
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
