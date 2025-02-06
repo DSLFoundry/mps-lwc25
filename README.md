@@ -44,6 +44,7 @@ Another useful extension is the plaintextgen plugin which helps to easily genera
  - constraint-based typesystem
  - shadow models or Dclare4MPS (for QL, this can enable a live programming workflow, transforming to generated HTML code incrementally and continuously while editing the model)
  - see the [MPS Extensions documentation](https://jetbrains.github.io/MPS-extensions/) for an overview of community extensions
+ - see [MPS Platform Docs](http://mbeddr.com/mps-platform-docs/) for a nearly exhaustive overview of the most used non-commercial third-party MPS extensions
 
 ## Conclusions for JetBrains MPS implementation of QL in 2025
 In the last 12 years, MPS itself has done steps to further engineer and stabilize the tool. Many bugs have been fixed, existing features streamlined, and performance highly optimized. The basic meta-interfaces of the MPS structure aspect have stayed stable, while many other aspects and additional extension capabilities and features (such as custom aspects, testing and debugging infrastructure for various aspects, mass node manipulation, many productivity features in the IDE, generation plans, ...) have been added.
