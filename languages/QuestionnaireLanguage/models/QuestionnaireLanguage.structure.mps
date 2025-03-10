@@ -172,6 +172,9 @@
     <node concept="PrWs8" id="257K23Pv8vp" role="PzmwI">
       <ref role="PrY4T" node="257K23PuhQy" resolve="IFormContents" />
     </node>
+    <node concept="PrWs8" id="5Qt2gdxAMSH" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4FCftMPq_h4">
     <property role="EcuMT" value="5397632171549283396" />
@@ -182,6 +185,9 @@
       <property role="IQ2ns" value="5397632171549283397" />
       <property role="20kJfa" value="derivedValue" />
       <ref role="20lvS9" node="257K23Pv8vo" resolve="DerivedValue" />
+    </node>
+    <node concept="PrWs8" id="5Qt2gdxAMSI" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
     </node>
   </node>
 </model>
