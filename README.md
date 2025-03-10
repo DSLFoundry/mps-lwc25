@@ -33,7 +33,7 @@ Another useful extension is the plaintextgen plugin which helps to easily genera
 ### Implementation walkthrough
 #### What stayed the same?
  - Each of the concepts mentioned in the [QL assignment](https://homepages.cwi.nl/~storm/Ql.pdf) has been implemented 1:1 as an MPS concept.
- - Similar as in the original implementation in 2013, we have used the IQuestionBlockContents interface concept to allow for free creation and movements of lines in the structural projectional editor of MPS.
+ - Similar as in the original implementation in 2013, we have used the IQuestionBlockContents (now renamed to Inform contents) interface concept to allow for free creation and movements of lines in the structural projectional editor of MPS.
  - The Empty concept represents empty lines. In addition, we have the DerivedValueReference and QuestionReference concepts in order to model references in the language.
  - Since the de.slisson.mps.richtext language already existed to model rich text, we have done this again in the new implementation, since richtext suffices for the text of a question. If we would have had a need for more advanced text modeling (à la LaTeX, including references to other part of the model, tagging, document structure, etc.), we could have used the mbeddr.doc language (with various out-of-the-box generation targets like HTML, Markdown, and LaTeX/PDF).
 
