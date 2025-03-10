@@ -16,6 +16,7 @@
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="7418278005949660372" name="jetbrains.mps.lang.editor.structure.FontFamilyStyleClassItem" flags="ln" index="2biZxu" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1160590307797" name="usesFolding" index="S$F3r" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
@@ -196,6 +197,7 @@
         <property role="3F0ifm" value="{" />
       </node>
       <node concept="3F2HdR" id="257K23PuhQX" role="3EZMnx">
+        <property role="S$F3r" value="true" />
         <ref role="1NtTu8" to="zg3i:257K23PuhQv" resolve="body" />
         <node concept="l2Vlx" id="257K23PuhQZ" role="2czzBx" />
         <node concept="pVoyu" id="257K23PuhR3" role="3F10Kt">
