@@ -5,6 +5,14 @@ Authors: Klemens Schindler (@klemensschindler) and Eugen Schindler (@eugenschind
 
 The original JetBrains MPS QL implementation is in the repository https://github.com/DSLFoundry/mps-lwc14, which in turn is based on https://github.com/DSLFoundry/mps-lwc13.
 
+## Input documentation
+The documentation for input to the paper can be found here:
+ - [Short summary including brief history of JetBrains MPS](doc/Summary.md)
+ - To open and run the implementation, see further below in this README file. Statistics are at the bottom of this README file.
+ - [QL feature table for JetBrains MPS](doc/QLFeatures_Table_Template.xlsx)
+ - [LWB feature table for JetBrains MPS](doc/LanguageWorkbench_FeatureConfiguration.xlsx)
+ - [MW feature table for JetBrains MPS](doc/ModelingWorkbench_FeatureConfiguration.xlsx)
+
 ## Setup
  - Install JetBrains MPS 2024.1 from the list on https://www.jetbrains.com/mps/download/previous.html for your platform
  - Run ```./gradlew``` after cloning this repository in order to download all dependencies and build the language
@@ -51,11 +59,12 @@ In the last 12 years, MPS itself has done steps to further engineer and stabiliz
 
 In addition, commercial and community extensions have been developed that add productivity and power to the toolbox of MPS language developers. This enables a quite concise and powerful way to write and maintain ecosystems of languages and language stacks for people who are knowledgeable with MPS language development, while keeping basic language creation still relatively accessible to new MPS language developers.
 
- - Total code written: 1794 nodes
-   - Language: 139 nodes
+ - Total code written: 1023 nodes
+   - Language: 256 nodes
    - Generator: 621 nodes
    - Build solution: 106 nodes
-   - Example model: 34 nodes
- - Total implementation effort (excluding documentation and build setup, including design): 4 person hours
- - Total coffee consumed: 4 cups
- - Total cookies eaten: 6
+   - Example model: 40 nodes
+ - Total implementation effort (excluding documentation and build setup, including design): 5 person hours
+ - Total documentation effort (README, Summary, Excel sheets): 10 person hours
+ - Total coffee consumed: 7 cups
+ - Total cookies/candies eaten: 11
