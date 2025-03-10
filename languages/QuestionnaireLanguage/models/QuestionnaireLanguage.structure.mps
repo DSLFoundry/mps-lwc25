@@ -10,6 +10,7 @@
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
@@ -53,12 +54,15 @@
     <node concept="PrWs8" id="6vTVXvbANVL" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
+    <node concept="PrWs8" id="5Qt2gdxAhuO" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
     <node concept="1TJgyj" id="257K23PtZxr" role="1TKVEi">
       <property role="IQ2ns" value="2398096574387845211" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="contents" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="257K23PuhQy" resolve="IQuestionBlockContents" />
+      <ref role="20lvS9" node="257K23PuhQy" resolve="IFormContents" />
     </node>
   </node>
   <node concept="1TIwiD" id="6vTVXvbANVN">
@@ -69,7 +73,7 @@
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="PrWs8" id="257K23PuhQA" role="PzmwI">
-      <ref role="PrY4T" node="257K23PuhQy" resolve="IQuestionBlockContents" />
+      <ref role="PrY4T" node="257K23PuhQy" resolve="IFormContents" />
     </node>
     <node concept="1TJgyj" id="6vTVXvbANVS" role="1TKVEi">
       <property role="IQ2ns" value="7492283165220486904" />
@@ -102,22 +106,22 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="257K23PuhQy" resolve="IQuestionBlockContents" />
+      <ref role="20lvS9" node="257K23PuhQy" resolve="IFormContents" />
     </node>
     <node concept="PrWs8" id="257K23Puuaz" role="PzmwI">
-      <ref role="PrY4T" node="257K23PuhQy" resolve="IQuestionBlockContents" />
+      <ref role="PrY4T" node="257K23PuhQy" resolve="IFormContents" />
     </node>
   </node>
   <node concept="PlHQZ" id="257K23PuhQy">
     <property role="EcuMT" value="2398096574387920290" />
-    <property role="TrG5h" value="IQuestionBlockContents" />
+    <property role="TrG5h" value="IFormContents" />
   </node>
   <node concept="1TIwiD" id="257K23PulpM">
     <property role="EcuMT" value="2398096574387934834" />
     <property role="TrG5h" value="Empty" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="257K23PulpN" role="PzmwI">
-      <ref role="PrY4T" node="257K23PuhQy" resolve="IQuestionBlockContents" />
+      <ref role="PrY4T" node="257K23PuhQy" resolve="IFormContents" />
     </node>
   </node>
   <node concept="1TIwiD" id="257K23PuuqZ">
@@ -166,7 +170,7 @@
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
     </node>
     <node concept="PrWs8" id="257K23Pv8vp" role="PzmwI">
-      <ref role="PrY4T" node="257K23PuhQy" resolve="IQuestionBlockContents" />
+      <ref role="PrY4T" node="257K23PuhQy" resolve="IFormContents" />
     </node>
   </node>
   <node concept="1TIwiD" id="4FCftMPq_h4">

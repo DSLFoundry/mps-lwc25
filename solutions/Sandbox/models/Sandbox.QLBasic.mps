@@ -25,6 +25,7 @@
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
+      <concept id="5115872837157054169" name="org.iets3.core.expr.simpleTypes.structure.IntegerType" flags="ng" index="30bXR$" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
@@ -70,6 +71,15 @@
         </node>
       </node>
       <node concept="2vmvy5" id="257K23PtZH2" role="3kc3m1" />
+    </node>
+    <node concept="2GoH4$" id="5Qt2gdxAhs2" role="3kc3xV">
+      <property role="TrG5h" value="hasSoldHouse" />
+      <node concept="19SGf9" id="5Qt2gdxAhs4" role="2GoH4J">
+        <node concept="19SUe$" id="5Qt2gdxAhs5" role="19SJt6">
+          <property role="19SUeA" value="Some other question with the same name?" />
+        </node>
+      </node>
+      <node concept="30bXR$" id="5Qt2gdxAhuI" role="3kc3m1" />
     </node>
     <node concept="2GoH4$" id="257K23PtZGQ" role="3kc3xV">
       <property role="TrG5h" value="hasBoughtHouse" />
