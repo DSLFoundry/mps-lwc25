@@ -10,6 +10,7 @@
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
       <concept id="5115872837156652453" name="org.iets3.core.expr.base.structure.MinusExpression" flags="ng" index="30dvUo" />
+      <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
@@ -129,12 +130,17 @@
           </node>
         </node>
         <node concept="3keXPw" id="257K23PvlkB" role="3keMTk" />
-        <node concept="30dvUo" id="5Qt2gdxBgxa" role="3keOvY">
-          <node concept="3kfyqv" id="257K23PvA0i" role="30dEsF">
-            <ref role="3kfyrw" node="257K23PuBYZ" resolve="sellingPrice" />
+        <node concept="30dDZf" id="5Qt2gdxDyej" role="3keOvY">
+          <node concept="30dvUo" id="5Qt2gdxDyek" role="30dEsF">
+            <node concept="3kfyqv" id="257K23PvA0i" role="30dEsF">
+              <ref role="3kfyrw" node="257K23PuBYZ" resolve="sellingPrice" />
+            </node>
+            <node concept="3kfyqv" id="4FCftMPq$Jl" role="30dEs_">
+              <ref role="3kfyrw" node="257K23Pv858" resolve="privateDebt" />
+            </node>
           </node>
-          <node concept="3kfyqv" id="4FCftMPq$Jl" role="30dEs_">
-            <ref role="3kfyrw" node="257K23Pv858" resolve="privateDebt" />
+          <node concept="3ZwAAo" id="5Qt2gdxDyfv" role="30dEs_">
+            <ref role="3ZwAAp" node="257K23Pv8QD" resolve="valueResidue" />
           </node>
         </node>
       </node>
