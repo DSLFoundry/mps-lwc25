@@ -68,6 +68,8 @@
   <node concept="1TIwiD" id="6vTVXvbANVN">
     <property role="EcuMT" value="7492283165220486899" />
     <property role="TrG5h" value="Question" />
+    <property role="R4oN_" value="Survey question in the form" />
+    <property role="34LRSv" value="question" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6vTVXvbANVP" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
@@ -93,6 +95,8 @@
   <node concept="1TIwiD" id="257K23PuhQr">
     <property role="EcuMT" value="2398096574387920283" />
     <property role="TrG5h" value="ConditionalBlock" />
+    <property role="34LRSv" value="if" />
+    <property role="R4oN_" value="Conditional block" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="257K23PuhQu" role="1TKVEi">
       <property role="IQ2ns" value="2398096574387920286" />
@@ -144,6 +148,8 @@
   <node concept="1TIwiD" id="257K23Pv8vo">
     <property role="EcuMT" value="2398096574388144088" />
     <property role="TrG5h" value="DerivedValue" />
+    <property role="34LRSv" value="derived" />
+    <property role="R4oN_" value="Derived value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="257K23Pv8vs" role="1TKVEi">
       <property role="IQ2ns" value="2398096574388144092" />
