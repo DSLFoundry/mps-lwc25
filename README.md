@@ -14,16 +14,13 @@ The documentation for input to the paper can be found here:
  - [MW feature table for JetBrains MPS](doc/ModelingWorkbench_FeatureConfiguration.xlsx)
 
 ## Setup
- - Install JetBrains MPS 2024.1 from the list on https://www.jetbrains.com/mps/download/previous.html for your platform
+ - Install JetBrains MPS 2025.1 from the list on https://www.jetbrains.com/mps/download/previous.html for your platform
  - Run ```./gradlew``` after cloning this repository in order to download all dependencies and build the language
  - Open the root directory of this repository in MPS
  - To play with an example QL model, open the root node QuestionnaireLanguage &rarr; Sandbox &rarr; Sandbox &rarr; QLBasic &rarr; HouseOwning
 
 ## New QL language implementation
 This section sketches the language implementation highlights and especially the differences in effort and amount of code needed to implement the language in MPS 2024.1 (and included batteries) as compared to the original last implementation of QL from 2014 in MPS 2.5.
-
-### Why use MPS 2024.1 instead of 2024.3?
-At the time of finishing up the implementation (beginning of February 2025), the newest available MPS version is 2024.3 (released on 21 January 2025). We have chosen the previous major version (2024.1) for the implementation. The reason for this is that the current main branch of KernelF is tested and stable on MPS 2024.1. This is typical of the commercial and community libraries built on top of MPS: the community and clients work with JetBrains to test and fix infrastructure libraries used for language development (like KernelF), so they are engineering-ready and stable.
 
 ### General observations
 Since version 2.5, MPS and its ecosystem of commercial and community-based libraries has evolved quite much. Most notably, for the new implementation of QL, we have heavily used the [KernelF](http://voelter.de/data/pub/kernelf-reference.pdf) extensible "funclarative" language (contained within the [IETS3.opensource](https://github.com/iets3/iets3.opensource) project). In practice, the most frequent use case of KernelF we have encountered, is to just "plug-in" and tailor (advanced) expressions instead of having to develop an expression hierarchy and various useful functionality for it every time from scratch in a language.
@@ -53,6 +50,7 @@ Another useful extension is the plaintextgen plugin which helps to easily genera
  - shadow models or Dclare4MPS (for QL, this can enable a live programming workflow, transforming to generated HTML code incrementally and continuously while editing the model)
  - see the [MPS Extensions documentation](https://jetbrains.github.io/MPS-extensions/) for an overview of community extensions
  - see [MPS Platform Docs](http://mbeddr.com/mps-platform-docs/) for a nearly exhaustive overview of the most used non-commercial third-party MPS extensions
+ - the build language itself is a generation target, which makes it possible to build extensions to the MPS build mechanism itself
 
 ## Conclusions for JetBrains MPS implementation of QL in 2025
 In the last 12 years, MPS itself has done steps to further engineer and stabilize the tool. Many bugs have been fixed, existing features streamlined, and performance highly optimized. The basic meta-interfaces of the MPS structure aspect have stayed stable, while many other aspects and additional extension capabilities and features (such as custom aspects, testing and debugging infrastructure for various aspects, mass node manipulation, many productivity features in the IDE, generation plans, ...) have been added.
