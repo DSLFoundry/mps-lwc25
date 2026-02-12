@@ -69,7 +69,7 @@ In addition, commercial and community extensions have been developed that add pr
  - Total cookies/candies eaten: 11
 
  - In the last (mps-lwc14) implementation, the amount of total nodes is a **factor of 43** more than the current implementation (mps-lwc25).
- - The last implementation took 5 people several evenings, while the current implementation was 2 people (excluding one cosmetics commit from JetBrains) for 2 short evenings (excluding documentation). We don't have exact statistics to factor our the exact implementation time from the design time, but the significant reduction in amount of total implementation code (measured in nodes), should give a pretty good idea of how much less the implementation work itself was.
+ - The last implementation took 5 people several evenings, while the current implementation was 2 people (excluding one cosmetics commit from JetBrains) for 2 short evenings (excluding documentation). We don't have exact statistics to factor out the exact implementation time from the design time, but the significant reduction in amount of total implementation code (measured in nodes), should give a pretty good idea of how much less the implementation work itself was.
 
  In this specific QL implementation, we contribute the high reduction in code (and hence implementation effort) to KernelF (which saves having to make from scratch entire expression concept hierarchies) and plaintextgen (which saves textgens or intermediate languages and drastically reduces templatizing reference implementations from plain text).
 
