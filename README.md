@@ -75,4 +75,4 @@ In addition, commercial and community extensions have been developed that add pr
 
 ## Final statement
 
-With this data, we can conclude that the QL implementation may not be a benchmark to seriously measure the power of MPS. It may be time to update the benchmark to a level that is more challenging for MPS and its opensource ecosystem of "batteries included" :-)
+With this data, we can conclude that the QL implementation may not be a benchmark to extensively measure the power of language implementation in MPS. It may be time to update the benchmark to a level that is more challenging for MPS and its opensource ecosystem of "batteries included" :-)
