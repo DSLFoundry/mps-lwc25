@@ -57,6 +57,7 @@ In the last 12 years, MPS itself has done steps to further engineer and stabiliz
 
 In addition, commercial and community extensions have been developed that add productivity and power to the toolbox of MPS language developers. This enables a quite concise and powerful way to write and maintain ecosystems of languages and language stacks for people who are knowledgeable with MPS language development, while keeping basic language creation still relatively accessible to new MPS language developers.
 
+## Some statistics
  - Total code written: 1023 nodes
    - Language: 256 nodes
    - Generator: 621 nodes
@@ -66,3 +67,12 @@ In addition, commercial and community extensions have been developed that add pr
  - Total documentation effort (README, Summary, Excel sheets): 10 person hours
  - Total coffee consumed: 7 cups
  - Total cookies/candies eaten: 11
+
+ - In the last (mps-lwc14) implementation, the amount of total nodes is a **factor of 43** more than the current implementation (mps-lwc25).
+ - The last implementation took 5 people several evenings, while the current implementation was 2 people (excluding one cosmetics commit from JetBrains) for 2 short evenings (excluding documentation). We don't have exact statistics to factor our the exact implementation time from the design time, but the significant reduction in amount of total implementation code (measured in nodes), should give a pretty good idea of how much less the implementation work itself was.
+
+ In this specific QL implementation, we contribute the high reduction in code (and hence implementation effort) to KernelF (which saves having to make from scratch entire expression concept hierarchies) and plaintextgen (which saves textgens or intermediate languages and drastically reduces templatizing reference implementations from plain text).
+
+## Final statement
+
+With this data, we can conclude that the QL implementation may not be a benchmark to seriously measure the power of MPS. It may be time to update the benchmark to a level that is more challenging for MPS and its opensource ecosystem of "batteries included" :-)
