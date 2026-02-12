@@ -15,7 +15,7 @@ The documentation for input to the paper can be found here:
 
 ## Setup
  - Install JetBrains MPS 2025.1 from the list on https://www.jetbrains.com/mps/download/previous.html for your platform
- - Run ```./gradlew``` (the used gradle 7 needs java 17) after cloning this repository in order to download all dependencies and build the language
+ - Run ```./gradlew``` (the used MPS and gradle 7 needs java 21) after cloning this repository in order to download all dependencies and build the language
  - Open the root directory of this repository in MPS
  - To play with an example QL model, open the root node QuestionnaireLanguage &rarr; Sandbox &rarr; Sandbox &rarr; QLBasic &rarr; HouseOwning
 
