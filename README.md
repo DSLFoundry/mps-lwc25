@@ -20,7 +20,7 @@ The documentation for input to the paper can be found here:
  - To play with an example QL model, open the root node QuestionnaireLanguage &rarr; Sandbox &rarr; Sandbox &rarr; QLBasic &rarr; HouseOwning
 
 ## New QL language implementation
-This section sketches the language implementation highlights and especially the differences in effort and amount of code needed to implement the language in MPS 2024.1 (and included batteries) as compared to the original last implementation of QL from 2014 in MPS 2.5.
+This section sketches the language implementation highlights and especially the differences in effort and amount of code needed to implement the language in MPS 2025.1 (and included batteries) as compared to the original last implementation of QL from 2014 in MPS 2.5.
 
 ### General observations
 Since version 2.5, MPS and its ecosystem of commercial and community-based libraries has evolved quite much. Most notably, for the new implementation of QL, we have heavily used the [KernelF](http://voelter.de/data/pub/kernelf-reference.pdf) extensible "funclarative" language (contained within the [IETS3.opensource](https://github.com/iets3/iets3.opensource) project). In practice, the most frequent use case of KernelF we have encountered, is to just "plug-in" and tailor (advanced) expressions instead of having to develop an expression hierarchy and various useful functionality for it every time from scratch in a language.
