@@ -45,14 +45,21 @@ Another useful extension is the plaintextgen plugin which helps to easily genera
  - Using KernelF's expression infrastructure adds quite some advanced functionality to a language with almost zero effort. If the language is relatively simple, however, one may want to restrict the plethora of possible expressions of KernelF to only a subset (e.g. only additions, subtractions, multiplications, and divisions). Though it doesn't cost much effort, it needs some considerations. Details are beyond the scope of this text.
 
 ### Other features not touched in this JetBrains MPS QL implementation
- - kotlin base language instead of java base language
+ - **most notable recent extension in 2026**: several Model Context Protocol interfaces, which enable agentic workflows, have been built for MPS: 
+    - the (as of yet experimental, but functional and quite extensive) [JetBrains Projectional Agent Toolkit](https://www.jetbrains.com/help/mps/2026.1/mps-projectional-agent-toolkit.html). This MCP is available directly from MPS. It has a comprehensive library of skills that help agents work with MPS. A limitation of the tool is that it works within
+    - a CLI interface called [mops](https://github.com/specificlanguages/mops) for headless model and language manipulation from [specificlanguages.com](https://specificlanguages.com/). 
+    - a proprietary MCP server from [itemis](https://www.itemis.com/) (available from MPS 22.3) called [Portalon](https://www.itemis.com/en/blog/model-based-engineering/custom-tools/ai-agents-meet-mps-with-portalon/)
+    
+    These functionalities enable MPS to interoperate with AI agents, and unlock the valuable domain knowledge in it, giving it a new role in the complex organization of a company's or domain's subject matter that has been encoded using MPS languages and models.
+    
+    Development of models and basic maintenance activities (coding, builds, testing, etc.) can be done with cheaper, more basic open weight or cloud hosted tool calling LLMs (with 27B parameters or more), while non-trivial language development has enough inherent complexity to currently require more complex (70B parameters or frontier-grade) LLMs. 
+- kotlin base language instead of java base language
  - constraint-based typesystem
  - shadow models or Dclare4MPS (for QL, this can enable a live programming workflow, transforming to generated HTML code incrementally and continuously while editing the model)
  - see the [MPS Extensions documentation](https://jetbrains.github.io/MPS-extensions/) for an overview of community extensions
  - see [MPS Platform Docs](http://mbeddr.com/mps-platform-docs/) for a nearly exhaustive overview of the most used non-commercial third-party MPS extensions
  - the build language itself is a generation target, which makes it possible to build extensions to the MPS build mechanism itself
- - most notable recent extension in 2026: several Model Context Protocol interfaces have been made for MPS, such as the (as of yet experimental, but functional and quite extensive) [JetBrains Projectional Agent Toolkit](https://www.jetbrains.com/help/mps/2026.1/mps-projectional-agent-toolkit.html) (available from MPS 2026.1 with a big library of skills), a proprietary MCP server from [itemis](https://www.itemis.com/) (available from MPS 22.3), and useful direct-text manipulation methods and tools from [specificlanguages.com](https://specificlanguages.com/). This modernizes MPS to interoperate with AI agents, and unlock the valuable domain knowledge in it, giving it a new role in the complex organization of a company's or domain's subject matter that has been encoded using MPS languages and models.
-
+ 
 ## Conclusions for JetBrains MPS implementation of QL in 2025
 In the last 12 years, MPS itself has done steps to further engineer and stabilize the tool. Many bugs have been fixed, existing features streamlined, and performance highly optimized. The basic meta-interfaces of the MPS structure aspect have stayed stable, while many other aspects and additional extension capabilities and features (such as custom aspects, testing and debugging infrastructure for various aspects, mass node manipulation, many productivity features in the IDE, generation plans, ...) have been added.
 
