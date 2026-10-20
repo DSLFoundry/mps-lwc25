@@ -49,10 +49,18 @@ Another useful extension is the plaintextgen plugin which helps to easily genera
     - the (as of yet experimental, but functional and quite extensive) [JetBrains Projectional Agent Toolkit](https://www.jetbrains.com/help/mps/2026.1/mps-projectional-agent-toolkit.html). This MCP is available directly from MPS. It has a comprehensive library of skills that help agents work with MPS. A limitation of the tool is that it works within
     - a CLI interface called [mops](https://github.com/specificlanguages/mops) for headless model and language manipulation from [specificlanguages.com](https://specificlanguages.com/). 
     - a proprietary MCP server from [itemis](https://www.itemis.com/) (available from MPS 22.3) called [Portalon](https://www.itemis.com/en/blog/model-based-engineering/custom-tools/ai-agents-meet-mps-with-portalon/)
+    - a soon-to-be-opensourced MCP from [F1re](https://www.f1re.io/) that enables addition of an AI aspect to any MPS language. This MCP builds on existing broad MCPs like Projectional Agent Toolkit and Portalon in order to give a targeted MCP for a specific domain represented by the MPS language with the AI aspect. This gives additional tools to coding agents in addition to skills/agent descriptions to work with any represented domain.
     
     These functionalities enable MPS to interoperate with AI agents, and unlock the valuable domain knowledge in it, giving it a new role in the complex organization of a company's or domain's subject matter that has been encoded using MPS languages and models.
     
-    Development of models and basic maintenance activities (coding, builds, testing, etc.) can be done with cheaper, more basic open weight or cloud hosted tool calling LLMs (with 27B parameters or more), while non-trivial language development has enough inherent complexity to currently require more complex (70B parameters or frontier-grade) LLMs. 
+    Development of models and basic maintenance activities (coding, builds, testing, etc.) can be done with cheaper, more basic open weight or cloud hosted tool calling LLMs (with 27B parameters or more), while non-trivial language development has enough inherent complexity to currently require more complex (70B parameters or more) LLMs and coding harnesses. The various mentioned AI tools have been used for:
+     - modeling projects at medium and large companies in various business sectors (cyber-physical, financial, security, etc.)
+     - non-trivial language development projects in closed source and open source; some non-trivial open-source examples that can be pointed to in this text:
+       - maintenance and feature development management in [MPS Extensions](https://github.com/jetbrains/mps-extensions)
+       - feature development in [Modelix](https://github.com/modelix/modelix.core)
+       - migrations and feature development in: [mbeddr.cpp](https://github.com/dslfoundry/mbeddr.cpp), [mps-umlrt](https://github.com/dslfoundry/mps-umlrt), and [mps-metabnf](https://github.com/DSLFoundry/mps-metabnf/)
+      
+    Most recent developments in this area are on speeding up agent-MPS interaction through techniques like code mode (Portalon and mops), virtual filesystem (Portalon), and projectional lexing/tokenization (mops, still in conceptual stage).
 - kotlin base language instead of java base language
  - constraint-based typesystem
  - shadow models or Dclare4MPS (for QL, this can enable a live programming workflow, transforming to generated HTML code incrementally and continuously while editing the model)
