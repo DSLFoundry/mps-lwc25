@@ -57,6 +57,7 @@ Another useful extension is the plaintextgen plugin which helps to easily genera
      - modeling projects at medium and large companies in various business sectors (cyber-physical, financial, security, etc.)
      - non-trivial language development projects in closed source and open source; some non-trivial open-source examples that can be pointed to in this text:
        - maintenance and feature development management in [MPS Extensions](https://github.com/jetbrains/mps-extensions)
+       - feature development in [iets3.opensource](https://github.com/iets3/iets3.opensource)
        - feature development in [Modelix](https://github.com/modelix/modelix.core)
        - migrations and feature development in: [mbeddr.cpp](https://github.com/dslfoundry/mbeddr.cpp), [mps-umlrt](https://github.com/dslfoundry/mps-umlrt), and [mps-metabnf](https://github.com/DSLFoundry/mps-metabnf/)
       
