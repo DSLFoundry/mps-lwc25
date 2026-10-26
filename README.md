@@ -3,6 +3,10 @@ This repository contains the JetBrains MPS submission for "The State of the Art 
 
 Authors: Klemens Schindler (@klemensschindler) and Eugen Schindler (@eugenschindler)
 
+The [`feat/full-ql-assignment` branch](https://github.com/DSLFoundry/mps-lwc25/tree/feat/full-ql-assignment)
+implements the full QL assignment (excluding satisfiability checking) with AI
+assistance and was also migrated to MPS 2026.1 with AI assistance.
+
 The original JetBrains MPS QL implementation is in the repository https://github.com/DSLFoundry/mps-lwc14, which in turn is based on https://github.com/DSLFoundry/mps-lwc13.
 
 ## Input documentation
