@@ -54,8 +54,15 @@ derived values are recomputed as answers change, and nested conditional
 visibility requires every enclosing condition to hold. Hiding a question clears
 its answer and removes it from completion checks.
 
-The response can be saved locally in the browser and downloaded as JSON once
-all visible questions are answered. The `HouseOwning` sample includes a nested
+To export a response, generate the `HouseOwning` questionnaire and open its
+generated HTML in a browser. Answer every currently visible question; the
+**Save completed response** button becomes available when the questionnaire is
+complete. Click it to save the response in that browser and download
+`HouseOwning-response.json` (the form name is sanitized for the filename) to
+the browser's normal download location. The JSON object contains the form name,
+an ISO `savedAt` timestamp, and an `answers` object keyed by question ID.
+Saved responses are also restored from that browser's local storage when the
+questionnaire is opened again. The `HouseOwning` sample includes a nested
 free-text question to demonstrate conditional visibility across multiple
 levels.
 
