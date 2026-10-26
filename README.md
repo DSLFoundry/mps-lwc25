@@ -41,6 +41,19 @@ Another useful extension is the plaintextgen plugin which helps to easily genera
  - In order to allow for using references to question and derived value definitions in expressions like derived values or conditions of a conditional block, we simply hook these references into KernelF as custom expressions, so they can compose with the KernelF expression machanism. This is accomplished by simply making the ```QuestionReference``` and ```DerivedValueReference``` concepts extend ```Expression (org.iets3.core.expr.base)```. 
  - In MPS 2.5 there was no plaintextgen plugin, so we would have been forced to either make a textgen aspect for each concept directly (which is really not fun to do and a lot of work) or to define an intermediate language for HTML (which also didn't yet exist out of the box in MPS 2.5). Using plaintextgen, however, making a code generator quickly for a specific case is as simple as copy-pasting the reference implementation into a plaintextgen model (which models lines, words, and general layouts of plain text) and then simply add generator macros to the relevant parts of the reference implementation in order to templatize the static reference implementation text, which is pretty similar to typical template-driven code generation. 
 
+#### Runtime behavior
+
+Generated questionnaires provide typed controls for Boolean, Money, Integer,
+Number, Real, String, and Date questions. Unanswered values remain undefined,
+derived values are recomputed as answers change, and nested conditional
+visibility requires every enclosing condition to hold. Hiding a question clears
+its answer and removes it from completion checks.
+
+The response can be saved locally in the browser and downloaded as JSON once
+all visible questions are answered. The `HouseOwning` sample includes a nested
+free-text question to demonstrate conditional visibility across multiple
+levels.
+
 ### Considerations / downsides
  - Using KernelF's expression infrastructure adds quite some advanced functionality to a language with almost zero effort. If the language is relatively simple, however, one may want to restrict the plethora of possible expressions of KernelF to only a subset (e.g. only additions, subtractions, multiplications, and divisions). Though it doesn't cost much effort, it needs some considerations. Details are beyond the scope of this text.
 

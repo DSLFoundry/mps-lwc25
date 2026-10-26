@@ -10,7 +10,6 @@
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
       <concept id="5115872837156652453" name="org.iets3.core.expr.base.structure.MinusExpression" flags="ng" index="30dvUo" />
-      <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
@@ -26,7 +25,7 @@
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
-      <concept id="5115872837157054169" name="org.iets3.core.expr.simpleTypes.structure.IntegerType" flags="ng" index="30bXR$" />
+      <concept id="5115872837157252551" name="org.iets3.core.expr.simpleTypes.structure.StringType" flags="ng" index="30bdrU" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
@@ -72,15 +71,6 @@
         </node>
       </node>
       <node concept="2vmvy5" id="257K23PtZH2" role="3kc3m1" />
-    </node>
-    <node concept="2GoH4$" id="5Qt2gdxAhs2" role="3kc3xV">
-      <property role="TrG5h" value="hasSoldHouse" />
-      <node concept="19SGf9" id="5Qt2gdxAhs4" role="2GoH4J">
-        <node concept="19SUe$" id="5Qt2gdxAhs5" role="19SJt6">
-          <property role="19SUeA" value="Some other question with the same name?" />
-        </node>
-      </node>
-      <node concept="30bXR$" id="5Qt2gdxAhuI" role="3kc3m1" />
     </node>
     <node concept="2GoH4$" id="257K23PtZGQ" role="3kc3xV">
       <property role="TrG5h" value="hasBoughtHouse" />
@@ -130,17 +120,12 @@
           </node>
         </node>
         <node concept="3keXPw" id="257K23PvlkB" role="3keMTk" />
-        <node concept="30dDZf" id="5Qt2gdxDyej" role="3keOvY">
-          <node concept="30dvUo" id="5Qt2gdxDyek" role="30dEsF">
-            <node concept="3kfyqv" id="257K23PvA0i" role="30dEsF">
-              <ref role="3kfyrw" node="257K23PuBYZ" resolve="sellingPrice" />
-            </node>
-            <node concept="3kfyqv" id="4FCftMPq$Jl" role="30dEs_">
-              <ref role="3kfyrw" node="257K23Pv858" resolve="privateDebt" />
-            </node>
+        <node concept="30dvUo" id="5Qt2gdxDyek" role="3keOvY">
+          <node concept="3kfyqv" id="257K23PvA0i" role="30dEsF">
+            <ref role="3kfyrw" node="257K23PuBYZ" resolve="sellingPrice" />
           </node>
-          <node concept="3ZwAAo" id="5Qt2gdxDyfv" role="30dEs_">
-            <ref role="3ZwAAp" node="257K23Pv8QD" resolve="valueResidue" />
+          <node concept="3kfyqv" id="4FCftMPq$Jl" role="30dEs_">
+            <ref role="3kfyrw" node="257K23Pv858" resolve="privateDebt" />
           </node>
         </node>
       </node>
@@ -152,6 +137,15 @@
           <node concept="3ZwAAo" id="4FCftMPqH$F" role="30dEsF">
             <ref role="3ZwAAp" node="257K23Pv8QD" resolve="valueResidue" />
           </node>
+        </node>
+        <node concept="2GoH4$" id="STlwLYkFNQ" role="3kfHQZ">
+          <property role="TrG5h" value="residuePlans" />
+          <node concept="19SGf9" id="STlwLYkFNR" role="2GoH4J">
+            <node concept="19SUe$" id="STlwLYkFNS" role="19SJt6">
+              <property role="19SUeA" value="How will you use the remaining money?" />
+            </node>
+          </node>
+          <node concept="30bdrU" id="STlwLYkFNT" role="3kc3m1" />
         </node>
       </node>
     </node>
