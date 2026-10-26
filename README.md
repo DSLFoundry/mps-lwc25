@@ -3,6 +3,11 @@ This repository contains the JetBrains MPS submission for "The State of the Art 
 
 Authors: Klemens Schindler (@klemensschindler) and Eugen Schindler (@eugenschindler)
 
+The full QL assignment implementation and its migration to MPS 2026.1 were
+developed with AI assistance on the
+[`feat/full-ql-assignment`](https://github.com/DSLFoundry/mps-lwc25/tree/feat/full-ql-assignment)
+branch.
+
 The original JetBrains MPS QL implementation is in the repository https://github.com/DSLFoundry/mps-lwc14, which in turn is based on https://github.com/DSLFoundry/mps-lwc13.
 
 ## Input documentation
@@ -14,13 +19,13 @@ The documentation for input to the paper can be found here:
  - [MW feature table for JetBrains MPS](doc/ModelingWorkbench_FeatureConfiguration.xlsx)
 
 ## Setup
- - Install JetBrains MPS 2025.1 from the list on https://www.jetbrains.com/mps/download/previous.html for your platform
- - Run ```./gradlew``` (the used MPS and gradle 7 needs java 21) after cloning this repository in order to download all dependencies and build the language
+ - Install JetBrains MPS 2026.1 from the list on https://www.jetbrains.com/mps/download/previous.html for your platform
+ - Run ```./gradlew``` (Gradle 8.7) with Java 21 or newer after cloning this repository in order to download all dependencies and build the language. MPS 2026.1 itself requires Java 25; use its bundled JetBrains Runtime.
  - Open the root directory of this repository in MPS
  - To play with an example QL model, open the root node QuestionnaireLanguage &rarr; Sandbox &rarr; Sandbox &rarr; QLBasic &rarr; HouseOwning
 
 ## New QL language implementation
-This section sketches the language implementation highlights and especially the differences in effort and amount of code needed to implement the language in MPS 2025.1 (and included batteries) as compared to the original last implementation of QL from 2014 in MPS 2.5.
+This section sketches the language implementation highlights and especially the differences in effort and amount of code needed to implement the language in MPS 2026.1 (and included batteries) as compared to the original last implementation of QL from 2014 in MPS 2.5.
 
 ### General observations
 Since version 2.5, MPS and its ecosystem of commercial and community-based libraries has evolved quite much. Most notably, for the new implementation of QL, we have heavily used the [KernelF](http://voelter.de/data/pub/kernelf-reference.pdf) extensible "funclarative" language (contained within the [IETS3.opensource](https://github.com/iets3/iets3.opensource) project). In practice, the most frequent use case of KernelF we have encountered, is to just "plug-in" and tailor (advanced) expressions instead of having to develop an expression hierarchy and various useful functionality for it every time from scratch in a language.
