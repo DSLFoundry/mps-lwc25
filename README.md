@@ -56,7 +56,7 @@ Another useful extension is the plaintextgen plugin which helps to easily genera
     Development of models and basic maintenance activities (coding, builds, testing, etc.) can be done with cheaper, more basic open weight or cloud hosted tool calling LLMs (with 27B parameters or more), while non-trivial language development has enough inherent complexity to currently require more complex (70B parameters or more) LLMs and coding harnesses. The various mentioned AI tools have been used for:
      - modeling projects at medium and large companies in various business sectors (cyber-physical, financial, security, etc.)
      - non-trivial language development projects in closed source and open source; some non-trivial open-source examples that can be pointed to in this text:
-       - maintenance and feature development management in [MPS Extensions](https://github.com/jetbrains/mps-extensions)
+       - maintenance and feature development management in [MPS Extensions](https://github.com/jetbrains/mps-extensions), such as review automation with advanced AI skills by [specificlanguages](https://specificlanguages.com/) on the entire MPS Extensions repository, a lot of bugfixing, and feature development.
        - feature development in [iets3.opensource](https://github.com/iets3/iets3.opensource)
        - feature development in [Modelix](https://github.com/modelix/modelix.core)
        - migrations and feature development in: [mbeddr.cpp](https://github.com/dslfoundry/mbeddr.cpp), [mps-umlrt](https://github.com/dslfoundry/mps-umlrt), and [mps-metabnf](https://github.com/DSLFoundry/mps-metabnf/)
