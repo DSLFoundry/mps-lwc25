@@ -24,22 +24,6 @@ The documentation for input to the paper can be found here:
  - Open the root directory of this repository in MPS
  - To play with an example QL model, open the root node QuestionnaireLanguage &rarr; Sandbox &rarr; Sandbox &rarr; QLBasic &rarr; HouseOwning
 
-### Repeating the MPS 2026.1 migration
-
-The migration was performed with the native MPS Migration Assistant:
-
-1. Use MPS 2026.1.1 and open this project. The MPS and IETS3 versions are pinned
-   in `build.gradle`; Gradle uses the 8.7 wrapper.
-2. When MPS reports that migration is required, choose **Migrate** in the
-   Migration Assistant. Do not postpone it.
-3. Rebuild the project with `./gradlew setup buildQuestionnaireLanguage`.
-4. Verify that `.mps/migration.xml` records project version `261`, then check
-   and build the `QuestionnaireLanguage`, `QuestionnaireLanguage.generator`,
-   and `Sandbox` modules in MPS.
-
-Use the JetBrains Runtime bundled with MPS 2026.1 (Java 25) to run the IDE.
-Gradle 8.7 can run with Java 21 or newer.
-
 ## New QL language implementation
 This section sketches the language implementation highlights and especially the differences in effort and amount of code needed to implement the language in MPS 2026.1 (and included batteries) as compared to the original last implementation of QL from 2014 in MPS 2.5.
 
