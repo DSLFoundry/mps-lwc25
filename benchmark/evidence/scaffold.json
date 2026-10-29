@@ -28,7 +28,8 @@
   },
   "setupRecovery": [
     "Default dependency Copy task attempted to delete IDE-locked libraries; restored missing files from the complete pre-existing baseline dependency directory, then excluded dependency resolution for builds.",
-    "Completely empty generator lacked QueriesGenerated; created an empty MappingConfiguration through PAT and rebuilt successfully."
+    "Completely empty generator lacked QueriesGenerated; created an empty MappingConfiguration through PAT and rebuilt successfully.",
+    "MPS offered a native Force Save Project migration after external reload. Ran it to completion; it restored the baseLanguage.regexp dependency-version entry. Applied the same normalized descriptor to both run branches before timing."
   ],
   "measurementNote": "Shared preparation evidence, excluded from both implementation budgets and KPI counts."
 }

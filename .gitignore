@@ -16,3 +16,8 @@ TEST-*.xml
 junit*.properties
 
 build/
+
+# Local dependency/build state is not benchmark implementation output.
+/.gradle/
+/artifacts/
+/tmp/
