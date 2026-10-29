@@ -12,7 +12,8 @@
 - Start + 120 minutes: `2026-10-29T20:59:09.113Z`
 - Later coordinator stop instruction: `2026-10-29T20:59:00Z` (applied as the earlier hard stop)
 - Implementation/evidence freeze: `2026-10-29T20:39:27Z` (integration commit timestamp)
-- Wall-clock elapsed from original start to implementation freeze: `1h 40m 17.887s`
+- Final active-work/report freeze: `2026-10-29T20:40:54.132Z`
+- Wall-clock elapsed from original start to final freeze: `1h 41m 45.019s`
 - Interruptions excluded: none. The coordinator review interval
   `19:33:09.530Z`–`19:35:25.299Z` counted against the original budget.
   Work resumed on the same branch at `19:35:25.299Z`.
