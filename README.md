@@ -6,11 +6,11 @@ See [BENCHMARK.md](BENCHMARK.md) for the scope, acceptance criteria, run rules,
 and measurements.
 
 The MPS project uses **MPS 2026.1.1**. This checkout implements native QL
-concepts and projectional editors, an MPS root-mapping generator, a sample
-questionnaire, and a production runtime and browser UI. The native generator
-produces and compiles one Java smoke-target class for each QL model; a mops
-Code Mode exporter separately translates the native questionnaire data into
-the runtime JSON consumed by the application.
+concepts and projectional editors, a native MPS root-mapping generator, a
+sample questionnaire, and a production runtime and browser UI. The generator
+serializes the authored questionnaire, nested conditionals, question
+properties, and expression trees into JSON in generated Java classes. The
+runtime/UI consumes that generated output.
 
 ## Setup
 
@@ -60,15 +60,22 @@ compiled output with:
 
 ```powershell
 .\build\mopsw.cmd make module QuestionnaireLanguage
+.\build\mopsw.cmd make module QuestionnaireLanguage.generator
 .\build\mopsw.cmd make module Sandbox
 .\build\mopsw.cmd code run benchmark\verify-native-generation.groovy
+.\build\mopsw.cmd code run benchmark\generate.groovy
+node benchmark\verify-native-runtime.cjs
 ```
 
-`generate.groovy` separately reads the native MPS model through mops Code Mode
-and writes `benchmark\generated-form.json`; it is not a hand-maintained
-substitute form. Run `node benchmark\verify-native-runtime.cjs` to pass that
-generated form through the production adapter/runtime and verify its computed
-answer.
+The root-mapping template invokes the compiled native serializer on each
+source `Questionnaire`. `verify-native-generation.groovy` checks generated
+classes and parses their generated questionnaire JSON. `generate.groovy`
+extracts that JSON from the generated class into `benchmark\generated-form.json`;
+it does not walk or re-serialize the source model. The same file is fetched by
+the production UI and passed to the production runtime. During native-
+generation verification, probes changed a native label and a native expression
+literal, regenerated, and confirmed those changes in the generated JSON and
+runtime computed value; the authored sample was then restored.
 `QuestionnaireLanguage.typesystem` includes an editor-time MPS rule that
 checks a direct `QuestionReference` used as a conditional condition and
 requires its target question to be boolean. IETS3 checks the types of other

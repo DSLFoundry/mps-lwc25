@@ -1,10 +1,17 @@
+import groovy.json.JsonSlurper
+
 project.read {
     def outputs = [
         'Sandbox.QLBasic.GeneratedQuestionnaire',
         'Sandbox.QLInvalid.GeneratedQuestionnaire'
     ].collect { name ->
         def generated = mops.runtime.requireClass('Sandbox', name)
-        [className: generated.name, title: generated.getMethod('title').invoke(null).toString()]
+        def json = generated.getMethod('questionnaireJson').invoke(null).toString()
+        def form = new JsonSlurper().parseText(json)
+        if (!(form.name instanceof String) || !(form.items instanceof List) || form.items.isEmpty()) {
+            throw new IllegalStateException("Generated questionnaire JSON is invalid for ${name}: ${json}")
+        }
+        [className: generated.name, title: generated.getMethod('title').invoke(null).toString(), name: form.name, itemCount: form.items.size(), json: json]
     }
 
     def solution = mops.lookup.requireModule('Sandbox')

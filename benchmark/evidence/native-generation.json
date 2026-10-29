@@ -1,25 +1,171 @@
 {
-  "timestamp": "2026-10-29T20:06:08.5367707Z",
-  "provider": "mops Code Mode",
-  "buildCommand": ".\\build\\mopsw.cmd make module QuestionnaireLanguage; .\\build\\mopsw.cmd make module Sandbox",
+  "timestamp": "2026-10-29T20:35:13.9089891Z",
+  "provider": "MPS native generator, run via mops",
+  "buildCommand": "mops make module QuestionnaireLanguage.generator; mops make module Sandbox",
   "buildOutcome": "SUCCESS",
-  "verifyCommand": ".\\build\\mopsw.cmd code run benchmark\\verify-native-generation.groovy",
-  "verification": {
-    "outputs": [
-      {
-        "className": "Sandbox.QLBasic.GeneratedQuestionnaire",
-        "title": "MPS native QL template"
+  "generator": "MPS root mapping + native BaseLanguage serializer QLNativeJson",
+  "sourceModels": [
+    "Sandbox.QLBasic",
+    "Sandbox.QLInvalid"
+  ],
+  "outputs": [
+    {
+      "className": "Sandbox.QLBasic.GeneratedQuestionnaire",
+      "title": "MPS native QL template",
+      "questionnaire": {
+        "name": "Household questionnaire",
+        "items": [
+          {
+            "id": "age",
+            "label": "Your age",
+            "type": "integer"
+          },
+          {
+            "id": "derived",
+            "label": "Computed sample",
+            "type": "integer",
+            "computed": {
+              "op": "+",
+              "args": [
+                {
+                  "literal": 2
+                },
+                {
+                  "literal": 3
+                }
+              ]
+            }
+          },
+          {
+            "id": "ownsCar",
+            "label": "Do you own a car?",
+            "type": "boolean"
+          },
+          {
+            "condition": {
+              "ref": "ownsCar"
+            },
+            "items": [
+              {
+                "id": "carDetails",
+                "label": "Describe your car",
+                "type": "string"
+              }
+            ]
+          },
+          {
+            "id": "monthlyIncome",
+            "label": "Monthly income",
+            "type": "money"
+          },
+          {
+            "id": "adjustment",
+            "label": "Adjustment factor",
+            "type": "decimal"
+          },
+          {
+            "id": "startDate",
+            "label": "Start date",
+            "type": "date"
+          }
+        ]
       },
-      {
-        "className": "Sandbox.QLInvalid.GeneratedQuestionnaire",
-        "title": "MPS native QL template"
-      }
-    ],
-    "files": [
-      "classes_gen/Sandbox\\QLBasic\\GeneratedQuestionnaire.class",
-      "classes_gen/Sandbox\\QLInvalid\\GeneratedQuestionnaire.class",
-      "source_gen/Sandbox\\QLBasic\\GeneratedQuestionnaire.java",
-      "source_gen/Sandbox\\QLInvalid\\GeneratedQuestionnaire.java"
-    ]
-  }
+      "json": "{\"name\":\"Household questionnaire\",\"items\":[{\"id\":\"age\",\"label\":\"Your age\",\"type\":\"integer\"},{\"id\":\"derived\",\"label\":\"Computed sample\",\"type\":\"integer\",\"computed\":{\"op\":\"+\",\"args\":[{\"literal\":2},{\"literal\":3}]}},{\"id\":\"ownsCar\",\"label\":\"Do you own a car?\",\"type\":\"boolean\"},{\"condition\":{\"ref\":\"ownsCar\"},\"items\":[{\"id\":\"carDetails\",\"label\":\"Describe your car\",\"type\":\"string\"}]},{\"id\":\"monthlyIncome\",\"label\":\"Monthly income\",\"type\":\"money\"},{\"id\":\"adjustment\",\"label\":\"Adjustment factor\",\"type\":\"decimal\"},{\"id\":\"startDate\",\"label\":\"Start date\",\"type\":\"date\"}]}"
+    },
+    {
+      "className": "Sandbox.QLInvalid.GeneratedQuestionnaire",
+      "title": "MPS native QL template",
+      "questionnaire": {
+        "name": "Invalid diagnostics fixture",
+        "items": [
+          {
+            "id": "duplicate",
+            "label": "Invalid arithmetic",
+            "type": "integer",
+            "computed": {
+              "op": "+",
+              "args": [
+                {
+                  "literal": true
+                },
+                {
+                  "literal": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "duplicate",
+            "label": "Duplicate identifier",
+            "type": "string"
+          },
+          {
+            "condition": {
+              "ref": "duplicate"
+            },
+            "items": []
+          },
+          {
+            "id": "cycleA",
+            "label": "Cycle A",
+            "type": "integer",
+            "computed": {
+              "ref": "cycleB"
+            }
+          },
+          {
+            "id": "cycleB",
+            "label": "Cycle B",
+            "type": "integer",
+            "computed": {
+              "ref": "cycleA"
+            }
+          },
+          {
+            "condition": {
+              "literal": 42
+            },
+            "items": []
+          }
+        ]
+      },
+      "json": "{\"name\":\"Invalid diagnostics fixture\",\"items\":[{\"id\":\"duplicate\",\"label\":\"Invalid arithmetic\",\"type\":\"integer\",\"computed\":{\"op\":\"+\",\"args\":[{\"literal\":true},{\"literal\":1}]}},{\"id\":\"duplicate\",\"label\":\"Duplicate identifier\",\"type\":\"string\"},{\"condition\":{\"ref\":\"duplicate\"},\"items\":[]},{\"id\":\"cycleA\",\"label\":\"Cycle A\",\"type\":\"integer\",\"computed\":{\"ref\":\"cycleB\"}},{\"id\":\"cycleB\",\"label\":\"Cycle B\",\"type\":\"integer\",\"computed\":{\"ref\":\"cycleA\"}},{\"condition\":{\"literal\":42},\"items\":[]}]}"
+    }
+  ],
+  "files": [
+    "classes_gen/Sandbox\\QLBasic\\GeneratedQuestionnaire.class",
+    "classes_gen/Sandbox\\QLInvalid\\GeneratedQuestionnaire.class",
+    "source_gen/Sandbox\\QLBasic\\GeneratedQuestionnaire.java",
+    "source_gen/Sandbox\\QLInvalid\\GeneratedQuestionnaire.java"
+  ],
+  "generatedArtifactsPresent": [
+    {
+      "path": "solutions\\Sandbox\\classes_gen\\Sandbox\\QLBasic\\GeneratedQuestionnaire.class",
+      "exists": true
+    },
+    {
+      "path": "solutions\\Sandbox\\classes_gen\\Sandbox\\QLInvalid\\GeneratedQuestionnaire.class",
+      "exists": true
+    },
+    {
+      "path": "solutions\\Sandbox\\source_gen\\Sandbox\\QLBasic\\GeneratedQuestionnaire.java",
+      "exists": true
+    },
+    {
+      "path": "solutions\\Sandbox\\source_gen\\Sandbox\\QLInvalid\\GeneratedQuestionnaire.java",
+      "exists": true
+    }
+  ],
+  "modelMutationProbes": [
+    {
+      "edit": "native age question label",
+      "effect": "edited label appeared in generated questionnaire JSON",
+      "restored": true
+    },
+    {
+      "edit": "native computed literal 2 to 11",
+      "effect": "generated JSON contained literal 11 and production runtime computed 14 instead of 5",
+      "restored": true
+    }
+  ]
 }

@@ -212,3 +212,12 @@ Starting HEAD: ebb9a686670577120e0a228a79a3afb33cbc5de2
 2026-10-29T20:08:11.6203367Z | operation: production adapter consumed freshly generated native model JSON; validation clean and computed value 5 confirmed; exit=0
 2026-10-29T20:08:41.6005522Z | operation: reproducible production-runtime verification of native-generated form passed; started=2026-10-29T20:08:41.5118008Z
 2026-10-29T20:09:23.4953484Z | operation: machine-validated final acceptance/native-check/generation/runtime/download/screenshot evidence; no acceptance-suite or shared protocol changes
+2026-10-29T20:14:18.0820824Z | operation: resumed implementation on same branch per coordinator priority; original start 2026-10-29T18:59:09.113Z and hard stop 2026-10-29T20:59:00Z unchanged
+2026-10-29T20:30:55.625Z | operation: native-generated questionnaire JSON validated by production runtime; computed result=5; fixed acceptance suite=20/20
+2026-10-29T20:31:15.000Z | operation: real Edge browser check completed against native-generated form; typed controls, condition visibility, computed value, and JSON download passed; gui.png/gui-download.json refreshed
+2026-10-29T20:33:31.000Z | operation: Gradle buildQuestionnaireLanguage completed successfully with dependency resolves excluded and isolated build\benchmark-gradle-cache
+2026-10-29T20:33:45.188Z | operation: utility source model check reports 51 errors, 5 warnings, 11 infos; typesystem model reports no findings; generated utility nevertheless builds and executes
+2026-10-29T20:35:13.000Z | operation: native generation evidence refreshed with valid and invalid model-specific JSON, generated source/bytecode existence, and restored label/literal mutation probes
+2026-10-29T20:36:01.537Z | operation: final mops makes/checks and native generation/runtime verification succeeded; production runtime result=5; unchanged acceptance suite passed 20/20
+2026-10-29T20:37:42.1674409Z | operation: confirmed generator property macro is a native static-method reference into QuestionnaireLanguage.generator.util; verified final working tree for diff review
+2026-10-29T20:37:49.7439625Z | operation: trimmed whitespace from regenerated native-check JSON evidence after diff check; no model/persistence changes
