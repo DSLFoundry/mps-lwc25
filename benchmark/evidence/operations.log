@@ -1,0 +1,177 @@
+Active work start UTC: 2026-10-29T18:59:09.113Z
+Absolute deadline UTC (start + 120 minutes): 2026-10-29T20:59:09.113Z
+Start checkout: C:\Sources\mps-lwc25-ql-mops
+Branch: benchmark/ql-mops
+Starting HEAD: ebb9a686670577120e0a228a79a3afb33cbc5de2
+
+2026-10-29T19:00:18.104Z | operation: mops Code Mode concept metadata lookup; calls:1; failed calls:0; mutations:0; model check/build/runtime tests:0
+
+2026-10-29T19:00:24.716Z | operation: mops Code Mode concept API introspection; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:00:39.005Z | operation: mops Code Mode metamodel discovery; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:01:02.016Z | operation: mops built-in MPS model discovery; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:01:19.553Z | operation: mops built-in module model inventory; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:01:24.276Z | operation: mops built-in module model inventory retry; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:01:42.831Z | operation: mops editor/textgen metamodel inspection; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:02:30.582Z | operation: mops IETS expression/type API discovery; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:02:37.117Z | operation: mops IETS expression structure inventory; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:02:42.731Z | operation: mops IETS concept name inventory; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:03:12.908Z | operation: mops metamodel link/example inspection; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:03:30.914Z | operation: mops structure schema token inspection; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:03:53.991Z | operation: mops primitive data type lookup; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:04:00.888Z | operation: mops primitive data type model search; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:04:04.850Z | operation: mops structure module models; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:04:12.254Z | operation: mops datatype target source lookup; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:04:22.041Z | operation: mops enumeration metadata lookup; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:04:27.291Z | operation: mops enumeration metadata lookup retry; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:04:48.808Z | failed attempt: mops Code Mode native structure script compile failed resolving SNode; no mutation occurred
+2026-10-29T19:05:01.998Z | retry preamble recorded the preceding failed SNode type-resolution attempt
+
+2026-10-29T19:05:02.935Z | operation: mops Code Mode native structure mutation retry; calls:1; failed calls:0; mutations:1 batch; roots:5
+
+2026-10-29T19:05:15.960Z | operation: mops check model QuestionnaireLanguage.structure exit=0; roots listed; first successful check: 2026-10-29T19:05:15.963Z if rc=0
+
+2026-10-29T19:05:33.557Z | operation: mops sample literal editor inspection; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:05:41.856Z | operation: mops editor list/refcell pattern inspection; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:06:04.029Z | operation: mops Code Mode editor mutation; calls:1; failed calls:0; mutations:1 batch; editor roots:4
+
+2026-10-29T19:06:11.832Z | operation: mops checks editor/structure exit=1/0; editor had errors; structure check succeeded (first successful check was 19:05:15.963Z)
+
+2026-10-29T19:06:23.556Z | operation: mops repair reference editor cell; calls:1; failed calls:0; mutations:1 batch; issue fixed from check
+
+2026-10-29T19:06:24.435Z | operation: mops check editor post-repair exit=1
+
+2026-10-29T19:06:33.890Z | operation: mops RefCell component requirement inspection; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:06:42.703Z | operation: mops repair RefCell inline component; calls:1; failed calls:0; mutations:1 batch
+
+2026-10-29T19:06:43.495Z | operation: mops check editor post-repair exit=0
+
+2026-10-29T19:07:38.183Z | operation: node fixed runtime acceptance suite; exit=0; first successful suite timestamp=2026-10-29T19:07:38.183Z; calls:1; tests:20
+
+2026-10-29T19:07:58.653Z | operation: mops sample expression/API inspection; calls:2; failed calls:0; mutations:0
+
+2026-10-29T19:08:21.361Z | failed attempt: mops Code Mode native sample mutation used list accessor for a single child; no root attached
+2026-10-29T19:08:22.164Z | mops check ran before the corrected sample existed; empty model check passed
+2026-10-29T19:08:32.852Z | retry preamble recorded the preceding single-child accessor failure
+
+2026-10-29T19:08:33.694Z | operation: mops Code Mode native QL example mutation retry; calls:1; failed calls:0; mutations:1 batch; native roots:1
+
+2026-10-29T19:08:34.574Z | operation: mops check native sample exit=1
+
+2026-10-29T19:08:46.898Z | operation: mops inspect optional computed link diagnostics; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:09:02.949Z | operation: mops repair QL cardinalities and structure check exit=0; mutations:1 batch
+
+2026-10-29T19:09:27.092Z | failed attempt: stale generated QL concept identity blocked name lookup before cardinality edit; model unchanged; sample check still showed required computed errors
+2026-10-29T19:09:46.122Z | retry preamble recorded the stale-language failure
+
+2026-10-29T19:09:46.956Z | operation: mops direct cardinality edit by node reference; calls:1; failed calls:0; mutations:1
+
+2026-10-29T19:09:50.597Z | operation: mops make QL after model change exit=0
+
+2026-10-29T19:09:55.700Z | operation: mops native example/editor checks exit=0/1
+
+2026-10-29T19:10:09.563Z | operation: mops repair computed 0..1 and rebuild/check descriptor exit=0
+
+2026-10-29T19:10:41.328Z | failed attempt: Code Mode descriptor declarationNode was null; no editor mutation; following check was prior editor state
+
+2026-10-29T19:10:51.330Z | operation: mops inspect editor/cardinality repair target; calls:1; failed calls:0; mutations:0
+2026-10-29T19:10:57.880Z | retry preamble recorded the preceding null declarationNode attempt
+
+2026-10-29T19:10:59.455Z | failed attempt: immutable children list update raised UnsupportedOperationException; no editor change
+2026-10-29T19:11:06.633Z | retry preamble recorded the preceding immutable-list failure
+
+2026-10-29T19:11:08.477Z | operation: mops computed editor list fix and model check exit=1; mutations:1
+
+2026-10-29T19:11:30.894Z | operation: mops make after optional computed multirole exit=0; editor check=0; sample check=0
+
+2026-10-29T19:12:39.993Z | operation: mops Code Mode native model generation; exit=0; roots=1; generated JSON: benchmark/generated-form.json
+
+2026-10-29T19:13:40.794Z | operation: server HTTP smoke and automation capability; requests=1
+
+2026-10-29T19:14:29.375Z | operation: launched isolated Edge headless for actual GUI test; PID=73952; CDP=9222 ready=True; profile under ignored build
+
+2026-10-29T19:14:39.658Z | operation: real Edge GUI interaction and JSON download check; exit=0
+
+2026-10-29T19:14:53.461Z | operation: mops add native date/decimal/money questions; sample check=0; generator=0; mutations:1
+
+2026-10-29T19:15:16.689Z | operation: real Edge GUI typed-control/visibility/download check (all types) exit=0
+
+2026-10-29T19:15:43.852Z | failed attempt: malformed Groovy syntax in typesystem discovery; no model access or mutation
+
+2026-10-29T19:15:54.366Z | operation: mops typesystem/constraints language discovery; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:16:15.732Z | operation: mops create invalid fixture model Sandbox.QLInvalid exit=0; mutations:1
+
+2026-10-29T19:16:31.428Z | operation: mops create invalid fixture nodes; mutations:1 batch; intentional invalid arithmetic/duplicate ID/unresolved ref
+
+2026-10-29T19:16:32.409Z | operation: mops native invalid fixture check; exit=1; saved evidence benchmark/evidence/native-invalid-check.txt
+
+2026-10-29T19:17:00.304Z | operation: mops inspect model imports and language API; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:17:10.635Z | operation: mops copy source model language imports and rerun invalid check; exit=1; evidence refreshed
+
+2026-10-29T19:17:28.173Z | operation: mops make reference display read-only; editor check exit=0; mutation:1
+
+2026-10-29T19:18:12.190Z | operation: mops concise typesystem model inventory; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:18:17.511Z | operation: mops type-system concept name list; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:18:25.980Z | operation: mops inspect existing native typesystem rules; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:18:41.934Z | operation: mops inspect MPS non-typesystem rule example; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:18:52.354Z | operation: mops inspect existing conditional typesystem check; calls:1; failed calls:0; mutations:0
+
+2026-10-29T19:20:03.034Z | failed attempt: stale generated editor language blocked invalid fixture extension; mops check reran unchanged fixture and exited 1
+
+2026-10-29T19:20:15.217Z | operation: mops rebuild for editor generation hash refresh exit=0
+
+2026-10-29T19:20:22.339Z | operation: mops extend invalid native fixture with condition and dependency cycle; mops check exit=1
+
+2026-10-29T19:20:57.236Z | first native semantic checker invocation; result aggregation bug reported only invalid model; corrected and rerun
+
+2026-10-29T19:21:11.263Z | operation: mops native semantic checker fix (valid+invalid) exit=0
+
+2026-10-29T19:22:56.357Z | operation: Gradle buildQuestionnaireLanguage excluding dependency resolves and isolated project cache; exit=0
+
+2026-10-29T19:23:10.335Z | operation: mops render/editor and final valid model checks codes=0/0/0
+
+2026-10-29T19:24:45.146Z | operation: mops structured native invalid model check; exit=1; JSONL evidence benchmark/evidence/native-invalid-check.jsonl
+
+2026-10-29T19:25:19.144Z | operation: mops raw JSONL invalid check capture retry with Java configured; exit=1
+
+2026-10-29T19:25:36.429Z | operation: final runtime/node/native-evidence validation; acceptance 20/20; exit=0
+
+2026-10-29T19:25:56.323Z | operation: final mops make, language diagnosis, valid checks, native checker/generation, expected invalid check exit=1 errors=2
+
+2026-10-29T19:26:39.223Z | operation: final real Edge browser verification on committed-runtime candidate; exit=0; screenshot and downloaded JSON updated
+
+2026-10-29T19:27:57.816Z | operation: mops read-only native root/node counts for final result report; exit=1
+
+2026-10-29T19:28:04.759Z | operation: mops successful read-only native root/node counts; exit=0
+
+2026-10-29T19:28:54.772Z | failed attempt: read-only native root-count query used nonexistent children.values(); no model access change or mutation
+
+2026-10-29T19:28:54.772Z | retry preamble: corrected native root/node query to iterate node.children directly
+
+2026-10-29T19:30:55.893Z | operation: final evidence/report preparation; 24 files staged; browser/server/profile cleaned; JSON normalized; git diff --cached --check reports only generated MPS final blank line

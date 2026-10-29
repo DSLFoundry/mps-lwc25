@@ -1,0 +1,3 @@
+error	No reference in the obligatory role 'question'	<unnamed>	QuestionnaireLanguage.structure.QuestionReference	r:d38310d7-e2d7-445d-9e37-03c515a7c638(Sandbox.QLInvalid)/7318089407678485380
+error	Error: �+� cannot be applied to types �boolean� and �number[1]{0}�	<unnamed>	org.iets3.core.expr.base.structure.PlusExpression	r:d38310d7-e2d7-445d-9e37-03c515a7c638(Sandbox.QLInvalid)/7318089407678485375
+# 2 errors, 0 warnings, 0 infos

@@ -1,0 +1,87 @@
+{
+  "timestamp": "2026-10-29T19:25:36.292Z",
+  "passed": 20,
+  "total": 20,
+  "results": [
+    {
+      "name": "all six question types preserve typed answers",
+      "passed": true
+    },
+    {
+      "name": "unanswered values stay undefined",
+      "passed": true
+    },
+    {
+      "name": "computed dependencies propagate undefined",
+      "passed": true
+    },
+    {
+      "name": "arithmetic operators produce expected values",
+      "passed": true
+    },
+    {
+      "name": "all comparison operators work for true and false cases",
+      "passed": true
+    },
+    {
+      "name": "boolean operators evaluate both truth outcomes",
+      "passed": true
+    },
+    {
+      "name": "undefined remains undefined through boolean expressions",
+      "passed": true
+    },
+    {
+      "name": "computed values update transitively",
+      "passed": true
+    },
+    {
+      "name": "forward references compute independently of display order",
+      "passed": true
+    },
+    {
+      "name": "undefined and false conditions hide questions",
+      "passed": true
+    },
+    {
+      "name": "nested visibility requires every enclosing condition",
+      "passed": true
+    },
+    {
+      "name": "date and string comparisons preserve their value domains",
+      "passed": true
+    },
+    {
+      "name": "JSON export contains form identity and typed answers",
+      "passed": true
+    },
+    {
+      "name": "valid form has no diagnostics",
+      "passed": true
+    },
+    {
+      "name": "duplicate identifiers are diagnosed across nested groups",
+      "passed": true
+    },
+    {
+      "name": "unresolved references are diagnosed",
+      "passed": true
+    },
+    {
+      "name": "nonboolean conditions are diagnosed",
+      "passed": true
+    },
+    {
+      "name": "incompatible computed result types are diagnosed",
+      "passed": true
+    },
+    {
+      "name": "invalid arithmetic and boolean operands are diagnosed",
+      "passed": true
+    },
+    {
+      "name": "direct and indirect cycles are diagnosed",
+      "passed": true
+    }
+  ]
+}

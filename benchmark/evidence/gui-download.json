@@ -1,0 +1,12 @@
+{
+  "form": "Household questionnaire",
+  "answers": {
+    "age": 37,
+    "derived": 5,
+    "ownsCar": true,
+    "carDetails": "blue car",
+    "monthlyIncome": 4200,
+    "adjustment": 1.25,
+    "startDate": "2026-10-29"
+  }
+}

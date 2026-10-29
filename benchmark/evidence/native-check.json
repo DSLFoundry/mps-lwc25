@@ -1,0 +1,45 @@
+[
+  {
+    "model": "Sandbox.QLBasic",
+    "diagnostics": [],
+    "questionCount": 7,
+    "conditionalCount": 1
+  },
+  {
+    "model": "Sandbox.QLInvalid",
+    "diagnostics": [
+      {
+        "code": "duplicate",
+        "id": "duplicate",
+        "message": "Duplicate question identifier: duplicate"
+      },
+      {
+        "code": "unresolved",
+        "id": null,
+        "message": "Unresolved native QuestionReference"
+      },
+      {
+        "code": "type",
+        "id": null,
+        "message": "Conditional expression must be boolean"
+      },
+      {
+        "code": "type",
+        "id": null,
+        "message": "Invalid native operands for +: boolean, integer"
+      },
+      {
+        "code": "type",
+        "id": "duplicate",
+        "message": "Computed result is invalid, expected integer"
+      },
+      {
+        "code": "cycle",
+        "id": "cycleA",
+        "message": "Computed dependency cycle: cycleA -> cycleB"
+      }
+    ],
+    "questionCount": 4,
+    "conditionalCount": 2
+  }
+]

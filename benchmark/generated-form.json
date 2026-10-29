@@ -1,0 +1,58 @@
+{
+    "name": "Household questionnaire",
+    "items": [
+        {
+            "id": "age",
+            "label": "Your age",
+            "type": "integer"
+        },
+        {
+            "id": "derived",
+            "label": "Computed sample",
+            "type": "integer",
+            "computed": {
+                "op": "+",
+                "args": [
+                    {
+                        "literal": 2
+                    },
+                    {
+                        "literal": 3
+                    }
+                ]
+            }
+        },
+        {
+            "id": "ownsCar",
+            "label": "Do you own a car?",
+            "type": "boolean"
+        },
+        {
+            "condition": {
+                "ref": "ownsCar"
+            },
+            "items": [
+                {
+                    "id": "carDetails",
+                    "label": "Describe your car",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "id": "monthlyIncome",
+            "label": "Monthly income",
+            "type": "money"
+        },
+        {
+            "id": "adjustment",
+            "label": "Adjustment factor",
+            "type": "decimal"
+        },
+        {
+            "id": "startDate",
+            "label": "Start date",
+            "type": "date"
+        }
+    ]
+}
