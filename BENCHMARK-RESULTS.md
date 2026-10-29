@@ -4,15 +4,15 @@
 
 - Scaffold: `ebb9a686670577120e0a228a79a3afb33cbc5de2`
 - Branch: `benchmark/ql-mops`
-- Implementation commit: pending final commit recording
-- Results/evidence follow-up commit: pending
+- Implementation commit: `a5ad875e5893548b9e4061831009521feb2e06a0`
+- Results/evidence follow-up commit: separate finalization commit
 - Active-work start: `2026-10-29T18:59:09.113Z`
 - Absolute deadline: `2026-10-29T20:59:09.113Z`
-- Active-work end: pending finalization; will be recorded before the evidence
-  follow-up commit
+- Active-work end: `2026-10-29T19:33:09.530Z`
+
 - Interruptions excluded: none reported
-- Time cap: completed within the 120-minute cap; exact end and elapsed time are
-  recorded in the final evidence update
+- Time cap: completed within the 120-minute cap; active elapsed time was 34.007 minutes (34m 0.417s), with no interruptions.
+
 - Versions: mops `0.4.0-SNAPSHOT`; MPS `2026.1.1`; bundled Java
   `25.0.3+1-329.124-jcef`; Node `v24.14.1`; IETS3 Open Source
   `2026.1.11424.a53a9bd`; configured MPS Gradle plugin `1.11.+`
@@ -151,3 +151,7 @@ whitespace in generated `native-check.json` and a final blank line in the
 newly serialized invalid MPS model. The JSON whitespace was normalized; the
 MPS serialization was left to the native MPS/mops writer rather than edited
 manually.
+
+## Final evidence freeze
+
+The implementation commit is `a5ad875e5893548b9e4061831009521feb2e06a0`. This report's end timestamp is the UTC content-freeze time; the final evidence commit was created immediately afterward. No branch switch, push, or amend was performed.
