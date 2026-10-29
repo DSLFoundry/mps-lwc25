@@ -1,120 +1,28 @@
-# mps-lwc25
-This repository contains the JetBrains MPS submission for "The State of the Art in Language Workbenches: 12 years later" paper. It holds a simple implementation (excluding satisfiability checking) of the Questionnaire Language (QL) as described in the [original QL assignment](https://homepages.cwi.nl/~storm/Ql.pdf).
+# QL agentic-coding benchmark scaffold
 
-Authors: Klemens Schindler (@klemensschindler) and Eugen Schindler (@eugenschindler)
+This branch is the common starting point for independent implementations of the
+[original QL assignment](https://homepages.cwi.nl/~storm/Ql.pdf) in JetBrains MPS.
+See [BENCHMARK.md](BENCHMARK.md) for the scope, acceptance criteria, run rules,
+and measurements.
 
-The full QL assignment implementation and its migration to MPS 2026.1 were
-developed with AI assistance on the
-[`feat/full-ql-assignment`](https://github.com/DSLFoundry/mps-lwc25/tree/feat/full-ql-assignment)
-branch.
-
-The original JetBrains MPS QL implementation is in the repository https://github.com/DSLFoundry/mps-lwc14, which in turn is based on https://github.com/DSLFoundry/mps-lwc13.
-
-## Input documentation
-The documentation for input to the paper can be found here:
- - [Short summary including brief history of JetBrains MPS](doc/Summary.md)
- - To open and run the implementation, see further below in this README file. Statistics are at the bottom of this README file.
- - [QL feature table for JetBrains MPS](doc/QLFeatures_Table_Template.xlsx)
- - [LWB feature table for JetBrains MPS](doc/LanguageWorkbench_FeatureConfiguration.xlsx)
- - [MW feature table for JetBrains MPS](doc/ModelingWorkbench_FeatureConfiguration.xlsx)
+The existing MPS project has been migrated to **MPS 2026.1.1**. QL-specific
+structure, editors, behavior, checks, generator rules, and example roots have
+been removed through native MPS APIs. Module identities, build models, dependency
+configuration, empty aspect models, and an empty generator mapping configuration
+are retained. KernelF, plaintextgen, and other existing dependencies may be used.
+The historical HTML reference implementation has also been removed.
 
 ## Setup
- - Install JetBrains MPS 2026.1 from the list on https://www.jetbrains.com/mps/download/previous.html for your platform
- - Run ```./gradlew``` (Gradle 8.7) with Java 21 or newer after cloning this repository in order to download all dependencies and build the language. MPS 2026.1 itself requires Java 25; use its bundled JetBrains Runtime.
- - Open the root directory of this repository in MPS
- - To play with an example QL model, open the root node QuestionnaireLanguage &rarr; Sandbox &rarr; Sandbox &rarr; QLBasic &rarr; HouseOwning
 
-## New QL language implementation
-This section sketches the language implementation highlights and especially the differences in effort and amount of code needed to implement the language in MPS 2026.1 (and included batteries) as compared to the original last implementation of QL from 2014 in MPS 2.5.
+Use Java 25 (the MPS bundled JetBrains Runtime is suitable) and run
+`.\gradlew.bat` to resolve dependencies and build. Open this directory in
+MPS 2026.1.1. There is deliberately no questionnaire example yet.
 
-### General observations
-Since version 2.5, MPS and its ecosystem of commercial and community-based libraries has evolved quite much. Most notably, for the new implementation of QL, we have heavily used the [KernelF](http://voelter.de/data/pub/kernelf-reference.pdf) extensible "funclarative" language (contained within the [IETS3.opensource](https://github.com/iets3/iets3.opensource) project). In practice, the most frequent use case of KernelF we have encountered, is to just "plug-in" and tailor (advanced) expressions instead of having to develop an expression hierarchy and various useful functionality for it every time from scratch in a language.
+When this project is already open in MPS, do not re-extract dependencies into
+directories whose JARs the IDE has locked. With dependencies already resolved,
+use `.\gradlew.bat buildQuestionnaireLanguage -x resolveMps -x resolveMpsArtifacts`.
+This builds the checked-out models without replacing the IDE's libraries.
 
-Another useful extension is the plaintextgen plugin which helps to easily generate all types of custom text from MPS models. Since we used HTML as generation target, we could also have used the built-in jetbrains.mps.lang.html language to generate the code, but we chose plaintextgen to illustrate a quick and easy method of getting text out of models.
-
-### Implementation walkthrough
-#### What stayed the same?
- - Each of the concepts mentioned in the [QL assignment](https://homepages.cwi.nl/~storm/Ql.pdf) has been implemented 1:1 as an MPS concept.
- - Similar as in the original implementation in 2013, we have used the IQuestionBlockContents (now renamed to IFormContents) interface concept to allow for free creation and movements of lines in the structural projectional editor of MPS.
- - The Empty concept represents empty lines. In addition, we have the DerivedValueReference and QuestionReference concepts in order to model references in the language.
- - Since the de.slisson.mps.richtext language already existed to model rich text, we have done this again in the new implementation, since richtext suffices for the text of a question. If we would have had a need for more advanced text modeling (à la LaTeX, including references to other part of the model, tagging, document structure, etc.), we could have used the mbeddr.doc language (with various out-of-the-box generation targets like HTML, Markdown, and LaTeX/PDF).
-
-#### What was done differently?
- - In order to model the type of a question, we chose to simply hook into the KernelF language, using KernelF's Type concept. This enables us to leverage the KernelF infrastructure of typing. What this does in practice, is that we can simply import the KernelF simpleTypes language (org.iets3.core.expr.simpleTypes) on model-level in order to get a whole set of standard types, such as Boolean, NumberType, and String. The only effort it takes to leverage all this infrastructure, is to simply make the ```type``` child of the ```Question``` concept of type ```Type (org.iets3.core.expr.base)```.
- - Like a ```Question```, a ```DerivedValue``` also has a KernelF ```Type```, but in order to derive a value, we also need an expression. Here, we simply make a child called ```value``` which is of type ```Expression (org.iets3.core.expr.base)```. This gives us access to the full set of expressions possible in KernelF (ranging from simple binary expressions like addition or multiplication, to dot expressions, option types, logic expressions, (in) equalities, etc.). In order to make sure that we connect to the KernelF typesystem, we have to add a type inference rule that makes sure that the type of a ```DerivedValue.value``` is equal to the expected type. This makes sure that whatever type computation happens via the KernelF infrastructure, we will get feedback from the editor if the resulting type of the expression in ```value``` does not fit with ```expectedType```.
- - In the same way, in order to have advanced conditions for the if-blocks in QL, we just need to make the ```condition``` child of the ```ConditionalBlock``` concept of type ```BooleanExpression (org.iets3.core.expr.base)```.
- - In order to allow for using references to question and derived value definitions in expressions like derived values or conditions of a conditional block, we simply hook these references into KernelF as custom expressions, so they can compose with the KernelF expression machanism. This is accomplished by simply making the ```QuestionReference``` and ```DerivedValueReference``` concepts extend ```Expression (org.iets3.core.expr.base)```. 
- - In MPS 2.5 there was no plaintextgen plugin, so we would have been forced to either make a textgen aspect for each concept directly (which is really not fun to do and a lot of work) or to define an intermediate language for HTML (which also didn't yet exist out of the box in MPS 2.5). Using plaintextgen, however, making a code generator quickly for a specific case is as simple as copy-pasting the reference implementation into a plaintextgen model (which models lines, words, and general layouts of plain text) and then simply add generator macros to the relevant parts of the reference implementation in order to templatize the static reference implementation text, which is pretty similar to typical template-driven code generation. 
-
-#### Runtime behavior
-
-Generated questionnaires provide typed controls for Boolean, Money, Integer,
-Number, Real, String, and Date questions. Unanswered values remain undefined,
-derived values are recomputed as answers change, and nested conditional
-visibility requires every enclosing condition to hold. Hiding a question clears
-its answer and removes it from completion checks.
-
-To export a response, generate the `HouseOwning` questionnaire and open its
-generated HTML in a browser. Answer every currently visible question; the
-**Save completed response** button becomes available when the questionnaire is
-complete. Click it to save the response in that browser and download
-`HouseOwning-response.json` (the form name is sanitized for the filename) to
-the browser's normal download location. The JSON object contains the form name,
-an ISO `savedAt` timestamp, and an `answers` object keyed by question ID.
-Saved responses are also restored from that browser's local storage when the
-questionnaire is opened again. The `HouseOwning` sample includes a nested
-free-text question to demonstrate conditional visibility across multiple
-levels.
-
-### Considerations / downsides
- - Using KernelF's expression infrastructure adds quite some advanced functionality to a language with almost zero effort. If the language is relatively simple, however, one may want to restrict the plethora of possible expressions of KernelF to only a subset (e.g. only additions, subtractions, multiplications, and divisions). Though it doesn't cost much effort, it needs some considerations. Details are beyond the scope of this text.
-
-### Other features not touched in this JetBrains MPS QL implementation
- - **most notable recent extension in 2026**: several Model Context Protocol interfaces, which enable agentic workflows, have been built for MPS: 
-    - the (as of yet experimental, but functional and quite extensive) [JetBrains Projectional Agent Toolkit](https://www.jetbrains.com/help/mps/2026.1/mps-projectional-agent-toolkit.html). This MCP is available directly from MPS. It has a comprehensive library of skills that help agents work with MPS. A limitation of the tool is that it works within
-    - a CLI interface called [mops](https://github.com/specificlanguages/mops) for headless model and language manipulation from [specificlanguages.com](https://specificlanguages.com/). 
-    - a proprietary MCP server from [itemis](https://www.itemis.com/) (available from MPS 22.3) called [Portalon](https://www.itemis.com/en/blog/model-based-engineering/custom-tools/ai-agents-meet-mps-with-portalon/)
-    - a soon-to-be-opensourced MCP from [F1re](https://www.f1re.io/) that enables addition of an AI aspect to any MPS language. This MCP builds on existing broad MCPs like Projectional Agent Toolkit and Portalon in order to give a targeted MCP for a specific domain represented by the MPS language with the AI aspect. This gives additional tools to coding agents in addition to skills/agent descriptions to work with any represented domain.
-    
-    These functionalities enable MPS to interoperate with AI agents, and unlock the valuable domain knowledge in it, giving it a new role in the complex organization of a company's or domain's subject matter that has been encoded using MPS languages and models.
-    
-    Development of models and basic maintenance activities (coding, builds, testing, etc.) can be done with cheaper, more basic open weight or cloud hosted tool calling LLMs (with 27B parameters or more), while non-trivial language development has enough inherent complexity to currently require more complex (70B parameters or more) LLMs and coding harnesses. The various mentioned AI tools have been used for:
-     - modeling projects at medium and large companies in various business sectors (cyber-physical, financial, security, etc.)
-     - non-trivial language development projects in closed source and open source; some non-trivial open-source examples that can be pointed to in this text:
-       - maintenance and feature development management in [MPS Extensions](https://github.com/jetbrains/mps-extensions), such as review automation with advanced AI skills by [specificlanguages](https://specificlanguages.com/) on the entire MPS Extensions repository, a lot of bugfixing, and feature development.
-       - feature development in [iets3.opensource](https://github.com/iets3/iets3.opensource)
-       - feature development in [Modelix](https://github.com/modelix/modelix.core)
-       - migrations and feature development in: [mbeddr.cpp](https://github.com/dslfoundry/mbeddr.cpp), [mps-umlrt](https://github.com/dslfoundry/mps-umlrt), and [mps-metabnf](https://github.com/DSLFoundry/mps-metabnf/)
-      
-    Most recent developments in this area are on speeding up agent-MPS interaction through techniques like code mode (Portalon and mops), virtual filesystem (Portalon), and projectional lexing/tokenization (mops, still in conceptual stage).
-- kotlin base language instead of java base language
- - constraint-based typesystem
- - shadow models or Dclare4MPS (for QL, this can enable a live programming workflow, transforming to generated HTML code incrementally and continuously while editing the model)
- - see the [MPS Extensions documentation](https://jetbrains.github.io/MPS-extensions/) for an overview of community extensions
- - see [MPS Platform Docs](http://mbeddr.com/mps-platform-docs/) for a nearly exhaustive overview of the most used non-commercial third-party MPS extensions
- - the build language itself is a generation target, which makes it possible to build extensions to the MPS build mechanism itself
- 
-## Conclusions for JetBrains MPS implementation of QL in 2025
-In the last 12 years, MPS itself has done steps to further engineer and stabilize the tool. Many bugs have been fixed, existing features streamlined, and performance highly optimized. The basic meta-interfaces of the MPS structure aspect have stayed stable, while many other aspects and additional extension capabilities and features (such as custom aspects, testing and debugging infrastructure for various aspects, mass node manipulation, many productivity features in the IDE, generation plans, ...) have been added.
-
-In addition, commercial and community extensions have been developed that add productivity and power to the toolbox of MPS language developers. This enables a quite concise and powerful way to write and maintain ecosystems of languages and language stacks for people who are knowledgeable with MPS language development, while keeping basic language creation still relatively accessible to new MPS language developers.
-
-## Some statistics
- - Total code written: 1023 nodes
-   - Language: 256 nodes
-   - Generator: 621 nodes
-   - Build solution: 106 nodes
-   - Example model: 40 nodes
- - Total implementation effort (excluding documentation and build setup, including design): 5 person hours
- - Total documentation effort (README, Summary, Excel sheets): 10 person hours
- - Total coffee consumed: 7 cups
- - Total cookies/candies eaten: 11
-
- - In the last (mps-lwc14) implementation, the amount of total nodes is a **factor of 43** more than the current implementation (mps-lwc25). Let's be generous and say that the SAT checking made the code base twice as complex, then we still come to **more than a factor of 21 in size reduction**!
- - The last implementation took 5 people several evenings, while the current implementation was 2 people (excluding one cosmetics commit from JetBrains) for 2 short evenings (excluding documentation). We don't have exact statistics to factor out the exact implementation time from the design time, but the significant reduction in amount of total implementation code (measured in nodes), should give a pretty good idea of how much less the implementation work itself was.
-
-In this specific QL implementation, we attribute the high reduction in code (and hence implementation effort) to KernelF (which saves having to make from scratch entire expression concept hierarchies) and plaintextgen (which saves textgens or intermediate languages and drastically reduces the effort of templatizing reference implementations from plain text).
-
-## Final statement
-
-With this data, we can conclude that the QL implementation may not be a benchmark to extensively measure the power of language implementation in MPS. It may be time to update the benchmark to a level that is more challenging for MPS and its opensource ecosystem of "batteries included" :-)
+The original repository authors are Klemens Schindler and Eugen Schindler.
+Historical paper materials remain in `doc`; they are not implementation input
+for either fresh benchmark run.

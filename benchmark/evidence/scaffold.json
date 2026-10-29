@@ -1,0 +1,34 @@
+{
+  "mps": "2026.1.1",
+  "iets3": "2026.1.11424.a53a9bd",
+  "preparationProvider": "JetBrains Projectional Agent Toolkit via local MCP",
+  "removedQlRoots": 29,
+  "retained": [
+    "QuestionnaireLanguage.build BuildProject",
+    "QuestionnaireLanguage.buildAllScripts BuildProject",
+    "empty generator MappingConfiguration main",
+    "module and model identities, dependencies, empty aspect models"
+  ],
+  "nativeModelChecks": {
+    "QuestionnaireLanguage.build": "no problems found",
+    "QuestionnaireLanguage.buildAllScripts": "no problems found",
+    "Sandbox.QLBasic": "no problems found",
+    "QuestionnaireLanguage.behavior": "no problems found",
+    "QuestionnaireLanguage.constraints": "no problems found",
+    "QuestionnaireLanguage.editor": "no problems found",
+    "QuestionnaireLanguage.structure": "no problems found",
+    "QuestionnaireLanguage.typesystem": "no problems found",
+    "QuestionnaireLanguage.generator.templates@generator": "warning: empty generator has no rules to modify an input"
+  },
+  "build": {
+    "command": ".\\gradlew.bat --console=plain buildQuestionnaireLanguage -x resolveMps -x resolveMpsArtifacts",
+    "javaHome": "C:\\Program Files\\JetBrains\\MPS 2026.1.1\\jbr",
+    "result": "BUILD SUCCESSFUL in 1m 26s",
+    "warnings": "existing external module classloading warnings; no build errors"
+  },
+  "setupRecovery": [
+    "Default dependency Copy task attempted to delete IDE-locked libraries; restored missing files from the complete pre-existing baseline dependency directory, then excluded dependency resolution for builds.",
+    "Completely empty generator lacked QueriesGenerated; created an empty MappingConfiguration through PAT and rebuilt successfully."
+  ],
+  "measurementNote": "Shared preparation evidence, excluded from both implementation budgets and KPI counts."
+}
