@@ -23,6 +23,8 @@ timestamp_not_captured (startup discovery): resources/list failed (-32601); mps_
 
 2026-10-29T21:28:31.310329+00:00 PAT added the native BuildMpsAspect bootstrap=true setting to resolve the self-generation cycle; results=pat-build-bootstrap-setting.json
 
+2026-10-29T21:30:10Z Gradle buildQuestionnaireLanguage succeeded with the bootstrap configuration; bootstrap/classloading warnings retained; evidence=gradle-build-bootstrap.log
+
 2026-10-29T21:36:12.665306+00:00 PAT re-scaffolded Question editor without the unsupported computed child; result=pat-question-editor-final.json
 
 2026-10-29T21:36:23.480112+00:00 PAT final checks for all QL aspect/example/build models and clean language/example MAKE; results=pat-native-final-checks-make.json
@@ -77,9 +79,27 @@ timestamp_not_captured (startup discovery): resources/list failed (-32601); mps_
 
 2026-10-29T22:33:27.416117Z PAT regenerated the native example successfully after adding the invalid reference fixture; evidence=pat-example-make-final-invalid-reference.json
 
-2026-10-29T22:33:46.568Z Production runtime revalidated the fresh generated invalid fixture with all four required diagnostic codes; unchanged acceptance suite passed 20/20; evidence=runtime-invalid-native-fixture.json and acceptance.json
+2026-10-29T22:33:46.568Z Production runtime revalidated the fresh generated invalid fixture with all four required diagnostic codes; evidence=runtime-invalid-native-fixture.json
+
+2026-10-29T22:33:46.665Z Unchanged acceptance suite passed 20/20 against the final source; evidence=acceptance.json
 
 2026-10-29T22:33:50Z Updated checked-in InvalidNativeFixtures JSON from source_gen; BenefitSurvey output and browser-smoke input remain unchanged.
 
 2026-10-29T22:34:00Z Self-reported retained PAT call/result records: approximately 308 total (202 entries through 21:54, 73 explicit later records, 29 calls represented by inventory/editor/schema evidence, plus four final calls); 23 error responses; approximately 68 mutation-related requests (56 successful non-dry-run, 8 dry-runs, 4 failed); three explicit retry incidents after 21:54, earlier retries not separately instrumented; harness-independent counts unavailable.
+
+2026-10-29T22:37:06Z Committed the PAT native language, runtime/GUI, generated examples, tests, and retained evidence as 728f626338b55566fb836297171d6f683c1c56db; local author/committer Eugen Schindler; no push.
+
+2026-10-29T22:42:05.882Z Final Gradle build after invalid-fixture regeneration succeeded in 2m26s; evidence=gradle-after-final-fixture.log
+
+2026-10-29T22:42:29.925Z Final Microsoft Edge headless smoke passed against fresh MPS-generated BenefitSurvey output, including typed inputs, live computed/unary values, nested visibility, and JSON download; test server stopped afterward; evidence=browser-smoke.json and browser-downloads
+
+2026-10-29T22:42:39.408Z Final production runtime validation of MPS-generated InvalidNativeFixtures reported all required diagnostic codes; evidence=runtime-invalid-native-fixture.json
+
+2026-10-29T22:42:39.494Z Final unchanged acceptance suite passed 20/20; evidence=acceptance.json
+
+2026-10-29T22:43:44.494Z SHA-256 comparison confirmed checked-in/source_gen copies match: BenefitSurvey=56B96968C74B4D3A83420ECEB08FE81C4827B0E2349118D82FA42A27C1EABBBC; InvalidNativeFixtures=6A2227E8BCD5341048758FA45AE857F99E317AF70E02873CDB39D9AD003C7BDE.
+
+2026-10-29T22:53:30Z Final benchmark report and evidence committed on benchmark/ql-pat; no push.
 2026-10-29T22:36:04.295Z Pruned two oversized exploratory PAT response dumps (46.8 MB build-tree dump and 6.1 MB base-language listing); retained timestamped operation summaries and final build/check evidence.
+2026-10-29T22:42:05.882Z Final Gradle build after invalid-fixture regeneration succeeded in 2m26s; evidence=gradle-after-final-fixture.log
+2026-10-29T22:48:34.460Z Final local evidence aggregation probe initially misread the nested PAT result wrapper and raised TypeError; corrected to unwrap data and the final evidence assertions all passed. No source/test defect.
