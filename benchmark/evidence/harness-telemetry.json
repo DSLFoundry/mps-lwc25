@@ -1,0 +1,37 @@
+{
+  "source": "Copilot CLI local event ledger, filtered by exact agentId",
+  "agentId": "e235a42d-644e-44ef-8c12-ff3199a9322f",
+  "capturedAt": "2026-10-29T20:53:51.529975+00:00",
+  "firstEvent": "2026-10-29T18:59:00.489Z",
+  "lastEvent": "2026-10-29T20:52:42.444Z",
+  "eventSpanMinutes": 113.69924999999999,
+  "toolCallsStarted": 571,
+  "toolCallsCompleted": 571,
+  "toolTransportFailures": 7,
+  "toolCallsByName": {
+    "apply_patch": 36,
+    "list_powershell": 2,
+    "powershell": 461,
+    "rg": 2,
+    "skill": 4,
+    "view": 59,
+    "web_fetch": 4,
+    "web_search": 3
+  },
+  "modelRequests": 487,
+  "inputTokens": 49334490,
+  "outputTokens": 406139,
+  "cacheReadTokens": 48424082,
+  "cacheWriteTokens": 908947,
+  "totalNanoAiu": 79306404705,
+  "requestDurationMs": 4533272,
+  "modelSelection": "Auto; no fixed model override supplied",
+  "notes": [
+    "Input, cache-read, and cache-write counters retain the ledger semantics; do not assume they are disjoint.",
+    "AIU is totalNanoAiu / 1e9; it is not a monetary price.",
+    "Request duration is summed request duration, not elapsed implementation time.",
+    "Tool transport success does not prove command or model-operation success.",
+    "A shell call may batch multiple provider operations; calls are not provider-operation counts.",
+    "Coordinator setup, final verification, and publishing are excluded by agent attribution."
+  ]
+}

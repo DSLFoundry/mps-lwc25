@@ -32,6 +32,28 @@ Versions: mops `0.4.0-SNAPSHOT`; MPS `2026.1.1`; bundled Java
 Model/agent identifier, tokens, and cost are unavailable from run
 instrumentation and are not inferred.
 
+### Coordinator-captured harness telemetry
+
+After freezing implementation at `d3cbd8c`, the coordinator extracted the
+local CLI ledger by exact agent ID (not the parent session total). See
+`benchmark/evidence/harness-telemetry.json`: **487 model requests, 571 tool
+calls, 7 transport-level failures, 49,334,490 input tokens, 406,139 output
+tokens, 48,424,082 cache-read tokens, and 79.3064 AIU**. Cache counters retain
+ledger semantics and are not assumed disjoint. AIU is not a monetary price.
+Tool-call success does not imply the contained shell command succeeded.
+Provider operations batched within shell calls are not independently counted.
+The complete agent-event span is **113.699 minutes**, including final reporting
+and coordinator follow-up intervals; the shorter content-freeze time above is
+not the complete harness span. Auto selection was used, without a model override.
+Three coordinator implementation follow-ups were needed after premature
+completion reports, plus one final request to resolve model-check errors.
+
+Coordinator reruns after the freeze independently reproduced 20/20 runtime
+cases, computed native output `5`, questionnaire-specific generated Java JSON,
+and serializer model checking with 0 errors, 5 warnings and 11 infos.
+These verification operations are outside the timed implementation and the
+agent-attributed counters. No implementation was repaired after the freeze.
+
 ## Operation accounting
 
 `benchmark/evidence/operations.log` is self-reported rather than harness
