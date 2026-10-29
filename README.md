@@ -62,6 +62,7 @@ compiled output with:
 .\build\mopsw.cmd make module QuestionnaireLanguage
 .\build\mopsw.cmd make module QuestionnaireLanguage.generator
 .\build\mopsw.cmd make module Sandbox
+.\build\mopsw.cmd check model QuestionnaireLanguage.generator.util
 .\build\mopsw.cmd code run benchmark\verify-native-generation.groovy
 .\build\mopsw.cmd code run benchmark\generate.groovy
 node benchmark\verify-native-runtime.cjs
