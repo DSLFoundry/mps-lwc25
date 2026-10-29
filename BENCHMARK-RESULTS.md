@@ -8,12 +8,13 @@
 - Initial results freeze: `52cb89e46554ca3eab927de42a12de8ff5915301`
 - Resumed implementation: `735a1efd0f5ffaf0cb543a22886dd442c2449ed8`
 - Integrated native generator and evidence: `97631651d4c1f303dc801cc5fd7e3ba96b2282ec`
+- Serializer model-check repair: `1a7ae22cfac473e2ef79f48927e13f8c755a4eab`
 - Original start: `2026-10-29T18:59:09.113Z`
 - Start + 120 minutes: `2026-10-29T20:59:09.113Z`
 - Later coordinator stop instruction: `2026-10-29T20:59:00Z` (applied as the earlier hard stop)
-- Implementation/evidence freeze: `2026-10-29T20:39:27Z` (integration commit timestamp)
-- Final active-work/report freeze: `2026-10-29T20:40:54.132Z`
-- Wall-clock elapsed from original start to final freeze: `1h 41m 45.019s`
+- Implementation/evidence freeze: `2026-10-29T20:51:50Z`
+- Final active-work/report freeze: `2026-10-29T20:51:54.391Z`
+- Wall-clock elapsed from original start: `1h 52m 45.278s`
 - Interruptions excluded: none. The coordinator review interval
   `19:33:09.530Z`–`19:35:25.299Z` counted against the original budget.
   Work resumed on the same branch at `19:35:25.299Z`.
@@ -38,7 +39,9 @@ telemetry. At the resumed-generator follow-up it contains timestamped
 implementation and validation entries. Logged `calls:` fields sum to 39, but
 are incomplete and are not an exact tool-call or provider-operation count.
 The final resumed validation operations are timestamped separately without
-claiming a complete call count. No automatic provider-call count was exposed.
+claiming a complete call count. The serializer model-check repair and
+validation are separately timestamped. No automatic provider-call count was
+exposed.
 All QL MPS model discovery, mutation, checking, making, generation, and runtime
 model access used mops; serialized `.mps`/`.mpl` persistence was not hand-edited.
 
@@ -101,14 +104,18 @@ The targeted Gradle language build passed:
 ```
 
 Mops make succeeded for the generator module and Sandbox. Checks returned no
-findings for the structure, editor, typesystem, and valid sample; the
-generator template had 0 errors and 2 informational BaseLanguage type
-recommendations. The invalid example intentionally exits nonzero with expected
-diagnostics. The serializer utility compiles and executes in generated MPS
-classes, but its source model check reports 51 BaseLanguage method-resolution
-errors, 5 warnings, and 11 infos; this check is explicitly not counted as a
-pass. The Gradle build emitted third-party class-loading and Java
-restricted-access warnings, but no build errors.
+findings for the structure, editor, typesystem, valid sample, and serializer
+utility; the generator template had 0 errors and 2 informational BaseLanguage
+type recommendations. The serializer utility reports 0 errors, 5 warnings,
+and 11 infos. Its former 51 method-resolution/signature errors came from
+incorrect method references to Java stub overloads (`StringBuilder.append`,
+`ArrayList` construction, and `SNode.getChildren`); these references were
+retargeted through mops to matching overload declarations. Remaining warnings
+include deprecated OpenAPI methods and a possible null dereference; the full
+diagnostic set is in `benchmark/evidence/native-generator-check.json`. The
+invalid example intentionally exits nonzero with expected diagnostics. The
+Gradle build emitted third-party class-loading and Java restricted-access
+warnings, but no build errors.
 
 The actual Edge browser script was rerun against the output extracted from the
 native-generated Java class. It exercised typed controls, computed values,
@@ -124,8 +131,8 @@ implementation, failed-G3, and results commits remain separate and unchanged.
 | Gate | Result | Evidence / qualification |
 |---|---|---|
 | G1 native concepts and projectional editors | **Pass** | mops checks; 5 structure roots and 4 editor roots. Expressions use imported IETS3 editors. |
-| G2 provider checks and invalid diagnostics | **Pass, partial native coverage** | Native conditional-reference rule plus IETS3 produce two invalid-model errors; Code Mode checker reports five findings. Duplicate identifiers, computed-result matching, and cycles remain outside editor-time MPS rules. |
-| G3 strict native MPS generation/compilation | **Pass** | Native root mapping serializes questionnaire-specific items, nested conditions, properties, and expression nodes into generated Java JSON. Both native sample models have generated Java source/bytecode and parsed JSON. Source-model checker issues in the utility class are disclosed separately. |
+| G2 provider checks and invalid diagnostics | **Partial** | Native conditional-reference rule plus IETS3 produce two invalid-model errors; Code Mode checker reports five findings. Duplicate identifiers, computed-result matching, and cycles remain outside editor-time MPS rules. |
+| G3 strict native MPS generation/compilation | **Pass, with warnings** | Native root mapping serializes questionnaire-specific items, nested conditions, properties, and expression nodes into generated Java JSON. Both native sample models have generated Java source/bytecode and parsed JSON. Serializer model check is 0 errors, 5 warnings, 11 infos. |
 | G4 native example to executable questionnaire | **Pass** | Native `QLBasic` → native MPS generator → generated Java JSON → extraction-only bridge → production runtime/UI; computed result `5`. Label and expression model edits visibly changed generated output. |
 | G5 actual GUI behavior | **Pass** | Real Edge run documented in `browser-check.mjs`; screenshot `gui.png`. |
 | G6 downloadable JSON answers | **Pass** | Browser-generated parseable JSON in `gui-download.json`; 7 answer entries. |
@@ -140,19 +147,24 @@ implementation, failed-G3, and results commits remain separate and unchanged.
   mops Code Mode semantic checker rather than native editor-time typesystem
   rules. This resumed run did not add further editor-time rules for those
   cross-question/global checks.
-- The serializer utility's BaseLanguage model has a known MPS check failure
-  (`Reference to wrong overridden method` on Java API calls), although MPS
-  make compiles it and generated classes execute. This weakens the cleanliness
-  of G3 and is not hidden as a successful model check.
+- G2 is not full native editor-time semantic coverage: duplicate identifiers,
+  computed-result compatibility, and dependency cycles remain Code Mode
+  diagnostics, not native MPS typesystem rules. This report does not claim the
+  full assignment is complete.
+- The serializer utility's previous BaseLanguage check errors were resolved by
+  correcting overload references through mops. Its remaining five warnings
+  include deprecated OpenAPI calls and a possible null dereference; they are
+  disclosed rather than suppressed.
 - Money values are numeric amounts without currency metadata or formatting.
-- The earlier implementation commits remain unchanged. The integrated
-  generator changes and final results will be committed separately before the
-  original hard stop.
+- Earlier implementation commits remain unchanged. The integrated generator
+  and serializer model-check repair are focused follow-up commits.
 
 ## Final evidence freeze
 
-The earlier G3 failure, resumed implementation, and integrated native
-generator work are preserved in separate commits. The implementation remains
-on `benchmark/ql-mops`; no amend, push, or branch switch was performed. The
-final results-document commit records this freeze; no work exceeded the
-original hard stop.
+The earlier G3 failure, resumed implementation, integrated native generator,
+and serializer model-check repair are preserved in separate commits. The
+implementation remains on `benchmark/ql-mops`; no amend, push, or branch
+switch was performed. The final results-document commit records this freeze;
+no work exceeded the original hard stop. G2 remains explicitly partial as
+global semantic diagnostics are not editor-time native rules; this is not
+reported as a complete assignment.
