@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-10-29T20:08:41.585Z",
+  "provider": "production benchmark adapter/runtime",
+  "form": "benchmark/generated-form.json",
+  "formName": "Household questionnaire",
+  "rootItems": 7,
+  "diagnostics": [],
+  "computedQuestion": "derived",
+  "computedValue": 5
+}

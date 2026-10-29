@@ -69,7 +69,6 @@
     <node concept="1TJgyj" id="6mf4SGrdOo9" role="1TKVEi">
       <property role="20kJfa" value="computed" />
       <property role="IQ2ns" value="1793300702800005" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>

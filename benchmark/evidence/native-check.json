@@ -14,11 +14,6 @@
         "message": "Duplicate question identifier: duplicate"
       },
       {
-        "code": "unresolved",
-        "id": null,
-        "message": "Unresolved native QuestionReference"
-      },
-      {
         "code": "type",
         "id": null,
         "message": "Conditional expression must be boolean"

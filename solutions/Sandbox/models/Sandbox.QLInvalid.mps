@@ -58,7 +58,9 @@
       <property role="1rmZpV" value="string" />
     </node>
     <node concept="1rmZpT" id="6mf4SGrepe3" role="1rmZpO">
-      <node concept="1rmZpN" id="6mf4SGrepe4" role="1rmZpS" />
+      <node concept="1rmZpN" id="6mf4SGrepe4" role="1rmZpS">
+        <ref role="1rmZpM" node="6mf4SGrepe2" />
+      </node>
     </node>
     <node concept="1rmZpY" id="6mf4SGrev45" role="1rmZpO">
       <property role="1rmZpX" value="cycleA" />

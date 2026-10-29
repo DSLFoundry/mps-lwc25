@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-10-29T20:06:08.5367707Z",
+  "provider": "mops Code Mode",
+  "buildCommand": ".\\build\\mopsw.cmd make module QuestionnaireLanguage; .\\build\\mopsw.cmd make module Sandbox",
+  "buildOutcome": "SUCCESS",
+  "verifyCommand": ".\\build\\mopsw.cmd code run benchmark\\verify-native-generation.groovy",
+  "verification": {
+    "outputs": [
+      {
+        "className": "Sandbox.QLBasic.GeneratedQuestionnaire",
+        "title": "MPS native QL template"
+      },
+      {
+        "className": "Sandbox.QLInvalid.GeneratedQuestionnaire",
+        "title": "MPS native QL template"
+      }
+    ],
+    "files": [
+      "classes_gen/Sandbox\\QLBasic\\GeneratedQuestionnaire.class",
+      "classes_gen/Sandbox\\QLInvalid\\GeneratedQuestionnaire.class",
+      "source_gen/Sandbox\\QLBasic\\GeneratedQuestionnaire.java",
+      "source_gen/Sandbox\\QLInvalid\\GeneratedQuestionnaire.java"
+    ]
+  }
+}

@@ -90,8 +90,7 @@
       <node concept="3F0ifn" id="6mf4SGrdOsS" role="3EZMnx">
         <property role="3F0ifm" value=" = " />
       </node>
-      <node concept="3F2HdR" id="6mf4SGrejii" role="3EZMnx">
-        <property role="2czwfO" value="" />
+      <node concept="3F1sOY" id="6mf4SGrfByo" role="3EZMnx">
         <ref role="1NtTu8" to="zg3i:6mf4SGrdOo9" resolve="computed" />
       </node>
     </node>

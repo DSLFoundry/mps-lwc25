@@ -5,18 +5,17 @@ This branch is the common starting point for independent implementations of the
 See [BENCHMARK.md](BENCHMARK.md) for the scope, acceptance criteria, run rules,
 and measurements.
 
-The existing MPS project has been migrated to **MPS 2026.1.1**. QL-specific
-structure, editors, behavior, checks, generator rules, and example roots have
-been removed through native MPS APIs. Module identities, build models, dependency
-configuration, empty aspect models, and an empty generator mapping configuration
-are retained. KernelF, plaintextgen, and other existing dependencies may be used.
-The historical HTML reference implementation has also been removed.
+The MPS project uses **MPS 2026.1.1**. This checkout implements native QL
+concepts and projectional editors, an MPS root-mapping generator, a sample
+questionnaire, and a production runtime and browser UI. The native generator
+produces and compiles one Java smoke-target class for each QL model; a mops
+Code Mode exporter separately translates the native questionnaire data into
+the runtime JSON consumed by the application.
 
 ## Setup
 
-Use Java 25 (the MPS bundled JetBrains Runtime is suitable) and run
-`.\gradlew.bat` to resolve dependencies and build. Open this directory in
-MPS 2026.1.1. There is deliberately no questionnaire example yet.
+Use Java 25 (the MPS bundled JetBrains Runtime is suitable). Open this
+directory in MPS 2026.1.1, or use the prepared `build\mopsw.cmd` wrapper.
 
 When this project is already open in MPS, do not re-extract dependencies into
 directories whose JARs the IDE has locked. With dependencies already resolved,
@@ -35,8 +34,8 @@ operators. The editor uses the IETS3 editors for expression nodes.
 
 Open `Sandbox.QLBasic` in MPS, add a `Questionnaire` root, then add `Question`
 and `Conditional` children using the projectional editor. A question's
-`computed` role is a zero-or-more child list in this implementation; the
-exporter consumes its first expression. Leave it empty for an input question.
+`computed` role is an optional single expression. Leave it empty for an input
+question.
 Use a `QuestionReference` expression to reference a question. The checked-in
 example includes input questions, a computed value, and a nested visibility
 condition.
@@ -54,16 +53,33 @@ $env:JAVA_HOME = 'C:\Program Files\JetBrains\MPS 2026.1.1\jbr'
 .\build\mopsw.cmd code run benchmark\check-native.groovy
 ```
 
-`generate.groovy` reads the native MPS model through mops Code Mode and writes
-`benchmark\generated-form.json`; it is not a hand-maintained substitute form.
-`check-native.groovy` performs semantic checks over the native QL models,
-including duplicate identifiers, unresolved references, expression/condition
-types, and dependency cycles. `Sandbox.QLInvalid` is a committed invalid
-fixture: the native MPS model checker reports its unresolved reference and
-ill-typed arithmetic; the Code Mode semantic checker additionally reports the
-duplicate identifier, non-boolean condition, and computed dependency cycle.
-The semantic checks are invoked as a mops Code Mode command; they are not yet
-editor-time typesystem rules.
+`QuestionnaireLanguage.generator.templates@generator` also contains a native
+MPS root-mapping rule and BaseLanguage template. The MPS make generates and
+compiles `GeneratedQuestionnaire` for each QL model in `Sandbox`. Verify the
+compiled output with:
+
+```powershell
+.\build\mopsw.cmd make module QuestionnaireLanguage
+.\build\mopsw.cmd make module Sandbox
+.\build\mopsw.cmd code run benchmark\verify-native-generation.groovy
+```
+
+`generate.groovy` separately reads the native MPS model through mops Code Mode
+and writes `benchmark\generated-form.json`; it is not a hand-maintained
+substitute form. Run `node benchmark\verify-native-runtime.cjs` to pass that
+generated form through the production adapter/runtime and verify its computed
+answer.
+`QuestionnaireLanguage.typesystem` includes an editor-time MPS rule that
+checks a direct `QuestionReference` used as a conditional condition and
+requires its target question to be boolean. IETS3 checks the types of other
+expression forms. `check-native.groovy` additionally checks the native QL
+models for duplicate identifiers, unresolved references, expression types,
+and computed-dependency cycles; those extended checks run in mops Code Mode.
+`Sandbox.QLInvalid` intentionally contains a reference to a string question
+in a condition and ill-typed arithmetic. The native MPS model checker reports
+both the conditional rule violation and the IETS3 arithmetic error; the Code
+Mode checker reports five findings, including the duplicate identifier,
+non-boolean condition, invalid computed expression, and dependency cycle.
 To see the native MPS checker's expected failures directly, run this command
 separately (exit code 1 is expected for this committed invalid fixture):
 

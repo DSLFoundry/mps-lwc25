@@ -12,7 +12,7 @@
   </facets>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="QuestionnaireLanguage.generator" uuid="859d56ea-5acc-4450-86c1-5c76a58ec80e">
+    <generator alias="main" namespace="QuestionnaireLanguage.generator" uuid="859d56ea-5acc-4450-86c1-5c76a58ec80e" generate-templates="true">
       <models>
         <modelRoot contentPath="${module}/generator" type="default">
           <sourceRoot path="${module}/generator/templates" />

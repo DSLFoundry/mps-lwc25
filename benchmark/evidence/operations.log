@@ -175,3 +175,40 @@ Starting HEAD: ebb9a686670577120e0a228a79a3afb33cbc5de2
 2026-10-29T19:28:54.772Z | retry preamble: corrected native root/node query to iterate node.children directly
 
 2026-10-29T19:30:55.893Z | operation: final evidence/report preparation; 24 files staged; browser/server/profile cleaned; JSON normalized; git diff --cached --check reports only generated MPS final blank line
+
+2026-10-29T19:38:57.219Z | operation: mops generator concept metadata discovery; exit=1
+
+2026-10-29T19:39:05.392Z | operation: mops generator concept metadata discovery; exit=0
+
+2026-10-29T19:39:32.266Z | operation: mops generator rule/template structure discovery; exit=0
+
+2026-10-29T19:40:28.525Z | operation: mops native Question.computed cardinality trial to optional single; exit=0
+
+2026-10-29T19:41:11.512Z | operation: mops optional-single computed cardinality setter retry with native enum identifier; exit=0
+
+2026-10-29T19:41:49.128Z | operation: mops regenerated language after cardinality edit and inspected link; exit=0
+
+2026-10-29T19:44:12.240Z | operation: mops Code Mode native root mapping rule/template creation; exit=0
+
+2026-10-29T19:44:17.246Z | operation: mops generator model check exit=1 and language make exit=1
+
+2026-10-29T19:44:40.991Z | operation: mops attach native TemplateFragment attribute and check; exit=0
+
+2026-10-29T19:47:58.391Z | operation: native generation forced and compiled output inspected via mops runtime; exit=0
+
+2026-10-29T19:49:51.467Z | operation: mops runtime loaded native generated Java from QL models; exit=0
+2026-10-29T19:35:25.299Z | operation: resumed same benchmark branch following coordinator request; prior G3 failure preserved in BENCHMARK-RESULTS.md; no additional budget granted
+2026-10-29T19:35:25.299Z | operation: resume accounting; original deadline remains 2026-10-29T20:59:09.113Z; review interval since 19:33:09.530Z counts as wall-clock elapsed; prior commits retained
+
+2026-10-29T19:50:41.725Z | operation: mops generator root rule/template created; TemplateFragment attached; MPS make template generation enabled; project make succeeds; compiled generated classes load and execute
+
+2026-10-29T19:57:36.116Z | operation: native mops generator source/bytecode evidence saved; root rule output executed from valid and invalid QL models
+2026-10-29T20:02:21.5633324Z | operation: native type-rule validation; mops make Sandbox and generated-class execution succeeded; valid QLBasic check clean; invalid QLInvalid check exits 1 with expected native boolean-reference and IETS3 arithmetic errors
+2026-10-29T20:04:41.3118870Z | operation: targeted Gradle QuestionnaireLanguage build completed; exit=0; started=2026-10-29T20:03:13.2869726Z
+2026-10-29T20:06:08.5367707Z | operation: final native language/Sandbox make and generated Java+class runtime verification succeeded; started=2026-10-29T20:06:04.7370566Z
+2026-10-29T20:06:25.2977034Z | operation: final mops model checks passed for structure/editor/typesystem/generator/valid sample; invalid sample produced two expected errors; started=2026-10-29T20:06:20.2068713Z
+2026-10-29T20:07:33.7982177Z | operation: regenerate runtime questionnaire JSON from native QLBasic model through mops Code Mode; exit=0; started=2026-10-29T20:07:32.9801522Z
+2026-10-29T20:07:41.2261448Z | operation: production-runtime export probe used nonexistent benchmark/runtime.cjs path; node require failed with MODULE_NOT_FOUND; no files changed
+2026-10-29T20:08:11.6203367Z | operation: production adapter consumed freshly generated native model JSON; validation clean and computed value 5 confirmed; exit=0
+2026-10-29T20:08:41.6005522Z | operation: reproducible production-runtime verification of native-generated form passed; started=2026-10-29T20:08:41.5118008Z
+2026-10-29T20:09:23.4953484Z | operation: machine-validated final acceptance/native-check/generation/runtime/download/screenshot evidence; no acceptance-suite or shared protocol changes
