@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-29T22:20:58.398456+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "filePath": "languages\\QuestionnaireLanguage\\models\\QuestionnaireLanguage.editor.mps",
+    "errorsOnly": false,
+    "timeout": 30000
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"filePath\":\"languages\\\\QuestionnaireLanguage\\\\models\\\\QuestionnaireLanguage.editor.mps\",\"errors\":[]}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "filePath": "languages\\QuestionnaireLanguage\\models\\QuestionnaireLanguage.editor.mps",
+      "errors": []
+    }
+  }
+}

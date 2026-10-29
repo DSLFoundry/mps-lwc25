@@ -1,0 +1,110 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "name": "Form",
+      "qualifiedName": "QuestionnaireLanguage.structure.Form",
+      "conceptAlias": "form",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736788:QuestionnaireLanguage.structure.Form",
+      "languageReference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage",
+      "superConcept": "c:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626:jetbrains.mps.lang.core.structure.BaseConcept",
+      "superInterfaces": [
+        "i:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468:jetbrains.mps.lang.core.structure.INamedConcept"
+      ],
+      "superInterfaceDetails": [
+        {
+          "name": "INamedConcept",
+          "reference": "i:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468:jetbrains.mps.lang.core.structure.INamedConcept"
+        }
+      ],
+      "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": true,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194664001",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "items",
+          "targetConcept": "QuestionnaireLanguage.structure.Item",
+          "cardinality": "0..n",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736788/2589700000046736797",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736797",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "QuestionnaireLanguage.structure.Form",
+        "properties": [
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          },
+          {
+            "name": "name",
+            "value": "Form"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "items",
+            "nodes": [
+              "/* Instances of QuestionnaireLanguage.structure.Item or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

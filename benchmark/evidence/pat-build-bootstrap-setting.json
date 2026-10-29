@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-29T21:28:31.310329+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "ADD",
+    "kind": "CHILD",
+    "nodeReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628499",
+    "childRole": "aspects",
+    "childJson": "{\"concept\":\"jetbrains.mps.build.mps.structure.BuildMpsAspect\",\"properties\":[{\"name\":\"bootstrap\",\"value\":\"true\"}]}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"name\":\"mps settings\",\"concept\":\"BuildMpsAspect\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:0cf935df-4699-4e9c-a132-fa109541cba3/6503355885715333289:jetbrains.mps.build.mps.structure.BuildMpsAspect\",\"reference\":\"r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/2589700000046879066\",\"parentReference\":\"r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628499\",\"rootReference\":\"r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628499\",\"rootName\":\"QuestionnaireLanguage\",\"modelReference\":\"r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)\",\"moduleReference\":\"10f275e3-1a9c-4414-acab-c5b801f5560b(QuestionnaireLanguage.build)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":0,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"No references found\"}}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

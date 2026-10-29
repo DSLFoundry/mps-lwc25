@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-29T22:33:10.446550+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "ADD",
+    "kind": "CHILD",
+    "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753",
+    "childRole": "items",
+    "position": -1,
+    "childJson": "{\"concept\":\"Calculated\",\"properties\":[{\"name\":\"label\",\"value\":\"Missing native target\"},{\"name\":\"valueType\",\"value\":\"integer\"},{\"name\":\"id\",\"value\":\"unresolvedNative\"}],\"children\":[{\"role\":\"computed\",\"nodes\":[{\"concept\":\"Reference\",\"properties\":[{\"name\":\"targetId\",\"value\":\"absentFromForm\"}]}]}]}",
+    "dryRun": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"dryRun\":true,\"message\":\"Dry run successful for node addition\"}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

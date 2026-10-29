@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-29T21:08:34.785224+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "conceptRefs": "[\"jetbrains.mps.baseLanguage.structure.StatementList\", \"jetbrains.mps.baseLanguage.structure.DotExpression\", \"jetbrains.mps.lang.smodel.structure.SLinkAccess\", \"jetbrains.mps.lang.smodel.structure.SLinkListAccess\", \"jetbrains.mps.lang.textGen.structure.UTF8EncodingDeclaration\", \"jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\", \"jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration\", \"jetbrains.mps.lang.textGen.structure.ExtensionDeclaration\"]"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-17488201009156575109.json\",\"details\":{\"unresolved\":[{\"ref\":\"jetbrains.mps.lang.textGen.structure.UTF8EncodingDeclaration\",\"kind\":\"concept\",\"suggestions\":[{\"qualifiedName\":\"jetbrains.mps.lang.textGen.structure.EncodingDeclaration\",\"conceptReference\":\"c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1224137887853744019:jetbrains.mps.lang.textGen.structure.EncodingDeclaration\"},{\"qualifiedName\":\"jetbrains.mps.lang.textGen.structure.EncodingDeclarationBase\",\"conceptReference\":\"i:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1224137887853744059:jetbrains.mps.lang.textGen.structure.EncodingDeclarationBase\"},{\"qualifiedName\":\"jetbrains.mps.lang.textGen.structure.AbstractTextGenDeclaration\",\"conceptReference\":\"c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1234281982537:jetbrains.mps.lang.textGen.structure.AbstractTextGenDeclaration\"},{\"qualifiedName\":\"jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\",\"conceptReference\":\"c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145:jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\"},{\"qualifiedName\":\"jetbrains.mps.lang.textGen.structure.EncodingLiteral\",\"conceptReference\":\"c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/7166719696753421196:jetbrains.mps.lang.textGen.structure.EncodingLiteral\"}]}]},\"warnings\":[\"Could not resolve conceptRef 'jetbrains.mps.lang.textGen.structure.UTF8EncodingDeclaration' — see details.unresolved for suggestions\"]}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

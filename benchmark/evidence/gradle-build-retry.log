@@ -1,0 +1,67 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/hmon/.gradle/wrapper/dists/gradle-8.7-all/aan3ydargesu18aqyqjwhr3pc/gradle-8.7/lib/native-platform-0.22-milestone-25.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+
+> Task :buildAllScripts
+Buildfile: C:\Sources\mps-lwc25\build\QuestionnaireLanguage.allScripts\build.xml
+Trying to override old definition of datatype module
+
+clean:
+
+declare-mps-tasks:
+
+fetchDependencies:
+
+generate:
+     [echo] generating
+ [generate] 2026-10-29 22:17:08,992 WARNING - jetbrains.mps.classloading.ModulesWatcher - 11 modules are marked as invalid roots for class loading out of 393 modules totally in the CL graph
+ [generate] 2026-10-29 22:17:08,995 WARNING - jetbrains.mps.classloading.ModulesWatcher - com.mbeddr.mpsutil.editor.querylist.runtime: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-29 22:17:08,995 WARNING - jetbrains.mps.classloading.ModulesWatcher - com.mbeddr.mpsutil.grammarcells.runtime: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-29 22:17:08,995 WARNING - jetbrains.mps.classloading.ModulesWatcher - de.itemis.stubs.batik: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-29 22:17:08,995 WARNING - jetbrains.mps.classloading.ModulesWatcher - jetbrains.mps.ide.devkit.editor: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-29 22:17:08,996 WARNING - jetbrains.mps.classloading.ModulesWatcher - com.mbeddr.mpsutil.refactoring.rt: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-29 22:17:08,996 WARNING - jetbrains.mps.classloading.ModulesWatcher - de.itemis.mps.editor.bool.runtime: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-29 22:17:08,996 WARNING - jetbrains.mps.classloading.ModulesWatcher - jetbrains.mps.lang.editor.tooltips.runtime: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-29 22:17:08,997 WARNING - jetbrains.mps.classloading.ModulesWatcher - nl.f1re.mps.editor.swing.runtime: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-29 22:17:08,997 WARNING - jetbrains.mps.classloading.ModulesWatcher - com.mbeddr.mpsutil.targetchooser: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-29 22:17:08,997 WARNING - jetbrains.mps.classloading.ModulesWatcher - de.itemis.mps.editor.diagram.runtime: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-29 22:17:08,997 WARNING - jetbrains.mps.classloading.ModulesWatcher - de.itemis.stubs.xml: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] dependencies should be extracted into build script: jetbrains.mps.lang.core
+ [generate] -- -- was input node: [modules] BuildMps_Language "QuestionnaireLanguage"[4400751780494628511] in QuestionnaireLanguage.build@0
+ [generate] -- was template node: r:54537613-52b5-40a8-b223-e87f0960b04f(jetbrains.mps.build.mps.generator.template.main@generator)/3189788309732145594
+ [generate] model 'QuestionnaireLanguage.build@0' has been generated with errors
+ [generate] generation completed with errors in 2354 ms
+ [generate] Error executing target jetbrains.mps.make.facets.Generate.generate
+ [generate] ****************************************************************************************************
+ [generate] 6 errors during generation:
+ [generate] dependencies should be extracted into build script: jetbrains.mps.lang.core
+ [generate] -- -- was input node: [modules] BuildMps_Language "QuestionnaireLanguage"[4400751780494628511] in QuestionnaireLanguage.build@0
+ [generate] -- was template node: r:54537613-52b5-40a8-b223-e87f0960b04f(jetbrains.mps.build.mps.generator.template.main@generator)/3189788309732145594
+ [generate] generation completed with errors in 2354 ms
+ [generate] Error executing target jetbrains.mps.make.facets.Generate.generate
+ [generate] Make was not successful
+ [generate] ****************************************************************************************************
+
+BUILD FAILED
+C:\Sources\mps-lwc25\build\QuestionnaireLanguage.allScripts\build.xml:80: Process exited with code -13.
+
+Total time: 26 seconds
+
+
+> Task :buildAllScripts FAILED
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':buildAllScripts'.
+> Process 'command 'C:\Program Files\JetBrains\MPS 2026.1.1\jbr\bin\java.exe'' finished with non-zero exit value 1
+
+* Try:
+1 actionable task: 1 executed
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 27s

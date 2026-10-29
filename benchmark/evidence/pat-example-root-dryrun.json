@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-29T21:09:01.608906+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "modelReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)",
+    "json": "{\"concept\": \"QuestionnaireLanguage.Form\", \"properties\": [{\"name\": \"name\", \"value\": \"BenefitSurvey\"}], \"children\": [{\"role\": \"items\", \"nodes\": [{\"concept\": \"QuestionnaireLanguage.Question\", \"properties\": [{\"name\": \"name\", \"value\": \"ownsHome\"}, {\"name\": \"label\", \"value\": \"Do you own a home?\"}, {\"name\": \"valueType\", \"value\": \"boolean\"}]}, {\"concept\": \"QuestionnaireLanguage.Question\", \"properties\": [{\"name\": \"name\", \"value\": \"residents\"}, {\"name\": \"label\", \"value\": \"How many residents?\"}, {\"name\": \"valueType\", \"value\": \"integer\"}]}, {\"concept\": \"QuestionnaireLanguage.Calculated\", \"properties\": [{\"name\": \"name\", \"value\": \"annualCost\"}, {\"name\": \"label\", \"value\": \"Annual cost estimate\"}, {\"name\": \"valueType\", \"value\": \"money\"}], \"children\": [{\"role\": \"computed\", \"nodes\": [{\"concept\": \"QuestionnaireLanguage.Binary\", \"properties\": [{\"name\": \"operator\", \"value\": \"+\"}], \"children\": [{\"role\": \"left\", \"nodes\": [{\"concept\": \"QuestionnaireLanguage.Reference\", \"properties\": [{\"name\": \"targetId\", \"value\": \"residents\"}], \"references\": [{\"role\": \"target\", \"target\": \"residents\"}]}]}, {\"role\": \"right\", \"nodes\": [{\"concept\": \"QuestionnaireLanguage.Literal\", \"properties\": [{\"name\": \"value\", \"value\": \"5\"}, {\"name\": \"literalType\", \"value\": \"integer\"}]}]}]}]}]}, {\"concept\": \"QuestionnaireLanguage.Branch\", \"children\": [{\"role\": \"condition\", \"nodes\": [{\"concept\": \"QuestionnaireLanguage.Reference\", \"properties\": [{\"name\": \"targetId\", \"value\": \"ownsHome\"}], \"references\": [{\"role\": \"target\", \"target\": \"ownsHome\"}]}]}, {\"role\": \"items\", \"nodes\": [{\"concept\": \"QuestionnaireLanguage.Question\", \"properties\": [{\"name\": \"name\", \"value\": \"homeType\"}, {\"name\": \"label\", \"value\": \"What type of home?\"}, {\"name\": \"valueType\", \"value\": \"string\"}]}]}]}]}]}",
+    "dryRun": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"dryRun\":true,\"message\":\"Dry run successful for root node insertion\"}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

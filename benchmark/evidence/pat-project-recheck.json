@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2026-10-29T21:01:52.248683+00:00",
+    "name": "get_project_modules",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"modules\":[]}",
+          "type": "text"
+        }
+      ],
+      "isError": false,
+      "structuredContent": {
+        "modules": []
+      }
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:01:52.278242+00:00",
+    "name": "mps_mcp_get_project_structure",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "includeModels": true
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":false,\"error\":\"Operation timed out after 30000ms. This may indicate a modal dialog or a long-running operation blocking MPS. Please close any open dialogs (Find Usages, Search, confirmation prompts, etc.) and try again.\",\"code\":\"MODAL_BLOCKED\",\"details\":{\"timeoutMs\":30000}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

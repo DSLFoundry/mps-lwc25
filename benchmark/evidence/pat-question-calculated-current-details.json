@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-29T21:59:42.665396+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "conceptRefs": "[\"QuestionnaireLanguage.structure.Question\",\"QuestionnaireLanguage.structure.Calculated\"]"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-2974442457456141249.json\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

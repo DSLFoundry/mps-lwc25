@@ -1,0 +1,128 @@
+[
+  {
+    "timestamp": "2026-10-29T20:57:20.525016+00:00",
+    "concept": "Form",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "conceptRef": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788",
+      "modelReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"editorNodeRef\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740076\",\"message\":\"Scaffolded editor with 1 properties, 0 references, and 1 children.\"}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T20:57:20.940790+00:00",
+    "concept": "Question",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "conceptRef": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736790",
+      "modelReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"editorNodeRef\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740095\",\"message\":\"Scaffolded editor with 3 properties, 0 references, and 1 children.\"}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T20:57:21.031703+00:00",
+    "concept": "Branch",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "conceptRef": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736791",
+      "modelReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"editorNodeRef\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740116\",\"message\":\"Scaffolded editor with 0 properties, 0 references, and 2 children.\"}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T20:57:21.112498+00:00",
+    "concept": "Literal",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "conceptRef": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736793",
+      "modelReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"editorNodeRef\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740137\",\"message\":\"Scaffolded editor with 2 properties, 0 references, and 0 children.\"}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T20:57:21.211285+00:00",
+    "concept": "Reference",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "conceptRef": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736794",
+      "modelReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"editorNodeRef\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740150\",\"message\":\"Scaffolded editor with 0 properties, 1 references, and 0 children.\"}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T20:57:21.300065+00:00",
+    "concept": "Binary",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "conceptRef": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736795",
+      "modelReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"editorNodeRef\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740170\",\"message\":\"Scaffolded editor with 1 properties, 0 references, and 2 children.\"}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T20:57:21.410535+00:00",
+    "concept": "Unary",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "conceptRef": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736796",
+      "modelReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"editorNodeRef\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740190\",\"message\":\"Scaffolded editor with 1 properties, 0 references, and 1 children.\"}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

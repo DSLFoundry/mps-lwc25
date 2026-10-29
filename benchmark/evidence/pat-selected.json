@@ -1,0 +1,366 @@
+[
+  {
+    "name": "mps_mcp_get_project_structure",
+    "schema": {
+      "properties": {
+        "includeStubModules": {
+          "type": "boolean",
+          "description": "Include non-project modules visible in the shared repository: read-only libraries/stubs and modules from other open MPS projects."
+        },
+        "includeModels": {
+          "type": "boolean",
+          "description": "Include models within modules."
+        },
+        "includeDependencies": {
+          "type": "boolean",
+          "description": "Include module/model dependencies and used languages."
+        },
+        "includeRootNodes": {
+          "type": "boolean",
+          "description": "Include root nodes of models."
+        },
+        "includeNodes": {
+          "type": "boolean",
+          "description": "Include all nodes (full AST), inlined under each root's containment roles. Implies includeRootNodes (and includeModels for module/project dumps). The full tree is always written to the result temp file regardless of size — there is no truncation — so prefer scoping with `startingPoint`, or use `mps_mcp_print_node` (deep=true) for a single root. Warning: can be extremely large."
+        },
+        "startingPoint": {
+          "type": "string",
+          "description": "Optional starting point: a persistent reference (module/model/root-node/node id) or a plain name. A plain NAME is resolved in the order node -> model -> module, so a name shared by a model and a module resolves to the MODEL. To target a module unambiguously, pass its persistent reference (<uuid>(<name>)) or use the 'moduleKind' filter (with startingPoint null). Scope heavy 'include...' flags by passing a startingPoint."
+        },
+        "moduleKind": {
+          "type": "string",
+          "description": "Optional filter by module kind (Solution, Language, DevKit, Generator). Only used if startingPoint is null."
+        },
+        "projectPath": {
+          "type": "string",
+          "description": " The project path. Pass this value ALWAYS if you are aware of it. It reduces numbers of ambiguous calls. \n In the case you know only the current working directory you can use it as the project path.\n If you're not aware about the project path you can ask user about it."
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "description": "        Primary tool for project discovery, name-based searching, dependency analysis, and shortened-name expansion (e.g. `j.m.l.core` → `jetbrains.mps.lang.core`). Saves the result to a temp file to bypass MCP response-size limits (path returned in `data`). Use `startingPoint` (a module/model/node reference) to scope the dump; use the `include...` flags to control depth. Keep `include...` flags false for fast project-wide discovery. With `includeDependencies`, each model's `usedLanguages` lists directly-used languages plus used devkits; every devkit entry (`kind: devkit`) carries a `providedLanguages` array enumerating the languages it brings into scope transitively (including via extended devkits), so a language already supplied by a devkit need not be imported again. A model's reported `name` is its full name including any stereotype (e.g. `foo.bar@tests`, `foo.bar@generator`); pass that exact name (stereotype included) when addressing the model. See `mps-mcp-workflow/references/finding-things.md` for the name-resolution protocol."
+  },
+  {
+    "name": "mps_mcp_run_console_command",
+    "schema": {
+      "properties": {
+        "dryRun": {
+          "type": "boolean",
+          "description": "Optional: if true, only check that a command is present in the console input without running it. Default: false."
+        },
+        "projectPath": {
+          "type": "string",
+          "description": " The project path. Pass this value ALWAYS if you are aware of it. It reduces numbers of ambiguous calls. \n In the case you know only the current working directory you can use it as the project path.\n If you're not aware about the project path you can ask user about it."
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "description": "        Runs the command currently in the MPS Console input editor against the live project — exactly as if the user pressed Ctrl+Enter in the Console tool window. Runs only when a command is present; if the input is empty it returns an error and runs nothing (it does not build or insert a command — use `mps_mcp_insert_console_command_from_json` to put one in first, or `mps_mcp_recall_console_command` to recall one). **This executes code with side effects:** a console command can mutate models, run make/clean, reload classes, etc. The executed command moves into the console history and its response is rendered in the Console; the response is NOT returned here, and for long-running commands (make/generate) it is produced asynchronously — read it from the Console tool window or via `mps_mcp_get_console_history` with `includeResponses=true`. Requires the MPS Console plugin. On `dryRun` it only checks that a command is present, without running anything. On success returns an envelope confirming execution was triggered."
+  },
+  {
+    "name": "mps_mcp_insert_root_node_from_json",
+    "schema": {
+      "properties": {
+        "modelReference": {
+          "type": "string",
+          "description": "Target model: a persistent model reference (preferred), or the model's long/short name resolved in the project selected by projectPath."
+        },
+        "json": {
+          "type": "string",
+          "description": "JSON blueprint, single object or top-level array (max 4KB) OR an absolute path to a TEMPORARY file (inside the system temp directory) containing it. See `mps-node-editing` for the format and file-input semantics."
+        },
+        "dryRun": {
+          "type": "boolean",
+          "description": "Optional: if true, only validate JSON and concept-role assignability without mutating the model. Standard validation warnings (such as dynamic-reference creation details) are returned in the envelope's 'warnings' slot. Default: false."
+        },
+        "projectPath": {
+          "type": "string",
+          "description": " The project path. Pass this value ALWAYS if you are aware of it. It reduces numbers of ambiguous calls. \n In the case you know only the current working directory you can use it as the project path.\n If you're not aware about the project path you can ask user about it."
+        }
+      },
+      "required": [
+        "modelReference",
+        "json"
+      ],
+      "type": "object"
+    },
+    "description": "        Bulk-creates one or more MPS root nodes from a JSON blueprint (a single object or a top-level array; arrays insert atomically with batch rollback on failure). Returns the new node's info envelope, or an array of envelopes when the input was an array. Two blueprint values fail silently rather than erroring: a reference role given a `c:` concept ref (instead of an `r:` node ref or a plain name) yields an unresolved reference, and an encoded id inside a property value (e.g. a `PropertyMacro.propertyId`) is not validated — both surface only via `mps_mcp_check_root_node_problems`. See `mps-node-editing` SKILL (File-Path Semantics, `references/json-format.md`) and `mps-mcp-workflow/references/bulk-creation.md` for the array contract and large-input strategies."
+  },
+  {
+    "name": "mps_mcp_update_root_node_from_json",
+    "schema": {
+      "properties": {
+        "nodeReference": {
+          "type": "string",
+          "description": "Persistent form of SNodeReference"
+        },
+        "json": {
+          "type": "string",
+          "description": "JSON blueprint of the root (max 4KB) OR an absolute path to a TEMPORARY file (inside the system temp directory) file containing it. Ignored for DELETE. See `mps-node-editing` for the format and file-input semantics."
+        },
+        "dryRun": {
+          "type": "boolean",
+          "description": "Optional, ignored for DELETE - if true, only validate JSON and concept-role assignability without mutating the node. Standard validation warnings (such as dynamic-reference creation details) are returned in the envelope's 'warnings' slot. Default: false."
+        },
+        "operation": {
+          "type": "string",
+          "description": "Operation to perform: UPDATE or DELETE"
+        },
+        "projectPath": {
+          "type": "string",
+          "description": " The project path. Pass this value ALWAYS if you are aware of it. It reduces numbers of ambiguous calls. \n In the case you know only the current working directory you can use it as the project path.\n If you're not aware about the project path you can ask user about it."
+        }
+      },
+      "required": [
+        "nodeReference"
+      ],
+      "type": "object"
+    },
+    "description": "        Updates or deletes an MPS root node from a JSON blueprint. The root node's persistent ID is preserved; its properties, references, and children are re-set to match the blueprint. The `name` property is included in the rewrite, so a different `name` in the blueprint renames the root (the ID is unchanged); omit `name` to keep the current one. This is a **full-root rewrite** — for partial updates prefer surgical tools if `mps_mcp_update_node`. See `mps-node-editing` SKILL (File-Path Semantics, `references/json-format.md`)."
+  },
+  {
+    "name": "mps_mcp_alter_nodes",
+    "schema": {
+      "properties": {
+        "operation": {
+          "type": "string",
+          "description": "The operation to perform (MOVE_CHILD, MOVE_NODE_TO_PARENT, COPY_NODE, MAKE, FIX_REFERENCES)"
+        },
+        "parameters": {
+          "type": "string",
+          "description": "JSON string representing the parameters for the operation"
+        },
+        "projectPath": {
+          "type": "string",
+          "description": " The project path. Pass this value ALWAYS if you are aware of it. It reduces numbers of ambiguous calls. \n In the case you know only the current working directory you can use it as the project path.\n If you're not aware about the project path you can ask user about it."
+        }
+      },
+      "required": [
+        "operation",
+        "parameters"
+      ],
+      "type": "object"
+    },
+    "description": "        Structural node mutations and code generation: move a child within its role, move a node to a new parent or make it a root, create a deep copy of a node, make/rebuild models/modules/whole project, fix broken references. Parameters are a JSON object string. For MOVE_CHILD and MOVE_NODE_TO_PARENT, `position` is 0-based and `-1` moves to the end; a `position` at or beyond the role's child count is clamped to the end (not rejected) and a negative value other than -1 is rejected — the response's `data.index` reports the moved (clamped) node's actual resulting index.\n         MAKE parameters: {\"modules\":[<moduleRef>,...]} | {\"models\":[<modelRef>,...]} | {\"wholeProject\":true}, plus optional \"rebuild\":bool; node references are not accepted — resolve the node's module or model first. Returns `{\"ok\":true,\"data\":{...}}` on success or `{\"ok\":false,\"error\":\"...\"}` on failure. See `mps-node-editing` and `mps-mcp-workflow` skills.\n         For COPY_NODE, a root node is copied and added as a new root in the same model; a node inside a multi-child collection role (`[0..*]` or `[1..*]`) is copied and inserted as the next sibling; a node in a single-child role (`[0..1]` or `[1]`) returns an error because copying a singleton child makes no structural sense.\n         Prefer COPY_NODE over hand-authoring a JSON blueprint when a new node should closely resemble one that already exists — it's fewer calls and guarantees a structurally valid clone; adjust the copy afterward with mps_mcp_update_node."
+  },
+  {
+    "name": "mps_mcp_check_root_node_problems",
+    "schema": {
+      "properties": {
+        "nodeReference": {
+          "type": "string",
+          "description": "Persistent form of SNodeReference or SModelReference"
+        },
+        "onlyNodesWithProblems": {
+          "type": "boolean",
+          "description": "If true, returns only nodes with problems in a list instead of a full tree (default = true)"
+        },
+        "autoApplyQuickFixes": {
+          "type": "boolean",
+          "description": "If true, apply every problem carrying exactly one auto-applicable fix within the node's subtree (node/root branch only) before returning the final report (default = false)"
+        },
+        "projectPath": {
+          "type": "string",
+          "description": " The project path. Pass this value ALWAYS if you are aware of it. It reduces numbers of ambiguous calls. \n In the case you know only the current working directory you can use it as the project path.\n If you're not aware about the project path you can ask user about it."
+        }
+      },
+      "required": [
+        "nodeReference"
+      ],
+      "type": "object"
+    },
+    "description": "        Validates an MPS node (and its descendants) or an MPS model. Accepts either an SNodeReference or SModelReference. Returns `data:\"no problems found\"` when clean, or a path to a temp file containing the problem tree. `onlyNodesWithProblems=true` (default) yields a flat list of nodes with problems; `onlyNodesWithProblems=false` returns the full subtree with `problems` arrays attached to every level. Each problem may carry a `quickFixes` array (`id`, `description`, `autoApplicable`); apply one with `mps_mcp_apply_intention(nodeReference=<the node's reference>, intentionId=<id>)`. Set `autoApplyQuickFixes=true` to run every problem carrying exactly one auto-applicable fix within the given node's subtree (node/root branch only) before returning the final report; applied fixes' descriptions appear in `details.appliedQuickFixes`; fixes that threw during execution appear in `details.failedQuickFixes`. Note: applied fixes may write outside the target model; only the target model is saved automatically. Besides the standard structure/constraints/typesystem checkers, this also decodes the encoded feature ids on attribute nodes — `PropertyAttribute.propertyId` (used by `PropertyMacro`) and `LinkAttribute.linkId` (used by `ReferenceMacro`) — and flags a malformed, blank, or non-resolving id here instead of letting it surface only as an opaque generation-time error. See `mps-mcp-workflow/references/analysis-tools.md` for the output schema."
+  },
+  {
+    "name": "mps_mcp_print_node",
+    "schema": {
+      "properties": {
+        "nodeReference": {
+          "type": "string",
+          "description": "Persistent form of SNodeReference"
+        },
+        "format": {
+          "type": "string",
+          "description": "Whether to return a JSON blueprint(default), HTML or PLAIN TEXT. Defaults to JSON."
+        },
+        "deep": {
+          "type": "boolean",
+          "description": "Whether to perform a deep (true) or shallow (false) printout. Only relevant for JSON format. Defaults to false."
+        },
+        "projectPath": {
+          "type": "string",
+          "description": " The project path. Pass this value ALWAYS if you are aware of it. It reduces numbers of ambiguous calls. \n In the case you know only the current working directory you can use it as the project path.\n If you're not aware about the project path you can ask user about it."
+        }
+      },
+      "required": [
+        "nodeReference"
+      ],
+      "type": "object"
+    },
+    "description": "        Saves a JSON printout of the specified node to a temp file (path returned in `data`). `deep=true` inlines all descendants; `deep=false` (default) lists direct children's refs only. The saved envelope is consumable by every node-mutation tool (`mps_mcp_update_node`, `mps_mcp_update_root_node_from_json`, etc.). See `mps-mcp-workflow/references/analysis-tools.md` for the output schema and `mps-node-editing/references/json-format.md` for the matching blueprint shape.\n        Alternatively, if HTML or PLAIN TEXT format is required, it saves the editor-projected representation of the specified node to a temp file (path returned in `data`).\n        If the goal is to duplicate this node rather than merely inspect it, prefer `mps_mcp_alter_nodes` `COPY_NODE` over printing it deep and re-inserting the JSON — it's fewer calls and produces a structurally guaranteed-valid clone."
+  },
+  {
+    "name": "mps_mcp_query_nodes",
+    "schema": {
+      "properties": {
+        "operation": {
+          "type": "string",
+          "description": "The operation to perform (FIND_INSTANCES, FIND_USAGES, GET_PARENT, GET_ROOT, GET_MODEL_FOR_NODE, NODE_INDEX, SIBLINGS, GET_CHILD_ROLE)"
+        },
+        "parameters": {
+          "type": "string",
+          "description": "JSON string representing the parameters for the operation"
+        },
+        "projectPath": {
+          "type": "string",
+          "description": " The project path. Pass this value ALWAYS if you are aware of it. It reduces numbers of ambiguous calls. \n In the case you know only the current working directory you can use it as the project path.\n If you're not aware about the project path you can ask user about it."
+        }
+      },
+      "required": [
+        "operation",
+        "parameters"
+      ],
+      "type": "object"
+    },
+    "description": "        Read-only node queries. FIND_INSTANCES: find nodes that are instances of a concept (`conceptRef`; optional `scope`\n        all|editable|models|modules|roots with matching `models`/`modules`/`roots` (each a single reference or a JSON array),\n        `propertyFilter` {\"name\",\"value\"}, `exact`, `sampleOnly`:true for one example node). `all` and `editable` are rooted\n        at the project selected by `projectPath`; explicit `models`/`modules`/`roots` may point to models, modules, or roots\n        from another open MPS project and are queried read-only. FIND_USAGES: find nodes whose references point at the given\n        node — incoming references, not instances (`nodeReference`; optional `scope` as above). GET_PARENT, GET_ROOT,\n        GET_MODEL_FOR_NODE, NODE_INDEX, SIBLINGS, GET_CHILD_ROLE take `nodeReference`. Returns `{\"ok\":true,\"data\":{...}}`\n        on success or `{\"ok\":false,\"error\":\"...\"}` on failure. See `mps-node-editing` and `mps-mcp-workflow` skills."
+  },
+  {
+    "name": "mps_mcp_update_node",
+    "schema": {
+      "properties": {
+        "operation": {
+          "type": "string",
+          "description": "The operation to perform (ADD or SET)"
+        },
+        "kind": {
+          "type": "string",
+          "description": "The kind of element to operate on (CHILD, PROPERTY, REFERENCE)"
+        },
+        "nodeReference": {
+          "type": "string",
+          "description": "Parent node ref for ADD CHILD"
+        },
+        "childRole": {
+          "type": "string",
+          "description": "Containment role name for ADD CHILD"
+        },
+        "position": {
+          "type": "integer",
+          "description": "0-based insert index for ADD CHILD multi-cardinality roles; null/-1 = append. A value at or beyond the current child count is clamped to an append; a negative value other than -1 is rejected. Single-cardinality roles accept only null/-1/0."
+        },
+        "childJson": {
+          "type": "string",
+          "description": "For ADD CHILD or SET CHILD: JSON blueprint as an inline string (max 4 KB) OR an absolute path to a file containing the JSON. Prefer the file form for blueprints larger than ~4 KB to avoid MCP transport truncation."
+        },
+        "childNodeRef": {
+          "type": "string",
+          "description": "Ref of the child to replace or delete (SET CHILD)"
+        },
+        "dryRun": {
+          "type": "boolean",
+          "description": "If true, validate without mutating (ADD CHILD, SET CHILD only). Default: false."
+        },
+        "properties": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": "Batch triplets [nodeRef, propertyName, value] for SET PROPERTY"
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": "Batch triplets [nodeRef, referenceRole, targetNodeRefOrName] for SET REFERENCE"
+        },
+        "projectPath": {
+          "type": "string",
+          "description": " The project path. Pass this value ALWAYS if you are aware of it. It reduces numbers of ambiguous calls. \n In the case you know only the current working directory you can use it as the project path.\n If you're not aware about the project path you can ask user about it."
+        }
+      },
+      "required": [
+        "operation",
+        "kind"
+      ],
+      "type": "object"
+    },
+    "description": "        Unified node-mutation tool. Use this for all child, property, and reference operations on MPS nodes.\n        operation × kind combinations and required parameters:\n        ADD × CHILD — Add a new child node.\n          nodeReference: persistent ref of the parent node.\n          childRole: containment role name.\n          childJson: JSON blueprint as an inline string (max 4 KB) OR an absolute path to a file containing the JSON. For large blueprints prefer the file form to avoid MCP transport truncation. Multi-cardinality roles append by default; pass `position` (0-based) to insert at a specific index. `dryRun=true` validates without mutating.\n          position: Multi-cardinality roles append by default; pass `position` (0-based) to insert at a specific index. A `position` at or beyond the current child count is clamped to an append (not rejected); a negative value other than -1 is rejected. Single-cardinality roles accept only null/-1/0.\n          Returns the inserted node's info envelope (`data.parentReference` carries the parent ref, `data.index` the actual landing index — useful when an over-range `position` was clamped).\n\n        SET × CHILD — Replace an existing child node with a new node described by a JSON blueprint. Deletes the child if `childJson = null`.\n          childNodeRef: persistent ref of the child to replace.\n          childJson: `null` deletes the child. JSON blueprint as an inline string (max 4 KB) OR an absolute path to a file containing the JSON. For large blueprints use the file form. The original child's position in its role is preserved. `dryRun=true` validates without mutating.\n          Returns the inserted node's info envelope or the parent's one, if deletion (`childJson = null`).\n\n        SET × PROPERTY — Set or delete properties on a batch of nodes. The value `propertyValue = null` DELETES the property.\n          properties: list of triplets [nodeReference, propertyName, propertyValue]. Returns a JSON array with one result per triplet. Encoded ids carried inside a property value (e.g. a `PropertyMacro.propertyId`) are NOT validated when set — a malformed, blank, or non-resolving id is accepted silently and surfaces only via `mps_mcp_check_root_node_problems`.\n\n        SET × REFERENCE — Set or delete references on a batch of nodes. The value `targetNodeRefOrName = null` DELETES the reference.\n          references: list of triplets [nodeReference, referenceRole, targetNodeRefOrName]. `targetNodeRefOrName` accepts a persistent node reference (`r:...`) or a plain name. A plain name is resolved within the reference role's search scope (the same resolution the blueprint-insert tools perform); for a role that declares no custom scope this spans the whole model plus its imports, so a name that matches **no** in-scope node — or **more than one** (an ambiguous name, e.g. two same-named nodes in different roots of one model) — fails with `NOT_FOUND` (the error states which) and the previous reference value is preserved, so it never leaves a dangling reference. Pass a persistent `r:` reference to bind a specific or ambiguous target. When a name required scope resolution, the per-item envelope carries a `fixReferences` summary. Do NOT use MPS XML short IDs copied from `.mps` files. A reference role does not accept a `c:` concept ref; pass the concept declaration's persistent node reference (`r:...`) or plain name instead. Returns a JSON array with one result per triplet. See `mps-mcp-workflow/references/reference-formats.md`.\n\n        ADD × PROPERTY and ADD × REFERENCE are not valid combinations and return an error.\n\n        The child's concept must be assignable to the role's concept; model dependencies and used languages are updated automatically on child operations. For `childJson` larger than ~4 KB pass an absolute file path instead of an inline string. See `mps-node-editing` for blueprint format, file-path semantics, and staged-construction patterns. See `mps-mcp-workflow/references/reference-formats.md` for reference formats.\n\n        On success returns `{\"ok\":true,\"data\":{...}}`. On failure returns `{\"ok\":false,\"error\":\"...\"}` with optional `code`, `details`, and `warnings` fields."
+  },
+  {
+    "name": "mps_mcp_alter_structure",
+    "schema": {
+      "properties": {
+        "operation": {
+          "type": "string",
+          "description": "The operation to perform (CREATE_CONCEPTS, CREATE_ENUM, UPDATE_CONCEPT_PROPERTY, RENAME_CONCEPT_PROPERTY, UPDATE_CONCEPT_CHILD, RENAME_CONCEPT_CHILD, UPDATE_CONCEPT_REFERENCE, RENAME_CONCEPT_REFERENCE)"
+        },
+        "parameters": {
+          "type": "string",
+          "description": "JSON string representing the parameters for the operation"
+        },
+        "projectPath": {
+          "type": "string",
+          "description": " The project path. Pass this value ALWAYS if you are aware of it. It reduces numbers of ambiguous calls. \n In the case you know only the current working directory you can use it as the project path.\n If you're not aware about the project path you can ask user about it."
+        }
+      },
+      "required": [
+        "operation",
+        "parameters"
+      ],
+      "type": "object"
+    },
+    "description": "        Alters MPS language structure: create concepts/enums, manage and rename properties/children/references. Returns a JSON object with 'ok':true and 'data':{...} on success, or 'ok':false and 'error':\"...\" on failure. Failure responses may also include optional 'code', 'details', and 'warnings' fields. Parameters are passed as a JSON object string. For the full operation list, parameter formats, and JSON blueprint schemas, see the `mps-aspect-structure-concepts` skill.\n\n        For `CREATE_CONCEPTS` with `make:true`, the response includes a `makeStatus` field (one of \"success\", \"runtime_stale\", \"failed\", or \"skipped\"). `makeStatus` is verified against the live runtime: \"success\" means the build succeeded AND every created concept's runtime descriptor was read back non-hollow, so dependent tools (`get_concept_details`, `scaffold_editor`) can be trusted immediately. The tool already forces a clean rebuild and, if the first (model-scoped) build leaves any descriptor hollow — which happens for a brand-new, never-before-deployed language — it automatically performs one module-scoped clean rebuild that materializes the runtime (`recoveryStage:\"module-rebuild\"` is then set). \"runtime_stale\" means descriptors are still hollow even after that; the still-hollow concept names are listed in `hollowConcepts` and a `descriptorRecoveryAction` is provided — recover by running `mps_mcp_alter_nodes` with `MAKE`, `rebuild=true`, targeting the language module (calling `mps_mcp_reload_all` alone is insufficient; restart MPS if it persists). For the canonical structure-to-aspect editing and compilation prerequisite chain, see the Critical Directives in the `mps-mcp-workflow` skill."
+  },
+  {
+    "name": "mps_mcp_query_structure",
+    "schema": {
+      "properties": {
+        "operation": {
+          "type": "string",
+          "description": "The operation to perform (GET_ENUMERATION_LITERALS, IS_SUBCONCEPT_OF, GET_SUB_CONCEPTS, GET_ASSIGNABLE_CONCEPTS, GET_ALL_SUPERCONCEPTS, LIST_CONCEPT_ASPECTS, GET_ASSIGNABLE_REFERENCES, IS_SMART_REFERENCE)"
+        },
+        "parameters": {
+          "type": "string",
+          "description": "JSON string representing the parameters for the operation"
+        },
+        "projectPath": {
+          "type": "string",
+          "description": " The project path. Pass this value ALWAYS if you are aware of it. It reduces numbers of ambiguous calls. \n In the case you know only the current working directory you can use it as the project path.\n If you're not aware about the project path you can ask user about it."
+        }
+      },
+      "required": [
+        "operation",
+        "parameters"
+      ],
+      "type": "object"
+    },
+    "description": "        Queries MPS language structure (read-only): check inheritance, list aspects, resolve references, query enumeration literals, check smart-reference status. For nodes that are instances of a concept use `mps_mcp_query_nodes` FIND_INSTANCES. Returns a JSON object with 'ok':true and 'data':{...} on success, or 'ok':false and 'error':\"...\" on failure. Failure responses may also include optional 'code', 'details', and 'warnings' fields. Parameters are passed as a JSON object string. For the full operation list, parameter formats, and JSON blueprint schemas, see the `mps-aspect-structure-concepts` skill."
+  },
+  {
+    "name": "mps_mcp_initialize_project_for_agents",
+    "schema": {
+      "properties": {
+        "targetDirectory": {
+          "type": "string",
+          "description": "Optional. Absolute path to the directory that should hold the agent configuration — normally the repository / workspace root (the directory containing `.git`), which may be an ANCESTOR of the MPS project directory when the project lives in a subdirectory. The directory must exist; the skills directories and guide files are created inside it. Leave empty to derive it from the open MPS project's enclosing VCS root. This is NOT the framework `projectPath` argument: `projectPath` selects which open project the call targets (pass the project base dir, never an ancestor), whereas `targetDirectory` is where files are written and may be an ancestor of the project."
+        },
+        "projectPath": {
+          "type": "string",
+          "description": " The project path. Pass this value ALWAYS if you are aware of it. It reduces numbers of ambiguous calls. \n In the case you know only the current working directory you can use it as the project path.\n If you're not aware about the project path you can ask user about it."
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "description": "        Initializes AI-agent support for an MPS checkout. Installs the bundled MPS skill catalog into `<targetDirectory>/.agents/skills/` and `<targetDirectory>/.claude/skills/` (each skill a subfolder containing `SKILL.md` and its references), and creates `<targetDirectory>/AGENTS.md` and `<targetDirectory>/CLAUDE.md` from the bundled template — but ONLY if those guide files do not already exist (existing files are never overwritten). Returns a JSON `data` object: `targetDirectory` (the resolved install location), `installedSkillCount`, `skillsDirectories`, `guideFilesWritten` (created fresh — nothing more to do for these), `guideFilesAlreadyPresent` (left untouched — merge `agentsFileText` into each yourself, preserving project-specific sections), and `agentsFileText` (the recommended guide content). Aborts upfront, installing nothing, with an error listing colliding names if any incoming skill name already exists under either skills directory; unrelated subfolders are left untouched. Safe to re-run once collisions are resolved.\n\n        WHERE TO INSTALL (`targetDirectory`): the directory that should hold the agent configuration — normally your REPOSITORY / WORKSPACE ROOT (the directory that contains the VCS folder such as `.git`), NOT necessarily the MPS project directory. Many repositories keep the MPS project in a subdirectory (e.g. `<repo>/tools/BigProject`, mbeddr, MPS-extensions, or one of several MPS projects in one checkout); the agent configuration still belongs at the repo root so one `.agents/`/`.claude/` setup covers the whole checkout. LEAVE `targetDirectory` EMPTY to let the tool derive it: it takes the open MPS project's base directory and walks up to the nearest enclosing VCS root (`.git`/`.hg`/`.svn`), falling back to the project directory if there is none. Pass it explicitly only when the derivation would be wrong — no VCS root, multiple projects open, or you want a specific location. Note that `projectPath` (the framework's project selector) and `targetDirectory` (this tool's install location) are different things. The platform routes EVERY `mps_mcp_*` call — including this one — by resolving `projectPath` to an open project, so pass the open MPS project's base directory (or your current working directory when it is inside that project) as `projectPath`. Do NOT pass an ancestor such as the repository root as `projectPath`: the platform matches it only at/inside an open project, so an ancestor is rejected (`\"Unable to determine the target project…\"`). Independently, leave `targetDirectory` empty so it is derived (project base → nearest VCS root) — that derived install location MAY be the repo root / an ancestor of the project, which is correct for the subdirectory-project case. If you do not yet know the project path, call `mps_mcp_list_open_projects`; if that call is itself rejected, the rejection message lists the open projects (e.g. `Currently open projects: {...}`) — use one of those paths as `projectPath`.\n\n        DISCOVERY: if this MPS project has no `mps-*` skill folders under `.agents/skills/` or `.claude/skills/`, it has not yet been initialized for agents — before doing substantial MPS work, proactively tell the user that and ask whether to run this tool (do not run it without approval).\n\n        REFRESHING STALE SKILLS AND AGENT GUIDES (on user request): when the user asks to update/refresh out-of-date MPS skills or the `AGENTS.md`/`CLAUDE.md` guidance, perform a clean reinstall: (1) delete every bundled MPS skill folder — the `mps-*` skills this tool installs, i.e. exactly the folder names it reports as collisions when run against an already-initialized project — from BOTH `.agents/skills/` and `.claude/skills/`, so dropped/renamed skills do not linger; leave any non-`mps-*` skills (e.g. project-local `<dsl-name>-dsl` skills) in place; (2) call this tool again to install the current catalog (with the collisions removed it now succeeds); (3) the existing `AGENTS.md`/`CLAUDE.md` are reported in `guideFilesAlreadyPresent` and left untouched — carefully update them from the returned `agentsFileText`, refreshing the MPS guidance sections to match the template while preserving project-specific content (e.g. the \"Project-Specific Notes\" section and any hand-authored details), rather than blindly overwriting the whole file."
+  }
+]

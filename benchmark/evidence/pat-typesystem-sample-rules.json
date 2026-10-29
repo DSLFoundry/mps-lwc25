@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-29T21:55:03.115305+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "FIND_INSTANCES",
+    "parameters": "{\"conceptRef\": \"c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1195214364922:jetbrains.mps.lang.typesystem.structure.NonTypesystemRule\", \"scope\": \"models\", \"models\": \"r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)\"}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-6176091537508780380.json\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-29T21:57:10.266891+00:00",
+  "name": "mps_mcp_get_concept_details",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "conceptRefs": "QuestionnaireLanguage.structure.Form"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-5337098647752869968.json\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

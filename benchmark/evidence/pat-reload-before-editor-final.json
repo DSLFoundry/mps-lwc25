@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-29T21:58:06.834823+00:00",
+  "name": "mps_mcp_reload_all",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":false,\"error\":\"Failed to reload modules: Operation timed out after 30000ms. This may indicate a modal dialog or a long-running operation blocking MPS. Please close any open dialogs (Find Usages, Search, confirmation prompts, etc.) and try again. (McpModalBlockedException)\",\"code\":\"INTERNAL_ERROR\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

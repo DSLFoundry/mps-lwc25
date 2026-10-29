@@ -1,0 +1,85 @@
+start_utc=2026-10-29T20:54:19.646Z
+deadline_utc=2026-10-29T22:54:19.646Z
+branch=benchmark/ql-pat
+scaffold=ebb9a686670577120e0a228a79a3afb33cbc5de2
+provider=PAT MCP
+timestamp_not_captured (startup discovery): resources/list failed (-32601); mps_mcp_get_project_structure succeeded, get_project_modules wrong tool name (retry planned). The original placeholder is corrected; see benchmark/evidence/pat-discovery.json for retained provider responses.
+
+2026-10-29T21:22:15.758924+00:00 PAT structural edits: 3 editor deletes, 1 full language module rebuild; results=pat-refactor-language-rebuild.json
+
+2026-10-29T21:22:28.820950+00:00 PAT scaffolded current Form, Question, and Calculated editors; results=pat-refactored-editor-scaffold.json
+
+2026-10-29T21:23:14.667304+00:00 PAT rewrote BenefitSurvey with explicit title/id properties; results=pat-example-root-refactor.json
+
+2026-10-29T21:23:56.692972+00:00 PAT set two native reference targets to persistent Question node refs; results=pat-example-reference-targets.json
+
+2026-10-29T21:24:08.534263+00:00 PAT native language rebuild/check/example module MAKE sequence; results=pat-native-generation-attempt.json
+
+2026-10-29T21:25:57.851825+00:00 PAT fixed Calculated textgen containment feature from Question.computed to Calculated.computed; results=pat-calculated-textgen-link-fix.json
+
+2026-10-29T21:26:08.786709+00:00 PAT rebuilt native language and generated questionnaire after computed-link fix; results=pat-native-generation-fixed.json
+
+2026-10-29T21:28:11.361198+00:00 PAT added the native BuildMpsAspect bootstrap=true setting to resolve the self-generation cycle; results=pat-build-bootstrap-setting.json
+
+2026-10-29T21:28:31.310329+00:00 PAT added the native BuildMpsAspect bootstrap=true setting to resolve the self-generation cycle; results=pat-build-bootstrap-setting.json
+
+2026-10-29T21:36:12.665306+00:00 PAT re-scaffolded Question editor without the unsupported computed child; result=pat-question-editor-final.json
+
+2026-10-29T21:36:23.480112+00:00 PAT final checks for all QL aspect/example/build models and clean language/example MAKE; results=pat-native-final-checks-make.json
+
+2026-10-29T21:38:06.733655+00:00 PAT created an invalid-native-fixture Form root in QuestionnaireExample; results=pat-invalid-fixture-root-create.json
+
+2026-10-29T21:38:16.991430+00:00 PAT populated duplicate/type/condition/cycle/unresolved native fixtures; results=pat-invalid-fixture-populate.json
+
+2026-10-29T21:40:35.705572+00:00 PAT generated valid and invalid native questionnaire roots; invalid reference/typing/cycle fixture stored in the shared MPS model; results=pat-invalid-native-generation-final.json
+
+2026-10-29T21:45:41.844975+00:00 PAT checked InvalidNativeFixtures; native MPS checker reports missing obligatory Reference.target only; semantic duplicate/type/cycle diagnostics remain runtime-only; evidence=pat-invalid-root-check-final.json and pat-invalid-root-check-final-data.json
+
+2026-10-29T21:45:41.873796+00:00 PAT build_project returned success with limited build-diagnostics notice; evidence=pat-build-final.json
+
+2026-10-29T21:45:52.476Z Unchanged benchmark acceptance suite passed 20/20; evidence=acceptance-final.log and acceptance.json
+
+2026-10-29T21:46:23Z Gradle final build attempt failed because the new jetbrains.mps.lang.core module dependency was not extracted into the native build model; preserved in gradle-final-build.log
+
+2026-10-29T21:48:41.961329+00:00 PAT dry-run validated BuildMps_ExtractedModuleDependency for jetbrains.mps.lang.core; evidence=pat-build-core-extracted-dep-dryrun.json
+
+2026-10-29T21:48:41.997592+00:00 PAT added the extracted core dependency to BuildMps_Language; evidence=pat-build-core-extracted-dep.json
+
+2026-10-29T21:50:14Z Gradle buildQuestionnaireLanguage succeeded after dependency normalization; bootstrap/classloading/resource warnings retained; evidence=gradle-final-build-retry.log
+
+2026-10-29T21:50:29.617950Z PAT inventory counted 26 QL aspect roots/270 nodes, 1 generator root/1 node, 2 example roots/27 nodes, and 1 build root/81 nodes; evidence=pat-root-counts.json and per-module JSON
+
+2026-10-29T21:50:35.835Z Production runtime validated the MPS-generated invalid fixture; required duplicate, unresolved, type, and cycle codes all present; evidence=runtime-invalid-fixture-final.log and runtime-invalid-native-fixture.json
+
+2026-10-29T21:50:45.915Z Microsoft Edge headless GUI/download smoke passed with typed inputs, live computed value, conditional visibility, and parseable downloaded answers; evidence=browser-smoke-final.log, browser-smoke.json, browser-downloads
+
+2026-10-29T21:51:32.900176+00:00 PAT explored built-in MPS checking-rule concepts for native G2 follow-up; no custom semantic rule was added; evidence=pat-native-check-rule-discovery.json and typesystem sample evidence
+
+2026-10-29T21:53:22.012953+00:00 PAT final build-model check found only informational resource-copy guidance, no errors; evidence=pat-build-root-check-final.json and pat-build-root-check-final-data.json
+
+2026-10-29T21:53:22.171163+00:00 PAT build_project final check succeeded with limited diagnostic collection; evidence=pat-build-project-final.json
+
+2026-10-29T21:54:00Z Self-reported retained PAT records: 202 timestamped call/result entries, 20 error responses, 48 mutation-related requests (43 successful non-dry-run, 2 dry-runs, 3 failed); harness-independent counts are unavailable here
+
+2026-10-29T22:28:03Z Final runtime fixture validation and unchanged acceptance suite passed; 20/20 tests; evidence=runtime-invalid-native-fixture.json, acceptance.json, acceptance-final.log
+
+2026-10-29T22:29:33Z Final Gradle buildQuestionnaireLanguage succeeded after native metadata normalization; warnings retained; evidence=gradle-final-post-native-metadata.log
+
+2026-10-29T22:30:06Z Final PAT inventory: 31 roots/391 nodes (language 27/272, generator 1/1, example 2/35, build 1/83); evidence=pat-inventory-final2.json and per-module inventory files
+
+2026-10-29T22:30:17.207Z Microsoft Edge headless smoke passed against fresh MPS-generated BenefitSurvey output: typed controls, unary/computed values, nested visibility, and JSON download; evidence=browser-smoke.json and browser-downloads
+
+2026-10-29T22:33:10.446550Z PAT dry-run validated addition of a native unresolved-reference fixture; evidence=pat-add-missing-target-dryrun.json
+
+2026-10-29T22:33:15.489393Z PAT added a Calculated question with an unresolved native Reference to InvalidNativeFixtures; evidence=pat-add-missing-target.json
+
+2026-10-29T22:33:20.590997Z PAT native model checker reported two missing obligatory Reference.target links in InvalidNativeFixtures; duplicate/type/condition/cycle diagnostics remain runtime-only; evidence=pat-invalid-fixture-post-missing-target-check.json and pat-invalid-fixture-post-missing-target-check-data.json
+
+2026-10-29T22:33:27.416117Z PAT regenerated the native example successfully after adding the invalid reference fixture; evidence=pat-example-make-final-invalid-reference.json
+
+2026-10-29T22:33:46.568Z Production runtime revalidated the fresh generated invalid fixture with all four required diagnostic codes; unchanged acceptance suite passed 20/20; evidence=runtime-invalid-native-fixture.json and acceptance.json
+
+2026-10-29T22:33:50Z Updated checked-in InvalidNativeFixtures JSON from source_gen; BenefitSurvey output and browser-smoke input remain unchanged.
+
+2026-10-29T22:34:00Z Self-reported retained PAT call/result records: approximately 308 total (202 entries through 21:54, 73 explicit later records, 29 calls represented by inventory/editor/schema evidence, plus four final calls); 23 error responses; approximately 68 mutation-related requests (56 successful non-dry-run, 8 dry-runs, 4 failed); three explicit retry incidents after 21:54, earlier retries not separately instrumented; harness-independent counts unavailable.
+2026-10-29T22:36:04.295Z Pruned two oversized exploratory PAT response dumps (46.8 MB build-tree dump and 6.1 MB base-language listing); retained timestamped operation summaries and final build/check evidence.

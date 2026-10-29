@@ -1,0 +1,123 @@
+[
+  {
+    "timestamp": "2026-10-29T21:42:10.173976+00:00",
+    "label": "Form textgen reads named property",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743459",
+      "operation": "UPDATE",
+      "json": "{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\",\"properties\":[{\"name\":\"name\",\"value\":\"Form\"}],\"references\":[{\"role\":\"conceptDeclaration\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788\"}],\"children\":[{\"role\":\"extension\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.ExtensionDeclaration\",\"children\":[{\"role\":\"body\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.StatementList\",\"children\":[{\"role\":\"statement\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.ReturnStatement\",\"children\":[{\"role\":\"expression\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.StringLiteral\",\"properties\":[{\"name\":\"value\",\"value\":\"json\"}]}]}]}]}]}]}]}]},{\"role\":\"textGenBlock\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration\",\"children\":[{\"role\":\"body\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.StatementList\",\"children\":[{\"role\":\"statement\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.AppendOperation\",\"children\":[{\"role\":\"part\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"{\\\"name\\\":\\\"\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194664001\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"\\\",\\\"items\\\":[\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.CollectionAppendPart\",\"properties\":[{\"name\":\"withSeparator\",\"value\":\"true\"},{\"name\":\"separator\",\"value\":\",\"}],\"children\":[{\"role\":\"list\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SLinkListAccess\",\"references\":[{\"role\":\"link\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736797\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"]}\"}]}]}]}]}]}]}]}]}]}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"name\":\"Form\",\"concept\":\"ConceptTextGenDeclaration\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145:jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\",\"reference\":\"r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743459\",\"parentReference\":\"\",\"rootReference\":\"r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743459\",\"modelReference\":\"r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)\",\"moduleReference\":\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\",\"virtualFolder\":\"\",\"isRoot\":true,\"present\":true,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"All references are already correctly resolved\"}}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:42:10.234309+00:00",
+    "label": "name valid and invalid native forms",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "SET",
+      "kind": "PROPERTY",
+      "properties": [
+        [
+          "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046743236",
+          "name",
+          "BenefitSurvey"
+        ],
+        [
+          "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753",
+          "name",
+          "InvalidNativeFixtures"
+        ]
+      ]
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":false,\"data\":[{\"ok\":false,\"error\":\"Property 'name' not found in concept 'Form'\",\"code\":\"NOT_FOUND\"},{\"ok\":false,\"error\":\"Property 'name' not found in concept 'Form'\",\"code\":\"NOT_FOUND\"}]}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:42:10.242506+00:00",
+    "label": "delete old Form editor",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046774647",
+      "operation": "DELETE"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"reference\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046774647\",\"deleted\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:42:10.335316+00:00",
+    "label": "make language named Form",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "MAKE",
+      "parameters": "{\"modules\": [\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\"], \"rebuild\": true}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"success\":true,\"message\":\"Make successful\",\"runtimeReady\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:42:13.271445+00:00",
+    "label": "scaffold named Form editor",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "conceptRef": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788",
+      "modelReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"editorNodeRef\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114642\",\"message\":\"Scaffolded editor with 1 properties, 0 references, and 1 children.\"}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:42:13.326667+00:00",
+    "label": "make final language",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "MAKE",
+      "parameters": "{\"modules\": [\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\"], \"rebuild\": true}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"success\":true,\"message\":\"Make successful\",\"runtimeReady\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

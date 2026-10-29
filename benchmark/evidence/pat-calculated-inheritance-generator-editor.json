@@ -1,0 +1,57 @@
+[
+  {
+    "timestamp": "2026-10-29T21:37:22.530383+00:00",
+    "label": "Calculated textgen uses inherited Question properties",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743572",
+      "operation": "UPDATE",
+      "json": "{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\",\"properties\":[{\"name\":\"name\",\"value\":\"Calculated\"}],\"references\":[{\"role\":\"conceptDeclaration\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046740212\"}],\"children\":[{\"role\":\"textGenBlock\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration\",\"children\":[{\"role\":\"body\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.StatementList\",\"children\":[{\"role\":\"statement\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.AppendOperation\",\"children\":[{\"role\":\"part\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"{\\\"id\\\":\\\"\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046743942\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"\\\",\\\"label\\\":\\\"\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736799\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"\\\",\\\"type\\\":\\\"\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736800\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"\\\",\\\"computed\\\":\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SLinkAccess\",\"references\":[{\"role\":\"link\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046740215\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"}\"}]}]}]}]}]}]}]}]}]}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"name\":\"Calculated\",\"concept\":\"ConceptTextGenDeclaration\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145:jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\",\"reference\":\"r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743572\",\"parentReference\":\"\",\"rootReference\":\"r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743572\",\"modelReference\":\"r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)\",\"moduleReference\":\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\",\"virtualFolder\":\"\",\"isRoot\":true,\"present\":true,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"All references are already correctly resolved\"}}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:37:22.601826+00:00",
+    "label": "delete old Calculated editor",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046774689",
+      "operation": "DELETE"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"reference\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046774689\",\"deleted\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:37:23.491720+00:00",
+    "label": "build updated language",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "MAKE",
+      "parameters": "{\"modules\": [\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\"], \"rebuild\": true}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"success\":true,\"message\":\"Make successful\",\"runtimeReady\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

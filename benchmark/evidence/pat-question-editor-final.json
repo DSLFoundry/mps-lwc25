@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-29T21:36:12.665306+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "conceptRef": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736790",
+    "modelReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"editorNodeRef\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046921310\",\"message\":\"Scaffolded editor with 3 properties, 0 references, and 0 children.\"}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

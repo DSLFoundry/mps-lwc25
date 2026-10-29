@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-29T20:56:49.187687+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "CREATE_CONCEPTS",
+    "parameters": "{\"structureModelRef\": \"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)\", \"conceptsJson\": \"[{\\\"name\\\": \\\"Form\\\", \\\"implements\\\": [\\\"jetbrains.mps.lang.core.structure.INamedConcept\\\"], \\\"conceptAlias\\\": \\\"form\\\", \\\"rootable\\\": true, \\\"children\\\": [{\\\"role\\\": \\\"items\\\", \\\"target\\\": \\\"Item\\\", \\\"multiple\\\": true, \\\"optional\\\": true}]}, {\\\"name\\\": \\\"Item\\\", \\\"extends\\\": \\\"jetbrains.mps.lang.structure.BaseConcept\\\", \\\"abstract\\\": true, \\\"conceptAlias\\\": \\\"item\\\"}, {\\\"name\\\": \\\"Question\\\", \\\"extends\\\": \\\"Item\\\", \\\"implements\\\": [\\\"jetbrains.mps.lang.core.structure.INamedConcept\\\"], \\\"conceptAlias\\\": \\\"question\\\", \\\"properties\\\": [{\\\"name\\\": \\\"label\\\", \\\"type\\\": \\\"string\\\"}, {\\\"name\\\": \\\"valueType\\\", \\\"type\\\": \\\"string\\\"}], \\\"children\\\": [{\\\"role\\\": \\\"computed\\\", \\\"target\\\": \\\"Expression\\\", \\\"multiple\\\": false, \\\"optional\\\": true}]}, {\\\"name\\\": \\\"Branch\\\", \\\"extends\\\": \\\"Item\\\", \\\"conceptAlias\\\": \\\"when\\\", \\\"children\\\": [{\\\"role\\\": \\\"condition\\\", \\\"target\\\": \\\"Expression\\\", \\\"multiple\\\": false, \\\"optional\\\": false}, {\\\"role\\\": \\\"items\\\", \\\"target\\\": \\\"Item\\\", \\\"multiple\\\": true, \\\"optional\\\": true}]}, {\\\"name\\\": \\\"Expression\\\", \\\"extends\\\": \\\"jetbrains.mps.lang.structure.BaseConcept\\\", \\\"abstract\\\": true, \\\"conceptAlias\\\": \\\"expression\\\"}, {\\\"name\\\": \\\"Literal\\\", \\\"extends\\\": \\\"Expression\\\", \\\"conceptAlias\\\": \\\"literal\\\", \\\"properties\\\": [{\\\"name\\\": \\\"value\\\", \\\"type\\\": \\\"string\\\"}, {\\\"name\\\": \\\"literalType\\\", \\\"type\\\": \\\"string\\\"}]}, {\\\"name\\\": \\\"Reference\\\", \\\"extends\\\": \\\"Expression\\\", \\\"conceptAlias\\\": \\\"ref\\\", \\\"references\\\": [{\\\"role\\\": \\\"target\\\", \\\"target\\\": \\\"Question\\\", \\\"optional\\\": false}]}, {\\\"name\\\": \\\"Binary\\\", \\\"extends\\\": \\\"Expression\\\", \\\"conceptAlias\\\": \\\"binary\\\", \\\"properties\\\": [{\\\"name\\\": \\\"operator\\\", \\\"type\\\": \\\"string\\\"}], \\\"children\\\": [{\\\"role\\\": \\\"left\\\", \\\"target\\\": \\\"Expression\\\", \\\"multiple\\\": false, \\\"optional\\\": false}, {\\\"role\\\": \\\"right\\\", \\\"target\\\": \\\"Expression\\\", \\\"multiple\\\": false, \\\"optional\\\": false}]}, {\\\"name\\\": \\\"Unary\\\", \\\"extends\\\": \\\"Expression\\\", \\\"conceptAlias\\\": \\\"unary\\\", \\\"properties\\\": [{\\\"name\\\": \\\"operator\\\", \\\"type\\\": \\\"string\\\"}], \\\"children\\\": [{\\\"role\\\": \\\"operand\\\", \\\"target\\\": \\\"Expression\\\", \\\"multiple\\\": false, \\\"optional\\\": false}]}]\", \"make\": true}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":false,\"error\":\"Errors during concept creation:\\nIn concept 'Item': Failed to resolve extends 'jetbrains.mps.lang.structure.BaseConcept'\\nIn concept 'Expression': Failed to resolve extends 'jetbrains.mps.lang.structure.BaseConcept'\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

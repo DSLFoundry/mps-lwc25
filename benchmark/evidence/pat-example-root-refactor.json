@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-29T21:23:14.667304+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046743236",
+    "operation": "UPDATE",
+    "json": "{\"concept\":\"QuestionnaireLanguage.Form\",\"properties\":[{\"name\":\"title\",\"value\":\"BenefitSurvey\"}],\"children\":[{\"role\":\"items\",\"nodes\":[{\"concept\":\"QuestionnaireLanguage.Question\",\"properties\":[{\"name\":\"id\",\"value\":\"ownsHome\"},{\"name\":\"label\",\"value\":\"Do you own a home?\"},{\"name\":\"valueType\",\"value\":\"boolean\"}]},{\"concept\":\"QuestionnaireLanguage.Question\",\"properties\":[{\"name\":\"id\",\"value\":\"residents\"},{\"name\":\"label\",\"value\":\"How many residents?\"},{\"name\":\"valueType\",\"value\":\"integer\"}]},{\"concept\":\"QuestionnaireLanguage.Calculated\",\"properties\":[{\"name\":\"id\",\"value\":\"annualCost\"},{\"name\":\"label\",\"value\":\"Annual cost estimate\"},{\"name\":\"valueType\",\"value\":\"money\"}],\"children\":[{\"role\":\"computed\",\"nodes\":[{\"concept\":\"QuestionnaireLanguage.Binary\",\"properties\":[{\"name\":\"operator\",\"value\":\"+\"}],\"children\":[{\"role\":\"left\",\"nodes\":[{\"concept\":\"QuestionnaireLanguage.Reference\",\"properties\":[{\"name\":\"targetId\",\"value\":\"residents\"}],\"references\":[{\"role\":\"target\",\"target\":\"residents\"}]}]},{\"role\":\"right\",\"nodes\":[{\"concept\":\"QuestionnaireLanguage.Literal\",\"properties\":[{\"name\":\"value\",\"value\":\"5\"},{\"name\":\"literalType\",\"value\":\"integer\"}]}]}]}]}]},{\"concept\":\"QuestionnaireLanguage.Branch\",\"children\":[{\"role\":\"condition\",\"nodes\":[{\"concept\":\"QuestionnaireLanguage.Reference\",\"properties\":[{\"name\":\"targetId\",\"value\":\"ownsHome\"}],\"references\":[{\"role\":\"target\",\"target\":\"ownsHome\"}]}]},{\"role\":\"items\",\"nodes\":[{\"concept\":\"QuestionnaireLanguage.Question\",\"properties\":[{\"name\":\"id\",\"value\":\"homeType\"},{\"name\":\"label\",\"value\":\"What type of home?\"},{\"name\":\"valueType\",\"value\":\"string\"}]}]}]}]}]}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"name\":\"form\",\"concept\":\"Form\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736788:QuestionnaireLanguage.structure.Form\",\"reference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046743236\",\"parentReference\":\"\",\"rootReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046743236\",\"modelReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\",\"moduleReference\":\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\",\"virtualFolder\":\"\",\"isRoot\":true,\"present\":true,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":2,\"message\":\"2 broken reference(s) could not be resolved\"}}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

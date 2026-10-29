@@ -1,0 +1,56 @@
+[
+  {
+    "timestamp": "2026-10-29T21:43:08.618838+00:00",
+    "label": "current valid root check",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046743236",
+      "onlyNodesWithProblems": true
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-12085764237672711745.json\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:43:08.642726+00:00",
+    "label": "current invalid root check",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753",
+      "onlyNodesWithProblems": true
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-9046364450669589804.json\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:43:08.671296+00:00",
+    "label": "regenerate native examples",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "MAKE",
+      "parameters": "{\"models\": [\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\"], \"rebuild\": true}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"success\":true,\"message\":\"Make successful\",\"runtimeReady\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

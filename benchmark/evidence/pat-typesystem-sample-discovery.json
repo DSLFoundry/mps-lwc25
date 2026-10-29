@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-29T21:51:46.555156+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "FIND_INSTANCES",
+    "parameters": "{\"conceptRef\": \"jetbrains.mps.lang.typesystem.structure.NonTypesystemRule\", \"scope\": \"all\", \"sampleOnly\": true}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":[{\"name\":\"checkAbstractClassCreators\",\"concept\":\"NonTypesystemRule\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1195214364922:jetbrains.mps.lang.typesystem.structure.NonTypesystemRule\",\"reference\":\"r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/5091709661843944852\",\"parentReference\":\"\",\"rootReference\":\"r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/5091709661843944852\",\"modelReference\":\"r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)\",\"moduleReference\":\"f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)\",\"virtualFolder\":\"\",\"isRoot\":true,\"present\":true}]}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-29T21:56:43.810738+00:00",
+  "name": "mps_mcp_get_current_editor_root_node",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "source": "editor"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":false,\"error\":\"No MPS editor is currently open\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

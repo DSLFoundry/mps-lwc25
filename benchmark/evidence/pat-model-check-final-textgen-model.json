@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-29T22:15:43.741109+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "nodeReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+    "onlyNodesWithProblems": true,
+    "autoApplyQuickFixes": false
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"no problems found\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

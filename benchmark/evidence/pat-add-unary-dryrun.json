@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-29T22:17:40.511534+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "ADD",
+    "kind": "CHILD",
+    "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046743236",
+    "childRole": "items",
+    "position": -1,
+    "childJson": "{\"concept\":\"Calculated\",\"properties\":[{\"name\":\"label\",\"value\":\"Not a homeowner\"},{\"name\":\"valueType\",\"value\":\"boolean\"},{\"name\":\"id\",\"value\":\"notHomeowner\"}],\"children\":[{\"role\":\"computed\",\"nodes\":[{\"concept\":\"Unary\",\"properties\":[{\"name\":\"operator\",\"value\":\"!\"}],\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"Reference\",\"properties\":[{\"name\":\"targetId\",\"value\":\"ownsHome\"}],\"references\":[{\"role\":\"target\",\"target\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046774711\"}]}]}]}]}]}",
+    "dryRun": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"dryRun\":true,\"message\":\"Dry run successful for node addition\"}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

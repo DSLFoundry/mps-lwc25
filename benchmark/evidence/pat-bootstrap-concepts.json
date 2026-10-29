@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-29T21:19:27.224321+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "searchTexts": "[\"bootstrap settings\", \"mps settings\"]"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":[{\"name\":\"BuildMpsAspect\",\"qualifiedName\":\"jetbrains.mps.build.mps.structure.BuildMpsAspect\",\"conceptAlias\":\"mps settings\",\"shortDescription\":\"\",\"doc\":\"\",\"deprecated\":\"false\",\"conceptReference\":\"c:0cf935df-4699-4e9c-a132-fa109541cba3/6503355885715333289:jetbrains.mps.build.mps.structure.BuildMpsAspect\",\"languageReference\":\"l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps\",\"superConcept\":\"c:798100da-4f0a-421a-b991-71f8c50ce5d2/3542413272732750877:jetbrains.mps.build.structure.BuildAspect\",\"superInterfaces\":[],\"superInterfaceDetails\":[],\"sourceNode\":\"r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/6503355885715333289\",\"isAbstract\":false,\"isInterfaceConcept\":false,\"isRootable\":false,\"virtualFolder\":\"Aspect\",\"present\":true}]}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

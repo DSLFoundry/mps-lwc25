@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-29T21:18:07.524763+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "ADD",
+    "kind": "CHILD",
+    "nodeReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628511",
+    "childRole": "dependencies",
+    "childJson": "{\"concept\":\"jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency\",\"children\":[{\"role\":\"dependency\",\"nodes\":[{\"concept\":\"jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule\",\"references\":[{\"role\":\"module\",\"target\":\"r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8939513996048535420\"}]}]}]}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"name\":\"(extracted)\",\"concept\":\"BuildMps_ExtractedModuleDependency\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency\",\"reference\":\"r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/2589700000046743926\",\"parentReference\":\"r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628511\",\"rootReference\":\"r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628499\",\"rootName\":\"QuestionnaireLanguage\",\"modelReference\":\"r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)\",\"moduleReference\":\"10f275e3-1a9c-4414-acab-c5b801f5560b(QuestionnaireLanguage.build)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":6,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"All references are already correctly resolved\"}}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

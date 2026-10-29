@@ -1,0 +1,146 @@
+[
+  {
+    "timestamp": "2026-10-29T21:38:54.706249+00:00",
+    "label": "final check r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)",
+      "onlyNodesWithProblems": true
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":\"no problems found\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:38:54.711062+00:00",
+    "label": "final check r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)",
+      "onlyNodesWithProblems": true
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":\"no problems found\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:38:54.733147+00:00",
+    "label": "final check r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "onlyNodesWithProblems": true
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":\"no problems found\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:38:54.736872+00:00",
+    "label": "final check r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)",
+      "onlyNodesWithProblems": true
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":\"no problems found\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:38:54.763147+00:00",
+    "label": "final check r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)",
+      "onlyNodesWithProblems": true
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":\"no problems found\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:38:54.777333+00:00",
+    "label": "native invalid fixture check",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753",
+      "onlyNodesWithProblems": true
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-7193078020107245983.json\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:38:54.791998+00:00",
+    "label": "language MAKE inherited",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "MAKE",
+      "parameters": "{\"modules\": [\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\"], \"rebuild\": true}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"success\":true,\"message\":\"Make successful\",\"runtimeReady\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:38:58.135809+00:00",
+    "label": "example model MAKE",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "MAKE",
+      "parameters": "{\"models\": [\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\"], \"rebuild\": true}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"success\":true,\"message\":\"Make successful\",\"runtimeReady\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

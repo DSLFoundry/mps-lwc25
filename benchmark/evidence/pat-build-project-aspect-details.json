@@ -1,0 +1,431 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "name": "BuildProject",
+      "qualifiedName": "jetbrains.mps.build.structure.BuildProject",
+      "conceptAlias": "build project",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363:jetbrains.mps.build.structure.BuildProject",
+      "languageReference": "l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build",
+      "superConcept": "c:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626:jetbrains.mps.lang.core.structure.BaseConcept",
+      "superInterfaces": [
+        "i:ceab5195-25ea-4f22-9b92-103b95ca8c0c/3734116213129792499:jetbrains.mps.lang.core.structure.ScopeProvider",
+        "i:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468:jetbrains.mps.lang.core.structure.INamedConcept"
+      ],
+      "superInterfaceDetails": [
+        {
+          "name": "ScopeProvider",
+          "reference": "i:ceab5195-25ea-4f22-9b92-103b95ca8c0c/3734116213129792499:jetbrains.mps.lang.core.structure.ScopeProvider"
+        },
+        {
+          "name": "INamedConcept",
+          "reference": "i:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468:jetbrains.mps.lang.core.structure.INamedConcept"
+        }
+      ],
+      "sourceNode": "r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)/5617550519002745363",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": true,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "internalBaseDirectory",
+          "type": "string",
+          "featureId": "798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363/5204048710541015587",
+          "sourceNode": "r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)/5204048710541015587",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "fileName",
+          "type": "string",
+          "featureId": "798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363/4915877860348071612",
+          "sourceNode": "r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)/4915877860348071612",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194664001",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "plugins",
+          "targetConcept": "jetbrains.mps.build.structure.BuildPlugin",
+          "cardinality": "0..n",
+          "featureId": "798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363/6647099934206700656",
+          "sourceNode": "r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)/6647099934206700656",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "dependencies",
+          "targetConcept": "jetbrains.mps.build.structure.BuildDependency",
+          "cardinality": "0..n",
+          "featureId": "798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363/5617550519002745381",
+          "sourceNode": "r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)/5617550519002745381",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "macros",
+          "targetConcept": "jetbrains.mps.build.structure.BuildMacro",
+          "cardinality": "0..n",
+          "featureId": "798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363/5617550519002745378",
+          "sourceNode": "r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)/5617550519002745378",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "parts",
+          "targetConcept": "jetbrains.mps.build.structure.BuildProjectPart",
+          "cardinality": "0..n",
+          "featureId": "798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363/7389400916848080626",
+          "sourceNode": "r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)/7389400916848080626",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "aspects",
+          "targetConcept": "jetbrains.mps.build.structure.BuildAspect",
+          "cardinality": "0..n",
+          "featureId": "798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363/3542413272732620719",
+          "sourceNode": "r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)/3542413272732620719",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "layout",
+          "targetConcept": "jetbrains.mps.build.structure.BuildLayout",
+          "cardinality": "1",
+          "featureId": "798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363/5617550519002745372",
+          "sourceNode": "r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)/5617550519002745372",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "scriptsDir",
+          "targetConcept": "jetbrains.mps.build.structure.BuildRelativePath",
+          "cardinality": "0..1",
+          "featureId": "798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363/4796668409958418110",
+          "sourceNode": "r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)/4796668409958418110",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.build.structure.BuildProject",
+        "properties": [
+          {
+            "name": "internalBaseDirectory",
+            "value": "example"
+          },
+          {
+            "name": "fileName",
+            "value": "example"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          },
+          {
+            "name": "name",
+            "value": "BuildProject"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "plugins",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.structure.BuildPlugin or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "dependencies",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.structure.BuildDependency or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "macros",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.structure.BuildMacro or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "parts",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.structure.BuildProjectPart or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "aspects",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.structure.BuildAspect or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "layout",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.structure.BuildLayout or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "scriptsDir",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.structure.BuildRelativePath or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "BuildAspect",
+      "qualifiedName": "jetbrains.mps.build.structure.BuildAspect",
+      "conceptAlias": "",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/3542413272732750877:jetbrains.mps.build.structure.BuildAspect",
+      "languageReference": "l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build",
+      "superConcept": "c:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626:jetbrains.mps.lang.core.structure.BaseConcept",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)/3542413272732750877",
+      "isAbstract": true,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.build.structure.BuildAspect",
+        "properties": [
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "BuildMpsAspect",
+      "qualifiedName": "jetbrains.mps.build.mps.structure.BuildMpsAspect",
+      "conceptAlias": "mps settings",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/6503355885715333289:jetbrains.mps.build.mps.structure.BuildMpsAspect",
+      "languageReference": "l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps",
+      "superConcept": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/3542413272732750877:jetbrains.mps.build.structure.BuildAspect",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/6503355885715333289",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "Aspect",
+      "present": true,
+      "properties": [
+        {
+          "name": "bootstrap",
+          "type": "boolean",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/6503355885715333289/6503355885715353788",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/6503355885715353788",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "testGeneration",
+          "type": "boolean",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/6503355885715333289/1787667533297081791",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/1787667533297081791",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "excludes",
+          "type": "string",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/6503355885715333289/5002485985633856504",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/5002485985633856504",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "generationMaxHeapSizeInMb",
+          "type": "integer",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/6503355885715333289/7981469545489178349",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/7981469545489178349",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "generationMaxPermSizeInMb",
+          "type": "integer",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/6503355885715333289/353547257300482730",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/353547257300482730",
+          "doc": "",
+          "deprecated": "true: since 2018.1: We target Java 8 which no longer has no MaxPermSize option."
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.build.mps.structure.BuildMpsAspect",
+        "properties": [
+          {
+            "name": "bootstrap",
+            "value": "true"
+          },
+          {
+            "name": "testGeneration",
+            "value": "true"
+          },
+          {
+            "name": "excludes",
+            "value": "example"
+          },
+          {
+            "name": "generationMaxHeapSizeInMb",
+            "value": "1"
+          },
+          {
+            "name": "generationMaxPermSizeInMb",
+            "value": "1"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

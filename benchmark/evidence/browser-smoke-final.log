@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-10-29T21:50:45.915Z",
+  "browser": "Microsoft Edge headless",
+  "page": "http://127.0.0.1:4197/",
+  "questionnaire": "solutions/QuestionnaireExample/source_gen/QuestionnaireExample/BenefitSurvey.json",
+  "interaction": {
+    "title": "BenefitSurvey",
+    "controls": {
+      "boolean": "checkbox",
+      "integer": "number",
+      "text": "text"
+    },
+    "initialHomeTypeHidden": true,
+    "homeTypeVisible": true,
+    "computedValue": "9"
+  },
+  "downloadedFile": "benchmark\\evidence\\browser-downloads\\BenefitSurvey-answers.json",
+  "answers": {
+    "form": "BenefitSurvey",
+    "answers": {
+      "ownsHome": true,
+      "residents": 4,
+      "annualCost": 9,
+      "homeType": "townhouse"
+    }
+  }
+}

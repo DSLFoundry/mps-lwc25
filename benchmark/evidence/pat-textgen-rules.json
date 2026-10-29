@@ -1,0 +1,146 @@
+[
+  {
+    "timestamp": "2026-10-29T21:09:53.620568+00:00",
+    "rule": "Form",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "json": "{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\",\"properties\":[{\"name\":\"name\",\"value\":\"Form\"}],\"references\":[{\"role\":\"conceptDeclaration\",\"target\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736788:QuestionnaireLanguage.structure.Form\"}],\"children\":[{\"role\":\"extension\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.ExtensionDeclaration\",\"children\":[{\"role\":\"body\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.StatementList\",\"children\":[{\"role\":\"statement\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.ReturnStatement\",\"children\":[{\"role\":\"expression\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.StringLiteral\",\"properties\":[{\"name\":\"value\",\"value\":\"json\"}]}]}]}]}]}]}]}]},{\"role\":\"textGenBlock\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration\",\"children\":[{\"role\":\"body\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.StatementList\",\"children\":[{\"role\":\"statement\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.AppendOperation\",\"children\":[{\"role\":\"part\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"{\\\"name\\\":\\\"\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194664001\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"\\\",\\\"items\\\":[\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.CollectionAppendPart\",\"properties\":[{\"name\":\"withSeparator\",\"value\":\"true\"},{\"name\":\"separator\",\"value\":\",\"}],\"children\":[{\"role\":\"list\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SLinkListAccess\",\"references\":[{\"role\":\"link\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736797\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"]}\"}]}]}]}]}]}]}]}]}]}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":false,\"error\":\"Failed to instantiate node from JSON: Expected a node reference (r:... or i:...), but a concept reference was provided: c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736788:QuestionnaireLanguage.structure.Form\",\"code\":\"INVALID_REQUEST\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:09:53.771762+00:00",
+    "rule": "Question",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "json": "{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\",\"properties\":[{\"name\":\"name\",\"value\":\"Question\"}],\"references\":[{\"role\":\"conceptDeclaration\",\"target\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question\"}],\"children\":[{\"role\":\"textGenBlock\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration\",\"children\":[{\"role\":\"body\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.StatementList\",\"children\":[{\"role\":\"statement\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.AppendOperation\",\"children\":[{\"role\":\"part\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"{\\\"id\\\":\\\"\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194664001\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"\\\",\\\"label\\\":\\\"\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736799\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"\\\",\\\"type\\\":\\\"\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736800\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"\\\"}\"}]}]}]}]}]}]}]}]}]}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":false,\"error\":\"Failed to instantiate node from JSON: Expected a node reference (r:... or i:...), but a concept reference was provided: c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question\",\"code\":\"INVALID_REQUEST\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:09:53.797701+00:00",
+    "rule": "Calculated",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "json": "{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\",\"properties\":[{\"name\":\"name\",\"value\":\"Calculated\"}],\"references\":[{\"role\":\"conceptDeclaration\",\"target\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated\"}],\"children\":[{\"role\":\"textGenBlock\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration\",\"children\":[{\"role\":\"body\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.StatementList\",\"children\":[{\"role\":\"statement\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.AppendOperation\",\"children\":[{\"role\":\"part\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"{\\\"id\\\":\\\"\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194664001\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"\\\",\\\"label\\\":\\\"\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736799\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"\\\",\\\"type\\\":\\\"\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736800\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"\\\",\\\"computed\\\":\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SLinkAccess\",\"references\":[{\"role\":\"link\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736801\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"}\"}]}]}]}]}]}]}]}]}]}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":false,\"error\":\"Failed to instantiate node from JSON: Expected a node reference (r:... or i:...), but a concept reference was provided: c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated\",\"code\":\"INVALID_REQUEST\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:09:53.827775+00:00",
+    "rule": "Branch",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "json": "{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\",\"properties\":[{\"name\":\"name\",\"value\":\"Branch\"}],\"references\":[{\"role\":\"conceptDeclaration\",\"target\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736791:QuestionnaireLanguage.structure.Branch\"}],\"children\":[{\"role\":\"textGenBlock\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration\",\"children\":[{\"role\":\"body\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.StatementList\",\"children\":[{\"role\":\"statement\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.AppendOperation\",\"children\":[{\"role\":\"part\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"{\\\"condition\\\":\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SLinkAccess\",\"references\":[{\"role\":\"link\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736803\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\",\\\"items\\\":[\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.CollectionAppendPart\",\"properties\":[{\"name\":\"withSeparator\",\"value\":\"true\"},{\"name\":\"separator\",\"value\":\",\"}],\"children\":[{\"role\":\"list\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SLinkListAccess\",\"references\":[{\"role\":\"link\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736804\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"]}\"}]}]}]}]}]}]}]}]}]}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":false,\"error\":\"Failed to instantiate node from JSON: Expected a node reference (r:... or i:...), but a concept reference was provided: c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736791:QuestionnaireLanguage.structure.Branch\",\"code\":\"INVALID_REQUEST\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:09:53.837720+00:00",
+    "rule": "Literal",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "json": "{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\",\"properties\":[{\"name\":\"name\",\"value\":\"Literal\"}],\"references\":[{\"role\":\"conceptDeclaration\",\"target\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal\"}],\"children\":[{\"role\":\"textGenBlock\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration\",\"children\":[{\"role\":\"body\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.StatementList\",\"children\":[{\"role\":\"statement\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.AppendOperation\",\"children\":[{\"role\":\"part\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"{\\\"literal\\\":\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736805\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"}\"}]}]}]}]}]}]}]}]}]}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":false,\"error\":\"Failed to instantiate node from JSON: Expected a node reference (r:... or i:...), but a concept reference was provided: c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal\",\"code\":\"INVALID_REQUEST\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:09:53.845811+00:00",
+    "rule": "Reference",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "json": "{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\",\"properties\":[{\"name\":\"name\",\"value\":\"Reference\"}],\"references\":[{\"role\":\"conceptDeclaration\",\"target\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference\"}],\"children\":[{\"role\":\"textGenBlock\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration\",\"children\":[{\"role\":\"body\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.StatementList\",\"children\":[{\"role\":\"statement\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.AppendOperation\",\"children\":[{\"role\":\"part\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"{\\\"ref\\\":\\\"\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046743211\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"\\\"}\"}]}]}]}]}]}]}]}]}]}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":false,\"error\":\"Failed to instantiate node from JSON: Expected a node reference (r:... or i:...), but a concept reference was provided: c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference\",\"code\":\"INVALID_REQUEST\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:09:53.852700+00:00",
+    "rule": "Binary",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "json": "{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\",\"properties\":[{\"name\":\"name\",\"value\":\"Binary\"}],\"references\":[{\"role\":\"conceptDeclaration\",\"target\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736795:QuestionnaireLanguage.structure.Binary\"}],\"children\":[{\"role\":\"textGenBlock\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration\",\"children\":[{\"role\":\"body\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.StatementList\",\"children\":[{\"role\":\"statement\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.AppendOperation\",\"children\":[{\"role\":\"part\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"{\\\"op\\\":\\\"\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736808\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"\\\",\\\"args\\\":[\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SLinkAccess\",\"references\":[{\"role\":\"link\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736809\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\",\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SLinkAccess\",\"references\":[{\"role\":\"link\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736810\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"]}\"}]}]}]}]}]}]}]}]}]}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":false,\"error\":\"Failed to instantiate node from JSON: Expected a node reference (r:... or i:...), but a concept reference was provided: c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736795:QuestionnaireLanguage.structure.Binary\",\"code\":\"INVALID_REQUEST\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:09:53.861174+00:00",
+    "rule": "Unary",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "json": "{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\",\"properties\":[{\"name\":\"name\",\"value\":\"Unary\"}],\"references\":[{\"role\":\"conceptDeclaration\",\"target\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736796:QuestionnaireLanguage.structure.Unary\"}],\"children\":[{\"role\":\"textGenBlock\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration\",\"children\":[{\"role\":\"body\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.StatementList\",\"children\":[{\"role\":\"statement\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.AppendOperation\",\"children\":[{\"role\":\"part\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"{\\\"op\\\":\\\"\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SPropertyAccess\",\"references\":[{\"role\":\"property\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736808\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"\\\",\\\"args\\\":[\"}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeAppendPart\",\"children\":[{\"role\":\"value\",\"nodes\":[{\"concept\":\"jetbrains.mps.baseLanguage.structure.DotExpression\",\"children\":[{\"role\":\"operand\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.textGen.structure.NodeParameter\"}]},{\"role\":\"operation\",\"nodes\":[{\"concept\":\"jetbrains.mps.lang.smodel.structure.SLinkAccess\",\"references\":[{\"role\":\"link\",\"target\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736812\"}]}]}]}]}]},{\"concept\":\"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\",\"properties\":[{\"name\":\"value\",\"value\":\"]}\"}]}]}]}]}]}]}]}]}]}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":false,\"error\":\"Failed to instantiate node from JSON: Expected a node reference (r:... or i:...), but a concept reference was provided: c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736796:QuestionnaireLanguage.structure.Unary\",\"code\":\"INVALID_REQUEST\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

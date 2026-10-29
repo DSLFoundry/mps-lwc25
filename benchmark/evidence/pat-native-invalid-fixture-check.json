@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "name": "ref",
+      "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014771",
+      "concept": "Reference",
+      "doc": "",
+      "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+      "problems": [],
+      "properties": [
+        {
+          "name": "targetId",
+          "type": "string",
+          "doc": "",
+          "value": "missing",
+          "problems": []
+        }
+      ],
+      "references": [
+        {
+          "role": "target",
+          "type": "Question",
+          "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+          "cardinality": "1",
+          "doc": "",
+          "problems": [
+            {
+              "severity": "error",
+              "message": "No reference in the obligatory role \u0027target\u0027"
+            }
+          ]
+        }
+      ],
+      "children": []
+    }
+  ]
+}

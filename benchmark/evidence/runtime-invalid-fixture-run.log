@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-10-29T21:43:54.852Z",
+  "source": "solutions\\QuestionnaireExample\\source_gen\\QuestionnaireExample\\InvalidNativeFixtures.json",
+  "diagnostics": [
+    {
+      "code": "duplicate",
+      "id": "duplicate",
+      "message": "Duplicate question identifier: duplicate"
+    },
+    {
+      "code": "type",
+      "message": "badArithmetic: + requires numeric operands."
+    },
+    {
+      "code": "type",
+      "id": "badArithmetic",
+      "message": "badArithmetic: computed result integer does not match boolean."
+    },
+    {
+      "code": "unresolved",
+      "id": "missing",
+      "message": "unresolved: unresolved question missing."
+    },
+    {
+      "code": "type",
+      "id": "conditional",
+      "message": "Condition for conditional must be boolean."
+    },
+    {
+      "code": "type",
+      "message": "Conditional expression must be boolean."
+    },
+    {
+      "code": "cycle",
+      "id": "cycleA",
+      "message": "Computed dependency cycle: cycleA -> cycleB -> cycleA"
+    }
+  ],
+  "codes": [
+    "cycle",
+    "duplicate",
+    "type",
+    "unresolved"
+  ],
+  "requiredCodes": [
+    "cycle",
+    "duplicate",
+    "type",
+    "unresolved"
+  ],
+  "complete": true
+}

@@ -1,0 +1,150 @@
+[
+  {
+    "timestamp": "2026-10-29T21:20:20.348196+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "SET",
+      "kind": "CHILD",
+      "nodeReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788",
+      "childNodeRef": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736798",
+      "childJson": null
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"name\":\"Form\",\"concept\":\"ConceptDeclaration\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration\",\"reference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788\",\"parentReference\":\"\",\"rootReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788\",\"modelReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)\",\"moduleReference\":\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\",\"virtualFolder\":\"\",\"isRoot\":true,\"present\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:20:20.468111+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "SET",
+      "kind": "CHILD",
+      "nodeReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736790",
+      "childNodeRef": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736802",
+      "childJson": null
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"name\":\"Question\",\"concept\":\"ConceptDeclaration\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration\",\"reference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736790\",\"parentReference\":\"\",\"rootReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736790\",\"modelReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)\",\"moduleReference\":\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\",\"virtualFolder\":\"\",\"isRoot\":true,\"present\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:20:20.552933+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "SET",
+      "kind": "CHILD",
+      "nodeReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046740212",
+      "childNodeRef": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046740216",
+      "childJson": null
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"name\":\"Calculated\",\"concept\":\"ConceptDeclaration\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration\",\"reference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046740212\",\"parentReference\":\"\",\"rootReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046740212\",\"modelReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)\",\"moduleReference\":\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\",\"virtualFolder\":\"\",\"isRoot\":true,\"present\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:20:20.650481+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "UPDATE_CONCEPT_PROPERTY",
+      "parameters": "{\"conceptRef\": \"QuestionnaireLanguage.Form\", \"propertyName\": \"title\", \"dataType\": \"string\"}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":true}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:20:20.740674+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "UPDATE_CONCEPT_PROPERTY",
+      "parameters": "{\"conceptRef\": \"QuestionnaireLanguage.Question\", \"propertyName\": \"id\", \"dataType\": \"string\"}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":true}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:20:20.829992+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "UPDATE_CONCEPT_PROPERTY",
+      "parameters": "{\"conceptRef\": \"QuestionnaireLanguage.Calculated\", \"propertyName\": \"id\", \"dataType\": \"string\"}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":true}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:20:21.027270+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "moduleName": "QuestionnaireLanguage",
+      "targetModule": "jetbrains.mps.lang.core",
+      "operation": "DELETE"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":true}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:20:21.123482+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "SET",
+      "kind": "CHILD",
+      "childNodeRef": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/2589700000046743926",
+      "childJson": null
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"name\":\"QuestionnaireLanguage\",\"concept\":\"BuildMps_Language\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:0cf935df-4699-4e9c-a132-fa109541cba3/3189788309731840248:jetbrains.mps.build.mps.structure.BuildMps_Language\",\"reference\":\"r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628511\",\"parentReference\":\"r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628518\",\"rootReference\":\"r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628499\",\"rootName\":\"QuestionnaireLanguage\",\"modelReference\":\"r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)\",\"moduleReference\":\"10f275e3-1a9c-4414-acab-c5b801f5560b(QuestionnaireLanguage.build)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

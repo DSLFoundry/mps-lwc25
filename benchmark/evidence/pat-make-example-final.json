@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-29T22:17:52.803464+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "MAKE",
+    "parameters": "{\"modules\": [\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\"], \"rebuild\": true}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"success\":true,\"message\":\"Make successful\",\"runtimeReady\":true}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

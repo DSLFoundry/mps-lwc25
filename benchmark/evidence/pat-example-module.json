@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-29T21:00:54.168018+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "type": "solution",
+    "name": "QuestionnaireExample",
+    "directory": "C:\\Sources\\mps-lwc25\\solutions\\QuestionnaireExample"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":false,\"error\":\"Operation timed out after 30000ms. This may indicate a modal dialog or a long-running operation blocking MPS. Please close any open dialogs (Find Usages, Search, confirmation prompts, etc.) and try again.\",\"code\":\"MODAL_BLOCKED\",\"details\":{\"timeoutMs\":30000}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

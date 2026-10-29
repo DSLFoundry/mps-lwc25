@@ -1,0 +1,1407 @@
+{
+  "ok": true,
+  "data": {
+    "name": "jetbrains.mps.lang.core",
+    "concept": "BuildMps_Language",
+    "doc": "",
+    "deprecated": "false",
+    "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/3189788309731840248:jetbrains.mps.build.mps.structure.BuildMps_Language",
+    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8939513996048535420",
+    "properties": [
+      {
+        "name": "uuid",
+        "type": "string",
+        "doc": "",
+        "deprecated": "false",
+        "value": "ceab5195-25ea-4f22-9b92-103b95ca8c0c"
+      },
+      {
+        "name": "compact",
+        "type": "boolean",
+        "doc": "",
+        "deprecated": "false",
+        "value": "true"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "doc": "",
+        "deprecated": "false",
+        "value": "jetbrains.mps.lang.core"
+      },
+      {
+        "name": "withKotlin",
+        "type": "boolean",
+        "doc": "",
+        "deprecated": "false",
+        "value": "true"
+      }
+    ],
+    "references": [],
+    "children": [
+      {
+        "role": "generator",
+        "type": "BuildMps_Generator",
+        "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5507251971038816436:jetbrains.mps.build.mps.structure.BuildMps_Generator",
+        "cardinality": "0..1",
+        "doc": "",
+        "deprecated": "false",
+        "nodes": [
+          {
+            "name": "jetbrains.mps.lang.core#9100558062448742579",
+            "concept": "BuildMps_Generator",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5507251971038816436:jetbrains.mps.build.mps.structure.BuildMps_Generator",
+            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/2972757353564129232",
+            "properties": [
+              {
+                "name": "uuid",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "1f3698ec-8a44-4aaa-b907-0ac2077d80a4"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "jetbrains.mps.lang.core#9100558062448742579"
+              },
+              {
+                "name": "withKotlin",
+                "type": "boolean",
+                "doc": "",
+                "deprecated": "false",
+                "value": "true"
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "sources",
+                "type": "BuildMps_ModuleSource",
+                "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547823:jetbrains.mps.build.mps.structure.BuildMps_ModuleSource",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "model root",
+                    "concept": "BuildMps_ModuleModelRoot",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/4278635856200817744:jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot",
+                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320254",
+                    "properties": [
+                      {
+                        "name": "deployFolderName",
+                        "type": "string",
+                        "doc": "name of the folder models get deployed to, usually the same as last segment of original path",
+                        "deprecated": "false",
+                        "value": "generator/template"
+                      },
+                      {
+                        "name": "extracted",
+                        "type": "boolean",
+                        "doc": "true indicates the root has been extracted automatically and values can get updated during project re-load process",
+                        "deprecated": "false",
+                        "value": "true"
+                      },
+                      {
+                        "name": "convert2binary",
+                        "type": "boolean",
+                        "doc": "true indicates model files have to be piped though a convertor that re-saves them into binary persistence, if possible",
+                        "deprecated": "false",
+                        "value": "true"
+                      }
+                    ],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "location",
+                        "type": "BuildInputFiles",
+                        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794596:jetbrains.mps.build.structure.BuildInputFiles",
+                        "cardinality": "1..n",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "files from",
+                            "concept": "BuildInputFiles",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794596:jetbrains.mps.build.structure.BuildInputFiles",
+                            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320255",
+                            "properties": [],
+                            "references": [],
+                            "children": [
+                              {
+                                "role": "dir",
+                                "type": "BuildSourcePath",
+                                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+                                "cardinality": "1",
+                                "doc": "",
+                                "deprecated": "false",
+                                "nodes": [
+                                  {
+                                    "name": "$mps_home",
+                                    "concept": "BuildSourceMacroRelativePath",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848153117:jetbrains.mps.build.structure.BuildSourceMacroRelativePath",
+                                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320242",
+                                    "properties": [],
+                                    "references": [
+                                      {
+                                        "role": "macro",
+                                        "type": "BuildFolderMacro",
+                                        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                                        "cardinality": "1",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "target": "mps_home",
+                                        "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/1277685309310599419"
+                                      }
+                                    ],
+                                    "children": [
+                                      {
+                                        "role": "compositePart",
+                                        "type": "BuildCompositePath",
+                                        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                        "cardinality": "0..1",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "nodes": [
+                                          {
+                                            "name": "BuildCompositePath",
+                                            "concept": "BuildCompositePath",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320243",
+                                            "properties": [
+                                              {
+                                                "name": "head",
+                                                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                "doc": "",
+                                                "deprecated": "false",
+                                                "value": "languages"
+                                              }
+                                            ],
+                                            "references": [],
+                                            "children": [
+                                              {
+                                                "role": "tail",
+                                                "type": "BuildCompositePath",
+                                                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                "cardinality": "0..1",
+                                                "doc": "",
+                                                "deprecated": "false",
+                                                "nodes": [
+                                                  {
+                                                    "name": "BuildCompositePath",
+                                                    "concept": "BuildCompositePath",
+                                                    "doc": "",
+                                                    "deprecated": "false",
+                                                    "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320244",
+                                                    "properties": [
+                                                      {
+                                                        "name": "head",
+                                                        "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                        "doc": "",
+                                                        "deprecated": "false",
+                                                        "value": "core"
+                                                      }
+                                                    ],
+                                                    "references": [],
+                                                    "children": [
+                                                      {
+                                                        "role": "tail",
+                                                        "type": "BuildCompositePath",
+                                                        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                        "cardinality": "0..1",
+                                                        "doc": "",
+                                                        "deprecated": "false",
+                                                        "nodes": [
+                                                          {
+                                                            "name": "BuildCompositePath",
+                                                            "concept": "BuildCompositePath",
+                                                            "doc": "",
+                                                            "deprecated": "false",
+                                                            "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320245",
+                                                            "properties": [
+                                                              {
+                                                                "name": "head",
+                                                                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                                "doc": "",
+                                                                "deprecated": "false",
+                                                                "value": "core"
+                                                              }
+                                                            ],
+                                                            "references": [],
+                                                            "children": [
+                                                              {
+                                                                "role": "tail",
+                                                                "type": "BuildCompositePath",
+                                                                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                                "cardinality": "0..1",
+                                                                "doc": "",
+                                                                "deprecated": "false",
+                                                                "nodes": [
+                                                                  {
+                                                                    "name": "BuildCompositePath",
+                                                                    "concept": "BuildCompositePath",
+                                                                    "doc": "",
+                                                                    "deprecated": "false",
+                                                                    "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320246",
+                                                                    "properties": [
+                                                                      {
+                                                                        "name": "head",
+                                                                        "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                                        "doc": "",
+                                                                        "deprecated": "false",
+                                                                        "value": "generator"
+                                                                      }
+                                                                    ],
+                                                                    "references": [],
+                                                                    "children": [
+                                                                      {
+                                                                        "role": "tail",
+                                                                        "type": "BuildCompositePath",
+                                                                        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                                        "cardinality": "0..1",
+                                                                        "doc": "",
+                                                                        "deprecated": "false",
+                                                                        "nodes": [
+                                                                          {
+                                                                            "name": "BuildCompositePath",
+                                                                            "concept": "BuildCompositePath",
+                                                                            "doc": "",
+                                                                            "deprecated": "false",
+                                                                            "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                                            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320247",
+                                                                            "properties": [
+                                                                              {
+                                                                                "name": "head",
+                                                                                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                                                "doc": "",
+                                                                                "deprecated": "false",
+                                                                                "value": "template"
+                                                                              }
+                                                                            ],
+                                                                            "references": [],
+                                                                            "children": []
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "role": "selectors",
+                                "type": "BuildFileSelector",
+                                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794599:jetbrains.mps.build.structure.BuildFileSelector",
+                                "cardinality": "0..n",
+                                "doc": "",
+                                "deprecated": "false",
+                                "nodes": [
+                                  {
+                                    "name": "includes",
+                                    "concept": "BuildFileIncludesSelector",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8654221991637384182:jetbrains.mps.build.structure.BuildFileIncludesSelector",
+                                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320256",
+                                    "properties": [
+                                      {
+                                        "name": "pattern",
+                                        "type": "string",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "value": "**/*.mps, **/*.mpsr, **/.model"
+                                      }
+                                    ],
+                                    "references": [],
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "sources",
+        "type": "BuildMps_ModuleSource",
+        "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547823:jetbrains.mps.build.mps.structure.BuildMps_ModuleSource",
+        "cardinality": "0..n",
+        "doc": "",
+        "deprecated": "false",
+        "nodes": [
+          {
+            "name": "resources",
+            "concept": "BuildMps_ModuleResources",
+            "doc": "Tells what files to treat as auxiliary module resources (e.g. icons, externalized messages, etc.)",
+            "deprecated": "false",
+            "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/763829979718664966:jetbrains.mps.build.mps.structure.BuildMps_ModuleResources",
+            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/763829979724718088",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "files",
+                "type": "BuildInputFiles",
+                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794596:jetbrains.mps.build.structure.BuildInputFiles",
+                "cardinality": "1",
+                "doc": "I use file set, not SingleFolder as other _ModuleSource concepts do to get behavior similar to that with template-hardcoded icons/*, resources/* pattern",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "files from",
+                    "concept": "BuildInputFiles",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794596:jetbrains.mps.build.structure.BuildInputFiles",
+                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/763829979724718089",
+                    "properties": [],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "dir",
+                        "type": "BuildSourcePath",
+                        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "$mps_home",
+                            "concept": "BuildSourceMacroRelativePath",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848153117:jetbrains.mps.build.structure.BuildSourceMacroRelativePath",
+                            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/763829979724718091",
+                            "properties": [],
+                            "references": [
+                              {
+                                "role": "macro",
+                                "type": "BuildFolderMacro",
+                                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                                "cardinality": "1",
+                                "doc": "",
+                                "deprecated": "false",
+                                "target": "mps_home",
+                                "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/1277685309310599419"
+                              }
+                            ],
+                            "children": [
+                              {
+                                "role": "compositePart",
+                                "type": "BuildCompositePath",
+                                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                "cardinality": "0..1",
+                                "doc": "",
+                                "deprecated": "false",
+                                "nodes": [
+                                  {
+                                    "name": "BuildCompositePath",
+                                    "concept": "BuildCompositePath",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/763829979724718092",
+                                    "properties": [
+                                      {
+                                        "name": "head",
+                                        "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "value": "languages"
+                                      }
+                                    ],
+                                    "references": [],
+                                    "children": [
+                                      {
+                                        "role": "tail",
+                                        "type": "BuildCompositePath",
+                                        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                        "cardinality": "0..1",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "nodes": [
+                                          {
+                                            "name": "BuildCompositePath",
+                                            "concept": "BuildCompositePath",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/763829979724718093",
+                                            "properties": [
+                                              {
+                                                "name": "head",
+                                                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                "doc": "",
+                                                "deprecated": "false",
+                                                "value": "core"
+                                              }
+                                            ],
+                                            "references": [],
+                                            "children": [
+                                              {
+                                                "role": "tail",
+                                                "type": "BuildCompositePath",
+                                                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                "cardinality": "0..1",
+                                                "doc": "",
+                                                "deprecated": "false",
+                                                "nodes": [
+                                                  {
+                                                    "name": "BuildCompositePath",
+                                                    "concept": "BuildCompositePath",
+                                                    "doc": "",
+                                                    "deprecated": "false",
+                                                    "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/763829979724718094",
+                                                    "properties": [
+                                                      {
+                                                        "name": "head",
+                                                        "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                        "doc": "",
+                                                        "deprecated": "false",
+                                                        "value": "core"
+                                                      }
+                                                    ],
+                                                    "references": [],
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "role": "selectors",
+                        "type": "BuildFileSelector",
+                        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794599:jetbrains.mps.build.structure.BuildFileSelector",
+                        "cardinality": "0..n",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "includes",
+                            "concept": "BuildFileIncludesSelector",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8654221991637384182:jetbrains.mps.build.structure.BuildFileIncludesSelector",
+                            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/763829979724718090",
+                            "properties": [
+                              {
+                                "name": "pattern",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "icons/**, resources/**"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "model root",
+            "concept": "BuildMps_ModuleModelRoot",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/4278635856200817744:jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot",
+            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320239",
+            "properties": [
+              {
+                "name": "deployFolderName",
+                "type": "string",
+                "doc": "name of the folder models get deployed to, usually the same as last segment of original path",
+                "deprecated": "false",
+                "value": "languageModels"
+              },
+              {
+                "name": "extracted",
+                "type": "boolean",
+                "doc": "true indicates the root has been extracted automatically and values can get updated during project re-load process",
+                "deprecated": "false",
+                "value": "true"
+              },
+              {
+                "name": "convert2binary",
+                "type": "boolean",
+                "doc": "true indicates model files have to be piped though a convertor that re-saves them into binary persistence, if possible",
+                "deprecated": "false",
+                "value": "true"
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "location",
+                "type": "BuildInputFiles",
+                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794596:jetbrains.mps.build.structure.BuildInputFiles",
+                "cardinality": "1..n",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "files from",
+                    "concept": "BuildInputFiles",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794596:jetbrains.mps.build.structure.BuildInputFiles",
+                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320240",
+                    "properties": [],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "dir",
+                        "type": "BuildSourcePath",
+                        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "$mps_home",
+                            "concept": "BuildSourceMacroRelativePath",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848153117:jetbrains.mps.build.structure.BuildSourceMacroRelativePath",
+                            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320229",
+                            "properties": [],
+                            "references": [
+                              {
+                                "role": "macro",
+                                "type": "BuildFolderMacro",
+                                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                                "cardinality": "1",
+                                "doc": "",
+                                "deprecated": "false",
+                                "target": "mps_home",
+                                "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/1277685309310599419"
+                              }
+                            ],
+                            "children": [
+                              {
+                                "role": "compositePart",
+                                "type": "BuildCompositePath",
+                                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                "cardinality": "0..1",
+                                "doc": "",
+                                "deprecated": "false",
+                                "nodes": [
+                                  {
+                                    "name": "BuildCompositePath",
+                                    "concept": "BuildCompositePath",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320230",
+                                    "properties": [
+                                      {
+                                        "name": "head",
+                                        "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "value": "languages"
+                                      }
+                                    ],
+                                    "references": [],
+                                    "children": [
+                                      {
+                                        "role": "tail",
+                                        "type": "BuildCompositePath",
+                                        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                        "cardinality": "0..1",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "nodes": [
+                                          {
+                                            "name": "BuildCompositePath",
+                                            "concept": "BuildCompositePath",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320231",
+                                            "properties": [
+                                              {
+                                                "name": "head",
+                                                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                "doc": "",
+                                                "deprecated": "false",
+                                                "value": "core"
+                                              }
+                                            ],
+                                            "references": [],
+                                            "children": [
+                                              {
+                                                "role": "tail",
+                                                "type": "BuildCompositePath",
+                                                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                "cardinality": "0..1",
+                                                "doc": "",
+                                                "deprecated": "false",
+                                                "nodes": [
+                                                  {
+                                                    "name": "BuildCompositePath",
+                                                    "concept": "BuildCompositePath",
+                                                    "doc": "",
+                                                    "deprecated": "false",
+                                                    "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320232",
+                                                    "properties": [
+                                                      {
+                                                        "name": "head",
+                                                        "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                        "doc": "",
+                                                        "deprecated": "false",
+                                                        "value": "core"
+                                                      }
+                                                    ],
+                                                    "references": [],
+                                                    "children": [
+                                                      {
+                                                        "role": "tail",
+                                                        "type": "BuildCompositePath",
+                                                        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                        "cardinality": "0..1",
+                                                        "doc": "",
+                                                        "deprecated": "false",
+                                                        "nodes": [
+                                                          {
+                                                            "name": "BuildCompositePath",
+                                                            "concept": "BuildCompositePath",
+                                                            "doc": "",
+                                                            "deprecated": "false",
+                                                            "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320233",
+                                                            "properties": [
+                                                              {
+                                                                "name": "head",
+                                                                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                                "doc": "",
+                                                                "deprecated": "false",
+                                                                "value": "languageModels"
+                                                              }
+                                                            ],
+                                                            "references": [],
+                                                            "children": []
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "role": "selectors",
+                        "type": "BuildFileSelector",
+                        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794599:jetbrains.mps.build.structure.BuildFileSelector",
+                        "cardinality": "0..n",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "includes",
+                            "concept": "BuildFileIncludesSelector",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8654221991637384182:jetbrains.mps.build.structure.BuildFileIncludesSelector",
+                            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8137134783405320241",
+                            "properties": [
+                              {
+                                "name": "pattern",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "**/*.mps, **/*.mpsr, **/.model"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "dependencies",
+        "type": "BuildMps_ModuleDependency",
+        "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+        "cardinality": "0..n",
+        "doc": "",
+        "deprecated": "false",
+        "nodes": [
+          {
+            "name": "(extracted)",
+            "concept": "BuildMps_ExtractedModuleDependency",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/2488570609612482290",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "dependency",
+                "type": "BuildMps_ModuleDependency",
+                "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "MPS.Core",
+                    "concept": "BuildMps_ModuleDependencyOnModule",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/2488570609612482289",
+                    "properties": [
+                      {
+                        "name": "reexport",
+                        "type": "boolean",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "true"
+                      }
+                    ],
+                    "references": [
+                      {
+                        "role": "module",
+                        "type": "BuildMps_Module",
+                        "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "MPS.Core",
+                        "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/2182758403694705590"
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "(extracted)",
+            "concept": "BuildMps_ExtractedModuleDependency",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/2488570609612482292",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "dependency",
+                "type": "BuildMps_ModuleDependency",
+                "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "MPS.Editor",
+                    "concept": "BuildMps_ModuleDependencyOnModule",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/2488570609612482291",
+                    "properties": [],
+                    "references": [
+                      {
+                        "role": "module",
+                        "type": "BuildMps_Module",
+                        "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "MPS.Editor",
+                        "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/2182758403694705599"
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "(extracted)",
+            "concept": "BuildMps_ExtractedModuleDependency",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/2488570609612482294",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "dependency",
+                "type": "BuildMps_ModuleDependency",
+                "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "jetbrains.mps.kernel",
+                    "concept": "BuildMps_ModuleDependencyOnModule",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/2488570609612482293",
+                    "properties": [],
+                    "references": [
+                      {
+                        "role": "module",
+                        "type": "BuildMps_Module",
+                        "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "jetbrains.mps.kernel",
+                        "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8939513996048536566"
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "(extracted)",
+            "concept": "BuildMps_ExtractedModuleDependency",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/1450543606036235764",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "dependency",
+                "type": "BuildMps_ModuleDependency",
+                "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "MPS.OpenAPI",
+                    "concept": "BuildMps_ModuleDependencyOnModule",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/1450543606036235765",
+                    "properties": [],
+                    "references": [
+                      {
+                        "role": "module",
+                        "type": "BuildMps_Module",
+                        "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "MPS.OpenAPI",
+                        "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/1966103100308041248"
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "(extracted)",
+            "concept": "BuildMps_ExtractedModuleDependency",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8100167580857235334",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "dependency",
+                "type": "BuildMps_ModuleDependency",
+                "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "JDK",
+                    "concept": "BuildMps_ModuleDependencyOnModule",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8100167580857235335",
+                    "properties": [],
+                    "references": [
+                      {
+                        "role": "module",
+                        "type": "BuildMps_Module",
+                        "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "JDK",
+                        "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/413682502717652307"
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "(extracted)",
+            "concept": "BuildMps_ExtractedModuleDependency",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8100167580857235338",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "dependency",
+                "type": "BuildMps_ModuleDependency",
+                "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "Annotations",
+                    "concept": "BuildMps_ModuleDependencyOnModule",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8100167580857235339",
+                    "properties": [],
+                    "references": [
+                      {
+                        "role": "module",
+                        "type": "BuildMps_Module",
+                        "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "Annotations",
+                        "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/4697806380739460690"
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "(extracted)",
+            "concept": "BuildMps_ExtractedModuleDependency",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/3206075216511679718",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "dependency",
+                "type": "BuildMps_ModuleDependency",
+                "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "jetbrains.mps.editor.runtime",
+                    "concept": "BuildMps_ModuleDependencyOnModule",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/3206075216511679719",
+                    "properties": [],
+                    "references": [
+                      {
+                        "role": "module",
+                        "type": "BuildMps_Module",
+                        "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "jetbrains.mps.editor.runtime",
+                        "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/4372437818007979949"
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "(extracted)",
+            "concept": "BuildMps_ExtractedModuleDependency",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/4693792088983789152",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "dependency",
+                "type": "BuildMps_ModuleDependency",
+                "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "jetbrains.mps.lang.migration.runtime",
+                    "concept": "BuildMps_ModuleDependencyOnModule",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/4693792088983789153",
+                    "properties": [],
+                    "references": [
+                      {
+                        "role": "module",
+                        "type": "BuildMps_Module",
+                        "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "jetbrains.mps.lang.migration.runtime",
+                        "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/5992093632073277155"
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "(extracted)",
+            "concept": "BuildMps_ExtractedModuleDependency",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/5301760200246499379",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "dependency",
+                "type": "BuildMps_ModuleDependency",
+                "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "jetbrains.mps.lang.structure",
+                    "concept": "BuildMps_ModuleDependencyOnModule",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/5301760200246499380",
+                    "properties": [],
+                    "references": [
+                      {
+                        "role": "module",
+                        "type": "BuildMps_Module",
+                        "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "jetbrains.mps.lang.structure",
+                        "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8939513996048536244"
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "(extracted)",
+            "concept": "BuildMps_ExtractedModuleDependency",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/692513665652892509",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "dependency",
+                "type": "BuildMps_ModuleDependency",
+                "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "jetbrains.mps.baseLanguage.tuples.runtime",
+                    "concept": "BuildMps_ModuleDependencyOnModule",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/692513665652892510",
+                    "properties": [],
+                    "references": [
+                      {
+                        "role": "module",
+                        "type": "BuildMps_Module",
+                        "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "jetbrains.mps.baseLanguage.tuples.runtime",
+                        "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8939513996048535731"
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "path",
+        "type": "BuildSourcePath",
+        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+        "cardinality": "0..1",
+        "doc": "",
+        "deprecated": "false",
+        "nodes": [
+          {
+            "name": "$mps_home",
+            "concept": "BuildSourceMacroRelativePath",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848153117:jetbrains.mps.build.structure.BuildSourceMacroRelativePath",
+            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/7507666976388975224",
+            "properties": [],
+            "references": [
+              {
+                "role": "macro",
+                "type": "BuildFolderMacro",
+                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "mps_home",
+                "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/1277685309310599419"
+              }
+            ],
+            "children": [
+              {
+                "role": "compositePart",
+                "type": "BuildCompositePath",
+                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "BuildCompositePath",
+                    "concept": "BuildCompositePath",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/7507666976388975225",
+                    "properties": [
+                      {
+                        "name": "head",
+                        "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "languages"
+                      }
+                    ],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "tail",
+                        "type": "BuildCompositePath",
+                        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                        "cardinality": "0..1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "BuildCompositePath",
+                            "concept": "BuildCompositePath",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/7507666976388975226",
+                            "properties": [
+                              {
+                                "name": "head",
+                                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "core"
+                              }
+                            ],
+                            "references": [],
+                            "children": [
+                              {
+                                "role": "tail",
+                                "type": "BuildCompositePath",
+                                "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                "cardinality": "0..1",
+                                "doc": "",
+                                "deprecated": "false",
+                                "nodes": [
+                                  {
+                                    "name": "BuildCompositePath",
+                                    "concept": "BuildCompositePath",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                    "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/7507666976388975227",
+                                    "properties": [
+                                      {
+                                        "name": "head",
+                                        "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "value": "core"
+                                      }
+                                    ],
+                                    "references": [],
+                                    "children": [
+                                      {
+                                        "role": "tail",
+                                        "type": "BuildCompositePath",
+                                        "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                        "cardinality": "0..1",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "nodes": [
+                                          {
+                                            "name": "BuildCompositePath",
+                                            "concept": "BuildCompositePath",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                            "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/7507666976388975228",
+                                            "properties": [
+                                              {
+                                                "name": "head",
+                                                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                "doc": "",
+                                                "deprecated": "false",
+                                                "value": "jetbrains.mps.lang.core.mpl"
+                                              }
+                                            ],
+                                            "references": [],
+                                            "children": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

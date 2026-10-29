@@ -1,0 +1,37 @@
+[
+  {
+    "timestamp": "2026-10-29T21:37:32.753322+00:00",
+    "label": "details",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "conceptRefs": "[\"QuestionnaireLanguage.Calculated\"]"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-13883875625271990831.json\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:37:32.789124+00:00",
+    "label": "scaffold",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "conceptRef": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046740212",
+      "modelReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"editorNodeRef\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047014731\",\"message\":\"Scaffolded editor with 3 properties, 0 references, and 1 children.\"}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

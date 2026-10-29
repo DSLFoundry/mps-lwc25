@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-29T21:48:20.602427+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "startingPoint": "jetbrains.mps.ide.build",
+    "includeModels": true,
+    "includeDependencies": false,
+    "includeNodes": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":false,\"error\":\"Starting point 'jetbrains.mps.ide.build' not found\",\"code\":\"NOT_FOUND\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

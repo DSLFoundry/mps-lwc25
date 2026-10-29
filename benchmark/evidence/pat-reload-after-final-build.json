@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-29T22:12:23.040022+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"All modules reloaded successfully\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

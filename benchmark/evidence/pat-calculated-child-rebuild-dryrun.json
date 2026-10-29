@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-29T22:06:13.750110+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "SET",
+    "kind": "CHILD",
+    "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046743236",
+    "childRole": "items",
+    "childNodeRef": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046774713",
+    "childJson": "C:\\Sources\\mps-lwc25\\benchmark\\evidence\\pat-calculated-child-rebuild-blueprint.json",
+    "dryRun": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":false,\"error\":\"Input file path 'C:\\\\Sources\\\\mps-lwc25\\\\benchmark\\\\evidence\\\\pat-calculated-child-rebuild-blueprint.json' is not inside the system temp directory. Write the JSON to a temp file (e.g. via File.createTempFile) and pass that path instead.\",\"code\":\"INVALID_REQUEST\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

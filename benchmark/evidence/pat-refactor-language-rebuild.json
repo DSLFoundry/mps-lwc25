@@ -1,0 +1,70 @@
+[
+  {
+    "timestamp": "2026-10-29T21:22:14.406110+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740076",
+      "operation": "DELETE"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"reference\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740076\",\"deleted\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:22:15.386452+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740095",
+      "operation": "DELETE"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"reference\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740095\",\"deleted\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:22:15.650752+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "nodeReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046743200",
+      "operation": "DELETE"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"reference\":\"r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046743200\",\"deleted\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:22:15.758924+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "MAKE",
+      "parameters": "{\"modules\": [\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\"], \"rebuild\": true}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"success\":true,\"message\":\"Make successful\",\"runtimeReady\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

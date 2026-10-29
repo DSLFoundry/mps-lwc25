@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-29T21:48:33.294248+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "nodeReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8939513996048535420",
+    "deep": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-17383914044385675566.json\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

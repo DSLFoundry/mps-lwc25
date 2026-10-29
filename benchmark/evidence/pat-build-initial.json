@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-29T21:10:26.360668+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "timeout": 120000
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"isSuccess\":true,\"problems\":[{\"message\":\"The project has limited build diagnostics functionality. Build messages cannot be collected.\"}]}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "isSuccess": true,
+      "problems": [
+        {
+          "message": "The project has limited build diagnostics functionality. Build messages cannot be collected."
+        }
+      ]
+    }
+  }
+}

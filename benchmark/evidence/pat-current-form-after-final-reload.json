@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-29T22:13:04.432437+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "source": "editor"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"name\":\"Form\",\"concept\":\"ConceptDeclaration\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration\",\"reference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788\",\"parentReference\":\"\",\"rootReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788\",\"modelReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)\",\"moduleReference\":\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\",\"virtualFolder\":\"\",\"isRoot\":true,\"present\":true,\"selectedNodeReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788\",\"bigCellSelected\":false,\"caret\":{\"present\":true,\"cellId\":\"name\",\"cellType\":\"EditorCell_Property\",\"nodeReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788\",\"nodeConcept\":\"ConceptDeclaration\",\"nodeName\":\"Form\",\"nodeConceptQualifiedName\":\"jetbrains.mps.lang.structure.structure.ConceptDeclaration\",\"nodeConceptReference\":\"c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration\",\"contextualNodeReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788\",\"contextualNodeConcept\":\"ConceptDeclaration\",\"contextualNodeName\":\"Form\",\"contextualNodeConceptQualifiedName\":\"jetbrains.mps.lang.structure.structure.ConceptDeclaration\",\"contextualNodeConceptReference\":\"c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration\",\"cellText\":\"Form\",\"caretPosition\":4,\"selectionStart\":4,\"selectionEnd\":4,\"isBig\":false,\"editable\":true,\"referenceCell\":false,\"errorState\":false,\"selectable\":true,\"selected\":true,\"feature\":{\"kind\":\"property\",\"name\":\"name\",\"declaredIn\":\"INamedConcept\",\"declaredInQualifiedName\":\"jetbrains.mps.lang.core.structure.INamedConcept\",\"declaredInConceptReference\":\"i:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468:jetbrains.mps.lang.core.structure.INamedConcept\",\"value\":\"Form\",\"valueNodeReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788\",\"targetReference\":\"\",\"targetConcept\":\"\",\"targetConceptQualifiedName\":\"\",\"targetConceptReference\":\"\",\"navigational\":false},\"messages\":[]},\"selection\":{\"present\":false,\"kind\":\"\",\"direction\":\"\",\"nodeCount\":0,\"nodesReturned\":0,\"nodesTruncated\":false,\"nodes\":[],\"cellCount\":0,\"cellsReturned\":0,\"cellsTruncated\":false,\"cells\":[],\"text\":\"\"}}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

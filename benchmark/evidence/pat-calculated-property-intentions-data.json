@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "type": "intention",
+      "id": "org.iets3.core.expr.base.intentions.attachValueInspector_Intention",
+      "kind": "NORMAL",
+      "presentation": "attachValueInspector",
+      "description": "DEBUGGING: Attach Value Inspector",
+      "targetNode": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046774713",
+      "declarationNode": "r:7d06857c-251f-4454-ac9c-c398e5200a04(org.iets3.core.expr.base.intentions)/2850607030359798920",
+      "parameterized": false
+    }
+  ]
+}

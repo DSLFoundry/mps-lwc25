@@ -1,0 +1,1234 @@
+{
+  "ok": true,
+  "data": {
+    "modules": [
+      {
+        "name": "QuestionnaireLanguage.build",
+        "reference": "10f275e3-1a9c-4414-acab-c5b801f5560b(QuestionnaireLanguage.build)",
+        "virtualFolder": "",
+        "readOnly": false,
+        "kind": "Solution",
+        "dependencies": [
+          {
+            "name": "jetbrains.mps.ide.build",
+            "reference": "422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)",
+            "scope": "Default",
+            "reexport": false
+          },
+          {
+            "name": "com.mbeddr.platform",
+            "reference": "3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)",
+            "scope": "Default",
+            "reexport": false
+          },
+          {
+            "name": "de.itemis.mps.extensions.build",
+            "reference": "f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)",
+            "scope": "Default",
+            "reexport": false
+          },
+          {
+            "name": "org.iets3.opensource.build",
+            "reference": "31dfb853-8304-435d-b27c-e29ef9a627cf(org.iets3.opensource.build)",
+            "scope": "Default",
+            "reexport": false
+          }
+        ],
+        "usedLanguages": [
+          {
+            "name": "jetbrains.mps.build",
+            "reference": "l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.build.mps",
+            "reference": "l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps",
+            "version": 8
+          },
+          {
+            "name": "jetbrains.mps.lang.core",
+            "reference": "l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core",
+            "version": 2
+          }
+        ],
+        "usedDevkits": [],
+        "facets": [
+          "java"
+        ],
+        "loadExtensions": "NotAvailable",
+        "models": [
+          {
+            "name": "QuestionnaireLanguage.build",
+            "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)",
+            "readOnly": false,
+            "dependencies": [
+              {
+                "name": "jetbrains.mps.ide.build",
+                "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)"
+              },
+              {
+                "name": "com.mbeddr.mpsutil.dev.build",
+                "reference": "r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)"
+              },
+              {
+                "name": "de.itemis.mps.extensions.build",
+                "reference": "r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)"
+              },
+              {
+                "name": "org.iets3.opensource.build.build",
+                "reference": "r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)"
+              }
+            ],
+            "usedLanguages": [
+              {
+                "name": "jetbrains.mps.build",
+                "reference": "l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build"
+              },
+              {
+                "name": "jetbrains.mps.build.mps",
+                "reference": "l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps"
+              }
+            ],
+            "engagedOnGenerationLanguages": [],
+            "rootNodesCount": 1
+          }
+        ]
+      },
+      {
+        "name": "Sandbox",
+        "reference": "52c3e310-5ac9-4a05-adb7-1d442266968f(Sandbox)",
+        "virtualFolder": "",
+        "readOnly": false,
+        "kind": "Solution",
+        "dependencies": [],
+        "usedLanguages": [
+          {
+            "name": "QuestionnaireLanguage",
+            "reference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage",
+            "version": 0
+          },
+          {
+            "name": "com.mbeddr.core.base",
+            "reference": "l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base",
+            "version": 6
+          },
+          {
+            "name": "com.mbeddr.mpsutil.blutil",
+            "reference": "l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil",
+            "version": 3
+          },
+          {
+            "name": "com.mbeddr.mpsutil.filepicker",
+            "reference": "l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker",
+            "version": 0
+          },
+          {
+            "name": "com.mbeddr.mpsutil.interpreter",
+            "reference": "l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter",
+            "version": 1
+          },
+          {
+            "name": "com.mbeddr.mpsutil.jung",
+            "reference": "l:d09a16fb-1d68-4a92-a5a4-20b4b2f86a62:com.mbeddr.mpsutil.jung",
+            "version": 0
+          },
+          {
+            "name": "com.mbeddr.mpsutil.plantuml.node",
+            "reference": "l:b4d28e19-7d2d-47e9-943e-3a41f97a0e52:com.mbeddr.mpsutil.plantuml.node",
+            "version": 0
+          },
+          {
+            "name": "de.slisson.mps.richtext",
+            "reference": "l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage",
+            "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage",
+            "version": 12
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.closures",
+            "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.collections",
+            "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections",
+            "version": 2
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.regexp",
+            "reference": "l:daafa647-f1f7-4b0b-b096-69cd7c8408c0:jetbrains.mps.baseLanguage.regexp",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.core",
+            "reference": "l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core",
+            "version": 2
+          },
+          {
+            "name": "jetbrains.mps.lang.modelapi",
+            "reference": "l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.smodel",
+            "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel",
+            "version": 19
+          },
+          {
+            "name": "jetbrains.mps.lang.traceable",
+            "reference": "l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable",
+            "version": 0
+          },
+          {
+            "name": "org.iets3.analysis.base",
+            "reference": "l:db8bd035-3f51-41d8-8fed-954c202d18be:org.iets3.analysis.base",
+            "version": 0
+          },
+          {
+            "name": "org.iets3.core.base",
+            "reference": "l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base",
+            "version": 0
+          },
+          {
+            "name": "org.iets3.core.expr.base",
+            "reference": "l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base",
+            "version": 22
+          },
+          {
+            "name": "org.iets3.core.expr.simpleTypes",
+            "reference": "l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes",
+            "version": 11
+          }
+        ],
+        "usedDevkits": [],
+        "facets": [
+          "java"
+        ],
+        "loadExtensions": "NotAvailable",
+        "models": [
+          {
+            "name": "Sandbox.QLBasic",
+            "reference": "r:1563aa75-9e95-4906-b5e3-c9d7c1e3928d(Sandbox.QLBasic)",
+            "readOnly": false,
+            "dependencies": [],
+            "usedLanguages": [
+              {
+                "name": "QuestionnaireLanguage",
+                "reference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage"
+              },
+              {
+                "name": "org.iets3.core.expr.simpleTypes",
+                "reference": "l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes"
+              }
+            ],
+            "engagedOnGenerationLanguages": [],
+            "rootNodesCount": 0
+          }
+        ]
+      },
+      {
+        "name": "QuestionnaireLanguage.buildAllScripts",
+        "reference": "e6ca667c-6285-4b1c-972c-df7bf51f117d(QuestionnaireLanguage.buildAllScripts)",
+        "virtualFolder": "",
+        "readOnly": false,
+        "kind": "Solution",
+        "dependencies": [
+          {
+            "name": "jetbrains.mps.ide.build",
+            "reference": "422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)",
+            "scope": "Default",
+            "reexport": false
+          },
+          {
+            "name": "com.mbeddr.platform",
+            "reference": "3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)",
+            "scope": "Default",
+            "reexport": false
+          },
+          {
+            "name": "de.itemis.mps.extensions.build",
+            "reference": "f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)",
+            "scope": "Default",
+            "reexport": false
+          },
+          {
+            "name": "org.iets3.opensource.build",
+            "reference": "31dfb853-8304-435d-b27c-e29ef9a627cf(org.iets3.opensource.build)",
+            "scope": "Default",
+            "reexport": false
+          }
+        ],
+        "usedLanguages": [
+          {
+            "name": "jetbrains.mps.build",
+            "reference": "l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.build.mps",
+            "reference": "l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps",
+            "version": 8
+          },
+          {
+            "name": "jetbrains.mps.lang.core",
+            "reference": "l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core",
+            "version": 2
+          }
+        ],
+        "usedDevkits": [],
+        "facets": [
+          "java"
+        ],
+        "loadExtensions": "NotAvailable",
+        "models": [
+          {
+            "name": "QuestionnaireLanguage.buildAllScripts",
+            "reference": "r:c14054a1-cbe3-4a3a-9436-ccdf7a44ed18(QuestionnaireLanguage.buildAllScripts)",
+            "readOnly": false,
+            "dependencies": [
+              {
+                "name": "jetbrains.mps.ide.build",
+                "reference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)"
+              },
+              {
+                "name": "com.mbeddr.mpsutil.dev.build",
+                "reference": "r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)"
+              },
+              {
+                "name": "de.itemis.mps.extensions.build",
+                "reference": "r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)"
+              },
+              {
+                "name": "org.iets3.opensource.build.build",
+                "reference": "r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)"
+              }
+            ],
+            "usedLanguages": [
+              {
+                "name": "jetbrains.mps.build",
+                "reference": "l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build"
+              },
+              {
+                "name": "jetbrains.mps.build.mps",
+                "reference": "l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps"
+              }
+            ],
+            "engagedOnGenerationLanguages": [],
+            "rootNodesCount": 1
+          }
+        ]
+      },
+      {
+        "name": "QuestionnaireLanguage",
+        "reference": "83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)",
+        "virtualFolder": "",
+        "readOnly": false,
+        "kind": "Language",
+        "dependencies": [
+          {
+            "name": "org.iets3.core.base",
+            "reference": "7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)",
+            "scope": "Default",
+            "reexport": false
+          },
+          {
+            "name": "com.mbeddr.doc",
+            "reference": "2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)",
+            "scope": "Default",
+            "reexport": false
+          },
+          {
+            "name": "org.iets3.core.expr.base",
+            "reference": "cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)",
+            "scope": "Default",
+            "reexport": false
+          },
+          {
+            "name": "org.iets3.core.expr.simpleTypes",
+            "reference": "6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)",
+            "scope": "Default",
+            "reexport": false
+          }
+        ],
+        "usedLanguages": [
+          {
+            "name": "jetbrains.mps.baseLanguage",
+            "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage",
+            "version": 12
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.classifiers",
+            "reference": "l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.closures",
+            "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.collections",
+            "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections",
+            "version": 2
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.javadoc",
+            "reference": "l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc",
+            "version": 3
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.logging",
+            "reference": "l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.tuples",
+            "reference": "l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples",
+            "version": 1
+          },
+          {
+            "name": "jetbrains.mps.lang.actions",
+            "reference": "l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions",
+            "version": 4
+          },
+          {
+            "name": "jetbrains.mps.lang.behavior",
+            "reference": "l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior",
+            "version": 2
+          },
+          {
+            "name": "jetbrains.mps.lang.constraints",
+            "reference": "l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints",
+            "version": 6
+          },
+          {
+            "name": "jetbrains.mps.lang.constraints.msg.specification",
+            "reference": "l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.constraints.rules",
+            "reference": "l:47257bf3-78d3-470b-89d9-8c3261a61d15:jetbrains.mps.lang.constraints.rules",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.constraints.rules.kinds",
+            "reference": "l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.constraints.rules.skeleton",
+            "reference": "l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.context",
+            "reference": "l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.context.defs",
+            "reference": "l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.core",
+            "reference": "l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core",
+            "version": 2
+          },
+          {
+            "name": "jetbrains.mps.lang.descriptor",
+            "reference": "l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.editor",
+            "reference": "l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor",
+            "version": 15
+          },
+          {
+            "name": "jetbrains.mps.lang.messages",
+            "reference": "l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.modelapi",
+            "reference": "l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.pattern",
+            "reference": "l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern",
+            "version": 2
+          },
+          {
+            "name": "jetbrains.mps.lang.quotation",
+            "reference": "l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation",
+            "version": 5
+          },
+          {
+            "name": "jetbrains.mps.lang.resources",
+            "reference": "l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources",
+            "version": 4
+          },
+          {
+            "name": "jetbrains.mps.lang.rulesAndMessages",
+            "reference": "l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.scopes",
+            "reference": "l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.sharedConcepts",
+            "reference": "l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.smodel",
+            "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel",
+            "version": 19
+          },
+          {
+            "name": "jetbrains.mps.lang.structure",
+            "reference": "l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure",
+            "version": 9
+          },
+          {
+            "name": "jetbrains.mps.lang.text",
+            "reference": "l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.traceable",
+            "reference": "l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.typesystem",
+            "reference": "l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem",
+            "version": 5
+          }
+        ],
+        "usedDevkits": [],
+        "extendedLanguages": [
+          {
+            "name": "org.iets3.core.expr.base",
+            "reference": "cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)"
+          },
+          {
+            "name": "org.iets3.core.expr.simpleTypes",
+            "reference": "6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)"
+          }
+        ],
+        "runtimeModules": [],
+        "accessoryModels": [],
+        "facets": [
+          "java"
+        ],
+        "loadExtensions": "Plugin",
+        "generators": [
+          {
+            "name": "QuestionnaireLanguage.generator",
+            "reference": "859d56ea-5acc-4450-86c1-5c76a58ec80e(QuestionnaireLanguage.generator)"
+          }
+        ],
+        "models": [
+          {
+            "name": "QuestionnaireLanguage.behavior",
+            "reference": "r:92004cb1-4a8c-4e76-962e-4d6db94b39bd(QuestionnaireLanguage.behavior)",
+            "readOnly": false,
+            "dependencies": [
+              {
+                "name": "QuestionnaireLanguage.structure",
+                "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)"
+              }
+            ],
+            "usedLanguages": [
+              {
+                "name": "jetbrains.mps.lang.smodel",
+                "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+              },
+              {
+                "name": "jetbrains.mps.lang.behavior",
+                "reference": "l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior"
+              },
+              {
+                "name": "jetbrains.mps.devkit.general-purpose",
+                "reference": "fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)",
+                "kind": "devkit",
+                "providedLanguages": [
+                  {
+                    "name": "jetbrains.mps.baseLanguage",
+                    "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.closures",
+                    "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.collections",
+                    "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.javadoc",
+                    "reference": "l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.logging",
+                    "reference": "l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.tuples",
+                    "reference": "l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.quotation",
+                    "reference": "l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.smodel",
+                    "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.text",
+                    "reference": "l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text"
+                  }
+                ]
+              }
+            ],
+            "engagedOnGenerationLanguages": [],
+            "rootNodesCount": 0
+          },
+          {
+            "name": "QuestionnaireLanguage.constraints",
+            "reference": "r:32469b95-2892-40b7-a7a7-12a1fa2fea89(QuestionnaireLanguage.constraints)",
+            "readOnly": false,
+            "dependencies": [],
+            "usedLanguages": [
+              {
+                "name": "jetbrains.mps.lang.constraints.rules.kinds",
+                "reference": "l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds"
+              },
+              {
+                "name": "jetbrains.mps.lang.context.defs",
+                "reference": "l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs"
+              },
+              {
+                "name": "jetbrains.mps.lang.constraints.msg.specification",
+                "reference": "l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification"
+              },
+              {
+                "name": "jetbrains.mps.lang.constraints.rules.skeleton",
+                "reference": "l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton"
+              },
+              {
+                "name": "jetbrains.mps.lang.rulesAndMessages",
+                "reference": "l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages"
+              },
+              {
+                "name": "jetbrains.mps.lang.constraints",
+                "reference": "l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints"
+              },
+              {
+                "name": "jetbrains.mps.lang.sharedConcepts",
+                "reference": "l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts"
+              },
+              {
+                "name": "jetbrains.mps.lang.context",
+                "reference": "l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context"
+              },
+              {
+                "name": "jetbrains.mps.lang.messages",
+                "reference": "l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages"
+              },
+              {
+                "name": "jetbrains.mps.devkit.aspect.constraints",
+                "reference": "00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)",
+                "kind": "devkit",
+                "providedLanguages": [
+                  {
+                    "name": "jetbrains.mps.baseLanguage",
+                    "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.closures",
+                    "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.collections",
+                    "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.javadoc",
+                    "reference": "l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.logging",
+                    "reference": "l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.tuples",
+                    "reference": "l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.constraints",
+                    "reference": "l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.constraints.msg.specification",
+                    "reference": "l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.constraints.rules",
+                    "reference": "l:47257bf3-78d3-470b-89d9-8c3261a61d15:jetbrains.mps.lang.constraints.rules"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.constraints.rules.kinds",
+                    "reference": "l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.constraints.rules.skeleton",
+                    "reference": "l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.context",
+                    "reference": "l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.context.defs",
+                    "reference": "l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.quotation",
+                    "reference": "l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.rulesAndMessages",
+                    "reference": "l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.scopes",
+                    "reference": "l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.smodel",
+                    "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.text",
+                    "reference": "l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text"
+                  }
+                ]
+              }
+            ],
+            "engagedOnGenerationLanguages": [],
+            "rootNodesCount": 0
+          },
+          {
+            "name": "QuestionnaireLanguage.editor",
+            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)",
+            "readOnly": false,
+            "dependencies": [
+              {
+                "name": "QuestionnaireLanguage.structure",
+                "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)"
+              }
+            ],
+            "usedLanguages": [
+              {
+                "name": "jetbrains.mps.lang.editor",
+                "reference": "l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor"
+              },
+              {
+                "name": "jetbrains.mps.lang.actions",
+                "reference": "l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions"
+              },
+              {
+                "name": "jetbrains.mps.devkit.general-purpose",
+                "reference": "fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)",
+                "kind": "devkit",
+                "providedLanguages": [
+                  {
+                    "name": "jetbrains.mps.baseLanguage",
+                    "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.closures",
+                    "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.collections",
+                    "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.javadoc",
+                    "reference": "l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.logging",
+                    "reference": "l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.tuples",
+                    "reference": "l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.quotation",
+                    "reference": "l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.smodel",
+                    "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.text",
+                    "reference": "l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text"
+                  }
+                ]
+              }
+            ],
+            "engagedOnGenerationLanguages": [],
+            "rootNodesCount": 0
+          },
+          {
+            "name": "QuestionnaireLanguage.structure",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)",
+            "readOnly": false,
+            "dependencies": [
+              {
+                "name": "org.iets3.core.base.structure",
+                "reference": "r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)"
+              },
+              {
+                "name": "com.mbeddr.doc.structure",
+                "reference": "r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)"
+              },
+              {
+                "name": "org.iets3.core.expr.base.structure",
+                "reference": "r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)"
+              },
+              {
+                "name": "org.iets3.core.expr.simpleTypes.structure",
+                "reference": "r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)"
+              }
+            ],
+            "usedLanguages": [
+              {
+                "name": "jetbrains.mps.devkit.aspect.structure",
+                "reference": "78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)",
+                "kind": "devkit",
+                "providedLanguages": [
+                  {
+                    "name": "jetbrains.mps.lang.resources",
+                    "reference": "l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.structure",
+                    "reference": "l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure"
+                  }
+                ]
+              }
+            ],
+            "engagedOnGenerationLanguages": [],
+            "rootNodesCount": 0
+          },
+          {
+            "name": "QuestionnaireLanguage.typesystem",
+            "reference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)",
+            "readOnly": false,
+            "dependencies": [],
+            "usedLanguages": [
+              {
+                "name": "jetbrains.mps.lang.typesystem",
+                "reference": "l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem"
+              },
+              {
+                "name": "jetbrains.mps.devkit.aspect.typesystem",
+                "reference": "00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)",
+                "kind": "devkit",
+                "providedLanguages": [
+                  {
+                    "name": "jetbrains.mps.baseLanguage",
+                    "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.closures",
+                    "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.collections",
+                    "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.javadoc",
+                    "reference": "l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.logging",
+                    "reference": "l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.tuples",
+                    "reference": "l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.actions",
+                    "reference": "l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.pattern",
+                    "reference": "l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.quotation",
+                    "reference": "l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.smodel",
+                    "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.text",
+                    "reference": "l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.typesystem",
+                    "reference": "l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem"
+                  }
+                ]
+              }
+            ],
+            "engagedOnGenerationLanguages": [],
+            "rootNodesCount": 0
+          },
+          {
+            "name": "QuestionnaireLanguage@descriptor",
+            "reference": "83a543da-6367-4b94-9df8-b626b1b2132c/i:f010101(QuestionnaireLanguage/QuestionnaireLanguage@descriptor)",
+            "readOnly": true,
+            "dependencies": [],
+            "usedLanguages": [
+              {
+                "name": "jetbrains.mps.lang.structure",
+                "reference": "l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure"
+              },
+              {
+                "name": "jetbrains.mps.devkit.language-descriptor",
+                "reference": "00000000-0000-4000-0000-3c66972ccb47(jetbrains.mps.devkit.language-descriptor)",
+                "kind": "devkit",
+                "providedLanguages": [
+                  {
+                    "name": "jetbrains.mps.lang.descriptor",
+                    "reference": "l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor"
+                  }
+                ]
+              }
+            ],
+            "engagedOnGenerationLanguages": [
+              {
+                "name": "jetbrains.mps.lang.descriptor",
+                "reference": "l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor"
+              },
+              {
+                "name": "jetbrains.mps.lang.editor",
+                "reference": "l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor"
+              },
+              {
+                "name": "jetbrains.mps.lang.actions",
+                "reference": "l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions"
+              },
+              {
+                "name": "jetbrains.mps.lang.behavior",
+                "reference": "l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior"
+              },
+              {
+                "name": "jetbrains.mps.lang.smodel",
+                "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+              },
+              {
+                "name": "jetbrains.mps.lang.typesystem",
+                "reference": "l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.logging",
+                "reference": "l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.collections",
+                "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections"
+              },
+              {
+                "name": "jetbrains.mps.lang.pattern",
+                "reference": "l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern"
+              },
+              {
+                "name": "jetbrains.mps.lang.text",
+                "reference": "l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text"
+              },
+              {
+                "name": "jetbrains.mps.lang.quotation",
+                "reference": "l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.tuples",
+                "reference": "l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.javadoc",
+                "reference": "l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage",
+                "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.closures",
+                "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures"
+              }
+            ],
+            "rootNodesCount": 0
+          }
+        ]
+      },
+      {
+        "name": "QuestionnaireLanguage.generator",
+        "reference": "859d56ea-5acc-4450-86c1-5c76a58ec80e(QuestionnaireLanguage.generator)",
+        "virtualFolder": "",
+        "readOnly": false,
+        "kind": "Generator",
+        "dependencies": [
+          {
+            "name": "org.iets3.core.expr.datetime",
+            "reference": "289fb12b-7f53-4ef7-bc2e-1ed2c6a7c998(org.iets3.core.expr.datetime)",
+            "scope": "Default",
+            "reexport": false
+          }
+        ],
+        "usedLanguages": [
+          {
+            "name": "com.dslfoundry.plaintextgen",
+            "reference": "l:990507d3-3527-4c54-bfe9-0ca3c9c6247a:com.dslfoundry.plaintextgen",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage",
+            "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage",
+            "version": 12
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.closures",
+            "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.collections",
+            "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections",
+            "version": 2
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.javadoc",
+            "reference": "l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc",
+            "version": 3
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.logging",
+            "reference": "l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.tuples",
+            "reference": "l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples",
+            "version": 1
+          },
+          {
+            "name": "jetbrains.mps.lang.core",
+            "reference": "l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core",
+            "version": 2
+          },
+          {
+            "name": "jetbrains.mps.lang.generator",
+            "reference": "l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator",
+            "version": 4
+          },
+          {
+            "name": "jetbrains.mps.lang.generator.generationContext",
+            "reference": "l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext",
+            "version": 2
+          },
+          {
+            "name": "jetbrains.mps.lang.generator.generationParameters",
+            "reference": "l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.modelapi",
+            "reference": "l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.quotation",
+            "reference": "l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation",
+            "version": 5
+          },
+          {
+            "name": "jetbrains.mps.lang.sharedConcepts",
+            "reference": "l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.smodel",
+            "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel",
+            "version": 19
+          },
+          {
+            "name": "jetbrains.mps.lang.text",
+            "reference": "l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text",
+            "version": 0
+          },
+          {
+            "name": "jetbrains.mps.lang.traceable",
+            "reference": "l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable",
+            "version": 0
+          }
+        ],
+        "usedDevkits": [],
+        "depGenerators": [],
+        "sourceLanguage": {
+          "name": "QuestionnaireLanguage",
+          "reference": "83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)"
+        },
+        "facets": [
+          "java"
+        ],
+        "loadExtensions": "NotAvailable",
+        "models": [
+          {
+            "name": "QuestionnaireLanguage.generator.templates@generator",
+            "reference": "r:1f1279ee-a270-42e5-9ba9-ef16190001b5(QuestionnaireLanguage.generator.templates@generator)",
+            "readOnly": false,
+            "dependencies": [
+              {
+                "name": "QuestionnaireLanguage.structure",
+                "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)"
+              },
+              {
+                "name": "de.slisson.mps.richtext.behavior",
+                "reference": "r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)"
+              },
+              {
+                "name": "jetbrains.mps.lang.core.structure",
+                "reference": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)"
+              },
+              {
+                "name": "org.iets3.core.expr.datetime.structure",
+                "reference": "r:9ec53fca-e669-4a18-ba8b-6c9f4f1cb361(org.iets3.core.expr.datetime.structure)"
+              },
+              {
+                "name": "org.iets3.core.expr.base.structure",
+                "reference": "r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)"
+              }
+            ],
+            "usedLanguages": [
+              {
+                "name": "com.dslfoundry.plaintextgen",
+                "reference": "l:990507d3-3527-4c54-bfe9-0ca3c9c6247a:com.dslfoundry.plaintextgen"
+              },
+              {
+                "name": "jetbrains.mps.lang.generator",
+                "reference": "l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator"
+              },
+              {
+                "name": "jetbrains.mps.lang.smodel",
+                "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage",
+                "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage"
+              },
+              {
+                "name": "jetbrains.mps.devkit.templates",
+                "reference": "a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)",
+                "kind": "devkit",
+                "providedLanguages": [
+                  {
+                    "name": "jetbrains.mps.baseLanguage",
+                    "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.closures",
+                    "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.collections",
+                    "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.javadoc",
+                    "reference": "l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.logging",
+                    "reference": "l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging"
+                  },
+                  {
+                    "name": "jetbrains.mps.baseLanguage.tuples",
+                    "reference": "l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.generator",
+                    "reference": "l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.generator.generationContext",
+                    "reference": "l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.generator.generationParameters",
+                    "reference": "l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.quotation",
+                    "reference": "l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.sharedConcepts",
+                    "reference": "l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.smodel",
+                    "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+                  },
+                  {
+                    "name": "jetbrains.mps.lang.text",
+                    "reference": "l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text"
+                  }
+                ]
+              }
+            ],
+            "engagedOnGenerationLanguages": [],
+            "rootNodesCount": 1
+          },
+          {
+            "name": "QuestionnaireLanguage.generator@descriptor",
+            "reference": "859d56ea-5acc-4450-86c1-5c76a58ec80e/i:f020202(QuestionnaireLanguage.generator/QuestionnaireLanguage.generator@descriptor)",
+            "readOnly": true,
+            "dependencies": [],
+            "usedLanguages": [],
+            "engagedOnGenerationLanguages": [
+              {
+                "name": "jetbrains.mps.lang.descriptor",
+                "reference": "l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor"
+              }
+            ],
+            "rootNodesCount": 0
+          }
+        ]
+      }
+    ]
+  }
+}

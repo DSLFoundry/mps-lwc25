@@ -1,0 +1,2280 @@
+{
+  "ok": true,
+  "data": {
+    "name": "QuestionnaireLanguage.build",
+    "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)",
+    "readOnly": false,
+    "rootNodes": [
+      {
+        "name": "QuestionnaireLanguage",
+        "concept": "BuildProject",
+        "doc": "",
+        "deprecated": "false",
+        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363:jetbrains.mps.build.structure.BuildProject",
+        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628499",
+        "properties": [
+          {
+            "name": "internalBaseDirectory",
+            "type": "string",
+            "doc": "",
+            "deprecated": "false",
+            "value": "../../build/QuestionnaireLanguage"
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "doc": "",
+            "deprecated": "false",
+            "value": "QuestionnaireLanguage"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "plugins",
+            "type": "BuildPlugin",
+            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/6647099934206689694:jetbrains.mps.build.structure.BuildPlugin",
+            "cardinality": "0..n",
+            "doc": "",
+            "deprecated": "false",
+            "nodes": [
+              {
+                "name": "java",
+                "concept": "BuildJavaPlugin",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/6647099934206700647:jetbrains.mps.build.structure.BuildJavaPlugin",
+                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628500",
+                "properties": [],
+                "references": [],
+                "children": []
+              },
+              {
+                "name": "mps",
+                "concept": "BuildMPSPlugin",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/868032131020265945:jetbrains.mps.build.mps.structure.BuildMPSPlugin",
+                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628501",
+                "properties": [],
+                "references": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "role": "dependencies",
+            "type": "BuildDependency",
+            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745379:jetbrains.mps.build.structure.BuildDependency",
+            "cardinality": "0..n",
+            "doc": "",
+            "deprecated": "false",
+            "nodes": [
+              {
+                "name": "mps",
+                "concept": "BuildProjectDependency",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/4993211115183325728:jetbrains.mps.build.structure.BuildProjectDependency",
+                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628503",
+                "properties": [],
+                "references": [
+                  {
+                    "role": "script",
+                    "type": "BuildProject",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363:jetbrains.mps.build.structure.BuildProject",
+                    "cardinality": "1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "target": "mps",
+                    "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/4301118715654192646"
+                  }
+                ],
+                "children": [
+                  {
+                    "role": "artifacts",
+                    "type": "BuildSourcePath",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+                    "cardinality": "0..1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": "$mps.home",
+                        "concept": "BuildSourceMacroRelativePath",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848153117:jetbrains.mps.build.structure.BuildSourceMacroRelativePath",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628504",
+                        "properties": [],
+                        "references": [
+                          {
+                            "role": "macro",
+                            "type": "BuildFolderMacro",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                            "cardinality": "1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "target": "mps.home",
+                            "targetReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628502"
+                          }
+                        ],
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "org.iets3.opensource",
+                "concept": "BuildProjectDependency",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/4993211115183325728:jetbrains.mps.build.structure.BuildProjectDependency",
+                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628686",
+                "properties": [],
+                "references": [
+                  {
+                    "role": "script",
+                    "type": "BuildProject",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363:jetbrains.mps.build.structure.BuildProject",
+                    "cardinality": "1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "target": "org.iets3.opensource",
+                    "targetReference": "r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)/6354991446090808661"
+                  }
+                ],
+                "children": [
+                  {
+                    "role": "artifacts",
+                    "type": "BuildSourcePath",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+                    "cardinality": "0..1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": "$artifacts.root",
+                        "concept": "BuildSourceMacroRelativePath",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848153117:jetbrains.mps.build.structure.BuildSourceMacroRelativePath",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628688",
+                        "properties": [],
+                        "references": [
+                          {
+                            "role": "macro",
+                            "type": "BuildFolderMacro",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                            "cardinality": "1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "target": "artifacts.root",
+                            "targetReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628564"
+                          }
+                        ],
+                        "children": [
+                          {
+                            "role": "compositePart",
+                            "type": "BuildCompositePath",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                            "cardinality": "0..1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "BuildCompositePath",
+                                "concept": "BuildCompositePath",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628691",
+                                "properties": [
+                                  {
+                                    "name": "head",
+                                    "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": "org.iets3.opensource"
+                                  }
+                                ],
+                                "references": [],
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "com.mbeddr.platform",
+                "concept": "BuildProjectDependency",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/4993211115183325728:jetbrains.mps.build.structure.BuildProjectDependency",
+                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628693",
+                "properties": [],
+                "references": [
+                  {
+                    "role": "script",
+                    "type": "BuildProject",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363:jetbrains.mps.build.structure.BuildProject",
+                    "cardinality": "1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "target": "com.mbeddr.platform",
+                    "targetReference": "r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)/4160126263863194133"
+                  }
+                ],
+                "children": [
+                  {
+                    "role": "artifacts",
+                    "type": "BuildSourcePath",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+                    "cardinality": "0..1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": "$artifacts.root",
+                        "concept": "BuildSourceMacroRelativePath",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848153117:jetbrains.mps.build.structure.BuildSourceMacroRelativePath",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628695",
+                        "properties": [],
+                        "references": [
+                          {
+                            "role": "macro",
+                            "type": "BuildFolderMacro",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                            "cardinality": "1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "target": "artifacts.root",
+                            "targetReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628564"
+                          }
+                        ],
+                        "children": [
+                          {
+                            "role": "compositePart",
+                            "type": "BuildCompositePath",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                            "cardinality": "0..1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "BuildCompositePath",
+                                "concept": "BuildCompositePath",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628698",
+                                "properties": [
+                                  {
+                                    "name": "head",
+                                    "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": "com.mbeddr.platform"
+                                  }
+                                ],
+                                "references": [],
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "de.itemis.mps.extensions",
+                "concept": "BuildProjectDependency",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/4993211115183325728:jetbrains.mps.build.structure.BuildProjectDependency",
+                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628700",
+                "properties": [],
+                "references": [
+                  {
+                    "role": "script",
+                    "type": "BuildProject",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363:jetbrains.mps.build.structure.BuildProject",
+                    "cardinality": "1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "target": "de.itemis.mps.extensions",
+                    "targetReference": "r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)/3410197114990977083"
+                  }
+                ],
+                "children": [
+                  {
+                    "role": "artifacts",
+                    "type": "BuildSourcePath",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+                    "cardinality": "0..1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": "$artifacts.root",
+                        "concept": "BuildSourceMacroRelativePath",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848153117:jetbrains.mps.build.structure.BuildSourceMacroRelativePath",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628702",
+                        "properties": [],
+                        "references": [
+                          {
+                            "role": "macro",
+                            "type": "BuildFolderMacro",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                            "cardinality": "1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "target": "artifacts.root",
+                            "targetReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628564"
+                          }
+                        ],
+                        "children": [
+                          {
+                            "role": "compositePart",
+                            "type": "BuildCompositePath",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                            "cardinality": "0..1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "BuildCompositePath",
+                                "concept": "BuildCompositePath",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628705",
+                                "properties": [
+                                  {
+                                    "name": "head",
+                                    "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": "com.mbeddr.platform"
+                                  }
+                                ],
+                                "references": [],
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "mpsBuild",
+                "concept": "BuildProjectDependency",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/4993211115183325728:jetbrains.mps.build.structure.BuildProjectDependency",
+                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628707",
+                "properties": [],
+                "references": [
+                  {
+                    "role": "script",
+                    "type": "BuildProject",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363:jetbrains.mps.build.structure.BuildProject",
+                    "cardinality": "1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "target": "mpsBuild",
+                    "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/8524659923334108558"
+                  }
+                ],
+                "children": [
+                  {
+                    "role": "artifacts",
+                    "type": "BuildSourcePath",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+                    "cardinality": "0..1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": "$mps.home",
+                        "concept": "BuildSourceMacroRelativePath",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848153117:jetbrains.mps.build.structure.BuildSourceMacroRelativePath",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628709",
+                        "properties": [],
+                        "references": [
+                          {
+                            "role": "macro",
+                            "type": "BuildFolderMacro",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                            "cardinality": "1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "target": "mps.home",
+                            "targetReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628502"
+                          }
+                        ],
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "role": "macros",
+            "type": "BuildMacro",
+            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745375:jetbrains.mps.build.structure.BuildMacro",
+            "cardinality": "0..n",
+            "doc": "",
+            "deprecated": "false",
+            "nodes": [
+              {
+                "name": "mps.home",
+                "concept": "BuildFolderMacro",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628502",
+                "properties": [
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "doc": "",
+                    "deprecated": "false",
+                    "value": "mps.home"
+                  }
+                ],
+                "references": [],
+                "children": []
+              },
+              {
+                "name": "ql.home",
+                "concept": "BuildFolderMacro",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642872",
+                "properties": [
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "doc": "",
+                    "deprecated": "false",
+                    "value": "ql.home"
+                  }
+                ],
+                "references": [],
+                "children": [
+                  {
+                    "role": "defaultPath",
+                    "type": "BuildSourcePath",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+                    "cardinality": "0..1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": ".",
+                        "concept": "BuildSourceProjectRelativePath",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5481553824944787378:jetbrains.mps.build.structure.BuildSourceProjectRelativePath",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642874",
+                        "properties": [],
+                        "references": [],
+                        "children": [
+                          {
+                            "role": "compositePart",
+                            "type": "BuildCompositePath",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                            "cardinality": "0..1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "BuildCompositePath",
+                                "concept": "BuildCompositePath",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642876",
+                                "properties": [
+                                  {
+                                    "name": "head",
+                                    "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": ".."
+                                  }
+                                ],
+                                "references": [],
+                                "children": [
+                                  {
+                                    "role": "tail",
+                                    "type": "BuildCompositePath",
+                                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                    "cardinality": "0..1",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "nodes": [
+                                      {
+                                        "name": "BuildCompositePath",
+                                        "concept": "BuildCompositePath",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642878",
+                                        "properties": [
+                                          {
+                                            "name": "head",
+                                            "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "value": ".."
+                                          }
+                                        ],
+                                        "references": [],
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "artifacts.root",
+                "concept": "BuildFolderMacro",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628564",
+                "properties": [
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "doc": "",
+                    "deprecated": "false",
+                    "value": "artifacts.root"
+                  }
+                ],
+                "references": [],
+                "children": [
+                  {
+                    "role": "defaultPath",
+                    "type": "BuildSourcePath",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+                    "cardinality": "0..1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": "$ql.home",
+                        "concept": "BuildSourceMacroRelativePath",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848153117:jetbrains.mps.build.structure.BuildSourceMacroRelativePath",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497562153",
+                        "properties": [],
+                        "references": [
+                          {
+                            "role": "macro",
+                            "type": "BuildFolderMacro",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                            "cardinality": "1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "target": "ql.home",
+                            "targetReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642872"
+                          }
+                        ],
+                        "children": [
+                          {
+                            "role": "compositePart",
+                            "type": "BuildCompositePath",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                            "cardinality": "0..1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "BuildCompositePath",
+                                "concept": "BuildCompositePath",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497562157",
+                                "properties": [
+                                  {
+                                    "name": "head",
+                                    "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": "build"
+                                  }
+                                ],
+                                "references": [],
+                                "children": [
+                                  {
+                                    "role": "tail",
+                                    "type": "BuildCompositePath",
+                                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                    "cardinality": "0..1",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "nodes": [
+                                      {
+                                        "name": "BuildCompositePath",
+                                        "concept": "BuildCompositePath",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497562158",
+                                        "properties": [
+                                          {
+                                            "name": "head",
+                                            "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "value": "artifacts"
+                                          }
+                                        ],
+                                        "references": [],
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "role": "parts",
+            "type": "BuildProjectPart",
+            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073736:jetbrains.mps.build.structure.BuildProjectPart",
+            "cardinality": "0..n",
+            "doc": "",
+            "deprecated": "false",
+            "nodes": [
+              {
+                "name": "QuestionnaireLanguage",
+                "concept": "BuildMps_IdeaPlugin",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314498932:jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin",
+                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628519",
+                "properties": [
+                  {
+                    "name": "id",
+                    "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4084472c",
+                    "doc": "",
+                    "deprecated": "false",
+                    "value": "QuestionnaireLanguage"
+                  },
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "doc": "",
+                    "deprecated": "false",
+                    "value": "QuestionnaireLanguage"
+                  }
+                ],
+                "references": [],
+                "children": [
+                  {
+                    "role": "name",
+                    "type": "BuildStringNotEmpty",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/841011766566059607:jetbrains.mps.build.structure.BuildStringNotEmpty",
+                    "cardinality": "1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": "BuildStringNotEmpty",
+                        "concept": "BuildStringNotEmpty",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/841011766566059607:jetbrains.mps.build.structure.BuildStringNotEmpty",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628520",
+                        "properties": [],
+                        "references": [],
+                        "children": [
+                          {
+                            "role": "parts",
+                            "type": "BuildStringPart",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/4903714810883702015:jetbrains.mps.build.structure.BuildStringPart",
+                            "cardinality": "0..n",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "QuestionnaireLanguage",
+                                "concept": "BuildTextStringPart",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/4903714810883702019:jetbrains.mps.build.structure.BuildTextStringPart",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628521",
+                                "properties": [
+                                  {
+                                    "name": "text",
+                                    "type": "string",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": "QuestionnaireLanguage"
+                                  },
+                                  {
+                                    "name": "name",
+                                    "type": "string",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": "QuestionnaireLanguage"
+                                  }
+                                ],
+                                "references": [],
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "role": "containerName",
+                    "type": "BuildStringNotEmpty",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/841011766566059607:jetbrains.mps.build.structure.BuildStringNotEmpty",
+                    "cardinality": "1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": "BuildStringNotEmpty",
+                        "concept": "BuildStringNotEmpty",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/841011766566059607:jetbrains.mps.build.structure.BuildStringNotEmpty",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628526",
+                        "properties": [],
+                        "references": [],
+                        "children": [
+                          {
+                            "role": "parts",
+                            "type": "BuildStringPart",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/4903714810883702015:jetbrains.mps.build.structure.BuildStringPart",
+                            "cardinality": "0..n",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "QuestionnaireLanguage",
+                                "concept": "BuildTextStringPart",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/4903714810883702019:jetbrains.mps.build.structure.BuildTextStringPart",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628527",
+                                "properties": [
+                                  {
+                                    "name": "text",
+                                    "type": "string",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": "QuestionnaireLanguage"
+                                  },
+                                  {
+                                    "name": "name",
+                                    "type": "string",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": "QuestionnaireLanguage"
+                                  }
+                                ],
+                                "references": [],
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "role": "version",
+                    "type": "BuildStringNotEmpty",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/841011766566059607:jetbrains.mps.build.structure.BuildStringNotEmpty",
+                    "cardinality": "1",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": "BuildStringNotEmpty",
+                        "concept": "BuildStringNotEmpty",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/841011766566059607:jetbrains.mps.build.structure.BuildStringNotEmpty",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628522",
+                        "properties": [],
+                        "references": [],
+                        "children": [
+                          {
+                            "role": "parts",
+                            "type": "BuildStringPart",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/4903714810883702015:jetbrains.mps.build.structure.BuildStringPart",
+                            "cardinality": "0..n",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "1.0",
+                                "concept": "BuildTextStringPart",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/4903714810883702019:jetbrains.mps.build.structure.BuildTextStringPart",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628523",
+                                "properties": [
+                                  {
+                                    "name": "text",
+                                    "type": "string",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": "1.0"
+                                  },
+                                  {
+                                    "name": "name",
+                                    "type": "string",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": "1.0"
+                                  }
+                                ],
+                                "references": [],
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "role": "content",
+                    "type": "BuildMps_IdeaPluginContent",
+                    "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314499051:jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginContent",
+                    "cardinality": "0..n",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": "QuestionnaireLanguage",
+                        "concept": "BuildMps_IdeaPluginGroup",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314586625:jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628524",
+                        "properties": [],
+                        "references": [
+                          {
+                            "role": "group",
+                            "type": "BuildMps_Group",
+                            "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/1500819558095907805:jetbrains.mps.build.mps.structure.BuildMps_Group",
+                            "cardinality": "1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "target": "QuestionnaireLanguage",
+                            "targetReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628518"
+                          }
+                        ],
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "role": "dependencies",
+                    "type": "BuildMps_IdeaPluginDependency",
+                    "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314499027:jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency",
+                    "cardinality": "0..n",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": "jetbrains.mps.core",
+                        "concept": "BuildMps_IdeaPluginDependency",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314499027:jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628525",
+                        "properties": [],
+                        "references": [
+                          {
+                            "role": "target",
+                            "type": "BuildMps_IdeaPlugin",
+                            "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314498932:jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin",
+                            "cardinality": "1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "target": "jetbrains.mps.core",
+                            "targetReference": "r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)/4973949960459588488"
+                          }
+                        ],
+                        "children": []
+                      },
+                      {
+                        "name": "com.mbeddr.doc",
+                        "concept": "BuildMps_IdeaPluginDependency",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314499027:jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497869381",
+                        "properties": [],
+                        "references": [
+                          {
+                            "role": "target",
+                            "type": "BuildMps_IdeaPlugin",
+                            "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314498932:jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin",
+                            "cardinality": "1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "target": "com.mbeddr.doc",
+                            "targetReference": "r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)/8607331426312061457"
+                          }
+                        ],
+                        "children": []
+                      },
+                      {
+                        "name": "org.iets3.core.os",
+                        "concept": "BuildMps_IdeaPluginDependency",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314499027:jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497869383",
+                        "properties": [],
+                        "references": [
+                          {
+                            "role": "target",
+                            "type": "BuildMps_IdeaPlugin",
+                            "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314498932:jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin",
+                            "cardinality": "1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "target": "org.iets3.core.os",
+                            "targetReference": "r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)/6354991446090808809"
+                          }
+                        ],
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "role": "xml",
+                    "type": "XmlElement",
+                    "typeReference": "c:479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681415858:jetbrains.mps.core.xml.structure.XmlElement",
+                    "cardinality": "0..n",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": "\u003celement/\u003e",
+                        "concept": "XmlElement",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681415858:jetbrains.mps.core.xml.structure.XmlElement",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628528",
+                        "properties": [
+                          {
+                            "name": "tagName",
+                            "type": "string",
+                            "doc": "",
+                            "deprecated": "false",
+                            "value": "depends"
+                          }
+                        ],
+                        "references": [],
+                        "children": [
+                          {
+                            "role": "content",
+                            "type": "XmlContent",
+                            "typeReference": "c:479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681299051:jetbrains.mps.core.xml.structure.XmlContent",
+                            "cardinality": "0..n",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "text",
+                                "concept": "XmlText",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:479c7a8c-02f9-43b5-9139-d910cb22f298/1622293396948952339:jetbrains.mps.core.xml.structure.XmlText",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628529",
+                                "properties": [
+                                  {
+                                    "name": "value",
+                                    "type": "string",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": "com.intellij.modules.platform"
+                                  }
+                                ],
+                                "references": [],
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "QuestionnaireLanguage",
+                "concept": "BuildMps_Group",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/1500819558095907805:jetbrains.mps.build.mps.structure.BuildMps_Group",
+                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628518",
+                "properties": [
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "doc": "",
+                    "deprecated": "false",
+                    "value": "QuestionnaireLanguage"
+                  }
+                ],
+                "references": [],
+                "children": [
+                  {
+                    "role": "modules",
+                    "type": "BuildMps_AbstractModule",
+                    "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/322010710375871467:jetbrains.mps.build.mps.structure.BuildMps_AbstractModule",
+                    "cardinality": "0..n",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": "QuestionnaireLanguage",
+                        "concept": "BuildMps_Language",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/3189788309731840248:jetbrains.mps.build.mps.structure.BuildMps_Language",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628511",
+                        "properties": [
+                          {
+                            "name": "uuid",
+                            "type": "string",
+                            "doc": "",
+                            "deprecated": "false",
+                            "value": "83a543da-6367-4b94-9df8-b626b1b2132c"
+                          },
+                          {
+                            "name": "compact",
+                            "type": "boolean",
+                            "doc": "",
+                            "deprecated": "false",
+                            "value": "true"
+                          },
+                          {
+                            "name": "name",
+                            "type": "string",
+                            "doc": "",
+                            "deprecated": "false",
+                            "value": "QuestionnaireLanguage"
+                          }
+                        ],
+                        "references": [],
+                        "children": [
+                          {
+                            "role": "generator",
+                            "type": "BuildMps_Generator",
+                            "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5507251971038816436:jetbrains.mps.build.mps.structure.BuildMps_Generator",
+                            "cardinality": "0..1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "QuestionnaireLanguage.generator",
+                                "concept": "BuildMps_Generator",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5507251971038816436:jetbrains.mps.build.mps.structure.BuildMps_Generator",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628545",
+                                "properties": [
+                                  {
+                                    "name": "uuid",
+                                    "type": "string",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": "859d56ea-5acc-4450-86c1-5c76a58ec80e"
+                                  },
+                                  {
+                                    "name": "name",
+                                    "type": "string",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": "QuestionnaireLanguage.generator"
+                                  }
+                                ],
+                                "references": [],
+                                "children": [
+                                  {
+                                    "role": "sources",
+                                    "type": "BuildMps_ModuleSource",
+                                    "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547823:jetbrains.mps.build.mps.structure.BuildMps_ModuleSource",
+                                    "cardinality": "0..n",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "nodes": [
+                                      {
+                                        "name": "model root",
+                                        "concept": "BuildMps_ModuleModelRoot",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/4278635856200817744:jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot",
+                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628551",
+                                        "properties": [
+                                          {
+                                            "name": "deployFolderName",
+                                            "type": "string",
+                                            "doc": "name of the folder models get deployed to, usually the same as last segment of original path",
+                                            "deprecated": "false",
+                                            "value": "generator/templates"
+                                          },
+                                          {
+                                            "name": "extracted",
+                                            "type": "boolean",
+                                            "doc": "true indicates the root has been extracted automatically and values can get updated during project re-load process",
+                                            "deprecated": "false",
+                                            "value": "true"
+                                          },
+                                          {
+                                            "name": "convert2binary",
+                                            "type": "boolean",
+                                            "doc": "true indicates model files have to be piped though a convertor that re-saves them into binary persistence, if possible",
+                                            "deprecated": "false",
+                                            "value": "true"
+                                          }
+                                        ],
+                                        "references": [],
+                                        "children": [
+                                          {
+                                            "role": "location",
+                                            "type": "BuildInputFiles",
+                                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794596:jetbrains.mps.build.structure.BuildInputFiles",
+                                            "cardinality": "1..n",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "nodes": [
+                                              {
+                                                "name": "files from",
+                                                "concept": "BuildInputFiles",
+                                                "doc": "",
+                                                "deprecated": "false",
+                                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794596:jetbrains.mps.build.structure.BuildInputFiles",
+                                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642914",
+                                                "properties": [],
+                                                "references": [],
+                                                "children": [
+                                                  {
+                                                    "role": "dir",
+                                                    "type": "BuildSourcePath",
+                                                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+                                                    "cardinality": "1",
+                                                    "doc": "",
+                                                    "deprecated": "false",
+                                                    "nodes": [
+                                                      {
+                                                        "name": "$ql.home",
+                                                        "concept": "BuildSourceMacroRelativePath",
+                                                        "doc": "",
+                                                        "deprecated": "false",
+                                                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848153117:jetbrains.mps.build.structure.BuildSourceMacroRelativePath",
+                                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642909",
+                                                        "properties": [],
+                                                        "references": [
+                                                          {
+                                                            "role": "macro",
+                                                            "type": "BuildFolderMacro",
+                                                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                                                            "cardinality": "1",
+                                                            "doc": "",
+                                                            "deprecated": "false",
+                                                            "target": "ql.home",
+                                                            "targetReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642872"
+                                                          }
+                                                        ],
+                                                        "children": [
+                                                          {
+                                                            "role": "compositePart",
+                                                            "type": "BuildCompositePath",
+                                                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                            "cardinality": "0..1",
+                                                            "doc": "",
+                                                            "deprecated": "false",
+                                                            "nodes": [
+                                                              {
+                                                                "name": "BuildCompositePath",
+                                                                "concept": "BuildCompositePath",
+                                                                "doc": "",
+                                                                "deprecated": "false",
+                                                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642910",
+                                                                "properties": [
+                                                                  {
+                                                                    "name": "head",
+                                                                    "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                                    "doc": "",
+                                                                    "deprecated": "false",
+                                                                    "value": "languages"
+                                                                  }
+                                                                ],
+                                                                "references": [],
+                                                                "children": [
+                                                                  {
+                                                                    "role": "tail",
+                                                                    "type": "BuildCompositePath",
+                                                                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                                    "cardinality": "0..1",
+                                                                    "doc": "",
+                                                                    "deprecated": "false",
+                                                                    "nodes": [
+                                                                      {
+                                                                        "name": "BuildCompositePath",
+                                                                        "concept": "BuildCompositePath",
+                                                                        "doc": "",
+                                                                        "deprecated": "false",
+                                                                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642911",
+                                                                        "properties": [
+                                                                          {
+                                                                            "name": "head",
+                                                                            "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                                            "doc": "",
+                                                                            "deprecated": "false",
+                                                                            "value": "QuestionnaireLanguage"
+                                                                          }
+                                                                        ],
+                                                                        "references": [],
+                                                                        "children": [
+                                                                          {
+                                                                            "role": "tail",
+                                                                            "type": "BuildCompositePath",
+                                                                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                                            "cardinality": "0..1",
+                                                                            "doc": "",
+                                                                            "deprecated": "false",
+                                                                            "nodes": [
+                                                                              {
+                                                                                "name": "BuildCompositePath",
+                                                                                "concept": "BuildCompositePath",
+                                                                                "doc": "",
+                                                                                "deprecated": "false",
+                                                                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642912",
+                                                                                "properties": [
+                                                                                  {
+                                                                                    "name": "head",
+                                                                                    "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                                                    "doc": "",
+                                                                                    "deprecated": "false",
+                                                                                    "value": "generator"
+                                                                                  }
+                                                                                ],
+                                                                                "references": [],
+                                                                                "children": [
+                                                                                  {
+                                                                                    "role": "tail",
+                                                                                    "type": "BuildCompositePath",
+                                                                                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                                                    "cardinality": "0..1",
+                                                                                    "doc": "",
+                                                                                    "deprecated": "false",
+                                                                                    "nodes": [
+                                                                                      {
+                                                                                        "name": "BuildCompositePath",
+                                                                                        "concept": "BuildCompositePath",
+                                                                                        "doc": "",
+                                                                                        "deprecated": "false",
+                                                                                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642913",
+                                                                                        "properties": [
+                                                                                          {
+                                                                                            "name": "head",
+                                                                                            "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                                                            "doc": "",
+                                                                                            "deprecated": "false",
+                                                                                            "value": "templates"
+                                                                                          }
+                                                                                        ],
+                                                                                        "references": [],
+                                                                                        "children": []
+                                                                                      }
+                                                                                    ]
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "role": "selectors",
+                                                    "type": "BuildFileSelector",
+                                                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794599:jetbrains.mps.build.structure.BuildFileSelector",
+                                                    "cardinality": "0..n",
+                                                    "doc": "",
+                                                    "deprecated": "false",
+                                                    "nodes": [
+                                                      {
+                                                        "name": "includes",
+                                                        "concept": "BuildFileIncludesSelector",
+                                                        "doc": "",
+                                                        "deprecated": "false",
+                                                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8654221991637384182:jetbrains.mps.build.structure.BuildFileIncludesSelector",
+                                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642915",
+                                                        "properties": [
+                                                          {
+                                                            "name": "pattern",
+                                                            "type": "string",
+                                                            "doc": "",
+                                                            "deprecated": "false",
+                                                            "value": "**/*.mps, **/*.mpsr, **/.model"
+                                                          }
+                                                        ],
+                                                        "references": [],
+                                                        "children": []
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "role": "dependencies",
+                                    "type": "BuildMps_ModuleDependency",
+                                    "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                                    "cardinality": "0..n",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "nodes": [
+                                      {
+                                        "name": "(extracted)",
+                                        "concept": "BuildMps_ExtractedModuleDependency",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/1024945001862737831",
+                                        "properties": [],
+                                        "references": [],
+                                        "children": [
+                                          {
+                                            "role": "dependency",
+                                            "type": "BuildMps_ModuleDependency",
+                                            "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                                            "cardinality": "1",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "nodes": [
+                                              {
+                                                "name": "org.iets3.core.expr.datetime",
+                                                "concept": "BuildMps_ModuleDependencyOnModule",
+                                                "doc": "",
+                                                "deprecated": "false",
+                                                "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/1024945001862737832",
+                                                "properties": [],
+                                                "references": [
+                                                  {
+                                                    "role": "module",
+                                                    "type": "BuildMps_Module",
+                                                    "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                                                    "cardinality": "1",
+                                                    "doc": "",
+                                                    "deprecated": "false",
+                                                    "target": "org.iets3.core.expr.datetime",
+                                                    "targetReference": "r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)/6410450860785406077"
+                                                  }
+                                                ],
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "role": "sources",
+                            "type": "BuildMps_ModuleSource",
+                            "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547823:jetbrains.mps.build.mps.structure.BuildMps_ModuleSource",
+                            "cardinality": "0..n",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "model root",
+                                "concept": "BuildMps_ModuleModelRoot",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/4278635856200817744:jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628542",
+                                "properties": [
+                                  {
+                                    "name": "deployFolderName",
+                                    "type": "string",
+                                    "doc": "name of the folder models get deployed to, usually the same as last segment of original path",
+                                    "deprecated": "false",
+                                    "value": "models"
+                                  },
+                                  {
+                                    "name": "extracted",
+                                    "type": "boolean",
+                                    "doc": "true indicates the root has been extracted automatically and values can get updated during project re-load process",
+                                    "deprecated": "false",
+                                    "value": "true"
+                                  },
+                                  {
+                                    "name": "convert2binary",
+                                    "type": "boolean",
+                                    "doc": "true indicates model files have to be piped though a convertor that re-saves them into binary persistence, if possible",
+                                    "deprecated": "false",
+                                    "value": "true"
+                                  }
+                                ],
+                                "references": [],
+                                "children": [
+                                  {
+                                    "role": "location",
+                                    "type": "BuildInputFiles",
+                                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794596:jetbrains.mps.build.structure.BuildInputFiles",
+                                    "cardinality": "1..n",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "nodes": [
+                                      {
+                                        "name": "files from",
+                                        "concept": "BuildInputFiles",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794596:jetbrains.mps.build.structure.BuildInputFiles",
+                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642907",
+                                        "properties": [],
+                                        "references": [],
+                                        "children": [
+                                          {
+                                            "role": "dir",
+                                            "type": "BuildSourcePath",
+                                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+                                            "cardinality": "1",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "nodes": [
+                                              {
+                                                "name": "$ql.home",
+                                                "concept": "BuildSourceMacroRelativePath",
+                                                "doc": "",
+                                                "deprecated": "false",
+                                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848153117:jetbrains.mps.build.structure.BuildSourceMacroRelativePath",
+                                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642903",
+                                                "properties": [],
+                                                "references": [
+                                                  {
+                                                    "role": "macro",
+                                                    "type": "BuildFolderMacro",
+                                                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                                                    "cardinality": "1",
+                                                    "doc": "",
+                                                    "deprecated": "false",
+                                                    "target": "ql.home",
+                                                    "targetReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642872"
+                                                  }
+                                                ],
+                                                "children": [
+                                                  {
+                                                    "role": "compositePart",
+                                                    "type": "BuildCompositePath",
+                                                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                    "cardinality": "0..1",
+                                                    "doc": "",
+                                                    "deprecated": "false",
+                                                    "nodes": [
+                                                      {
+                                                        "name": "BuildCompositePath",
+                                                        "concept": "BuildCompositePath",
+                                                        "doc": "",
+                                                        "deprecated": "false",
+                                                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642904",
+                                                        "properties": [
+                                                          {
+                                                            "name": "head",
+                                                            "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                            "doc": "",
+                                                            "deprecated": "false",
+                                                            "value": "languages"
+                                                          }
+                                                        ],
+                                                        "references": [],
+                                                        "children": [
+                                                          {
+                                                            "role": "tail",
+                                                            "type": "BuildCompositePath",
+                                                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                            "cardinality": "0..1",
+                                                            "doc": "",
+                                                            "deprecated": "false",
+                                                            "nodes": [
+                                                              {
+                                                                "name": "BuildCompositePath",
+                                                                "concept": "BuildCompositePath",
+                                                                "doc": "",
+                                                                "deprecated": "false",
+                                                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642905",
+                                                                "properties": [
+                                                                  {
+                                                                    "name": "head",
+                                                                    "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                                    "doc": "",
+                                                                    "deprecated": "false",
+                                                                    "value": "QuestionnaireLanguage"
+                                                                  }
+                                                                ],
+                                                                "references": [],
+                                                                "children": [
+                                                                  {
+                                                                    "role": "tail",
+                                                                    "type": "BuildCompositePath",
+                                                                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                                    "cardinality": "0..1",
+                                                                    "doc": "",
+                                                                    "deprecated": "false",
+                                                                    "nodes": [
+                                                                      {
+                                                                        "name": "BuildCompositePath",
+                                                                        "concept": "BuildCompositePath",
+                                                                        "doc": "",
+                                                                        "deprecated": "false",
+                                                                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642906",
+                                                                        "properties": [
+                                                                          {
+                                                                            "name": "head",
+                                                                            "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                                            "doc": "",
+                                                                            "deprecated": "false",
+                                                                            "value": "models"
+                                                                          }
+                                                                        ],
+                                                                        "references": [],
+                                                                        "children": []
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "role": "selectors",
+                                            "type": "BuildFileSelector",
+                                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5248329904287794599:jetbrains.mps.build.structure.BuildFileSelector",
+                                            "cardinality": "0..n",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "nodes": [
+                                              {
+                                                "name": "includes",
+                                                "concept": "BuildFileIncludesSelector",
+                                                "doc": "",
+                                                "deprecated": "false",
+                                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8654221991637384182:jetbrains.mps.build.structure.BuildFileIncludesSelector",
+                                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642908",
+                                                "properties": [
+                                                  {
+                                                    "name": "pattern",
+                                                    "type": "string",
+                                                    "doc": "",
+                                                    "deprecated": "false",
+                                                    "value": "**/*.mps, **/*.mpsr, **/.model"
+                                                  }
+                                                ],
+                                                "references": [],
+                                                "children": []
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "role": "dependencies",
+                            "type": "BuildMps_ModuleDependency",
+                            "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                            "cardinality": "0..n",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "(extracted)",
+                                "concept": "BuildMps_ExtractedModuleDependency",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497561641",
+                                "properties": [],
+                                "references": [],
+                                "children": [
+                                  {
+                                    "role": "dependency",
+                                    "type": "BuildMps_ModuleDependency",
+                                    "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                                    "cardinality": "1",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "nodes": [
+                                      {
+                                        "name": "org.iets3.core.expr.base",
+                                        "concept": "BuildMps_ModuleDependencyOnModule",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497561642",
+                                        "properties": [],
+                                        "references": [
+                                          {
+                                            "role": "module",
+                                            "type": "BuildMps_Module",
+                                            "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                                            "cardinality": "1",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "target": "org.iets3.core.expr.base",
+                                            "targetReference": "r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)/6354991446090808681"
+                                          }
+                                        ],
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "(extracted)",
+                                "concept": "BuildMps_ExtractedModuleDependency",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497561643",
+                                "properties": [],
+                                "references": [],
+                                "children": [
+                                  {
+                                    "role": "dependency",
+                                    "type": "BuildMps_ModuleDependency",
+                                    "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                                    "cardinality": "1",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "nodes": [
+                                      {
+                                        "name": "org.iets3.core.expr.simpleTypes",
+                                        "concept": "BuildMps_ModuleDependencyOnModule",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497561644",
+                                        "properties": [],
+                                        "references": [
+                                          {
+                                            "role": "module",
+                                            "type": "BuildMps_Module",
+                                            "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                                            "cardinality": "1",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "target": "org.iets3.core.expr.simpleTypes",
+                                            "targetReference": "r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)/6354991446090808717"
+                                          }
+                                        ],
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "(extracted)",
+                                "concept": "BuildMps_ExtractedModuleDependency",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497561645",
+                                "properties": [],
+                                "references": [],
+                                "children": [
+                                  {
+                                    "role": "dependency",
+                                    "type": "BuildMps_ModuleDependency",
+                                    "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                                    "cardinality": "1",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "nodes": [
+                                      {
+                                        "name": "com.mbeddr.doc",
+                                        "concept": "BuildMps_ModuleDependencyOnModule",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497561646",
+                                        "properties": [],
+                                        "references": [
+                                          {
+                                            "role": "module",
+                                            "type": "BuildMps_Module",
+                                            "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                                            "cardinality": "1",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "target": "com.mbeddr.doc",
+                                            "targetReference": "r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)/35689190611756416"
+                                          }
+                                        ],
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "(extracted)",
+                                "concept": "BuildMps_ExtractedModuleDependency",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497561647",
+                                "properties": [],
+                                "references": [],
+                                "children": [
+                                  {
+                                    "role": "dependency",
+                                    "type": "BuildMps_ModuleDependency",
+                                    "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                                    "cardinality": "1",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "nodes": [
+                                      {
+                                        "name": "org.iets3.core.base",
+                                        "concept": "BuildMps_ModuleDependencyOnModule",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497561648",
+                                        "properties": [],
+                                        "references": [
+                                          {
+                                            "role": "module",
+                                            "type": "BuildMps_Module",
+                                            "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+                                            "cardinality": "1",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "target": "org.iets3.core.base",
+                                            "targetReference": "r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)/6354991446090808807"
+                                          }
+                                        ],
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "(extracted)",
+                                "concept": "BuildMps_ExtractedModuleDependency",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497561653",
+                                "properties": [],
+                                "references": [],
+                                "children": [
+                                  {
+                                    "role": "dependency",
+                                    "type": "BuildMps_ModuleDependency",
+                                    "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                                    "cardinality": "1",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "nodes": [
+                                      {
+                                        "name": "extends org.iets3.core.expr.base",
+                                        "concept": "BuildMps_ModuleDependencyExtendLanguage",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/4278635856200794926:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage",
+                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497561654",
+                                        "properties": [],
+                                        "references": [
+                                          {
+                                            "role": "language",
+                                            "type": "BuildMps_Language",
+                                            "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/3189788309731840248:jetbrains.mps.build.mps.structure.BuildMps_Language",
+                                            "cardinality": "1",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "target": "org.iets3.core.expr.base",
+                                            "targetReference": "r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)/6354991446090808681"
+                                          }
+                                        ],
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "(extracted)",
+                                "concept": "BuildMps_ExtractedModuleDependency",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497561655",
+                                "properties": [],
+                                "references": [],
+                                "children": [
+                                  {
+                                    "role": "dependency",
+                                    "type": "BuildMps_ModuleDependency",
+                                    "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+                                    "cardinality": "1",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "nodes": [
+                                      {
+                                        "name": "extends org.iets3.core.expr.simpleTypes",
+                                        "concept": "BuildMps_ModuleDependencyExtendLanguage",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/4278635856200794926:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage",
+                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/6604143809497561656",
+                                        "properties": [],
+                                        "references": [
+                                          {
+                                            "role": "language",
+                                            "type": "BuildMps_Language",
+                                            "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/3189788309731840248:jetbrains.mps.build.mps.structure.BuildMps_Language",
+                                            "cardinality": "1",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "target": "org.iets3.core.expr.simpleTypes",
+                                            "targetReference": "r:c3d6ae0c-8b10-477f-a3e9-5dc8700ceb13(org.iets3.opensource.build.build)/6354991446090808717"
+                                          }
+                                        ],
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "role": "path",
+                            "type": "BuildSourcePath",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+                            "cardinality": "0..1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "$ql.home",
+                                "concept": "BuildSourceMacroRelativePath",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848153117:jetbrains.mps.build.structure.BuildSourceMacroRelativePath",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642883",
+                                "properties": [],
+                                "references": [
+                                  {
+                                    "role": "macro",
+                                    "type": "BuildFolderMacro",
+                                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848136194:jetbrains.mps.build.structure.BuildFolderMacro",
+                                    "cardinality": "1",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "target": "ql.home",
+                                    "targetReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642872"
+                                  }
+                                ],
+                                "children": [
+                                  {
+                                    "role": "compositePart",
+                                    "type": "BuildCompositePath",
+                                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                    "cardinality": "0..1",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "nodes": [
+                                      {
+                                        "name": "BuildCompositePath",
+                                        "concept": "BuildCompositePath",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642888",
+                                        "properties": [
+                                          {
+                                            "name": "head",
+                                            "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "value": "languages"
+                                          }
+                                        ],
+                                        "references": [],
+                                        "children": [
+                                          {
+                                            "role": "tail",
+                                            "type": "BuildCompositePath",
+                                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                            "cardinality": "0..1",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "nodes": [
+                                              {
+                                                "name": "BuildCompositePath",
+                                                "concept": "BuildCompositePath",
+                                                "doc": "",
+                                                "deprecated": "false",
+                                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642889",
+                                                "properties": [
+                                                  {
+                                                    "name": "head",
+                                                    "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                    "doc": "",
+                                                    "deprecated": "false",
+                                                    "value": "QuestionnaireLanguage"
+                                                  }
+                                                ],
+                                                "references": [],
+                                                "children": [
+                                                  {
+                                                    "role": "tail",
+                                                    "type": "BuildCompositePath",
+                                                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                    "cardinality": "0..1",
+                                                    "doc": "",
+                                                    "deprecated": "false",
+                                                    "nodes": [
+                                                      {
+                                                        "name": "BuildCompositePath",
+                                                        "concept": "BuildCompositePath",
+                                                        "doc": "",
+                                                        "deprecated": "false",
+                                                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/8618885170173601777:jetbrains.mps.build.structure.BuildCompositePath",
+                                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494642890",
+                                                        "properties": [
+                                                          {
+                                                            "name": "head",
+                                                            "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@4f920efd",
+                                                            "doc": "",
+                                                            "deprecated": "false",
+                                                            "value": "QuestionnaireLanguage.mpl"
+                                                          }
+                                                        ],
+                                                        "references": [],
+                                                        "children": []
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "role": "aspects",
+            "type": "BuildAspect",
+            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/3542413272732750877:jetbrains.mps.build.structure.BuildAspect",
+            "cardinality": "0..n",
+            "doc": "",
+            "deprecated": "false",
+            "nodes": [
+              {
+                "name": "mps settings",
+                "concept": "BuildMpsAspect",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/6503355885715333289:jetbrains.mps.build.mps.structure.BuildMpsAspect",
+                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/2589700000046879066",
+                "properties": [
+                  {
+                    "name": "bootstrap",
+                    "type": "boolean",
+                    "doc": "",
+                    "deprecated": "false",
+                    "value": "true"
+                  }
+                ],
+                "references": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "role": "layout",
+            "type": "BuildLayout",
+            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745364:jetbrains.mps.build.structure.BuildLayout",
+            "cardinality": "1",
+            "doc": "",
+            "deprecated": "false",
+            "nodes": [
+              {
+                "name": "/",
+                "concept": "BuildLayout",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745364:jetbrains.mps.build.structure.BuildLayout",
+                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628532",
+                "properties": [],
+                "references": [],
+                "children": [
+                  {
+                    "role": "children",
+                    "type": "BuildLayout_Node",
+                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848036997:jetbrains.mps.build.structure.BuildLayout_Node",
+                    "cardinality": "0..n",
+                    "doc": "",
+                    "deprecated": "false",
+                    "nodes": [
+                      {
+                        "name": "//QuestionnaireLanguage.zip",
+                        "concept": "BuildLayout_Zip",
+                        "doc": "",
+                        "deprecated": "false",
+                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848050071:jetbrains.mps.build.structure.BuildLayout_Zip",
+                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628533",
+                        "properties": [
+                          {
+                            "name": "name",
+                            "type": "string",
+                            "doc": "",
+                            "deprecated": "false",
+                            "value": "QuestionnaireLanguage.zip"
+                          }
+                        ],
+                        "references": [],
+                        "children": [
+                          {
+                            "role": "containerName",
+                            "type": "BuildStringNotEmpty",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/841011766566059607:jetbrains.mps.build.structure.BuildStringNotEmpty",
+                            "cardinality": "1",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "BuildStringNotEmpty",
+                                "concept": "BuildStringNotEmpty",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/841011766566059607:jetbrains.mps.build.structure.BuildStringNotEmpty",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628534",
+                                "properties": [],
+                                "references": [],
+                                "children": [
+                                  {
+                                    "role": "parts",
+                                    "type": "BuildStringPart",
+                                    "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/4903714810883702015:jetbrains.mps.build.structure.BuildStringPart",
+                                    "cardinality": "0..n",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "nodes": [
+                                      {
+                                        "name": "QuestionnaireLanguage.zip",
+                                        "concept": "BuildTextStringPart",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "conceptReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/4903714810883702019:jetbrains.mps.build.structure.BuildTextStringPart",
+                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628535",
+                                        "properties": [
+                                          {
+                                            "name": "text",
+                                            "type": "string",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "value": "QuestionnaireLanguage.zip"
+                                          },
+                                          {
+                                            "name": "name",
+                                            "type": "string",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "value": "QuestionnaireLanguage.zip"
+                                          }
+                                        ],
+                                        "references": [],
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "role": "children",
+                            "type": "BuildLayout_Node",
+                            "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848036997:jetbrains.mps.build.structure.BuildLayout_Node",
+                            "cardinality": "0..n",
+                            "doc": "",
+                            "deprecated": "false",
+                            "nodes": [
+                              {
+                                "name": "//QuestionnaireLanguage.zip/QuestionnaireLanguage",
+                                "concept": "BuildMpsLayout_Plugin",
+                                "doc": "",
+                                "deprecated": "false",
+                                "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314498926:jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin",
+                                "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628536",
+                                "properties": [
+                                  {
+                                    "name": "name",
+                                    "type": "string",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "value": "QuestionnaireLanguage"
+                                  }
+                                ],
+                                "references": [
+                                  {
+                                    "role": "plugin",
+                                    "type": "BuildMps_IdeaPlugin",
+                                    "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314498932:jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin",
+                                    "cardinality": "1",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "target": "QuestionnaireLanguage",
+                                    "targetReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628519"
+                                  }
+                                ],
+                                "children": [
+                                  {
+                                    "role": "packagingType",
+                                    "type": "BuildMpsLayout_PluginLayoutTypeBase",
+                                    "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/3570488090019868063:jetbrains.mps.build.mps.structure.BuildMpsLayout_PluginLayoutTypeBase",
+                                    "cardinality": "1",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "nodes": [
+                                      {
+                                        "name": "auto packaging",
+                                        "concept": "BuildMpsLayout_AutoPluginLayoutType",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/3570488090019868065:jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType",
+                                        "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628537",
+                                        "properties": [],
+                                        "references": [],
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

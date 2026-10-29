@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-10-29T22:14:51.872798+00:00",
+  "counts": [
+    {
+      "label": "language",
+      "models": 7,
+      "rootNodes": 27,
+      "nodes": 271,
+      "evidence": "benchmark\\evidence\\pat-root-counts-final-language.json"
+    },
+    {
+      "label": "example",
+      "models": 1,
+      "rootNodes": 2,
+      "nodes": 27,
+      "evidence": "benchmark\\evidence\\pat-root-counts-final-example.json"
+    },
+    {
+      "label": "build",
+      "models": 1,
+      "rootNodes": 1,
+      "nodes": 83,
+      "evidence": "benchmark\\evidence\\pat-root-counts-final-build.json"
+    }
+  ]
+}

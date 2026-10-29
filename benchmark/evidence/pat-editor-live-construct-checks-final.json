@@ -1,0 +1,157 @@
+{
+  "timestamp": "2026-10-29T22:27:49.604633+00:00",
+  "results": [
+    {
+      "timestamp": "2026-10-29T22:27:44.650760+00:00",
+      "concept": "Form",
+      "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046743236",
+      "openResult": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"present\":true}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      },
+      "editorRoot": "BenefitSurvey",
+      "selectedConcept": "Form",
+      "cellType": "EditorCell_Collection",
+      "messages": [],
+      "errorState": false
+    },
+    {
+      "timestamp": "2026-10-29T22:27:45.258417+00:00",
+      "concept": "Question",
+      "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046774711",
+      "openResult": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"present\":true}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      },
+      "editorRoot": "BenefitSurvey",
+      "selectedConcept": "Question",
+      "cellType": "EditorCell_Collection",
+      "messages": [],
+      "errorState": false
+    },
+    {
+      "timestamp": "2026-10-29T22:27:45.880756+00:00",
+      "concept": "Calculated",
+      "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047218441",
+      "openResult": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"present\":true}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      },
+      "editorRoot": "BenefitSurvey",
+      "selectedConcept": "Calculated",
+      "cellType": "EditorCell_Collection",
+      "messages": [],
+      "errorState": false
+    },
+    {
+      "timestamp": "2026-10-29T22:27:46.505125+00:00",
+      "concept": "Branch",
+      "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046774720",
+      "openResult": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"present\":true}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      },
+      "editorRoot": "BenefitSurvey",
+      "selectedConcept": "Branch",
+      "cellType": "EditorCell_Collection",
+      "messages": [],
+      "errorState": false
+    },
+    {
+      "timestamp": "2026-10-29T22:27:47.144501+00:00",
+      "concept": "Binary",
+      "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047218443",
+      "openResult": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"present\":true}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      },
+      "editorRoot": "BenefitSurvey",
+      "selectedConcept": "Binary",
+      "cellType": "EditorCell_Collection",
+      "messages": [],
+      "errorState": false
+    },
+    {
+      "timestamp": "2026-10-29T22:27:47.764454+00:00",
+      "concept": "Reference",
+      "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047218446",
+      "openResult": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"present\":true}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      },
+      "editorRoot": "BenefitSurvey",
+      "selectedConcept": "Reference",
+      "cellType": "EditorCell_Collection",
+      "messages": [],
+      "errorState": false
+    },
+    {
+      "timestamp": "2026-10-29T22:27:48.372715+00:00",
+      "concept": "Literal",
+      "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047218447",
+      "openResult": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"present\":true}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      },
+      "editorRoot": "BenefitSurvey",
+      "selectedConcept": "Literal",
+      "cellType": "EditorCell_Collection",
+      "messages": [],
+      "errorState": false
+    },
+    {
+      "timestamp": "2026-10-29T22:27:48.997852+00:00",
+      "concept": "Unary",
+      "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047218750",
+      "openResult": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"present\":true}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      },
+      "editorRoot": "BenefitSurvey",
+      "selectedConcept": "Unary",
+      "cellType": "EditorCell_Collection",
+      "messages": [],
+      "errorState": false
+    }
+  ]
+}

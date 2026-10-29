@@ -1,28 +1,107 @@
-# QL agentic-coding benchmark scaffold
+# Questionnaire Language (QL)
 
-This branch is the common starting point for independent implementations of the
-[original QL assignment](https://homepages.cwi.nl/~storm/Ql.pdf) in JetBrains MPS.
-See [BENCHMARK.md](BENCHMARK.md) for the scope, acceptance criteria, run rules,
-and measurements.
+This MPS 2026.1.1 project contains a native QL language, a generated
+questionnaire example, and a JavaScript runtime with a browser GUI.
 
-The existing MPS project has been migrated to **MPS 2026.1.1**. QL-specific
-structure, editors, behavior, checks, generator rules, and example roots have
-been removed through native MPS APIs. Module identities, build models, dependency
-configuration, empty aspect models, and an empty generator mapping configuration
-are retained. KernelF, plaintextgen, and other existing dependencies may be used.
-The historical HTML reference implementation has also been removed.
+## Language and example
 
-## Setup
+The `QuestionnaireLanguage` module defines `Form`, `Question`, `Calculated`,
+`Branch`, `Literal`, `Reference`, `Binary`, and `Unary` concepts with
+projectional editors. A form contains ordered questions and nested branches.
+Question value types are `boolean`, `string`, `integer`, `decimal`, `money`,
+and `date`. The runtime supports `&&`, `||`, `!`, comparisons, and arithmetic;
+unanswered values and dependent computations remain undefined.
 
-Use Java 25 (the MPS bundled JetBrains Runtime is suitable) and run
-`.\gradlew.bat` to resolve dependencies and build. Open this directory in
-MPS 2026.1.1. There is deliberately no questionnaire example yet.
+The native `QuestionnaireExample` model contains the `BenefitSurvey` form. Its
+MPS text-generation rules produce a computed unary value and a nested
+conditional as well as the typed questions. They produce:
 
-When this project is already open in MPS, do not re-extract dependencies into
-directories whose JARs the IDE has locked. With dependencies already resolved,
-use `.\gradlew.bat buildQuestionnaireLanguage -x resolveMps -x resolveMpsArtifacts`.
-This builds the checked-out models without replacing the IDE's libraries.
+```text
+solutions\QuestionnaireExample\source_gen\QuestionnaireExample\BenefitSurvey.json
+```
 
-The original repository authors are Klemens Schindler and Eugen Schindler.
-Historical paper materials remain in `doc`; they are not implementation input
-for either fresh benchmark run.
+The checked-in `solutions\QuestionnaireExample\generated\BenefitSurvey.json`
+is the output produced from that model. To regenerate it:
+
+1. Open the project in MPS 2026.1.1.
+2. Make the `QuestionnaireLanguage` module, then make the
+   `QuestionnaireExample` model.
+3. Use the generated file under `source_gen` as the GUI input. The
+   `generated` copy is a convenient checked-in default.
+
+With the bundled Java 25 runtime, the language build is:
+
+```powershell
+$env:JAVA_HOME = 'C:\Program Files\JetBrains\MPS 2026.1.1\jbr'
+.\gradlew.bat --console=plain buildQuestionnaireLanguage `
+  -x resolveMps -x resolveMpsArtifacts --project-cache-dir build\gradle-cache
+```
+
+The MPS build model enables bootstrap generation because the language's
+text-generation rules refer to its own concepts.
+
+## Run the GUI and download answers
+
+From the repository root:
+
+```powershell
+node runtime\server.cjs
+```
+
+The server uses the checked-in generated questionnaire by default. Open
+`http://127.0.0.1:4173/`. If that port is occupied, set another port, for
+example `$env:PORT='4197'`, before starting the server.
+
+The GUI uses checkboxes for booleans, numeric controls for integer/decimal/money,
+date controls for dates, and text inputs for strings. Computed questions update
+as answers change; conditional groups follow their enclosing conditions.
+**Download answers as JSON** saves a file containing the form name and typed
+answers.
+
+To serve a freshly generated MPS output instead of the checked-in copy:
+
+```powershell
+node runtime\server.cjs solutions\QuestionnaireExample\source_gen\QuestionnaireExample\BenefitSurvey.json
+```
+
+## Checks and limitations
+
+Run the fixed runtime acceptance suite with:
+
+```powershell
+node benchmark\acceptance.cjs
+```
+
+The native `InvalidNativeFixtures` form is generated from MPS and exercises
+duplicate IDs, unresolved IDs, invalid operand/result and condition types, and
+dependency cycles in the production runtime:
+
+```powershell
+node benchmark\tools\validate-native-fixture.cjs
+```
+
+The production runtime validator reports all four required diagnostic codes.
+The native MPS checker reports missing mandatory `Reference.target` links for
+the fixture's unresolved references. It does not report duplicate-ID,
+expression-type, condition-type, or dependency-cycle diagnostics; those are
+runtime checks, not native editor-time type-system rules.
+
+For a real browser check (Microsoft Edge on Windows), serve the fresh MPS
+output in one terminal:
+
+```powershell
+$env:PORT='4197'
+node runtime\server.cjs solutions\QuestionnaireExample\source_gen\QuestionnaireExample\BenefitSurvey.json
+```
+
+Then run the browser check in another terminal:
+
+```powershell
+$env:PORT='4197'
+$env:QUESTIONNAIRE_PATH='solutions\QuestionnaireExample\source_gen\QuestionnaireExample\BenefitSurvey.json'
+node benchmark\tools\browser-smoke.cjs
+```
+
+The browser check exercises typed controls, recomputation, nested visibility,
+and the JSON download. Its downloaded answer file and result are retained under
+`benchmark\evidence`.

@@ -1,0 +1,874 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "name": "ConceptTextGenDeclaration",
+      "qualifiedName": "jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration",
+      "conceptAlias": "Concept Text Gen",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145:jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration",
+      "languageReference": "l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen",
+      "superConcept": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1234281982537:jetbrains.mps.lang.textGen.structure.AbstractTextGenDeclaration",
+      "superInterfaces": [
+        "i:c72da2b9-7cce-4447-8389-f407dc1158b7/2621449412040133764:jetbrains.mps.lang.structure.structure.IConceptAspect"
+      ],
+      "superInterfaceDetails": [
+        {
+          "name": "IConceptAspect",
+          "reference": "i:c72da2b9-7cce-4447-8389-f407dc1158b7/2621449412040133764:jetbrains.mps.lang.structure.structure.IConceptAspect"
+        }
+      ],
+      "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1233670071145",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": true,
+      "virtualFolder": "root",
+      "present": true,
+      "properties": [
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194664001",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "references": [
+        {
+          "name": "conceptDeclaration",
+          "targetConcept": "jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+          "cardinality": "1",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145/1233670257997",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1233670257997",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "children": [
+        {
+          "name": "extension",
+          "targetConcept": "jetbrains.mps.lang.textGen.structure.ExtensionDeclaration",
+          "cardinality": "0..1",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145/7991274449437422201",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/7991274449437422201",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "encoding",
+          "targetConcept": "jetbrains.mps.lang.textGen.structure.EncodingDeclarationBase",
+          "cardinality": "0..1",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145/1224137887853744062",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1224137887853744062",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "textGenBlock",
+          "targetConcept": "jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration",
+          "cardinality": "0..1",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145/1233749296504",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1233749296504",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "filename",
+          "targetConcept": "jetbrains.mps.lang.textGen.structure.FilenameFunction",
+          "cardinality": "0..1",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145/45307784116711884",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/45307784116711884",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "filePath",
+          "targetConcept": "jetbrains.mps.lang.textGen.structure.FilePathSpec",
+          "cardinality": "0..1",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145/7844911294523354450",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/7844911294523354450",
+          "doc": "optional path, defaults to model name (\u0027.\u0027 --\u003e \u0027/\u0027) unless specified",
+          "deprecated": "false"
+        },
+        {
+          "name": "layout",
+          "targetConcept": "jetbrains.mps.lang.textGen.structure.TextUnitLayout",
+          "cardinality": "0..1",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145/3147320813467893228",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/3147320813467893228",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "contextObjects",
+          "targetConcept": "jetbrains.mps.lang.textGen.structure.UnitContextObject",
+          "cardinality": "0..n",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145/2160817178329904672",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/2160817178329904672",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration",
+        "properties": [
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          },
+          {
+            "name": "name",
+            "value": "ConceptTextGenDeclaration"
+          }
+        ],
+        "references": [
+          {
+            "role": "conceptDeclaration",
+            "target": "/* Reference to jetbrains.mps.lang.structure.structure.ConceptDeclaration */"
+          }
+        ],
+        "children": [
+          {
+            "role": "extension",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.textGen.structure.ExtensionDeclaration or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "encoding",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.textGen.structure.EncodingDeclarationBase or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "textGenBlock",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "filename",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.textGen.structure.FilenameFunction or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "filePath",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.textGen.structure.FilePathSpec or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "layout",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.textGen.structure.TextUnitLayout or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "contextObjects",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.textGen.structure.UnitContextObject or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "GenerateTextDeclaration",
+      "qualifiedName": "jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration",
+      "conceptAlias": "do generate text",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233749247888:jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration",
+      "languageReference": "l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen",
+      "superConcept": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1137021947720:jetbrains.mps.baseLanguage.structure.ConceptFunction",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1233749247888",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "binaryOutput",
+          "type": "boolean",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233749247888/402850470217717484",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/402850470217717484",
+          "doc": "implementation code access binary (sequence of bytes) output instead of a text buffer",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "body",
+          "targetConcept": "jetbrains.mps.baseLanguage.structure.StatementList",
+          "cardinality": "1",
+          "featureId": "f3061a53-9226-4cc5-a443-f952ceaf5816/1137021947720/1137022507850",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)/1137022507850",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration",
+        "properties": [
+          {
+            "name": "binaryOutput",
+            "value": "true"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "body",
+            "nodes": [
+              "/* Instances of jetbrains.mps.baseLanguage.structure.StatementList or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "AppendOperation",
+      "qualifiedName": "jetbrains.mps.lang.textGen.structure.AppendOperation",
+      "conceptAlias": "append",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237306079178:jetbrains.mps.lang.textGen.structure.AppendOperation",
+      "languageReference": "l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen",
+      "superConcept": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1237306079178",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "operation.append",
+      "present": true,
+      "properties": [
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [
+        {
+          "name": "textArea",
+          "targetConcept": "jetbrains.mps.lang.textGen.structure.LayoutPart",
+          "cardinality": "0..1",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237306079178/3135747254706172356",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/3135747254706172356",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "children": [
+        {
+          "name": "part",
+          "targetConcept": "jetbrains.mps.lang.textGen.structure.AbstractAppendPart",
+          "cardinality": "1..n",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237306079178/1237306115446",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1237306115446",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.lang.textGen.structure.AppendOperation",
+        "properties": [
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [
+          {
+            "role": "textArea",
+            "target": "/* Reference to jetbrains.mps.lang.textGen.structure.LayoutPart */"
+          }
+        ],
+        "children": [
+          {
+            "role": "part",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.textGen.structure.AbstractAppendPart or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "CollectionAppendPart",
+      "qualifiedName": "jetbrains.mps.lang.textGen.structure.CollectionAppendPart",
+      "conceptAlias": "$list{",
+      "shortDescription": "collection",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305491868:jetbrains.mps.lang.textGen.structure.CollectionAppendPart",
+      "languageReference": "l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen",
+      "superConcept": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305115734:jetbrains.mps.lang.textGen.structure.AbstractAppendPart",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1237305491868",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "operation.append.part",
+      "present": true,
+      "properties": [
+        {
+          "name": "separator",
+          "type": "string",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305491868/1237306003719",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1237306003719",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "withSeparator",
+          "type": "boolean",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305491868/1237983969951",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1237983969951",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "list",
+          "targetConcept": "jetbrains.mps.baseLanguage.structure.Expression",
+          "cardinality": "1",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305491868/1237305945551",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1237305945551",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.lang.textGen.structure.CollectionAppendPart",
+        "properties": [
+          {
+            "name": "separator",
+            "value": "example"
+          },
+          {
+            "name": "withSeparator",
+            "value": "true"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "list",
+            "nodes": [
+              "/* Instances of jetbrains.mps.baseLanguage.structure.Expression or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "NodeAppendPart",
+      "qualifiedName": "jetbrains.mps.lang.textGen.structure.NodeAppendPart",
+      "conceptAlias": "${",
+      "shortDescription": "node or property",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305334312:jetbrains.mps.lang.textGen.structure.NodeAppendPart",
+      "languageReference": "l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen",
+      "superConcept": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305115734:jetbrains.mps.lang.textGen.structure.AbstractAppendPart",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1237305334312",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "operation.append.part",
+      "present": true,
+      "properties": [
+        {
+          "name": "withIndent",
+          "type": "boolean",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305334312/1237306318654",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1237306318654",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "value",
+          "targetConcept": "jetbrains.mps.baseLanguage.structure.Expression",
+          "cardinality": "1",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305334312/1237305790512",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1237305790512",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.lang.textGen.structure.NodeAppendPart",
+        "properties": [
+          {
+            "name": "withIndent",
+            "value": "true"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "value",
+            "nodes": [
+              "/* Instances of jetbrains.mps.baseLanguage.structure.Expression or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ConstantStringAppendPart",
+      "qualifiedName": "jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart",
+      "conceptAlias": "constant",
+      "shortDescription": "constant string",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305557638:jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart",
+      "languageReference": "l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen",
+      "superConcept": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305115734:jetbrains.mps.lang.textGen.structure.AbstractAppendPart",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1237305557638",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "operation.append.part",
+      "present": true,
+      "properties": [
+        {
+          "name": "value",
+          "type": "string",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305557638/1237305576108",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1237305576108",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "withIndent",
+          "type": "boolean",
+          "featureId": "b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305557638/1237306361677",
+          "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1237306361677",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart",
+        "properties": [
+          {
+            "name": "value",
+            "value": "example"
+          },
+          {
+            "name": "withIndent",
+            "value": "true"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExtensionDeclaration",
+      "qualifiedName": "jetbrains.mps.lang.textGen.structure.ExtensionDeclaration",
+      "conceptAlias": "extension",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/8931911391946696733:jetbrains.mps.lang.textGen.structure.ExtensionDeclaration",
+      "languageReference": "l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen",
+      "superConcept": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1137021947720:jetbrains.mps.baseLanguage.structure.ConceptFunction",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/8931911391946696733",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "body",
+          "targetConcept": "jetbrains.mps.baseLanguage.structure.StatementList",
+          "cardinality": "1",
+          "featureId": "f3061a53-9226-4cc5-a443-f952ceaf5816/1137021947720/1137022507850",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)/1137022507850",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.lang.textGen.structure.ExtensionDeclaration",
+        "properties": [
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "body",
+            "nodes": [
+              "/* Instances of jetbrains.mps.baseLanguage.structure.StatementList or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "EncodingDeclarationBase",
+      "qualifiedName": "jetbrains.mps.lang.textGen.structure.EncodingDeclarationBase",
+      "conceptAlias": "",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "i:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1224137887853744059:jetbrains.mps.lang.textGen.structure.EncodingDeclarationBase",
+      "languageReference": "l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen",
+      "superConcept": "",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)/1224137887853744059",
+      "isAbstract": true,
+      "isInterfaceConcept": true,
+      "isRootable": false,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.lang.textGen.structure.EncodingDeclarationBase",
+        "properties": [
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

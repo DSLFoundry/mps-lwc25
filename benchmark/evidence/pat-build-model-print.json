@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-29T21:15:31.025454+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "nodeReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)",
+    "format": "PLAIN TEXT",
+    "deep": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":false,\"error\":\"Node 'r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)' not found\",\"code\":\"NOT_FOUND\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

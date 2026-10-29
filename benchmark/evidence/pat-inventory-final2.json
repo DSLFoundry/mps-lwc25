@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-10-29T22:30:06.708399+00:00",
+  "counts": [
+    {
+      "label": "language",
+      "timestamp": "2026-10-29T22:30:06.333201+00:00",
+      "startingPoint": "83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)",
+      "models": 7,
+      "roots": 27,
+      "nodes": 272,
+      "evidence": "benchmark\\evidence\\pat-inventory-final2-language.json"
+    },
+    {
+      "label": "generator",
+      "timestamp": "2026-10-29T22:30:06.523413+00:00",
+      "startingPoint": "859d56ea-5acc-4450-86c1-5c76a58ec80e(QuestionnaireLanguage.generator)",
+      "models": 2,
+      "roots": 1,
+      "nodes": 1,
+      "evidence": "benchmark\\evidence\\pat-inventory-final2-generator.json"
+    },
+    {
+      "label": "example",
+      "timestamp": "2026-10-29T22:30:06.531648+00:00",
+      "startingPoint": "ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)",
+      "models": 1,
+      "roots": 2,
+      "nodes": 35,
+      "evidence": "benchmark\\evidence\\pat-inventory-final2-example.json"
+    },
+    {
+      "label": "build",
+      "timestamp": "2026-10-29T22:30:06.545235+00:00",
+      "startingPoint": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)",
+      "models": 1,
+      "roots": 1,
+      "nodes": 83,
+      "evidence": "benchmark\\evidence\\pat-inventory-final2-build.json"
+    }
+  ],
+  "totals": {
+    "roots": 31,
+    "nodes": 391
+  }
+}

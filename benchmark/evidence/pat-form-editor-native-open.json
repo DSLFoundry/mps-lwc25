@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-29T22:08:49.160186+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "nodeReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114642"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"present\":true}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

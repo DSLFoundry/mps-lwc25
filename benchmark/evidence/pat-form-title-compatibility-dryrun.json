@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-29T22:25:49.814174+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "ADD",
+    "kind": "CHILD",
+    "nodeReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788",
+    "childRole": "propertyDeclaration",
+    "position": -1,
+    "childJson": "{\"concept\":\"PropertyDeclaration\",\"properties\":[{\"name\":\"name\",\"value\":\"title\"},{\"name\":\"propertyId\",\"value\":\"2589700000046743938\"}],\"references\":[{\"role\":\"dataType\",\"target\":\"r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1082983041843\"}]}",
+    "dryRun": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"dryRun\":true,\"message\":\"Dry run successful for node addition\"}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

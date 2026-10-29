@@ -1,0 +1,337 @@
+{
+  "ok": true,
+  "data": {
+    "name": "Form_Editor",
+    "concept": "ConceptEditorDeclaration",
+    "doc": "",
+    "deprecated": "false",
+    "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1071666914219:jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration",
+    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114642",
+    "properties": [
+      {
+        "name": "name",
+        "type": "string",
+        "doc": "",
+        "deprecated": "false",
+        "value": "Form_Editor"
+      }
+    ],
+    "references": [
+      {
+        "role": "conceptDeclaration",
+        "type": "AbstractConceptDeclaration",
+        "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135:jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration",
+        "cardinality": "0..1",
+        "doc": "",
+        "deprecated": "false",
+        "target": "Form",
+        "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788"
+      }
+    ],
+    "children": [
+      {
+        "role": "cellModel",
+        "type": "EditorCellModel",
+        "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265:jetbrains.mps.lang.editor.structure.EditorCellModel",
+        "cardinality": "1",
+        "doc": "",
+        "deprecated": "false",
+        "nodes": [
+          {
+            "name": "collection",
+            "concept": "CellModel_Collection",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389446423:jetbrains.mps.lang.editor.structure.CellModel_Collection",
+            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114644",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "childCellModel",
+                "type": "EditorCellModel",
+                "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265:jetbrains.mps.lang.editor.structure.EditorCellModel",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "constant",
+                    "concept": "CellModel_Constant",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389577006:jetbrains.mps.lang.editor.structure.CellModel_Constant",
+                    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114646",
+                    "properties": [
+                      {
+                        "name": "text",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "form"
+                      }
+                    ],
+                    "references": [],
+                    "children": []
+                  },
+                  {
+                    "name": "constant",
+                    "concept": "CellModel_Constant",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389577006:jetbrains.mps.lang.editor.structure.CellModel_Constant",
+                    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114647",
+                    "properties": [
+                      {
+                        "name": "text",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "Name:"
+                      }
+                    ],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "styleItem",
+                        "type": "StyleClassItem",
+                        "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1186402475462:jetbrains.mps.lang.editor.structure.StyleClassItem",
+                        "cardinality": "0..n",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "indent-layout-on-new-line",
+                            "concept": "IndentLayoutOnNewLineStyleClassItem",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1237385578942:jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem",
+                            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114648",
+                            "properties": [
+                              {
+                                "name": "flag",
+                                "type": "boolean",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "true"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "{name}",
+                    "concept": "CellModel_Property",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389658414:jetbrains.mps.lang.editor.structure.CellModel_Property",
+                    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114649",
+                    "properties": [],
+                    "references": [
+                      {
+                        "role": "relationDeclaration",
+                        "type": "BaseConcept",
+                        "typeReference": "c:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626:jetbrains.mps.lang.core.structure.BaseConcept",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "name",
+                        "targetReference": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194664001"
+                      }
+                    ],
+                    "children": []
+                  },
+                  {
+                    "name": "constant",
+                    "concept": "CellModel_Constant",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389577006:jetbrains.mps.lang.editor.structure.CellModel_Constant",
+                    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114650",
+                    "properties": [
+                      {
+                        "name": "text",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "items:"
+                      }
+                    ],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "styleItem",
+                        "type": "StyleClassItem",
+                        "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1186402475462:jetbrains.mps.lang.editor.structure.StyleClassItem",
+                        "cardinality": "0..n",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "indent-layout-on-new-line",
+                            "concept": "IndentLayoutOnNewLineStyleClassItem",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1237385578942:jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem",
+                            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114651",
+                            "properties": [
+                              {
+                                "name": "flag",
+                                "type": "boolean",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "true"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "%items%",
+                    "concept": "CellModel_RefNodeList",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073390211982:jetbrains.mps.lang.editor.structure.CellModel_RefNodeList",
+                    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114652",
+                    "properties": [],
+                    "references": [
+                      {
+                        "role": "relationDeclaration",
+                        "type": "BaseConcept",
+                        "typeReference": "c:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626:jetbrains.mps.lang.core.structure.BaseConcept",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "items",
+                        "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736797"
+                      }
+                    ],
+                    "children": [
+                      {
+                        "role": "cellLayout",
+                        "type": "CellLayout",
+                        "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1106270491082:jetbrains.mps.lang.editor.structure.CellLayout",
+                        "cardinality": "0..1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "indent",
+                            "concept": "CellLayout_Indent",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1237303669825:jetbrains.mps.lang.editor.structure.CellLayout_Indent",
+                            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114657",
+                            "properties": [],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "role": "styleItem",
+                        "type": "StyleClassItem",
+                        "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1186402475462:jetbrains.mps.lang.editor.structure.StyleClassItem",
+                        "cardinality": "0..n",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "indent-layout-on-new-line",
+                            "concept": "IndentLayoutOnNewLineStyleClassItem",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1237385578942:jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem",
+                            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114654",
+                            "properties": [
+                              {
+                                "name": "flag",
+                                "type": "boolean",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "true"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          },
+                          {
+                            "name": "indent-layout-indent",
+                            "concept": "IndentLayoutIndentStyleClassItem",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1237307900041:jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem",
+                            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114655",
+                            "properties": [
+                              {
+                                "name": "flag",
+                                "type": "boolean",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "true"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          },
+                          {
+                            "name": "indent-layout-new-line-children",
+                            "concept": "IndentLayoutNewLineChildrenStyleClassItem",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1237375020029:jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem",
+                            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114656",
+                            "properties": [
+                              {
+                                "name": "flag",
+                                "type": "boolean",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "true"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "role": "cellLayout",
+                "type": "CellLayout",
+                "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1106270491082:jetbrains.mps.lang.editor.structure.CellLayout",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "indent",
+                    "concept": "CellLayout_Indent",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1237303669825:jetbrains.mps.lang.editor.structure.CellLayout_Indent",
+                    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114645",
+                    "properties": [],
+                    "references": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

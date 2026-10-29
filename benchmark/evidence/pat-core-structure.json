@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-29T21:48:11.262106+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "startingPoint": "jetbrains.mps.lang.core",
+    "includeModels": true,
+    "includeDependencies": true,
+    "includeNodes": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":false,\"error\":\"Starting point 'jetbrains.mps.lang.core' not found\",\"code\":\"NOT_FOUND\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

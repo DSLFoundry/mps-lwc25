@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-29T21:57:10.289177+00:00",
+  "name": "mps_mcp_print_node",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "nodeReference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114642",
+    "deep": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-7538945275300822723.json\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

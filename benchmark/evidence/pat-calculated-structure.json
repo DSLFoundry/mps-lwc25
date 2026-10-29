@@ -1,0 +1,36 @@
+[
+  {
+    "timestamp": "2026-10-29T21:08:07.081240+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "CREATE_CONCEPTS",
+      "parameters": "{\"structureModelRef\": \"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)\", \"conceptsJson\": \"[{\\\"name\\\": \\\"Calculated\\\", \\\"extends\\\": \\\"Item\\\", \\\"implements\\\": [\\\"jetbrains.mps.lang.core.structure.INamedConcept\\\"], \\\"conceptAlias\\\": \\\"computed question\\\", \\\"properties\\\": [{\\\"name\\\": \\\"label\\\", \\\"type\\\": \\\"string\\\"}, {\\\"name\\\": \\\"valueType\\\", \\\"type\\\": \\\"string\\\"}], \\\"children\\\": [{\\\"role\\\": \\\"computed\\\", \\\"target\\\": \\\"Expression\\\", \\\"multiple\\\": false, \\\"optional\\\": false}]}]\", \"make\": true}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"createdReferences\":{\"Calculated\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046740212\"},\"makeStatus\":\"success\",\"makeMessage\":\"Make successful\"}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:08:09.514966+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "UPDATE_CONCEPT_PROPERTY",
+      "parameters": "{\"conceptRef\": \"QuestionnaireLanguage.Reference\", \"propertyName\": \"targetId\", \"dataType\": \"string\"}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":true}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

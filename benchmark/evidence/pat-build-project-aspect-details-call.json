@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-29T21:28:18.991848+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "conceptRefs": "[\"jetbrains.mps.build.structure.BuildProject\",\"jetbrains.mps.build.structure.BuildAspect\",\"jetbrains.mps.build.mps.structure.BuildMpsAspect\"]"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-8334707867703234545.json\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

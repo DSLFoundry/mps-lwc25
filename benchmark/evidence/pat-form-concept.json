@@ -1,0 +1,155 @@
+{
+  "ok": true,
+  "data": {
+    "name": "Form",
+    "concept": "ConceptDeclaration",
+    "doc": "",
+    "deprecated": "false",
+    "conceptReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788",
+    "properties": [
+      {
+        "name": "rootable",
+        "type": "boolean",
+        "doc": "",
+        "deprecated": "false",
+        "value": "true"
+      },
+      {
+        "name": "conceptAlias",
+        "type": "string",
+        "doc": "",
+        "deprecated": "false",
+        "value": "form"
+      },
+      {
+        "name": "conceptId",
+        "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@6b083c78",
+        "doc": "",
+        "deprecated": "false",
+        "value": "2589700000046736788"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "doc": "",
+        "deprecated": "false",
+        "value": "Form"
+      }
+    ],
+    "references": [
+      {
+        "role": "extends",
+        "type": "ConceptDeclaration",
+        "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+        "cardinality": "0..1",
+        "doc": "",
+        "deprecated": "false",
+        "target": "BaseConcept",
+        "targetReference": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1133920641626"
+      }
+    ],
+    "children": [
+      {
+        "role": "implements",
+        "type": "InterfaceConceptReference",
+        "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169127622168:jetbrains.mps.lang.structure.structure.InterfaceConceptReference",
+        "cardinality": "0..n",
+        "doc": "",
+        "deprecated": "false",
+        "nodes": [
+          {
+            "name": "INamedConcept",
+            "concept": "InterfaceConceptReference",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169127622168:jetbrains.mps.lang.structure.structure.InterfaceConceptReference",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736798",
+            "properties": [],
+            "references": [
+              {
+                "role": "intfc",
+                "type": "InterfaceConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169125989551:jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "INamedConcept",
+                "targetReference": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194658468"
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "role": "linkDeclaration",
+        "type": "LinkDeclaration",
+        "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288298:jetbrains.mps.lang.structure.structure.LinkDeclaration",
+        "cardinality": "0..n",
+        "doc": "",
+        "deprecated": "false",
+        "nodes": [
+          {
+            "name": "items",
+            "concept": "LinkDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288298:jetbrains.mps.lang.structure.structure.LinkDeclaration",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736797",
+            "properties": [
+              {
+                "name": "role",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "items"
+              },
+              {
+                "name": "metaClass",
+                "type": "enum:LinkMetaclass",
+                "doc": "",
+                "deprecated": "false",
+                "value": "fLJjDmT/aggregation"
+              },
+              {
+                "name": "sourceCardinality",
+                "type": "enum:Cardinality",
+                "doc": "",
+                "deprecated": "false",
+                "value": "fLJekj5/_0__n"
+              },
+              {
+                "name": "linkId",
+                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@6b083c78",
+                "doc": "",
+                "deprecated": "false",
+                "value": "2589700000046736797"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "items"
+              }
+            ],
+            "references": [
+              {
+                "role": "target",
+                "type": "AbstractConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135:jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Item",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736789"
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

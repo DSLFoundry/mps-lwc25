@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-29T21:53:22.012953+00:00",
+  "name": "mps_mcp_check_root_node_problems",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "nodeReference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628499",
+    "onlyNodesWithProblems": true,
+    "autoApplyQuickFixes": false
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-13273414417233032328.json\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-29T22:20:58.557237+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "filePath": "solutions\\QuestionnaireExample\\models\\QuestionnaireExample.mps",
+    "errorsOnly": false,
+    "timeout": 30000
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"filePath\":\"solutions\\\\QuestionnaireExample\\\\models\\\\QuestionnaireExample.mps\",\"errors\":[]}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "filePath": "solutions\\QuestionnaireExample\\models\\QuestionnaireExample.mps",
+      "errors": []
+    }
+  }
+}

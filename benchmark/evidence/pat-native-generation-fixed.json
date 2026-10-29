@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2026-10-29T21:26:05.756259+00:00",
+    "label": "language MAKE",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "MAKE",
+      "parameters": "{\"modules\": [\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\"], \"rebuild\": true}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"success\":true,\"message\":\"Make successful\",\"runtimeReady\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:26:08.786709+00:00",
+    "label": "example MAKE",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "operation": "MAKE",
+      "parameters": "{\"modules\": [\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\"], \"rebuild\": true}"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"success\":true,\"message\":\"Make successful\",\"runtimeReady\":true}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "timestamp": "2026-10-29T21:07:09.210575+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "usedLanguage": "QuestionnaireLanguage",
+      "kind": "language",
+      "operation": "ADD"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"added\":true,\"providedByDevKit\":false}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:07:09.282333+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "usedLanguage": "jetbrains.mps.lang.textGen",
+      "kind": "language",
+      "operation": "ADD"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"added\":false,\"providedByDevKit\":true,\"devKit\":\"jetbrains.mps.devkit.aspect.textgen\"}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

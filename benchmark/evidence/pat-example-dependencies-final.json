@@ -1,0 +1,134 @@
+{
+  "ok": true,
+  "data": {
+    "name": "QuestionnaireExample",
+    "reference": "ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)",
+    "virtualFolder": "",
+    "readOnly": false,
+    "kind": "Solution",
+    "dependencies": [],
+    "usedLanguages": [
+      {
+        "name": "org.iets3.analysis.base",
+        "reference": "l:db8bd035-3f51-41d8-8fed-954c202d18be:org.iets3.analysis.base",
+        "version": 0
+      },
+      {
+        "name": "org.iets3.core.expr.base",
+        "reference": "l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base",
+        "version": 22
+      },
+      {
+        "name": "jetbrains.mps.baseLanguage.regexp",
+        "reference": "l:daafa647-f1f7-4b0b-b096-69cd7c8408c0:jetbrains.mps.baseLanguage.regexp",
+        "version": 0
+      },
+      {
+        "name": "QuestionnaireLanguage",
+        "reference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage",
+        "version": 0
+      },
+      {
+        "name": "org.iets3.core.expr.simpleTypes",
+        "reference": "l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes",
+        "version": 11
+      },
+      {
+        "name": "com.mbeddr.mpsutil.blutil",
+        "reference": "l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil",
+        "version": 3
+      },
+      {
+        "name": "jetbrains.mps.lang.smodel",
+        "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel",
+        "version": 19
+      },
+      {
+        "name": "com.mbeddr.mpsutil.interpreter",
+        "reference": "l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter",
+        "version": 1
+      },
+      {
+        "name": "com.mbeddr.mpsutil.jung",
+        "reference": "l:d09a16fb-1d68-4a92-a5a4-20b4b2f86a62:com.mbeddr.mpsutil.jung",
+        "version": 0
+      },
+      {
+        "name": "de.slisson.mps.richtext",
+        "reference": "l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.baseLanguage.collections",
+        "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections",
+        "version": 2
+      },
+      {
+        "name": "org.iets3.core.base",
+        "reference": "l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base",
+        "version": 0
+      },
+      {
+        "name": "com.mbeddr.mpsutil.filepicker",
+        "reference": "l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker",
+        "version": 0
+      },
+      {
+        "name": "com.mbeddr.core.base",
+        "reference": "l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base",
+        "version": 6
+      },
+      {
+        "name": "com.mbeddr.mpsutil.plantuml.node",
+        "reference": "l:b4d28e19-7d2d-47e9-943e-3a41f97a0e52:com.mbeddr.mpsutil.plantuml.node",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.core",
+        "reference": "l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core",
+        "version": 2
+      },
+      {
+        "name": "jetbrains.mps.lang.modelapi",
+        "reference": "l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.traceable",
+        "reference": "l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.baseLanguage",
+        "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage",
+        "version": 12
+      },
+      {
+        "name": "jetbrains.mps.baseLanguage.closures",
+        "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures",
+        "version": 0
+      }
+    ],
+    "usedDevkits": [],
+    "facets": [
+      "java"
+    ],
+    "loadExtensions": "NotAvailable",
+    "models": [
+      {
+        "name": "QuestionnaireExample",
+        "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)",
+        "readOnly": false,
+        "dependencies": [],
+        "usedLanguages": [
+          {
+            "name": "QuestionnaireLanguage",
+            "reference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage"
+          }
+        ],
+        "engagedOnGenerationLanguages": [],
+        "rootNodesCount": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2026-10-29T21:07:28.096730+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)",
+      "usedLanguage": "QuestionnaireLanguage",
+      "kind": "language",
+      "operation": "ADD"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"added\":true,\"providedByDevKit\":false}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:07:28.138948+00:00",
+    "name": "details",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "conceptRefs": "[\"QuestionnaireLanguage.Form\", \"QuestionnaireLanguage.Question\", \"QuestionnaireLanguage.Branch\", \"QuestionnaireLanguage.Literal\", \"QuestionnaireLanguage.Reference\", \"QuestionnaireLanguage.Binary\", \"QuestionnaireLanguage.Unary\", \"jetbrains.mps.baseLanguage.structure.StringLiteral\", \"jetbrains.mps.lang.smodel.structure.SPropertyAccess\", \"jetbrains.mps.lang.smodel.structure.SLinkAccess\", \"jetbrains.mps.lang.smodel.structure.SLinkListAccess\", \"jetbrains.mps.lang.textGen.structure.NodeParameter\", \"jetbrains.mps.baseLanguage.structure.ReturnStatement\"]"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-17486639715328734368.json\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

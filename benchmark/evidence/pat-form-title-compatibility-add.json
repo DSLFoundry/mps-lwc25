@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-29T22:25:56.262457+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "ADD",
+    "kind": "CHILD",
+    "nodeReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788",
+    "childRole": "propertyDeclaration",
+    "position": -1,
+    "childJson": "{\"concept\":\"PropertyDeclaration\",\"properties\":[{\"name\":\"name\",\"value\":\"title\"},{\"name\":\"propertyId\",\"value\":\"2589700000046743938\"}],\"references\":[{\"role\":\"dataType\",\"target\":\"r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1082983041843\"}]}",
+    "dryRun": false
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"name\":\"title\",\"concept\":\"PropertyDeclaration\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288299:jetbrains.mps.lang.structure.structure.PropertyDeclaration\",\"reference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000047270492\",\"parentReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788\",\"rootReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788\",\"rootName\":\"Form\",\"modelReference\":\"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)\",\"moduleReference\":\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":0,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"All references are already correctly resolved\"}}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

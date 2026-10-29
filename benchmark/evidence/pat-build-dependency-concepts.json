@@ -1,0 +1,457 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "name": "BuildMps_Language",
+      "qualifiedName": "jetbrains.mps.build.mps.structure.BuildMps_Language",
+      "conceptAlias": "language",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/3189788309731840248:jetbrains.mps.build.mps.structure.BuildMps_Language",
+      "languageReference": "l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps",
+      "superConcept": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388:jetbrains.mps.build.mps.structure.BuildMps_Module",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/3189788309731840248",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "Project",
+      "present": true,
+      "properties": [
+        {
+          "name": "doNotCompile",
+          "type": "boolean",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388/1500819558096356884",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/1500819558096356884",
+          "doc": "",
+          "deprecated": "true"
+        },
+        {
+          "name": "javaCode",
+          "type": "BuildMps_CodeKind",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388/2928402740576877067",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/2928402740576877067",
+          "doc": "",
+          "deprecated": "false",
+          "enumerationValues": [
+            "compile_mps",
+            "compile_ext",
+            "none"
+          ]
+        },
+        {
+          "name": "uuid",
+          "type": "string",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/322010710375871467/322010710375892619",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/322010710375892619",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "compact",
+          "type": "boolean",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/322010710375871467/8369506495128725901",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/8369506495128725901",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194664001",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "withKotlin",
+          "type": "boolean",
+          "featureId": "798100da-4f0a-421a-b991-71f8c50ce5d2/2591537044435828007/7687809870062809395",
+          "sourceNode": "r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)/7687809870062809395",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "runtime",
+          "targetConcept": "jetbrains.mps.build.mps.structure.BuildMps_ModuleRuntime",
+          "cardinality": "0..n",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/3189788309731840248/3189788309731917348",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/3189788309731917348",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "accessory",
+          "targetConcept": "jetbrains.mps.build.mps.structure.BuildMps_ModuleRef",
+          "cardinality": "0..n",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/3189788309731840248/7939233666839079197",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/7939233666839079197",
+          "doc": "modules of accessory models hosted externally to the language",
+          "deprecated": "false"
+        },
+        {
+          "name": "generator",
+          "targetConcept": "jetbrains.mps.build.mps.structure.BuildMps_Generator",
+          "cardinality": "0..1",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/3189788309731840248/9200313594498201639",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/9200313594498201639",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "managedGenerators",
+          "targetConcept": "jetbrains.mps.build.mps.structure.BuildMps_GeneratorRef",
+          "cardinality": "0..n",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/3189788309731840248/7862711839422606216",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/7862711839422606216",
+          "doc": "unlike generator containment, this one references generators owned by project itself. Generator modules references this way are bundled along with the language.",
+          "deprecated": "false"
+        },
+        {
+          "name": "sources",
+          "targetConcept": "jetbrains.mps.build.mps.structure.BuildMps_ModuleSource",
+          "cardinality": "0..n",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388/5253498789149547825",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/5253498789149547825",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "dependencies",
+          "targetConcept": "jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+          "cardinality": "0..n",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388/5253498789149547704",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/5253498789149547704",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "output",
+          "targetConcept": "jetbrains.mps.build.structure.BuildSourcePath",
+          "cardinality": "0..1",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149381388/4571516170014976861",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/4571516170014976861",
+          "doc": "Experimental functionality, MPSI-36",
+          "deprecated": "false"
+        },
+        {
+          "name": "path",
+          "targetConcept": "jetbrains.mps.build.structure.BuildSourcePath",
+          "cardinality": "0..1",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/322010710375871467/322010710375956261",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/322010710375956261",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.build.mps.structure.BuildMps_Language",
+        "properties": [
+          {
+            "name": "doNotCompile",
+            "value": "true"
+          },
+          {
+            "name": "javaCode",
+            "value": "compile_mps"
+          },
+          {
+            "name": "uuid",
+            "value": "example"
+          },
+          {
+            "name": "compact",
+            "value": "true"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          },
+          {
+            "name": "name",
+            "value": "BuildMps_Language"
+          },
+          {
+            "name": "withKotlin",
+            "value": "true"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "runtime",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.mps.structure.BuildMps_ModuleRuntime or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "accessory",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.mps.structure.BuildMps_ModuleRef or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "generator",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.mps.structure.BuildMps_Generator or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "managedGenerators",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.mps.structure.BuildMps_GeneratorRef or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "sources",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.mps.structure.BuildMps_ModuleSource or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "dependencies",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "output",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.structure.BuildSourcePath or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "path",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.structure.BuildSourcePath or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "BuildMps_ExtractedModuleDependency",
+      "qualifiedName": "jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+      "conceptAlias": "(extracted)",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166:jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+      "languageReference": "l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps",
+      "superConcept": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/7259033139236285166",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "Project.Deps",
+      "present": true,
+      "properties": [
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "dependency",
+          "targetConcept": "jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+          "cardinality": "1",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/7259033139236285166/7259033139236285167",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/7259033139236285167",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency",
+        "properties": [
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "dependency",
+            "nodes": [
+              "/* Instances of jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "BuildMps_ModuleDependencyOnModule",
+      "qualifiedName": "jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+      "conceptAlias": "",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+      "languageReference": "l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps",
+      "superConcept": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/5253498789149585690",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "Project.Deps",
+      "present": true,
+      "properties": [
+        {
+          "name": "reexport",
+          "type": "boolean",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690/5253498789149547713",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/5253498789149547713",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [
+        {
+          "name": "module",
+          "targetConcept": "jetbrains.mps.build.mps.structure.BuildMps_Module",
+          "cardinality": "1",
+          "featureId": "0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149585690/5253498789149547705",
+          "sourceNode": "r:0353b795-df17-4050-9687-ee47eeb7094f(jetbrains.mps.build.mps.structure)/5253498789149547705",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "children": [
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule",
+        "properties": [
+          {
+            "name": "reexport",
+            "value": "true"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [
+          {
+            "role": "module",
+            "target": "/* Reference to jetbrains.mps.build.mps.structure.BuildMps_Module */"
+          }
+        ],
+        "children": [
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

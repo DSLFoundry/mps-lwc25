@@ -1,0 +1,90 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "name": "BenefitSurvey",
+      "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046743236",
+      "concept": "Form",
+      "doc": "",
+      "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736788:QuestionnaireLanguage.structure.Form",
+      "problems": [],
+      "properties": [
+        {
+          "name": "name",
+          "type": "string",
+          "doc": "",
+          "value": "BenefitSurvey",
+          "problems": []
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "role": "items",
+          "type": "Item",
+          "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736789:QuestionnaireLanguage.structure.Item",
+          "cardinality": "0..n",
+          "doc": "",
+          "problems": []
+        }
+      ]
+    },
+    {
+      "name": "computed question",
+      "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046774713",
+      "concept": "Calculated",
+      "doc": "",
+      "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+      "problems": [],
+      "properties": [
+        {
+          "name": "label",
+          "type": "string",
+          "doc": "",
+          "value": "Annual cost estimate",
+          "problems": [
+            {
+              "severity": "error",
+              "message": "Property Calculated.label does not belong to the concept Calculated"
+            }
+          ]
+        },
+        {
+          "name": "valueType",
+          "type": "string",
+          "doc": "",
+          "value": "money",
+          "problems": [
+            {
+              "severity": "error",
+              "message": "Property Calculated.valueType does not belong to the concept Calculated"
+            }
+          ]
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "doc": "",
+          "value": "annualCost",
+          "problems": [
+            {
+              "severity": "error",
+              "message": "Property Calculated.id does not belong to the concept Calculated"
+            }
+          ]
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "role": "computed",
+          "type": "Expression",
+          "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+          "cardinality": "1",
+          "doc": "",
+          "problems": []
+        }
+      ]
+    }
+  ]
+}

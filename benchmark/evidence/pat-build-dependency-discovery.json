@@ -1,0 +1,35 @@
+[
+  {
+    "timestamp": "2026-10-29T21:17:32.724205+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "names": "jetbrains.mps.lang.core",
+      "scope": "all"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":[]}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:17:32.755404+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "conceptRefs": "[\"jetbrains.mps.build.mps.structure.BuildMps_Language\", \"jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency\", \"jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule\"]"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-8644457966048342748.json\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

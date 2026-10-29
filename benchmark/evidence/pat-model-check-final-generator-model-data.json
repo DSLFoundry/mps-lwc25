@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "data": {
+    "name": "QuestionnaireLanguage.generator.templates@generator",
+    "reference": "r:1f1279ee-a270-42e5-9ba9-ef16190001b5(QuestionnaireLanguage.generator.templates@generator)",
+    "module": "QuestionnaireLanguage.generator",
+    "problems": [
+      {
+        "severity": "warning",
+        "message": "Generator Model QuestionnaireLanguage.generator.templates@generator got no target nor query language. No rules to modify an input. Is it empty?"
+      }
+    ]
+  }
+}

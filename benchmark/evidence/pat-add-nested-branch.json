@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-29T22:17:48.231541+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "ADD",
+    "kind": "CHILD",
+    "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046774720",
+    "childRole": "items",
+    "position": -1,
+    "childJson": "{\"concept\":\"Branch\",\"children\":[{\"role\":\"condition\",\"nodes\":[{\"concept\":\"Binary\",\"properties\":[{\"name\":\"operator\",\"value\":\">\"}],\"children\":[{\"role\":\"left\",\"nodes\":[{\"concept\":\"Reference\",\"properties\":[{\"name\":\"targetId\",\"value\":\"residents\"}],\"references\":[{\"role\":\"target\",\"target\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046774712\"}]}]},{\"role\":\"right\",\"nodes\":[{\"concept\":\"Literal\",\"properties\":[{\"name\":\"value\",\"value\":\"2\"},{\"name\":\"literalType\",\"value\":\"integer\"}]}]}]}]},{\"role\":\"items\",\"nodes\":[{\"concept\":\"Question\",\"properties\":[{\"name\":\"label\",\"value\":\"Does your home have a garden?\"},{\"name\":\"valueType\",\"value\":\"boolean\"},{\"name\":\"id\",\"value\":\"hasGarden\"}]}]}]}",
+    "dryRun": false
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"name\":\"when\",\"concept\":\"Branch\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736791:QuestionnaireLanguage.structure.Branch\",\"reference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047218753\",\"parentReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046774720\",\"rootReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046743236\",\"rootName\":\"BenefitSurvey\",\"modelReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\",\"moduleReference\":\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":1,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"All references are already correctly resolved\"}}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

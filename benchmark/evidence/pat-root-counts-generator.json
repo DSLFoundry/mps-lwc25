@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "data": {
+    "modules": [
+      {
+        "name": "QuestionnaireLanguage.generator",
+        "reference": "859d56ea-5acc-4450-86c1-5c76a58ec80e(QuestionnaireLanguage.generator)",
+        "virtualFolder": "",
+        "readOnly": false,
+        "kind": "Generator",
+        "facets": [
+          "java"
+        ],
+        "loadExtensions": "NotAvailable",
+        "models": [
+          {
+            "name": "QuestionnaireLanguage.generator.templates@generator",
+            "reference": "r:1f1279ee-a270-42e5-9ba9-ef16190001b5(QuestionnaireLanguage.generator.templates@generator)",
+            "readOnly": false,
+            "rootNodes": [
+              {
+                "name": "main",
+                "concept": "MappingConfiguration",
+                "doc": "",
+                "deprecated": "false",
+                "conceptReference": "c:b401a680-8325-4110-8fd3-84331ff25bef/1095416546421:jetbrains.mps.lang.generator.structure.MappingConfiguration",
+                "reference": "r:1f1279ee-a270-42e5-9ba9-ef16190001b5(QuestionnaireLanguage.generator.templates@generator)/2589700000046736476",
+                "properties": [
+                  {
+                    "name": "name",
+                    "type": "string",
+                    "doc": "",
+                    "deprecated": "false",
+                    "value": "main"
+                  }
+                ],
+                "references": [],
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "QuestionnaireLanguage.generator@descriptor",
+            "reference": "859d56ea-5acc-4450-86c1-5c76a58ec80e/i:f020202(QuestionnaireLanguage.generator/QuestionnaireLanguage.generator@descriptor)",
+            "readOnly": true,
+            "rootNodes": []
+          }
+        ]
+      }
+    ]
+  }
+}

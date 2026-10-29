@@ -1,0 +1,114 @@
+[
+  {
+    "timestamp": "2026-10-29T21:05:35.422930+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "usedLanguage": "QuestionnaireLanguage",
+      "kind": "language",
+      "operation": "ADD"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":false,\"error\":\"Operation timed out after 30000ms. This may indicate a modal dialog or a long-running operation blocking MPS. Please close any open dialogs (Find Usages, Search, confirmation prompts, etc.) and try again.\",\"code\":\"MODAL_BLOCKED\",\"details\":{\"timeoutMs\":30000}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:06:05.429217+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "usedLanguage": "jetbrains.mps.lang.textGen",
+      "kind": "language",
+      "operation": "ADD"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":false,\"error\":\"Operation timed out after 30000ms. This may indicate a modal dialog or a long-running operation blocking MPS. Please close any open dialogs (Find Usages, Search, confirmation prompts, etc.) and try again.\",\"code\":\"MODAL_BLOCKED\",\"details\":{\"timeoutMs\":30000}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:06:35.460689+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "usedLanguage": "jetbrains.mps.baseLanguage",
+      "kind": "language",
+      "operation": "ADD"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"added\":false,\"providedByDevKit\":true,\"devKit\":\"jetbrains.mps.devkit.aspect.textgen\"}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:06:49.178579+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "usedLanguage": "jetbrains.mps.lang.smodel",
+      "kind": "language",
+      "operation": "ADD"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"added\":false,\"providedByDevKit\":true,\"devKit\":\"jetbrains.mps.devkit.aspect.textgen\"}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:06:49.201829+00:00",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+      "usedLanguage": "jetbrains.mps.baseLanguage.collections",
+      "kind": "language",
+      "operation": "ADD"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":{\"added\":false,\"providedByDevKit\":true,\"devKit\":\"jetbrains.mps.devkit.aspect.textgen\"}}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  },
+  {
+    "timestamp": "2026-10-29T21:06:49.205856+00:00",
+    "name": "details",
+    "args": {
+      "projectPath": "C:\\Sources\\mps-lwc25",
+      "conceptRefs": "[\"jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration\", \"jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration\", \"jetbrains.mps.lang.textGen.structure.AppendOperation\", \"jetbrains.mps.lang.textGen.structure.CollectionAppendPart\", \"jetbrains.mps.lang.textGen.structure.NodeAppendPart\", \"jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart\", \"jetbrains.mps.lang.textGen.structure.ExtensionDeclaration\", \"jetbrains.mps.lang.textGen.structure.EncodingDeclarationBase\"]"
+    },
+    "result": {
+      "content": [
+        {
+          "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-15033653018314427552.json\"}",
+          "type": "text"
+        }
+      ],
+      "isError": false
+    }
+  }
+]

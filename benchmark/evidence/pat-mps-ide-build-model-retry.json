@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-29T21:17:50.101651+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "startingPoint": "jetbrains.mps.ide.build",
+    "includeStubModules": true,
+    "includeNodes": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-15631564527920377500.json\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

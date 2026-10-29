@@ -1,0 +1,73 @@
+{
+  "concept": "Calculated",
+  "properties": [
+    {
+      "name": "label",
+      "value": "Annual cost estimate"
+    },
+    {
+      "name": "valueType",
+      "value": "money"
+    },
+    {
+      "name": "id",
+      "value": "annualCost"
+    }
+  ],
+  "children": [
+    {
+      "role": "computed",
+      "nodes": [
+        {
+          "concept": "Binary",
+          "properties": [
+            {
+              "name": "operator",
+              "value": "+"
+            }
+          ],
+          "children": [
+            {
+              "role": "left",
+              "nodes": [
+                {
+                  "concept": "Reference",
+                  "properties": [
+                    {
+                      "name": "targetId",
+                      "value": "residents"
+                    }
+                  ],
+                  "references": [
+                    {
+                      "role": "target",
+                      "target": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000046774712"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "role": "right",
+              "nodes": [
+                {
+                  "concept": "Literal",
+                  "properties": [
+                    {
+                      "name": "value",
+                      "value": "5"
+                    },
+                    {
+                      "name": "literalType",
+                      "value": "integer"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

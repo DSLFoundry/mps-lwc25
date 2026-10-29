@@ -1,0 +1,90 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "name": "QuestionnaireLanguage",
+      "reference": "r:35e3b589-c47c-4706-9151-c5d7ea98fe37(QuestionnaireLanguage.build)/4400751780494628511",
+      "concept": "BuildMps_Language",
+      "doc": "",
+      "conceptReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/3189788309731840248:jetbrains.mps.build.mps.structure.BuildMps_Language",
+      "problems": [
+        {
+          "severity": "info",
+          "message": "Info: Module uses language that may produce resource files. Need resources entry to get these copied during build",
+          "quickFixes": [
+            {
+              "id": "jetbrains.mps.build.mps.typesystem.addModuleResources_QuickFix",
+              "description": "Add resources entry to copy generated resource files during build",
+              "autoApplicable": false
+            }
+          ]
+        }
+      ],
+      "properties": [
+        {
+          "name": "javaCode",
+          "type": "enum:BuildMps_CodeKind",
+          "doc": "",
+          "value": "compile_mps",
+          "problems": []
+        },
+        {
+          "name": "uuid",
+          "type": "string",
+          "doc": "",
+          "value": "83a543da-6367-4b94-9df8-b626b1b2132c",
+          "problems": []
+        },
+        {
+          "name": "compact",
+          "type": "boolean",
+          "doc": "",
+          "value": "true",
+          "problems": []
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "doc": "",
+          "value": "QuestionnaireLanguage",
+          "problems": []
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "role": "generator",
+          "type": "BuildMps_Generator",
+          "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5507251971038816436:jetbrains.mps.build.mps.structure.BuildMps_Generator",
+          "cardinality": "0..1",
+          "doc": "",
+          "problems": []
+        },
+        {
+          "role": "sources",
+          "type": "BuildMps_ModuleSource",
+          "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547823:jetbrains.mps.build.mps.structure.BuildMps_ModuleSource",
+          "cardinality": "0..n",
+          "doc": "",
+          "problems": []
+        },
+        {
+          "role": "dependencies",
+          "type": "BuildMps_ModuleDependency",
+          "typeReference": "c:0cf935df-4699-4e9c-a132-fa109541cba3/5253498789149547703:jetbrains.mps.build.mps.structure.BuildMps_ModuleDependency",
+          "cardinality": "0..n",
+          "doc": "",
+          "problems": []
+        },
+        {
+          "role": "path",
+          "type": "BuildSourcePath",
+          "typeReference": "c:798100da-4f0a-421a-b991-71f8c50ce5d2/7389400916848073790:jetbrains.mps.build.structure.BuildSourcePath",
+          "cardinality": "0..1",
+          "doc": "",
+          "problems": []
+        }
+      ]
+    }
+  ]
+}
