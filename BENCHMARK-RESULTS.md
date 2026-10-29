@@ -7,14 +7,17 @@
 - Original implementation: `a5ad875e5893548b9e4061831009521feb2e06a0`
 - Initial results freeze: `52cb89e46554ca3eab927de42a12de8ff5915301`
 - Resumed implementation: `735a1efd0f5ffaf0cb543a22886dd442c2449ed8`
+- Integrated native generator and evidence: `97631651d4c1f303dc801cc5fd7e3ba96b2282ec`
 - Original start: `2026-10-29T18:59:09.113Z`
 - Start + 120 minutes: `2026-10-29T20:59:09.113Z`
 - Later coordinator stop instruction: `2026-10-29T20:59:00Z` (applied as the earlier hard stop)
-- Active-work end: `2026-10-29T20:11:12.361Z`
-- Wall-clock elapsed from original start: `1h 12m 3.248s`
+- Implementation/evidence freeze: `2026-10-29T20:39:27Z` (integration commit timestamp)
+- Wall-clock elapsed from original start to implementation freeze: `1h 40m 17.887s`
 - Interruptions excluded: none. The coordinator review interval
   `19:33:09.530Z`–`19:35:25.299Z` counted against the original budget.
   Work resumed on the same branch at `19:35:25.299Z`.
+  The second review interval `20:11:12.361Z`–`20:14:18.082Z` also counted
+  against the original budget; no extension was granted.
 
 The initial results commit explicitly recorded G3 as failed. That failed
 attempt remains available in commit `52cb89e`; resumed work then implemented
@@ -30,19 +33,20 @@ instrumentation and are not inferred.
 ## Operation accounting
 
 `benchmark/evidence/operations.log` is self-reported rather than harness
-telemetry. At report preparation it contains 113 timestamped entries and 97
-explicit operation rows. Logged `calls:` fields sum to 39, but are incomplete
-and are not an exact tool-call or provider-operation count. No automatic
-provider-call count was exposed. All QL MPS model discovery, mutation,
-checking, making, generation, and runtime model access used mops; serialized
-`.mps`/`.mpl` persistence was not hand-edited.
+telemetry. At the resumed-generator follow-up it contains timestamped
+implementation and validation entries. Logged `calls:` fields sum to 39, but
+are incomplete and are not an exact tool-call or provider-operation count.
+The final resumed validation operations are timestamped separately without
+claiming a complete call count. No automatic provider-call count was exposed.
+All QL MPS model discovery, mutation, checking, making, generation, and runtime
+model access used mops; serialized `.mps`/`.mpl` persistence was not hand-edited.
 
 ## Implementation and verification
 
 The implementation provides native QL concepts and projectional editors,
 valid and invalid native examples, an editor-time conditional type rule, an
-MPS root-mapping template, a mops Code Mode native-model exporter/checker, a
-production JavaScript runtime, a browser UI/server, and reproducible evidence.
+MPS root-mapping template and compiled serializer, a production JavaScript
+runtime, a browser UI/server, and reproducible evidence.
 Native model counts obtained through mops are:
 
 | Model | Roots | Nodes |
@@ -50,10 +54,11 @@ Native model counts obtained through mops are:
 | `QuestionnaireLanguage.structure` | 5 | 14 |
 | `QuestionnaireLanguage.editor` | 4 | 26 |
 | `QuestionnaireLanguage.typesystem` | 1 | 38 |
-| `QuestionnaireLanguage.generator.templates@generator` | 2 | 12 |
+| `QuestionnaireLanguage.generator.templates@generator` | 2 | 24 |
+| `QuestionnaireLanguage.generator.util` | 1 | 732 |
 | `Sandbox.QLBasic` | 1 | 13 |
 | `Sandbox.QLInvalid` | 1 | 14 |
-| **Total** | **14** | **117** |
+| **Total** | **15** | **861** |
 
 `Question.computed` is now optional single-valued, with the editor using a
 single-reference cell. The native typesystem rule checks a direct
@@ -61,18 +66,22 @@ single-reference cell. The native typesystem rule checks a direct
 target to be boolean. It guards unresolved links; a prior probe confirmed an
 unresolved reference does not produce a duplicate type-rule error.
 
-The native generator contains a root-mapping rule and BaseLanguage template.
-MPS make generated and compiled Java source and bytecode for both Sandbox QL
-models. `benchmark/evidence/native-generation.json` records four generated
-files and successful runtime loading of both generated classes. The template's
-output is a static generation smoke target, not a serializer of questionnaire
-data; the separate Code Mode exporter is the executable runtime-data path.
+The native generator contains a root-mapping rule, a BaseLanguage output
+template, and a compiled serializer utility. Its property macro contains a
+native static method reference to the serializer, passing the input
+`Questionnaire` node; it walks questions, conditionals, links, literal nodes,
+and operator trees and returns JSON. Both native sample roots generate
+compiled Java classes exposing the corresponding complete questionnaire JSON.
+`benchmark/generate.groovy` only extracts JSON from the generated class; it no
+longer walks or serializes the source model.
 
-The valid native example exports to `benchmark/generated-form.json`. The
-reproducible `benchmark/verify-native-runtime.cjs` sends that output through
-the production adapter/runtime: validation is clean and its computed question
-evaluates to `5`. The result is recorded in
-`benchmark/evidence/native-runtime.json`.
+The resulting `benchmark/generated-form.json` is fetched by the production
+browser UI and consumed by the production runtime. `benchmark/evidence` records
+the actual generated data. Mutation tests changed a native question label and
+a native computed literal, reran MPS make and proved the generated JSON
+changed; the runtime result changed from `5` to `14` for the expression probe.
+Both native edits were then restored through mops and generation rerun. The
+final example validates with no diagnostics and computes to `5`.
 
 The unchanged fixed runner `node benchmark\acceptance.cjs` passed **20/20**;
 per-case results are in `benchmark/evidence/acceptance.json`. The mops
@@ -87,30 +96,36 @@ Machine-readable MPS diagnostics are in
 The targeted Gradle language build passed:
 
 ```powershell
-.\gradlew.bat --console=plain buildQuestionnaireLanguage -x resolveMps -x resolveMpsArtifacts --project-cache-dir build\gradle-cache
+.\gradlew.bat --console=plain buildQuestionnaireLanguage -x resolveMps -x resolveMpsArtifacts --project-cache-dir build\benchmark-gradle-cache
 ```
 
-Mops make and checks passed for the language structure, editor, typesystem,
-generator template, and valid sample. The generator model emitted one
-informational recommendation about a BaseLanguage type and no errors. The
-invalid example intentionally exits nonzero. The Gradle build emitted
-third-party class-loading and Java restricted-access warnings, but no build
-errors.
+Mops make succeeded for the generator module and Sandbox. Checks returned no
+findings for the structure, editor, typesystem, and valid sample; the
+generator template had 0 errors and 2 informational BaseLanguage type
+recommendations. The invalid example intentionally exits nonzero with expected
+diagnostics. The serializer utility compiles and executes in generated MPS
+classes, but its source model check reports 51 BaseLanguage method-resolution
+errors, 5 warnings, and 11 infos; this check is explicitly not counted as a
+pass. The Gradle build emitted third-party class-loading and Java
+restricted-access warnings, but no build errors.
 
-The original real Edge browser run exercised typed controls, computed values,
-nested visibility, and JSON download. Its script, screenshot, and parsed
-download remain in `benchmark/evidence/browser-check.mjs`, `gui.png`, and
-`gui-download.json`. Browser evidence was not rerun during the resumed
-model-only changes; no runtime/UI code changed in that segment.
+The actual Edge browser script was rerun against the output extracted from the
+native-generated Java class. It exercised typed controls, computed values,
+nested visibility, and JSON download; current artifacts are
+`benchmark/evidence/browser-check.mjs`, `gui.png`, and `gui-download.json`.
+
+The integrated generator/evidence commit changed 11 files (2,328 insertions,
+129 deletions), including the new native serializer model. Earlier
+implementation, failed-G3, and results commits remain separate and unchanged.
 
 ## Acceptance gates
 
 | Gate | Result | Evidence / qualification |
 |---|---|---|
 | G1 native concepts and projectional editors | **Pass** | mops checks; 5 structure roots and 4 editor roots. Expressions use imported IETS3 editors. |
-| G2 provider checks and invalid diagnostics | **Pass, with limitation** | Native editor-time rule plus IETS3 produce two invalid-model errors; Code Mode checker reports five findings. Extended duplicate, computed-result, and cycle checks remain Code Mode checks. |
-| G3 strict native MPS generation/compilation | **Pass, smoke-target scope** | MPS make produces and compiles source and bytecode from both native QL model roots. The template does not serialize QL data; see G4 for the runtime-data path. |
-| G4 native example to executable questionnaire | **Pass** | Native `QLBasic` → mops exporter → generated JSON → production adapter/runtime; computed result `5`. Browser also consumed the generated example. |
+| G2 provider checks and invalid diagnostics | **Pass, partial native coverage** | Native conditional-reference rule plus IETS3 produce two invalid-model errors; Code Mode checker reports five findings. Duplicate identifiers, computed-result matching, and cycles remain outside editor-time MPS rules. |
+| G3 strict native MPS generation/compilation | **Pass** | Native root mapping serializes questionnaire-specific items, nested conditions, properties, and expression nodes into generated Java JSON. Both native sample models have generated Java source/bytecode and parsed JSON. Source-model checker issues in the utility class are disclosed separately. |
+| G4 native example to executable questionnaire | **Pass** | Native `QLBasic` → native MPS generator → generated Java JSON → extraction-only bridge → production runtime/UI; computed result `5`. Label and expression model edits visibly changed generated output. |
 | G5 actual GUI behavior | **Pass** | Real Edge run documented in `browser-check.mjs`; screenshot `gui.png`. |
 | G6 downloadable JSON answers | **Pass** | Browser-generated parseable JSON in `gui-download.json`; 7 answer entries. |
 | G7 README authoring/build/run/download instructions | **Pass** | `README.md`, including native make and JSON download steps. |
@@ -121,17 +136,22 @@ model-only changes; no runtime/UI code changed in that segment.
 - The native editor-time rule covers direct question references in conditional
   conditions. Other expression typing is supplied by IETS3; duplicate
   identifiers, computed-result matching, and cycles are checked by the
-  Code Mode semantic checker rather than native typesystem rules.
-- The native MPS generator is a compiled root-mapping/template smoke target;
-  runtime JSON export is implemented separately by the native-model Code Mode
-  exporter.
+  mops Code Mode semantic checker rather than native editor-time typesystem
+  rules. This resumed run did not add further editor-time rules for those
+  cross-question/global checks.
+- The serializer utility's BaseLanguage model has a known MPS check failure
+  (`Reference to wrong overridden method` on Java API calls), although MPS
+  make compiles it and generated classes execute. This weakens the cleanliness
+  of G3 and is not hidden as a successful model check.
 - Money values are numeric amounts without currency metadata or formatting.
-- The resumed implementation commit `735a1efd` changes 15 files with 424 text
-  insertions and 37 deletions. The initial commits remain unchanged.
+- The earlier implementation commits remain unchanged. The integrated
+  generator changes and final results will be committed separately before the
+  original hard stop.
 
 ## Final evidence freeze
 
-The earlier G3 failure, resumed implementation, and final report are preserved
-in separate commits. The implementation is committed on `benchmark/ql-mops`;
-no amend, push, or branch switch was performed. The final report/evidence
-commit follows this content freeze.
+The earlier G3 failure, resumed implementation, and integrated native
+generator work are preserved in separate commits. The implementation remains
+on `benchmark/ql-mops`; no amend, push, or branch switch was performed. The
+final results-document commit records this freeze; no work exceeded the
+original hard stop.

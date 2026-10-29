@@ -221,3 +221,4 @@ Starting HEAD: ebb9a686670577120e0a228a79a3afb33cbc5de2
 2026-10-29T20:36:01.537Z | operation: final mops makes/checks and native generation/runtime verification succeeded; production runtime result=5; unchanged acceptance suite passed 20/20
 2026-10-29T20:37:42.1674409Z | operation: confirmed generator property macro is a native static-method reference into QuestionnaireLanguage.generator.util; verified final working tree for diff review
 2026-10-29T20:37:49.7439625Z | operation: trimmed whitespace from regenerated native-check JSON evidence after diff check; no model/persistence changes
+2026-10-29T20:40:32.5442280Z | operation: committed integrated native generator and evidence as 97631651d4c1f303dc801cc5fd7e3ba96b2282ec at 2026-10-29T20:39:27Z; staged diff check flagged only the mops-serialized model's final blank line, retained that provider output unmodified and checked all other staged paths clean
