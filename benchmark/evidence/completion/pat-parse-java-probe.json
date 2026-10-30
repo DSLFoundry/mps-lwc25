@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-30T01:58:00.393034+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "parameters": "{\"code\": \"public class QuestionnaireNativeDiagnostics { public static boolean hasErrors(org.jetbrains.mps.openapi.model.SNode form) { return false; } }\", \"insert\": {\"mode\": \"root\", \"modelReference\": \"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)\"}, \"postProcess\": {\"importUsedLanguages\": true}}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":false,\"error\":\"Missing 'parameters.featureKind'\",\"code\":\"INVALID_REQUEST\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

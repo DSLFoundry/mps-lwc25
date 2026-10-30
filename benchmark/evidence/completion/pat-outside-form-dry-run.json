@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-30T02:07:15.995368+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "modelReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)",
+    "json": "{\"concept\": \"QuestionnaireLanguage.structure.Form\", \"properties\": [{\"name\": \"title\", \"value\": \"ReferenceTargetForm\"}, {\"name\": \"name\", \"value\": \"ReferenceTargetForm\"}], \"children\": [{\"role\": \"items\", \"nodes\": [{\"concept\": \"QuestionnaireLanguage.structure.Question\", \"properties\": [{\"name\": \"label\", \"value\": \"Outside form question\"}, {\"name\": \"valueType\", \"value\": \"string\"}, {\"name\": \"id\", \"value\": \"outsideQuestion\"}]}]}]}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"dryRun\":true,\"message\":\"Dry run successful for root node insertion\"}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

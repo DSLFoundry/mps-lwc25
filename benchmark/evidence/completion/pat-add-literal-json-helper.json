@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-10-30T02:17:34.484021+00:00",
+  "args": {
+    "parameters": {
+      "code": "public static String literalJson(String value, String type) {\n  if (!\"string\".equals(type)) return value == null ? \"null\" : value;\n  String text = value == null ? \"\" : value;\n  StringBuilder result = new StringBuilder();\n  result.append('\"');\n  for (int i = 0; i < text.length(); i++) {\n    char c = text.charAt(i);\n    if (c == '\"') result.append('\\\\').append('\"');\n    else if (c == '\\\\') result.append('\\\\').append('\\\\');\n    else if (c == '\\b') result.append('\\\\').append('b');\n    else if (c == '\\f') result.append('\\\\').append('f');\n    else if (c == '\\n') result.append('\\\\').append('n');\n    else if (c == '\\r') result.append('\\\\').append('r');\n    else if (c == '\\t') result.append('\\\\').append('t');\n    else if (c < 32) {\n      result.append('\\\\').append('u');\n      String hex = Integer.toHexString((int) c);\n      for (int pad = hex.length(); pad < 4; pad++) result.append('0');\n      result.append(hex);\n    } else result.append(c);\n  }\n  result.append('\"');\n  return result.toString();\n}\n",
+      "featureKind": "METHOD",
+      "contextNodeRef": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047323562",
+      "insert": {
+        "mode": "child",
+        "parentRef": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047323562",
+        "role": "member",
+        "position": -1
+      },
+      "postProcess": {
+        "importUsedLanguages": true,
+        "resolveReferences": true
+      }
+    },
+    "projectPath": "C:\\Sources\\mps-lwc25"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"inserted\":[{\"name\":\"literalJson\",\"concept\":\"StaticMethodDeclaration\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration\",\"reference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047521191\",\"parentReference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047323562\",\"rootReference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047323562\",\"rootName\":\"QuestionnaireNativeDiagnostics\",\"modelReference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)\",\"moduleReference\":\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":12}],\"package\":null,\"languages\":[],\"problems\":[{\"reference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047521561\",\"concept\":\"DotExpression\",\"severity\":\"warning\",\"message\":\"Warning: This operation can produce 'java.lang.NullPointerException'\"}],\"errorMsg\":null}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

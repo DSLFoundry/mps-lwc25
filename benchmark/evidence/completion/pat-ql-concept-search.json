@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-30T01:56:52.153059+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "searchTexts": "[\"Form\", \"Question\", \"Calculated\", \"Reference\", \"Branch\", \"BinaryExpression\", \"UnaryExpression\", \"Literal\"]"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-2355473585699181968.json\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

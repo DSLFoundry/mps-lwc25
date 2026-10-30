@@ -1,0 +1,998 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "name": "Binary",
+      "qualifiedName": "QuestionnaireLanguage.structure.Binary",
+      "conceptAlias": "binary",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736795:QuestionnaireLanguage.structure.Binary",
+      "languageReference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage",
+      "superConcept": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736795",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "operator",
+          "type": "string",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736795/2589700000046736808",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736808",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "left",
+          "targetConcept": "QuestionnaireLanguage.structure.Expression",
+          "cardinality": "1",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736795/2589700000046736809",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736809",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "right",
+          "targetConcept": "QuestionnaireLanguage.structure.Expression",
+          "cardinality": "1",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736795/2589700000046736810",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736810",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "QuestionnaireLanguage.structure.Binary",
+        "properties": [
+          {
+            "name": "operator",
+            "value": "example"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "left",
+            "nodes": [
+              "/* Instances of QuestionnaireLanguage.structure.Expression or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "right",
+            "nodes": [
+              "/* Instances of QuestionnaireLanguage.structure.Expression or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Branch",
+      "qualifiedName": "QuestionnaireLanguage.structure.Branch",
+      "conceptAlias": "when",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736791:QuestionnaireLanguage.structure.Branch",
+      "languageReference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage",
+      "superConcept": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736789:QuestionnaireLanguage.structure.Item",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736791",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "condition",
+          "targetConcept": "QuestionnaireLanguage.structure.Expression",
+          "cardinality": "1",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736791/2589700000046736803",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736803",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "items",
+          "targetConcept": "QuestionnaireLanguage.structure.Item",
+          "cardinality": "0..n",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736791/2589700000046736804",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736804",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "QuestionnaireLanguage.structure.Branch",
+        "properties": [
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "condition",
+            "nodes": [
+              "/* Instances of QuestionnaireLanguage.structure.Expression or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "items",
+            "nodes": [
+              "/* Instances of QuestionnaireLanguage.structure.Item or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Calculated",
+      "qualifiedName": "QuestionnaireLanguage.structure.Calculated",
+      "conceptAlias": "computed question",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+      "languageReference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage",
+      "superConcept": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046740212",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "label",
+          "type": "string",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790/2589700000046736799",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736799",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "valueType",
+          "type": "string",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790/2589700000046736800",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736800",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790/2589700000046743942",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046743942",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "computed",
+          "targetConcept": "QuestionnaireLanguage.structure.Expression",
+          "cardinality": "1",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212/2589700000046740215",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046740215",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "QuestionnaireLanguage.structure.Calculated",
+        "properties": [
+          {
+            "name": "label",
+            "value": "example"
+          },
+          {
+            "name": "valueType",
+            "value": "example"
+          },
+          {
+            "name": "id",
+            "value": "example"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "computed",
+            "nodes": [
+              "/* Instances of QuestionnaireLanguage.structure.Expression or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Expression",
+      "qualifiedName": "QuestionnaireLanguage.structure.Expression",
+      "conceptAlias": "expression",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+      "languageReference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage",
+      "superConcept": "c:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626:jetbrains.mps.lang.core.structure.BaseConcept",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736792",
+      "isAbstract": true,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "QuestionnaireLanguage.structure.Expression",
+        "properties": [
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Form",
+      "qualifiedName": "QuestionnaireLanguage.structure.Form",
+      "conceptAlias": "form",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736788:QuestionnaireLanguage.structure.Form",
+      "languageReference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage",
+      "superConcept": "c:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626:jetbrains.mps.lang.core.structure.BaseConcept",
+      "superInterfaces": [
+        "i:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468:jetbrains.mps.lang.core.structure.INamedConcept"
+      ],
+      "superInterfaceDetails": [
+        {
+          "name": "INamedConcept",
+          "reference": "i:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468:jetbrains.mps.lang.core.structure.INamedConcept"
+        }
+      ],
+      "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": true,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "title",
+          "type": "string",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736788/2589700000046743938",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000047270492",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194664001",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "items",
+          "targetConcept": "QuestionnaireLanguage.structure.Item",
+          "cardinality": "0..n",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736788/2589700000046736797",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736797",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "QuestionnaireLanguage.structure.Form",
+        "properties": [
+          {
+            "name": "title",
+            "value": "example"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          },
+          {
+            "name": "name",
+            "value": "Form"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "items",
+            "nodes": [
+              "/* Instances of QuestionnaireLanguage.structure.Item or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Item",
+      "qualifiedName": "QuestionnaireLanguage.structure.Item",
+      "conceptAlias": "item",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736789:QuestionnaireLanguage.structure.Item",
+      "languageReference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage",
+      "superConcept": "c:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626:jetbrains.mps.lang.core.structure.BaseConcept",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736789",
+      "isAbstract": true,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "QuestionnaireLanguage.structure.Item",
+        "properties": [
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Literal",
+      "qualifiedName": "QuestionnaireLanguage.structure.Literal",
+      "conceptAlias": "literal",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+      "languageReference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage",
+      "superConcept": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736793",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "value",
+          "type": "string",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793/2589700000046736805",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736805",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "literalType",
+          "type": "string",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793/2589700000046736806",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736806",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "QuestionnaireLanguage.structure.Literal",
+        "properties": [
+          {
+            "name": "value",
+            "value": "example"
+          },
+          {
+            "name": "literalType",
+            "value": "example"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Question",
+      "qualifiedName": "QuestionnaireLanguage.structure.Question",
+      "conceptAlias": "question",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+      "languageReference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage",
+      "superConcept": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736789:QuestionnaireLanguage.structure.Item",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736790",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "label",
+          "type": "string",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790/2589700000046736799",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736799",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "valueType",
+          "type": "string",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790/2589700000046736800",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736800",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790/2589700000046743942",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046743942",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "QuestionnaireLanguage.structure.Question",
+        "properties": [
+          {
+            "name": "label",
+            "value": "example"
+          },
+          {
+            "name": "valueType",
+            "value": "example"
+          },
+          {
+            "name": "id",
+            "value": "example"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Reference",
+      "qualifiedName": "QuestionnaireLanguage.structure.Reference",
+      "conceptAlias": "ref",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+      "languageReference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage",
+      "superConcept": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736794",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "targetId",
+          "type": "string",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794/2589700000046741701",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046741701",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [
+        {
+          "name": "target",
+          "targetConcept": "QuestionnaireLanguage.structure.Question",
+          "cardinality": "1",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794/2589700000046736807",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736807",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "children": [
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "QuestionnaireLanguage.structure.Reference",
+        "properties": [
+          {
+            "name": "targetId",
+            "value": "example"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [
+          {
+            "role": "target",
+            "target": "/* Reference to QuestionnaireLanguage.structure.Question */"
+          }
+        ],
+        "children": [
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Unary",
+      "qualifiedName": "QuestionnaireLanguage.structure.Unary",
+      "conceptAlias": "unary",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736796:QuestionnaireLanguage.structure.Unary",
+      "languageReference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage",
+      "superConcept": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736796",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "",
+      "present": true,
+      "properties": [
+        {
+          "name": "operator",
+          "type": "string",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736796/2589700000046736811",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736811",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "operand",
+          "targetConcept": "QuestionnaireLanguage.structure.Expression",
+          "cardinality": "1",
+          "featureId": "83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736796/2589700000046736812",
+          "sourceNode": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736812",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "QuestionnaireLanguage.structure.Unary",
+        "properties": [
+          {
+            "name": "operator",
+            "value": "example"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "operand",
+            "nodes": [
+              "/* Instances of QuestionnaireLanguage.structure.Expression or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

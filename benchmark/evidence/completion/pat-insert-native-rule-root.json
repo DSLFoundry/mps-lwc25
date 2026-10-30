@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-30T02:03:04.619922+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "modelReference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)",
+    "json": "{\"concept\": \"jetbrains.mps.lang.typesystem.structure.NonTypesystemRule\", \"properties\": [{\"name\": \"name\", \"value\": \"checkQuestionnaireNativeSemantics\"}], \"children\": [{\"role\": \"applicableNode\", \"nodes\": [{\"concept\": \"jetbrains.mps.lang.typesystem.structure.ConceptReference\", \"name\": \"form\", \"references\": [{\"role\": \"concept\", \"target\": \"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788\"}]}]}, {\"role\": \"body\", \"nodes\": [{\"concept\": \"jetbrains.mps.baseLanguage.structure.StatementList\"}]}]}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"name\":\"checkQuestionnaireNativeSemantics\",\"concept\":\"NonTypesystemRule\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1195214364922:jetbrains.mps.lang.typesystem.structure.NonTypesystemRule\",\"reference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468767\",\"parentReference\":\"\",\"rootReference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468767\",\"modelReference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)\",\"moduleReference\":\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\",\"virtualFolder\":\"\",\"isRoot\":true,\"present\":true,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"All references are already correctly resolved\"}}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

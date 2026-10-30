@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-30T02:02:40.215741+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "file_path": "jar://C:/Program Files/JetBrains/MPS 2026.1.1/plugins/mcp-tools/lib/mcp-tools.jar!/jetbrains/mps/agents/mcp/skills/mps-baselanguage/references/parse-java-tips.md"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "File jar://C:/Program Files/JetBrains/MPS 2026.1.1/plugins/mcp-tools/lib/mcp-tools.jar!/jetbrains/mps/agents/mcp/skills/mps-baselanguage/references/parse-java-tips.md is outside project, library, and SDK roots",
+        "type": "text"
+      }
+    ],
+    "isError": true
+  }
+}

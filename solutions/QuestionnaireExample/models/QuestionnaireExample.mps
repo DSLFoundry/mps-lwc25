@@ -72,7 +72,7 @@
         </node>
         <node concept="32rhfO" id="2fKtARxDbWf" role="32rhf7">
           <property role="32rhf8" value="5" />
-          <property role="32rhfb" value="integer" />
+          <property role="32rhfb" value="money" />
         </node>
       </node>
     </node>
@@ -195,6 +195,313 @@
       <property role="32rvvF" value="unresolvedNative" />
       <node concept="32rhfR" id="2fKtARxD_i6" role="32rgiq">
         <property role="32rgUC" value="absentFromForm" />
+      </node>
+    </node>
+    <node concept="32rhfU" id="2fKtARxElQ1" role="32rhfK">
+      <node concept="32rhfO" id="2fKtARxElQ3" role="32rhfe">
+        <property role="32rhf8" value="true" />
+        <property role="32rhfb" value="boolean" />
+      </node>
+      <node concept="32rhfV" id="2fKtARxElQ4" role="32rhf9">
+        <property role="32rhfM" value="Nested duplicate" />
+        <property role="32rhfd" value="string" />
+        <property role="32rvvF" value="duplicate" />
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxElQ5" role="32rhfK">
+      <property role="32rhfM" value="Result type mismatch" />
+      <property role="32rhfd" value="boolean" />
+      <property role="32rvvF" value="badResult" />
+      <node concept="32rhfQ" id="2fKtARxElQ7" role="32rgiq">
+        <property role="32rhf5" value="+" />
+        <node concept="32rhfO" id="2fKtARxElQa" role="32rhf4">
+          <property role="32rhf8" value="1" />
+          <property role="32rhfb" value="integer" />
+        </node>
+        <node concept="32rhfO" id="2fKtARxElQb" role="32rhf7">
+          <property role="32rhf8" value="2" />
+          <property role="32rhfb" value="integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxElQc" role="32rhfK">
+      <property role="32rhfM" value="Logical operand mismatch" />
+      <property role="32rhfd" value="boolean" />
+      <property role="32rvvF" value="badLogical" />
+      <node concept="32rhfQ" id="2fKtARxElQe" role="32rgiq">
+        <property role="32rhf5" value="&amp;&amp;" />
+        <node concept="32rhfO" id="2fKtARxElQh" role="32rhf4">
+          <property role="32rhf8" value="true" />
+          <property role="32rhfb" value="boolean" />
+        </node>
+        <node concept="32rhfO" id="2fKtARxElQi" role="32rhf7">
+          <property role="32rhf8" value="0" />
+          <property role="32rhfb" value="integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxElQj" role="32rhfK">
+      <property role="32rhfM" value="Unary operand mismatch" />
+      <property role="32rhfd" value="boolean" />
+      <property role="32rvvF" value="badUnary" />
+      <node concept="32rhfL" id="2fKtARxElQl" role="32rgiq">
+        <property role="32rhf6" value="!" />
+        <node concept="32rhfO" id="2fKtARxElQn" role="32rhf1">
+          <property role="32rhf8" value="1" />
+          <property role="32rhfb" value="integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxElQo" role="32rhfK">
+      <property role="32rhfM" value="Comparison operand mismatch" />
+      <property role="32rhfd" value="boolean" />
+      <property role="32rvvF" value="badComparison" />
+      <node concept="32rhfQ" id="2fKtARxElQq" role="32rgiq">
+        <property role="32rhf5" value="&gt;" />
+        <node concept="32rhfR" id="2fKtARxElQA" role="32rhf4">
+          <property role="32rgUC" value="stringSource" />
+          <ref role="32rhfa" node="2fKtARxCZas" />
+        </node>
+        <node concept="32rhfO" id="2fKtARxElQu" role="32rhf7">
+          <property role="32rhf8" value="1" />
+          <property role="32rhfb" value="integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxElQv" role="32rhfK">
+      <property role="32rhfM" value="Direct self dependency" />
+      <property role="32rhfd" value="integer" />
+      <property role="32rvvF" value="directCycle" />
+      <node concept="32rhfR" id="2fKtARxElQx" role="32rgiq">
+        <property role="32rgUC" value="directCycle" />
+        <ref role="32rhfa" node="2fKtARxElQv" />
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxElQy" role="32rhfK">
+      <property role="32rhfM" value="Out of form dependency" />
+      <property role="32rhfd" value="string" />
+      <property role="32rvvF" value="externalReference" />
+      <node concept="32rhfR" id="2fKtARxElQ$" role="32rgiq">
+        <property role="32rgUC" value="outsideQuestion" />
+        <ref role="32rhfa" node="2fKtARxElQ0" />
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxFMGf" role="32rhfK">
+      <property role="32rvvF" value="badSubtract" />
+      <property role="32rhfM" value="badSubtract" />
+      <property role="32rhfd" value="integer" />
+      <node concept="32rhfQ" id="2fKtARxFMGh" role="32rgiq">
+        <property role="32rhf5" value="-" />
+        <node concept="32rhfO" id="2fKtARxFMGk" role="32rhf4">
+          <property role="32rhf8" value="x" />
+          <property role="32rhfb" value="string" />
+        </node>
+        <node concept="32rhfO" id="2fKtARxFMGl" role="32rhf7">
+          <property role="32rhf8" value="1" />
+          <property role="32rhfb" value="integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxFMGm" role="32rhfK">
+      <property role="32rvvF" value="badMultiply" />
+      <property role="32rhfM" value="badMultiply" />
+      <property role="32rhfd" value="integer" />
+      <node concept="32rhfQ" id="2fKtARxFMGo" role="32rgiq">
+        <property role="32rhf5" value="*" />
+        <node concept="32rhfO" id="2fKtARxFMGr" role="32rhf4">
+          <property role="32rhf8" value="x" />
+          <property role="32rhfb" value="string" />
+        </node>
+        <node concept="32rhfO" id="2fKtARxFMGs" role="32rhf7">
+          <property role="32rhf8" value="1" />
+          <property role="32rhfb" value="integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxFMGt" role="32rhfK">
+      <property role="32rvvF" value="badDivide" />
+      <property role="32rhfM" value="badDivide" />
+      <property role="32rhfd" value="integer" />
+      <node concept="32rhfQ" id="2fKtARxFMGv" role="32rgiq">
+        <property role="32rhf5" value="/" />
+        <node concept="32rhfO" id="2fKtARxFMGy" role="32rhf4">
+          <property role="32rhf8" value="x" />
+          <property role="32rhfb" value="string" />
+        </node>
+        <node concept="32rhfO" id="2fKtARxFMGz" role="32rhf7">
+          <property role="32rhf8" value="1" />
+          <property role="32rhfb" value="integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxFMG$" role="32rhfK">
+      <property role="32rvvF" value="badOr" />
+      <property role="32rhfM" value="badOr" />
+      <property role="32rhfd" value="boolean" />
+      <node concept="32rhfQ" id="2fKtARxFMGA" role="32rgiq">
+        <property role="32rhf5" value="||" />
+        <node concept="32rhfO" id="2fKtARxFMGD" role="32rhf4">
+          <property role="32rhf8" value="true" />
+          <property role="32rhfb" value="boolean" />
+        </node>
+        <node concept="32rhfO" id="2fKtARxFMGE" role="32rhf7">
+          <property role="32rhf8" value="1" />
+          <property role="32rhfb" value="integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxFMGF" role="32rhfK">
+      <property role="32rvvF" value="badEqual" />
+      <property role="32rhfM" value="badEqual" />
+      <property role="32rhfd" value="boolean" />
+      <node concept="32rhfQ" id="2fKtARxFMGH" role="32rgiq">
+        <property role="32rhf5" value="==" />
+        <node concept="32rhfO" id="2fKtARxFMGK" role="32rhf4">
+          <property role="32rhf8" value="x" />
+          <property role="32rhfb" value="string" />
+        </node>
+        <node concept="32rhfO" id="2fKtARxFMGL" role="32rhf7">
+          <property role="32rhf8" value="1" />
+          <property role="32rhfb" value="integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxFMGM" role="32rhfK">
+      <property role="32rvvF" value="badNotEqual" />
+      <property role="32rhfM" value="badNotEqual" />
+      <property role="32rhfd" value="boolean" />
+      <node concept="32rhfQ" id="2fKtARxFMGO" role="32rgiq">
+        <property role="32rhf5" value="!=" />
+        <node concept="32rhfO" id="2fKtARxFMGR" role="32rhf4">
+          <property role="32rhf8" value="x" />
+          <property role="32rhfb" value="string" />
+        </node>
+        <node concept="32rhfO" id="2fKtARxFMGS" role="32rhf7">
+          <property role="32rhf8" value="1" />
+          <property role="32rhfb" value="integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxFMGT" role="32rhfK">
+      <property role="32rvvF" value="badLess" />
+      <property role="32rhfM" value="badLess" />
+      <property role="32rhfd" value="boolean" />
+      <node concept="32rhfQ" id="2fKtARxFMGV" role="32rgiq">
+        <property role="32rhf5" value="&lt;" />
+        <node concept="32rhfO" id="2fKtARxFMGY" role="32rhf4">
+          <property role="32rhf8" value="x" />
+          <property role="32rhfb" value="string" />
+        </node>
+        <node concept="32rhfO" id="2fKtARxFMGZ" role="32rhf7">
+          <property role="32rhf8" value="1" />
+          <property role="32rhfb" value="integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxFMH0" role="32rhfK">
+      <property role="32rvvF" value="badGreaterEqual" />
+      <property role="32rhfM" value="badGreaterEqual" />
+      <property role="32rhfd" value="boolean" />
+      <node concept="32rhfQ" id="2fKtARxFMH2" role="32rgiq">
+        <property role="32rhf5" value="&gt;=" />
+        <node concept="32rhfO" id="2fKtARxFMH5" role="32rhf4">
+          <property role="32rhf8" value="x" />
+          <property role="32rhfb" value="string" />
+        </node>
+        <node concept="32rhfO" id="2fKtARxFMH6" role="32rhf7">
+          <property role="32rhf8" value="1" />
+          <property role="32rhfb" value="integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxFMH7" role="32rhfK">
+      <property role="32rvvF" value="badLessEqual" />
+      <property role="32rhfM" value="badLessEqual" />
+      <property role="32rhfd" value="boolean" />
+      <node concept="32rhfQ" id="2fKtARxFMH9" role="32rgiq">
+        <property role="32rhf5" value="&lt;=" />
+        <node concept="32rhfO" id="2fKtARxFMHc" role="32rhf4">
+          <property role="32rhf8" value="x" />
+          <property role="32rhfb" value="string" />
+        </node>
+        <node concept="32rhfO" id="2fKtARxFMHd" role="32rhf7">
+          <property role="32rhf8" value="1" />
+          <property role="32rhfb" value="integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxFMHe" role="32rhfK">
+      <property role="32rvvF" value="badUnaryMinus" />
+      <property role="32rhfM" value="badUnaryMinus" />
+      <property role="32rhfd" value="integer" />
+      <node concept="32rhfL" id="2fKtARxFMHg" role="32rgiq">
+        <property role="32rhf6" value="-" />
+        <node concept="32rhfO" id="2fKtARxFMHi" role="32rhf1">
+          <property role="32rhf8" value="true" />
+          <property role="32rhfb" value="boolean" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="32rhfT" id="2fKtARxElPZ">
+    <property role="32rvvJ" value="ReferenceTargetForm" />
+    <property role="TrG5h" value="ReferenceTargetForm" />
+    <node concept="32rhfV" id="2fKtARxElQ0" role="32rhfK">
+      <property role="32rhfM" value="Outside form question" />
+      <property role="32rhfd" value="string" />
+      <property role="32rvvF" value="outsideQuestion" />
+    </node>
+    <node concept="32rgip" id="2fKtARxFMGc" role="32rhfK">
+      <property role="32rhfM" value="Escaped string literal" />
+      <property role="32rhfd" value="string" />
+      <property role="32rvvF" value="greeting" />
+      <node concept="32rhfO" id="2fKtARxFMGe" role="32rgiq">
+        <property role="32rhf8" value="He said &quot;hi&quot;&#10;C:\path" />
+        <property role="32rhfb" value="string" />
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxFMHj" role="32rhfK">
+      <property role="32rvvF" value="stringConcat" />
+      <property role="32rhfM" value="stringConcat" />
+      <property role="32rhfd" value="string" />
+      <node concept="32rhfQ" id="2fKtARxFMHl" role="32rgiq">
+        <property role="32rhf5" value="+" />
+        <node concept="32rhfO" id="2fKtARxFMHo" role="32rhf4">
+          <property role="32rhf8" value="He said " />
+          <property role="32rhfb" value="string" />
+        </node>
+        <node concept="32rhfO" id="2fKtARxFMHp" role="32rhf7">
+          <property role="32rhf8" value="hello" />
+          <property role="32rhfb" value="string" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxFMHq" role="32rhfK">
+      <property role="32rvvF" value="negative" />
+      <property role="32rhfM" value="Unary negative value" />
+      <property role="32rhfd" value="integer" />
+      <node concept="32rhfL" id="2fKtARxFMHs" role="32rgiq">
+        <property role="32rhf6" value="-" />
+        <node concept="32rhfO" id="2fKtARxFMHu" role="32rhf1">
+          <property role="32rhf8" value="4" />
+          <property role="32rhfb" value="integer" />
+        </node>
+      </node>
+    </node>
+    <node concept="32rgip" id="2fKtARxH1g6" role="32rhfK">
+      <property role="32rvvF" value="division" />
+      <property role="32rhfM" value="Integer division produces decimal" />
+      <property role="32rhfd" value="decimal" />
+      <node concept="32rhfQ" id="2fKtARxH1g8" role="32rgiq">
+        <property role="32rhf5" value="/" />
+        <node concept="32rhfO" id="2fKtARxH1gb" role="32rhf4">
+          <property role="32rhf8" value="4" />
+          <property role="32rhfb" value="integer" />
+        </node>
+        <node concept="32rhfO" id="2fKtARxH1gc" role="32rhf7">
+          <property role="32rhf8" value="2" />
+          <property role="32rhfb" value="integer" />
+        </node>
       </node>
     </node>
   </node>

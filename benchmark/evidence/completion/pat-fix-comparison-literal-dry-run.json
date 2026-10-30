@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-30T02:16:28.937079+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "SET",
+    "kind": "CHILD",
+    "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521178",
+    "childRole": "left",
+    "childNodeRef": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521181",
+    "childJson": "{\"concept\": \"QuestionnaireLanguage.structure.Reference\", \"properties\": [{\"name\": \"targetId\", \"value\": \"stringSource\"}], \"references\": [{\"role\": \"target\", \"target\": \"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166108\"}]}",
+    "dryRun": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"dryRun\":true,\"message\":\"Dry run successful for node replacement\"}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

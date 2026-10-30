@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-10-30T02:07:51.495027+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "ADD",
+    "kind": "CHILD",
+    "nodeReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753",
+    "childRole": "items",
+    "position": -1,
+    "childJson": "{\"concept\": \"QuestionnaireLanguage.structure.Calculated\", \"properties\": [{\"name\": \"label\", \"value\": \"Direct self dependency\"}, {\"name\": \"valueType\", \"value\": \"integer\"}, {\"name\": \"id\", \"value\": \"directCycle\"}], \"children\": [{\"role\": \"computed\", \"nodes\": [{\"concept\": \"QuestionnaireLanguage.structure.Reference\", \"properties\": [{\"name\": \"targetId\", \"value\": \"directCycle\"}]}]}]}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"name\":\"computed question\",\"concept\":\"Calculated\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated\",\"reference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521183\",\"parentReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootName\":\"InvalidNativeFixtures\",\"modelReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\",\"moduleReference\":\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":14,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"No references found\"}}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

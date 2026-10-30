@@ -1,0 +1,50 @@
+{
+  "startedAt": "2026-10-30T02:35:44.327587+00:00",
+  "completedAt": "2026-10-30T02:35:44.590213+00:00",
+  "provider": "PAT tools/call -> mps_mcp_check_root_node_problems",
+  "projectPath": "C:\\Sources\\mps-lwc25",
+  "checks": {
+    "valid-benefit-survey": {
+      "clean": true,
+      "messages": [],
+      "evidence": null
+    },
+    "valid-reference-target": {
+      "clean": true,
+      "messages": [],
+      "evidence": null
+    },
+    "invalid-semantic-matrix": {
+      "clean": false,
+      "messages": [
+        "Error: [QL_DUPLICATE_ID] duplicate identifier 'duplicate' on Duplicate one (duplicate) and Duplicate two (duplicate)\n[QL_DUPLICATE_ID] duplicate identifier 'duplicate' on Duplicate one (duplicate) and Nested duplicate (duplicate)\n[QL_REFERENCE_UNRESOLVED] reference 'missing' does not resolve\n[QL_REFERENCE_UNRESOLVED] reference 'absentFromForm' does not resolve\n[QL_REFERENCE_OUT_OF_FORM] reference 'outsideQuestion' targets a question outside this form\n[QL_OPERAND_TYPE] + requires two numeric operands or two strings, got string and integer\n[QL_RESULT_TYPE] computed question 'badResult' declares boolean but its expression produces integer\n[QL_OPERAND_TYPE] && requires boolean operands, got boolean and integer\n[QL_OPERAND_TYPE] unary ! requires boolean, got integer\n[QL_OPERAND_TYPE] > requires compatible ordered operands, got string and integer\n[QL_OPERAND_TYPE] - requires numeric operands, got string and integer\n[QL_OPERAND_TYPE] * requires numeric operands, got string and integer\n[QL_OPERAND_TYPE] / requires numeric operands, got string and integer\n[QL_OPERAND_TYPE] || requires boolean operands, got boolean and integer\n[QL_OPERAND_TYPE] == requires compatible operands, got string and integer\n[QL_OPERAND_TYPE] != requires compatible operands, got string and integer\n[QL_OPERAND_TYPE] < requires compatible ordered operands, got string and integer\n[QL_OPERAND_TYPE] >= requires compatible ordered operands, got string and integer\n[QL_OPERAND_TYPE] <= requires compatible ordered operands, got string and integer\n[QL_OPERAND_TYPE] unary - requires a numeric operand, got boolean\n[QL_CONDITION_TYPE] branch condition must be boolean, got integer\n[QL_DEPENDENCY_CYCLE] cycleA -> cycleB -> cycleA\n[QL_DEPENDENCY_CYCLE] directCycle -> directCycle"
+      ],
+      "evidence": "C:\\Sources\\mps-lwc25\\benchmark\\evidence\\completion\\native-check-invalid-semantic-matrix-data.json"
+    }
+  },
+  "assertedCategories": [
+    "nested duplicate identifiers",
+    "unresolved references",
+    "out-of-form references",
+    "arithmetic operand typing",
+    "subtraction operand typing",
+    "multiplication operand typing",
+    "division operand typing",
+    "logical operand typing",
+    "disjunction operand typing",
+    "unary operand typing",
+    "unary numeric operand typing",
+    "comparison operand typing",
+    "less-than operand typing",
+    "greater-or-equal operand typing",
+    "less-or-equal operand typing",
+    "equality operand typing",
+    "inequality operand typing",
+    "calculated result typing",
+    "branch condition typing",
+    "indirect dependency cycle",
+    "direct dependency cycle"
+  ],
+  "assertionCount": 23,
+  "result": "PASS"
+}

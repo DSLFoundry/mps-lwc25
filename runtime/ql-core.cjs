@@ -57,7 +57,8 @@
       diagnostics.push({ code: 'type', message: `${path}: invalid operator expression.` });
       return 'unknown';
     }
-    const expected = op === '!' ? 1 : 2;
+    const unaryMinus = op === '-' && args.length === 1;
+    const expected = op === '!' || unaryMinus ? 1 : 2;
     if (args.length !== expected) {
       diagnostics.push({ code: 'type', message: `${path}: operator ${op} expects ${expected} operand(s).` });
       return 'unknown';
@@ -68,12 +69,17 @@
       if (types[0] !== 'boolean') diagnostics.push({ code: 'type', message: `${path}: ! requires a boolean operand.` });
       return 'boolean';
     }
+    if (unaryMinus) {
+      if (!numeric.has(types[0])) diagnostics.push({ code: 'type', message: `${path}: unary - requires a numeric operand.` });
+      return numeric.has(types[0]) ? types[0] : 'unknown';
+    }
     if (op === '&&' || op === '||') {
       if (types.some(type => type !== 'boolean')) diagnostics.push({ code: 'type', message: `${path}: ${op} requires boolean operands.` });
       return 'boolean';
     }
     if (['+', '-', '*', '/'].includes(op)) {
-      if (!numericPair) diagnostics.push({ code: 'type', message: `${path}: ${op} requires numeric operands.` });
+      if (op === '+' && types[0] === 'string' && types[1] === 'string') return 'string';
+      if (!numericPair) diagnostics.push({ code: 'type', message: `${path}: ${op} requires numeric operands${op === '+' ? ' or two strings' : ''}.` });
       if (types.includes('money')) return 'money';
       if (types.includes('decimal') || op === '/') return 'decimal';
       return 'integer';
@@ -159,7 +165,7 @@
       case '&&': return left && right;
       case '||': return left || right;
       case '+': return left + right;
-      case '-': return left - right;
+      case '-': return right === undefined ? -left : left - right;
       case '*': return left * right;
       case '/': return right === 0 ? undefined : left / right;
       case '<': return left < right;

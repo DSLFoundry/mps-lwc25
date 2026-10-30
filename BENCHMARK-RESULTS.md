@@ -141,3 +141,96 @@ Eight Gradle invocations are retained: four successful and four failed. Failures
    ```
 
    Open `http://127.0.0.1:4173/`, fill the typed controls, and choose **Download answers as JSON**. The download contains the form identity and typed answers.
+
+## Untimed completion follow-up — 2026-10-30
+
+This addendum records the separately authorized completion work. It does not
+edit or retroactively rescore the timed run above: its G2 result remains
+**FAIL (partial)** as measured. The untimed follow-up completed the missing
+native checks on the existing PAT branch.
+
+### Follow-up metadata
+
+- Branch: `benchmark/ql-pat`; resumed at `d099b51b7222f586d43fc00dc39ded8fe9e0eb08`.
+- Scaffold: `ebb9a686670577120e0a228a79a3afb33cbc5de2`.
+- Provider: PAT MCP only for native MPS discovery, edits, checks, and generation;
+  no mops calls or serialized MPS/XML edits.
+- MPS 2026.1.1, bundled JBR 25, Node 24.14.1. No active-time cap was assigned
+  to this follow-up.
+- Actual UTC start: `2026-10-30T01:51:52.049Z`.
+- Actual UTC end (implementation, validation, and report finalized before Git
+  commit): `2026-10-30T02:44:58.7365165Z`.
+
+### Native semantics completed
+
+`QuestionnaireLanguage.typesystem` now has a Form-applicable native
+`NonTypesystemRule` that reports nested duplicate identifiers, unresolved and
+out-of-form references, operand/result/condition typing, and direct/indirect
+calculation cycles through MPS model checks. The live PAT assertion script
+checks 23 conditions: 21 required invalid diagnostic messages and two clean
+valid forms. Its operator fixtures cover `+`, `-`, `*`, `/`, `&&`, `||`, `!`,
+unary numeric `-`, `==`, `!=`, `<`, `>`, `<=`, and `>=`. `ReferenceTargetForm`
+also verifies that integer division has a decimal result type; both it and
+`BenefitSurvey` remain clean in the native checker.
+
+Native TextGen now JSON-quotes and escapes string literals. The generated
+`ReferenceTargetForm` exercises quotes, a backslash, a newline, string
+concatenation, unary numeric negation, and integer division. Tests execute the
+generated JSON through the production runtime; runtime support for string
+concatenation and unary numeric negation was aligned with the native language.
+This is not a test-only evaluator or validator.
+
+The PAT-native verification is reproducible with:
+
+```powershell
+python benchmark\tools\verify-native-diagnostics.py
+node benchmark\tools\validate-native-fixture.cjs
+node benchmark\tools\validate-native-generated-expressions.cjs
+```
+
+### Follow-up verification and gates
+
+| Gate | Follow-up result | Evidence |
+|---|---|---|
+| G1 Native concepts/editors | **PASS** | Existing PAT editor evidence `benchmark/evidence/pat-editor-live-construct-checks-final.json`; no concept/editor regressions. |
+| G2 Native provider checks | **PASS** | 23 live PAT assertions in `benchmark/evidence/completion/native-diagnostics-assertions.json`; per-root data in `native-check-*-data.json`. |
+| G3 Native generation/build | **PASS** | PAT Make records `pat-make-language-after-infer-rebind.json` and `pat-make-example-final.json`; final authorized Gradle build `benchmark/evidence/completion/gradle-completion-final.log`. |
+| G4 Native model to executable output | **PASS** | Fresh JSON parsing and matching `BenefitSurvey` SHA-256 are in `validation-post-division.log`; production expression round-trip is in `validate-native-generated-expressions.cjs`. |
+| G5 Typed GUI/computation/visibility | **PASS** | Real Microsoft Edge run against fresh MPS output: `benchmark/evidence/completion/browser-smoke-post-division.json`. |
+| G6 JSON answer download | **PASS** | Browser-downloaded, parsed answers: `benchmark/evidence/completion/browser-downloads-post-division/BenefitSurvey-answers.json`. |
+| G7 User documentation | **PASS** | `README.md` documents authoring, Make/build, GUI/download, native checking, and expression checks. |
+| G8 Fixed acceptance | **PASS** | Unmodified `node benchmark\acceptance.cjs`: 20/20; output in `benchmark/evidence/completion/validation-post-division.log`. |
+
+First preserved successful milestones in this follow-up were: clean valid-form
+MPS check at `2026-10-30T02:06:37.252453Z`; first invalid-fixture native check
+at `02:08:09.842934Z`; PAT Make of the language at `02:05:57.938929Z` and
+example at `02:09:59.922924Z`; and the fixed runtime suite at
+`02:09:39.670Z`. Final post-division validation completed at
+`02:35:44.9849022Z`; the final Gradle build passed from
+`02:35:57.6141166Z` through `02:37:33.3648177Z`; the final Edge/download smoke
+passed at `02:37:46.233Z`.
+
+The final PAT project inventory is retained at
+`benchmark/evidence/completion/pat-inventory-final-project-post-division-data.json`:
+6 loaded modules, 13 models, 35 roots, and 2,090 AST nodes (including build
+models). The authored `QuestionnaireLanguage` module contains 29 roots / 1,851
+nodes; `QuestionnaireExample` contains 3 roots / 113 nodes. The completion
+evidence directory contains 149 files (about 7.66 MiB).
+The resulting commit contains 157 paths: six modified implementation,
+documentation, and model files; two new verification scripts; and those 149
+evidence files. The staged diff is 111,955 insertions and 24 deletions.
+
+Provider usage is self-reported, not an automatic harness count: at least 117
+PAT requests are evidenced by 88 timestamped single-call records, an 11-call
+batched fixture insertion, and six known three-root verifier runs. Repeated
+check files were overwritten by later runs, so the exact agent total is
+unavailable; the coordinator can append the harness count. Token and cost
+measurements were not exposed. The recorded operation chronology, failures,
+retries, and recovery evidence are under `benchmark/evidence/completion`.
+
+### Remaining scope and warnings
+
+Base QL is complete for the requested scope; QLS and SAT/determinism extensions
+remain excluded. The final Gradle/MPS build succeeded with non-fatal restricted
+native-access, third-party classloading/bootstrap, and deprecated-API warnings.
+No applicable CI normalization/dirty-files gate was found in the frozen scope.

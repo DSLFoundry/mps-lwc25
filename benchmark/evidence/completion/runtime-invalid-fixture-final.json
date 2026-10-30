@@ -1,0 +1,129 @@
+{
+  "timestamp": "2026-10-30T02:31:34.693Z",
+  "source": "solutions\\QuestionnaireExample\\source_gen\\QuestionnaireExample\\InvalidNativeFixtures.json",
+  "diagnostics": [
+    {
+      "code": "duplicate",
+      "id": "duplicate",
+      "message": "Duplicate question identifier: duplicate"
+    },
+    {
+      "code": "duplicate",
+      "id": "duplicate",
+      "message": "Duplicate question identifier: duplicate"
+    },
+    {
+      "code": "type",
+      "message": "badArithmetic: + requires numeric operands or two strings."
+    },
+    {
+      "code": "type",
+      "id": "badArithmetic",
+      "message": "badArithmetic: computed result integer does not match boolean."
+    },
+    {
+      "code": "unresolved",
+      "id": "missing",
+      "message": "unresolved: unresolved question missing."
+    },
+    {
+      "code": "type",
+      "id": "conditional",
+      "message": "Condition for conditional must be boolean."
+    },
+    {
+      "code": "unresolved",
+      "id": "absentFromForm",
+      "message": "unresolvedNative: unresolved question absentFromForm."
+    },
+    {
+      "code": "type",
+      "id": "badResult",
+      "message": "badResult: computed result integer does not match boolean."
+    },
+    {
+      "code": "type",
+      "message": "badLogical: && requires boolean operands."
+    },
+    {
+      "code": "type",
+      "message": "badUnary: ! requires a boolean operand."
+    },
+    {
+      "code": "type",
+      "message": "badComparison: > compares incompatible operands."
+    },
+    {
+      "code": "unresolved",
+      "id": "outsideQuestion",
+      "message": "externalReference: unresolved question outsideQuestion."
+    },
+    {
+      "code": "type",
+      "message": "badSubtract: - requires numeric operands."
+    },
+    {
+      "code": "type",
+      "message": "badMultiply: * requires numeric operands."
+    },
+    {
+      "code": "type",
+      "message": "badDivide: / requires numeric operands."
+    },
+    {
+      "code": "type",
+      "message": "badOr: || requires boolean operands."
+    },
+    {
+      "code": "type",
+      "message": "badEqual: == compares incompatible operands."
+    },
+    {
+      "code": "type",
+      "message": "badNotEqual: != compares incompatible operands."
+    },
+    {
+      "code": "type",
+      "message": "badLess: < compares incompatible operands."
+    },
+    {
+      "code": "type",
+      "message": "badGreaterEqual: >= compares incompatible operands."
+    },
+    {
+      "code": "type",
+      "message": "badLessEqual: <= compares incompatible operands."
+    },
+    {
+      "code": "type",
+      "message": "badUnaryMinus: unary - requires a numeric operand."
+    },
+    {
+      "code": "type",
+      "message": "Conditional expression must be boolean."
+    },
+    {
+      "code": "cycle",
+      "id": "cycleA",
+      "message": "Computed dependency cycle: cycleA -> cycleB -> cycleA"
+    },
+    {
+      "code": "cycle",
+      "id": "directCycle",
+      "message": "Computed dependency cycle: directCycle -> directCycle"
+    }
+  ],
+  "codes": [
+    "cycle",
+    "duplicate",
+    "type",
+    "unresolved"
+  ],
+  "requiredCodes": [
+    "cycle",
+    "duplicate",
+    "type",
+    "unresolved"
+  ],
+  "complete": true
+}

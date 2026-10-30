@@ -1,0 +1,2247 @@
+{
+  "ok": true,
+  "data": {
+    "name": "QuestionnaireLanguage",
+    "reference": "83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)",
+    "virtualFolder": "",
+    "readOnly": false,
+    "kind": "Language",
+    "dependencies": [
+      {
+        "name": "org.iets3.core.base",
+        "reference": "7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)",
+        "scope": "Default",
+        "reexport": false
+      },
+      {
+        "name": "com.mbeddr.doc",
+        "reference": "2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)",
+        "scope": "Default",
+        "reexport": false
+      },
+      {
+        "name": "org.iets3.core.expr.base",
+        "reference": "cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)",
+        "scope": "Default",
+        "reexport": false
+      },
+      {
+        "name": "org.iets3.core.expr.simpleTypes",
+        "reference": "6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)",
+        "scope": "Default",
+        "reexport": false
+      },
+      {
+        "name": "jetbrains.mps.lang.core",
+        "reference": "ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)",
+        "scope": "Default",
+        "reexport": false
+      }
+    ],
+    "usedLanguages": [
+      {
+        "name": "jetbrains.mps.lang.constraints.rules.kinds",
+        "reference": "l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.baseLanguage.logging",
+        "reference": "l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.constraints.rules.skeleton",
+        "reference": "l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.behavior",
+        "reference": "l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior",
+        "version": 2
+      },
+      {
+        "name": "org.iets3.analysis.base",
+        "reference": "l:db8bd035-3f51-41d8-8fed-954c202d18be:org.iets3.analysis.base",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.pattern",
+        "reference": "l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern",
+        "version": 2
+      },
+      {
+        "name": "jetbrains.mps.lang.text",
+        "reference": "l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text",
+        "version": 0
+      },
+      {
+        "name": "org.iets3.core.expr.base",
+        "reference": "l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base",
+        "version": 22
+      },
+      {
+        "name": "jetbrains.mps.baseLanguage.regexp",
+        "reference": "l:daafa647-f1f7-4b0b-b096-69cd7c8408c0:jetbrains.mps.baseLanguage.regexp",
+        "version": 0
+      },
+      {
+        "name": "QuestionnaireLanguage",
+        "reference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage",
+        "version": 0
+      },
+      {
+        "name": "org.iets3.core.expr.simpleTypes",
+        "reference": "l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes",
+        "version": 11
+      },
+      {
+        "name": "jetbrains.mps.lang.editor",
+        "reference": "l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor",
+        "version": 15
+      },
+      {
+        "name": "jetbrains.mps.lang.actions",
+        "reference": "l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions",
+        "version": 4
+      },
+      {
+        "name": "jetbrains.mps.lang.messages",
+        "reference": "l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages",
+        "version": 0
+      },
+      {
+        "name": "com.mbeddr.mpsutil.blutil",
+        "reference": "l:63e0e566-5131-447e-90e3-12ea330e1a00:com.mbeddr.mpsutil.blutil",
+        "version": 3
+      },
+      {
+        "name": "com.mbeddr.mpsutil.jung",
+        "reference": "l:d09a16fb-1d68-4a92-a5a4-20b4b2f86a62:com.mbeddr.mpsutil.jung",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.constraints.msg.specification",
+        "reference": "l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.rulesAndMessages",
+        "reference": "l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.constraints.rules",
+        "reference": "l:47257bf3-78d3-470b-89d9-8c3261a61d15:jetbrains.mps.lang.constraints.rules",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.descriptor",
+        "reference": "l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.baseLanguage.classifiers",
+        "reference": "l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers",
+        "version": 0
+      },
+      {
+        "name": "com.mbeddr.core.base",
+        "reference": "l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base",
+        "version": 6
+      },
+      {
+        "name": "com.mbeddr.mpsutil.plantuml.node",
+        "reference": "l:b4d28e19-7d2d-47e9-943e-3a41f97a0e52:com.mbeddr.mpsutil.plantuml.node",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.core",
+        "reference": "l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core",
+        "version": 2
+      },
+      {
+        "name": "jetbrains.mps.lang.sharedConcepts",
+        "reference": "l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.traceable",
+        "reference": "l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.baseLanguage",
+        "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage",
+        "version": 12
+      },
+      {
+        "name": "jetbrains.mps.baseLanguage.closures",
+        "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.resources",
+        "reference": "l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources",
+        "version": 4
+      },
+      {
+        "name": "jetbrains.mps.lang.constraints",
+        "reference": "l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints",
+        "version": 6
+      },
+      {
+        "name": "jetbrains.mps.lang.quotation",
+        "reference": "l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation",
+        "version": 5
+      },
+      {
+        "name": "jetbrains.mps.baseLanguage.tuples",
+        "reference": "l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples",
+        "version": 1
+      },
+      {
+        "name": "jetbrains.mps.lang.scopes",
+        "reference": "l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.baseLanguage.javadoc",
+        "reference": "l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc",
+        "version": 3
+      },
+      {
+        "name": "jetbrains.mps.lang.smodel",
+        "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel",
+        "version": 19
+      },
+      {
+        "name": "com.mbeddr.mpsutil.interpreter",
+        "reference": "l:47f075a6-558e-4640-a606-7ce0236c8023:com.mbeddr.mpsutil.interpreter",
+        "version": 1
+      },
+      {
+        "name": "jetbrains.mps.lang.context.defs",
+        "reference": "l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.textGen",
+        "reference": "l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen",
+        "version": 1
+      },
+      {
+        "name": "jetbrains.mps.lang.structure",
+        "reference": "l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure",
+        "version": 9
+      },
+      {
+        "name": "de.slisson.mps.richtext",
+        "reference": "l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.baseLanguage.collections",
+        "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections",
+        "version": 2
+      },
+      {
+        "name": "org.iets3.core.base",
+        "reference": "l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base",
+        "version": 0
+      },
+      {
+        "name": "com.mbeddr.mpsutil.filepicker",
+        "reference": "l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.typesystem",
+        "reference": "l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem",
+        "version": 5
+      },
+      {
+        "name": "jetbrains.mps.lang.modelapi",
+        "reference": "l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi",
+        "version": 0
+      },
+      {
+        "name": "jetbrains.mps.lang.context",
+        "reference": "l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context",
+        "version": 0
+      }
+    ],
+    "usedDevkits": [],
+    "extendedLanguages": [
+      {
+        "name": "org.iets3.core.expr.base",
+        "reference": "cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)"
+      },
+      {
+        "name": "org.iets3.core.expr.simpleTypes",
+        "reference": "6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)"
+      }
+    ],
+    "runtimeModules": [],
+    "accessoryModels": [],
+    "facets": [
+      "java"
+    ],
+    "loadExtensions": "Plugin",
+    "generators": [
+      {
+        "name": "QuestionnaireLanguage.generator",
+        "reference": "859d56ea-5acc-4450-86c1-5c76a58ec80e(QuestionnaireLanguage.generator)"
+      }
+    ],
+    "models": [
+      {
+        "name": "QuestionnaireLanguage.behavior",
+        "reference": "r:92004cb1-4a8c-4e76-962e-4d6db94b39bd(QuestionnaireLanguage.behavior)",
+        "readOnly": false,
+        "dependencies": [
+          {
+            "name": "QuestionnaireLanguage.structure",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)"
+          }
+        ],
+        "usedLanguages": [
+          {
+            "name": "jetbrains.mps.lang.smodel",
+            "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+          },
+          {
+            "name": "jetbrains.mps.lang.behavior",
+            "reference": "l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior"
+          },
+          {
+            "name": "jetbrains.mps.devkit.general-purpose",
+            "reference": "fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)",
+            "kind": "devkit",
+            "providedLanguages": [
+              {
+                "name": "jetbrains.mps.baseLanguage",
+                "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.closures",
+                "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.collections",
+                "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.javadoc",
+                "reference": "l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.logging",
+                "reference": "l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.tuples",
+                "reference": "l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples"
+              },
+              {
+                "name": "jetbrains.mps.lang.quotation",
+                "reference": "l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation"
+              },
+              {
+                "name": "jetbrains.mps.lang.smodel",
+                "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+              },
+              {
+                "name": "jetbrains.mps.lang.text",
+                "reference": "l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text"
+              }
+            ]
+          }
+        ],
+        "engagedOnGenerationLanguages": [],
+        "rootNodes": []
+      },
+      {
+        "name": "QuestionnaireLanguage.constraints",
+        "reference": "r:32469b95-2892-40b7-a7a7-12a1fa2fea89(QuestionnaireLanguage.constraints)",
+        "readOnly": false,
+        "dependencies": [],
+        "usedLanguages": [
+          {
+            "name": "jetbrains.mps.lang.constraints.rules.kinds",
+            "reference": "l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds"
+          },
+          {
+            "name": "jetbrains.mps.lang.context.defs",
+            "reference": "l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs"
+          },
+          {
+            "name": "jetbrains.mps.lang.constraints.msg.specification",
+            "reference": "l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification"
+          },
+          {
+            "name": "jetbrains.mps.lang.constraints.rules.skeleton",
+            "reference": "l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton"
+          },
+          {
+            "name": "jetbrains.mps.lang.rulesAndMessages",
+            "reference": "l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages"
+          },
+          {
+            "name": "jetbrains.mps.lang.constraints",
+            "reference": "l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints"
+          },
+          {
+            "name": "jetbrains.mps.lang.sharedConcepts",
+            "reference": "l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts"
+          },
+          {
+            "name": "jetbrains.mps.lang.context",
+            "reference": "l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context"
+          },
+          {
+            "name": "jetbrains.mps.lang.messages",
+            "reference": "l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages"
+          },
+          {
+            "name": "jetbrains.mps.devkit.aspect.constraints",
+            "reference": "00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)",
+            "kind": "devkit",
+            "providedLanguages": [
+              {
+                "name": "jetbrains.mps.baseLanguage",
+                "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.closures",
+                "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.collections",
+                "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.javadoc",
+                "reference": "l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.logging",
+                "reference": "l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.tuples",
+                "reference": "l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples"
+              },
+              {
+                "name": "jetbrains.mps.lang.constraints",
+                "reference": "l:3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1:jetbrains.mps.lang.constraints"
+              },
+              {
+                "name": "jetbrains.mps.lang.constraints.msg.specification",
+                "reference": "l:e51810c5-7308-4642-bcb6-469e61b5dd18:jetbrains.mps.lang.constraints.msg.specification"
+              },
+              {
+                "name": "jetbrains.mps.lang.constraints.rules",
+                "reference": "l:47257bf3-78d3-470b-89d9-8c3261a61d15:jetbrains.mps.lang.constraints.rules"
+              },
+              {
+                "name": "jetbrains.mps.lang.constraints.rules.kinds",
+                "reference": "l:5dae8159-ab99-46bb-a40d-0cee30ee7018:jetbrains.mps.lang.constraints.rules.kinds"
+              },
+              {
+                "name": "jetbrains.mps.lang.constraints.rules.skeleton",
+                "reference": "l:134c38d4-e3af-4d9e-b069-1c7df0a4005d:jetbrains.mps.lang.constraints.rules.skeleton"
+              },
+              {
+                "name": "jetbrains.mps.lang.context",
+                "reference": "l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context"
+              },
+              {
+                "name": "jetbrains.mps.lang.context.defs",
+                "reference": "l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs"
+              },
+              {
+                "name": "jetbrains.mps.lang.quotation",
+                "reference": "l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation"
+              },
+              {
+                "name": "jetbrains.mps.lang.rulesAndMessages",
+                "reference": "l:b3551702-269c-4f05-ba61-58060cef4292:jetbrains.mps.lang.rulesAndMessages"
+              },
+              {
+                "name": "jetbrains.mps.lang.scopes",
+                "reference": "l:d8f591ec-4d86-4af2-9f92-a9e93c803ffa:jetbrains.mps.lang.scopes"
+              },
+              {
+                "name": "jetbrains.mps.lang.smodel",
+                "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+              },
+              {
+                "name": "jetbrains.mps.lang.text",
+                "reference": "l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text"
+              }
+            ]
+          }
+        ],
+        "engagedOnGenerationLanguages": [],
+        "rootNodes": []
+      },
+      {
+        "name": "QuestionnaireLanguage.editor",
+        "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)",
+        "readOnly": false,
+        "dependencies": [
+          {
+            "name": "QuestionnaireLanguage.structure",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)"
+          }
+        ],
+        "usedLanguages": [
+          {
+            "name": "jetbrains.mps.lang.editor",
+            "reference": "l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor"
+          },
+          {
+            "name": "jetbrains.mps.lang.actions",
+            "reference": "l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions"
+          },
+          {
+            "name": "jetbrains.mps.devkit.general-purpose",
+            "reference": "fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)",
+            "kind": "devkit",
+            "providedLanguages": [
+              {
+                "name": "jetbrains.mps.baseLanguage",
+                "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.closures",
+                "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.collections",
+                "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.javadoc",
+                "reference": "l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.logging",
+                "reference": "l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.tuples",
+                "reference": "l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples"
+              },
+              {
+                "name": "jetbrains.mps.lang.quotation",
+                "reference": "l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation"
+              },
+              {
+                "name": "jetbrains.mps.lang.smodel",
+                "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+              },
+              {
+                "name": "jetbrains.mps.lang.text",
+                "reference": "l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text"
+              }
+            ]
+          }
+        ],
+        "engagedOnGenerationLanguages": [],
+        "rootNodes": [
+          {
+            "name": "Branch_Editor",
+            "concept": "ConceptEditorDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1071666914219:jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration",
+            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740116",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Branch_Editor"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "AbstractConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135:jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Branch",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736791"
+              }
+            ],
+            "children": [
+              {
+                "role": "cellModel",
+                "type": "EditorCellModel",
+                "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265:jetbrains.mps.lang.editor.structure.EditorCellModel",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "collection",
+                    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740118"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Literal_Editor",
+            "concept": "ConceptEditorDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1071666914219:jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration",
+            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740137",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Literal_Editor"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "AbstractConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135:jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Literal",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736793"
+              }
+            ],
+            "children": [
+              {
+                "role": "cellModel",
+                "type": "EditorCellModel",
+                "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265:jetbrains.mps.lang.editor.structure.EditorCellModel",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "collection",
+                    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740139"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Reference_Editor",
+            "concept": "ConceptEditorDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1071666914219:jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration",
+            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740150",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Reference_Editor"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "AbstractConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135:jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Reference",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736794"
+              }
+            ],
+            "children": [
+              {
+                "role": "cellModel",
+                "type": "EditorCellModel",
+                "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265:jetbrains.mps.lang.editor.structure.EditorCellModel",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "collection",
+                    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740152"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Binary_Editor",
+            "concept": "ConceptEditorDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1071666914219:jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration",
+            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740170",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Binary_Editor"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "AbstractConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135:jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Binary",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736795"
+              }
+            ],
+            "children": [
+              {
+                "role": "cellModel",
+                "type": "EditorCellModel",
+                "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265:jetbrains.mps.lang.editor.structure.EditorCellModel",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "collection",
+                    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740172"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unary_Editor",
+            "concept": "ConceptEditorDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1071666914219:jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration",
+            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740190",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Unary_Editor"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "AbstractConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135:jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Unary",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736796"
+              }
+            ],
+            "children": [
+              {
+                "role": "cellModel",
+                "type": "EditorCellModel",
+                "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265:jetbrains.mps.lang.editor.structure.EditorCellModel",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "collection",
+                    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046740192"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Question_Editor",
+            "concept": "ConceptEditorDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1071666914219:jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration",
+            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046921310",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Question_Editor"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "AbstractConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135:jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Question",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736790"
+              }
+            ],
+            "children": [
+              {
+                "role": "cellModel",
+                "type": "EditorCellModel",
+                "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265:jetbrains.mps.lang.editor.structure.EditorCellModel",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "collection",
+                    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000046921312"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Calculated_Editor",
+            "concept": "ConceptEditorDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1071666914219:jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration",
+            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047014731",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Calculated_Editor"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "AbstractConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135:jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Calculated",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046740212"
+              }
+            ],
+            "children": [
+              {
+                "role": "cellModel",
+                "type": "EditorCellModel",
+                "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265:jetbrains.mps.lang.editor.structure.EditorCellModel",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "collection",
+                    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047014733"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Form_Editor",
+            "concept": "ConceptEditorDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1071666914219:jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration",
+            "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114642",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Form_Editor"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "AbstractConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135:jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Form",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788"
+              }
+            ],
+            "children": [
+              {
+                "role": "cellModel",
+                "type": "EditorCellModel",
+                "typeReference": "c:18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265:jetbrains.mps.lang.editor.structure.EditorCellModel",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "collection",
+                    "reference": "r:54c0b9cb-a7a8-4293-bc40-080395667d27(QuestionnaireLanguage.editor)/2589700000047114644"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "QuestionnaireLanguage.structure",
+        "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)",
+        "readOnly": false,
+        "dependencies": [
+          {
+            "name": "org.iets3.core.base.structure",
+            "reference": "r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)"
+          },
+          {
+            "name": "com.mbeddr.doc.structure",
+            "reference": "r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)"
+          },
+          {
+            "name": "org.iets3.core.expr.base.structure",
+            "reference": "r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)"
+          },
+          {
+            "name": "org.iets3.core.expr.simpleTypes.structure",
+            "reference": "r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)"
+          },
+          {
+            "name": "jetbrains.mps.lang.core.structure",
+            "reference": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)"
+          }
+        ],
+        "usedLanguages": [
+          {
+            "name": "jetbrains.mps.lang.structure",
+            "reference": "l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure"
+          },
+          {
+            "name": "jetbrains.mps.devkit.aspect.structure",
+            "reference": "78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)",
+            "kind": "devkit",
+            "providedLanguages": [
+              {
+                "name": "jetbrains.mps.lang.resources",
+                "reference": "l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources"
+              },
+              {
+                "name": "jetbrains.mps.lang.structure",
+                "reference": "l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure"
+              }
+            ]
+          }
+        ],
+        "engagedOnGenerationLanguages": [],
+        "rootNodes": [
+          {
+            "name": "Form",
+            "concept": "ConceptDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788",
+            "properties": [
+              {
+                "name": "rootable",
+                "type": "boolean",
+                "doc": "",
+                "deprecated": "false",
+                "value": "true"
+              },
+              {
+                "name": "conceptAlias",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "form"
+              },
+              {
+                "name": "conceptId",
+                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@6b083c78",
+                "doc": "",
+                "deprecated": "false",
+                "value": "2589700000046736788"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Form"
+              }
+            ],
+            "references": [
+              {
+                "role": "extends",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "BaseConcept",
+                "targetReference": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1133920641626"
+              }
+            ],
+            "children": [
+              {
+                "role": "implements",
+                "type": "InterfaceConceptReference",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169127622168:jetbrains.mps.lang.structure.structure.InterfaceConceptReference",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "INamedConcept",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000047066508"
+                  }
+                ]
+              },
+              {
+                "role": "linkDeclaration",
+                "type": "LinkDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288298:jetbrains.mps.lang.structure.structure.LinkDeclaration",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "items",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736797"
+                  }
+                ]
+              },
+              {
+                "role": "propertyDeclaration",
+                "type": "PropertyDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288299:jetbrains.mps.lang.structure.structure.PropertyDeclaration",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "title",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000047270492"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Item",
+            "concept": "ConceptDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736789",
+            "properties": [
+              {
+                "name": "conceptAlias",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "item"
+              },
+              {
+                "name": "abstract",
+                "type": "boolean",
+                "doc": "",
+                "deprecated": "false",
+                "value": "true"
+              },
+              {
+                "name": "conceptId",
+                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@6b083c78",
+                "doc": "",
+                "deprecated": "false",
+                "value": "2589700000046736789"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Item"
+              }
+            ],
+            "references": [
+              {
+                "role": "extends",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "BaseConcept",
+                "targetReference": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1133920641626"
+              }
+            ],
+            "children": []
+          },
+          {
+            "name": "Question",
+            "concept": "ConceptDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736790",
+            "properties": [
+              {
+                "name": "conceptAlias",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "question"
+              },
+              {
+                "name": "conceptId",
+                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@6b083c78",
+                "doc": "",
+                "deprecated": "false",
+                "value": "2589700000046736790"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Question"
+              }
+            ],
+            "references": [
+              {
+                "role": "extends",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Item",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736789"
+              }
+            ],
+            "children": [
+              {
+                "role": "propertyDeclaration",
+                "type": "PropertyDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288299:jetbrains.mps.lang.structure.structure.PropertyDeclaration",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "label",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736799"
+                  },
+                  {
+                    "name": "valueType",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736800"
+                  },
+                  {
+                    "name": "id",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046743942"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Branch",
+            "concept": "ConceptDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736791",
+            "properties": [
+              {
+                "name": "conceptAlias",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "when"
+              },
+              {
+                "name": "conceptId",
+                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@6b083c78",
+                "doc": "",
+                "deprecated": "false",
+                "value": "2589700000046736791"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Branch"
+              }
+            ],
+            "references": [
+              {
+                "role": "extends",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Item",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736789"
+              }
+            ],
+            "children": [
+              {
+                "role": "linkDeclaration",
+                "type": "LinkDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288298:jetbrains.mps.lang.structure.structure.LinkDeclaration",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "condition",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736803"
+                  },
+                  {
+                    "name": "items",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736804"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Expression",
+            "concept": "ConceptDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736792",
+            "properties": [
+              {
+                "name": "conceptAlias",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "expression"
+              },
+              {
+                "name": "abstract",
+                "type": "boolean",
+                "doc": "",
+                "deprecated": "false",
+                "value": "true"
+              },
+              {
+                "name": "conceptId",
+                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@6b083c78",
+                "doc": "",
+                "deprecated": "false",
+                "value": "2589700000046736792"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Expression"
+              }
+            ],
+            "references": [
+              {
+                "role": "extends",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "BaseConcept",
+                "targetReference": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1133920641626"
+              }
+            ],
+            "children": []
+          },
+          {
+            "name": "Literal",
+            "concept": "ConceptDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736793",
+            "properties": [
+              {
+                "name": "conceptAlias",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "literal"
+              },
+              {
+                "name": "conceptId",
+                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@6b083c78",
+                "doc": "",
+                "deprecated": "false",
+                "value": "2589700000046736793"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Literal"
+              }
+            ],
+            "references": [
+              {
+                "role": "extends",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Expression",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736792"
+              }
+            ],
+            "children": [
+              {
+                "role": "propertyDeclaration",
+                "type": "PropertyDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288299:jetbrains.mps.lang.structure.structure.PropertyDeclaration",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "value",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736805"
+                  },
+                  {
+                    "name": "literalType",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736806"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Reference",
+            "concept": "ConceptDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736794",
+            "properties": [
+              {
+                "name": "conceptAlias",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "ref"
+              },
+              {
+                "name": "conceptId",
+                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@6b083c78",
+                "doc": "",
+                "deprecated": "false",
+                "value": "2589700000046736794"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Reference"
+              }
+            ],
+            "references": [
+              {
+                "role": "extends",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Expression",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736792"
+              }
+            ],
+            "children": [
+              {
+                "role": "linkDeclaration",
+                "type": "LinkDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288298:jetbrains.mps.lang.structure.structure.LinkDeclaration",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "target",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736807"
+                  }
+                ]
+              },
+              {
+                "role": "propertyDeclaration",
+                "type": "PropertyDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288299:jetbrains.mps.lang.structure.structure.PropertyDeclaration",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "targetId",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046741701"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Binary",
+            "concept": "ConceptDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736795",
+            "properties": [
+              {
+                "name": "conceptAlias",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "binary"
+              },
+              {
+                "name": "conceptId",
+                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@6b083c78",
+                "doc": "",
+                "deprecated": "false",
+                "value": "2589700000046736795"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Binary"
+              }
+            ],
+            "references": [
+              {
+                "role": "extends",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Expression",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736792"
+              }
+            ],
+            "children": [
+              {
+                "role": "linkDeclaration",
+                "type": "LinkDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288298:jetbrains.mps.lang.structure.structure.LinkDeclaration",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "left",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736809"
+                  },
+                  {
+                    "name": "right",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736810"
+                  }
+                ]
+              },
+              {
+                "role": "propertyDeclaration",
+                "type": "PropertyDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288299:jetbrains.mps.lang.structure.structure.PropertyDeclaration",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "operator",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736808"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unary",
+            "concept": "ConceptDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736796",
+            "properties": [
+              {
+                "name": "conceptAlias",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "unary"
+              },
+              {
+                "name": "conceptId",
+                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@6b083c78",
+                "doc": "",
+                "deprecated": "false",
+                "value": "2589700000046736796"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Unary"
+              }
+            ],
+            "references": [
+              {
+                "role": "extends",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Expression",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736792"
+              }
+            ],
+            "children": [
+              {
+                "role": "linkDeclaration",
+                "type": "LinkDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288298:jetbrains.mps.lang.structure.structure.LinkDeclaration",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "operand",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736812"
+                  }
+                ]
+              },
+              {
+                "role": "propertyDeclaration",
+                "type": "PropertyDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288299:jetbrains.mps.lang.structure.structure.PropertyDeclaration",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "operator",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736811"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Calculated",
+            "concept": "ConceptDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046740212",
+            "properties": [
+              {
+                "name": "conceptAlias",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "computed question"
+              },
+              {
+                "name": "conceptId",
+                "type": "jetbrains.mps.smodel.adapter.structure.types.SConstrainedStringDatatypeAdapter@6b083c78",
+                "doc": "",
+                "deprecated": "false",
+                "value": "2589700000046740212"
+              },
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Calculated"
+              }
+            ],
+            "references": [
+              {
+                "role": "extends",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Question",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736790"
+              }
+            ],
+            "children": [
+              {
+                "role": "linkDeclaration",
+                "type": "LinkDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288298:jetbrains.mps.lang.structure.structure.LinkDeclaration",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "computed",
+                    "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046740215"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "QuestionnaireLanguage.textGen",
+        "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+        "readOnly": false,
+        "dependencies": [
+          {
+            "name": "jetbrains.mps.lang.core.structure",
+            "reference": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)"
+          },
+          {
+            "name": "QuestionnaireLanguage.structure",
+            "reference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)"
+          }
+        ],
+        "usedLanguages": [
+          {
+            "name": "jetbrains.mps.lang.textGen",
+            "reference": "l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen"
+          },
+          {
+            "name": "QuestionnaireLanguage",
+            "reference": "l:83a543da-6367-4b94-9df8-b626b1b2132c:QuestionnaireLanguage"
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage",
+            "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage"
+          },
+          {
+            "name": "jetbrains.mps.lang.smodel",
+            "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+          },
+          {
+            "name": "jetbrains.mps.devkit.aspect.textgen",
+            "reference": "fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)",
+            "kind": "devkit",
+            "providedLanguages": [
+              {
+                "name": "jetbrains.mps.baseLanguage",
+                "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.closures",
+                "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.collections",
+                "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections"
+              },
+              {
+                "name": "jetbrains.mps.lang.smodel",
+                "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+              },
+              {
+                "name": "jetbrains.mps.lang.textGen",
+                "reference": "l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen"
+              }
+            ]
+          }
+        ],
+        "engagedOnGenerationLanguages": [],
+        "rootNodes": [
+          {
+            "name": "Form",
+            "concept": "ConceptTextGenDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145:jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration",
+            "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743459",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Form_TextGen"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Form",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788"
+              }
+            ],
+            "children": [
+              {
+                "role": "extension",
+                "type": "ExtensionDeclaration",
+                "typeReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/8931911391946696733:jetbrains.mps.lang.textGen.structure.ExtensionDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "extension",
+                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000047066516"
+                  }
+                ]
+              },
+              {
+                "role": "textGenBlock",
+                "type": "GenerateTextDeclaration",
+                "typeReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233749247888:jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "do generate text",
+                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000047066521"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Question",
+            "concept": "ConceptTextGenDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145:jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration",
+            "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743514",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Question_TextGen"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Question",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736790"
+              }
+            ],
+            "children": [
+              {
+                "role": "textGenBlock",
+                "type": "GenerateTextDeclaration",
+                "typeReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233749247888:jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "do generate text",
+                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046744006"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Calculated",
+            "concept": "ConceptTextGenDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145:jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration",
+            "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743572",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Calculated_TextGen"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Calculated",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046740212"
+              }
+            ],
+            "children": [
+              {
+                "role": "textGenBlock",
+                "type": "GenerateTextDeclaration",
+                "typeReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233749247888:jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "do generate text",
+                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046972806"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Branch",
+            "concept": "ConceptTextGenDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145:jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration",
+            "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743654",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Branch_TextGen"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Branch",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736791"
+              }
+            ],
+            "children": [
+              {
+                "role": "textGenBlock",
+                "type": "GenerateTextDeclaration",
+                "typeReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233749247888:jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "do generate text",
+                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743655"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Literal",
+            "concept": "ConceptTextGenDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145:jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration",
+            "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743712",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Literal_TextGen"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Literal",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736793"
+              }
+            ],
+            "children": [
+              {
+                "role": "textGenBlock",
+                "type": "GenerateTextDeclaration",
+                "typeReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233749247888:jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "do generate text",
+                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743713"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Reference",
+            "concept": "ConceptTextGenDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145:jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration",
+            "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743738",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Reference_TextGen"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Reference",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736794"
+              }
+            ],
+            "children": [
+              {
+                "role": "textGenBlock",
+                "type": "GenerateTextDeclaration",
+                "typeReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233749247888:jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "do generate text",
+                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743896"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Binary",
+            "concept": "ConceptTextGenDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145:jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration",
+            "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743772",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Binary_TextGen"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Binary",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736795"
+              }
+            ],
+            "children": [
+              {
+                "role": "textGenBlock",
+                "type": "GenerateTextDeclaration",
+                "typeReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233749247888:jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "do generate text",
+                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743773"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Unary",
+            "concept": "ConceptTextGenDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145:jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration",
+            "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743846",
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Unary_TextGen"
+              }
+            ],
+            "references": [
+              {
+                "role": "conceptDeclaration",
+                "type": "ConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "target": "Unary",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736796"
+              }
+            ],
+            "children": [
+              {
+                "role": "textGenBlock",
+                "type": "GenerateTextDeclaration",
+                "typeReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233749247888:jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration",
+                "cardinality": "0..1",
+                "doc": "",
+                "deprecated": "false",
+                "children": [
+                  {
+                    "name": "do generate text",
+                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743847"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "QuestionnaireLanguage.typesystem",
+        "reference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)",
+        "readOnly": false,
+        "dependencies": [],
+        "usedLanguages": [
+          {
+            "name": "jetbrains.mps.lang.typesystem",
+            "reference": "l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem"
+          },
+          {
+            "name": "jetbrains.mps.devkit.aspect.typesystem",
+            "reference": "00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)",
+            "kind": "devkit",
+            "providedLanguages": [
+              {
+                "name": "jetbrains.mps.baseLanguage",
+                "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.closures",
+                "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.collections",
+                "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.javadoc",
+                "reference": "l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.logging",
+                "reference": "l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging"
+              },
+              {
+                "name": "jetbrains.mps.baseLanguage.tuples",
+                "reference": "l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples"
+              },
+              {
+                "name": "jetbrains.mps.lang.actions",
+                "reference": "l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions"
+              },
+              {
+                "name": "jetbrains.mps.lang.pattern",
+                "reference": "l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern"
+              },
+              {
+                "name": "jetbrains.mps.lang.quotation",
+                "reference": "l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation"
+              },
+              {
+                "name": "jetbrains.mps.lang.smodel",
+                "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+              },
+              {
+                "name": "jetbrains.mps.lang.text",
+                "reference": "l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text"
+              },
+              {
+                "name": "jetbrains.mps.lang.typesystem",
+                "reference": "l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem"
+              }
+            ]
+          }
+        ],
+        "engagedOnGenerationLanguages": [],
+        "rootNodes": []
+      },
+      {
+        "name": "QuestionnaireLanguage@descriptor",
+        "reference": "83a543da-6367-4b94-9df8-b626b1b2132c/i:f010101(QuestionnaireLanguage/QuestionnaireLanguage@descriptor)",
+        "readOnly": true,
+        "dependencies": [],
+        "usedLanguages": [
+          {
+            "name": "jetbrains.mps.lang.structure",
+            "reference": "l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure"
+          },
+          {
+            "name": "jetbrains.mps.devkit.language-descriptor",
+            "reference": "00000000-0000-4000-0000-3c66972ccb47(jetbrains.mps.devkit.language-descriptor)",
+            "kind": "devkit",
+            "providedLanguages": [
+              {
+                "name": "jetbrains.mps.lang.descriptor",
+                "reference": "l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor"
+              }
+            ]
+          }
+        ],
+        "engagedOnGenerationLanguages": [
+          {
+            "name": "jetbrains.mps.lang.descriptor",
+            "reference": "l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor"
+          },
+          {
+            "name": "jetbrains.mps.lang.editor",
+            "reference": "l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor"
+          },
+          {
+            "name": "jetbrains.mps.lang.actions",
+            "reference": "l:aee9cad2-acd4-4608-aef2-0004f6a1cdbd:jetbrains.mps.lang.actions"
+          },
+          {
+            "name": "jetbrains.mps.lang.behavior",
+            "reference": "l:af65afd8-f0dd-4942-87d9-63a55f2a9db1:jetbrains.mps.lang.behavior"
+          },
+          {
+            "name": "jetbrains.mps.lang.smodel",
+            "reference": "l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel"
+          },
+          {
+            "name": "jetbrains.mps.lang.typesystem",
+            "reference": "l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem"
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.logging",
+            "reference": "l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging"
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.collections",
+            "reference": "l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections"
+          },
+          {
+            "name": "jetbrains.mps.lang.pattern",
+            "reference": "l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern"
+          },
+          {
+            "name": "jetbrains.mps.lang.text",
+            "reference": "l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text"
+          },
+          {
+            "name": "jetbrains.mps.lang.quotation",
+            "reference": "l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation"
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.tuples",
+            "reference": "l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples"
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.javadoc",
+            "reference": "l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc"
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage",
+            "reference": "l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage"
+          },
+          {
+            "name": "jetbrains.mps.baseLanguage.closures",
+            "reference": "l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures"
+          },
+          {
+            "name": "jetbrains.mps.lang.textGen",
+            "reference": "l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen"
+          }
+        ],
+        "rootNodes": [
+          {
+            "name": "StructureAspectDeputy",
+            "concept": "StructureAspectDeputy",
+            "doc": "represents structure aspect in a @descriptor model",
+            "deprecated": "false",
+            "conceptReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/4779912984502395132:jetbrains.mps.lang.structure.structure.StructureAspectDeputy",
+            "reference": "83a543da-6367-4b94-9df8-b626b1b2132c/i:f010101(QuestionnaireLanguage/QuestionnaireLanguage@descriptor)/2589700000047321954",
+            "properties": [],
+            "references": [],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

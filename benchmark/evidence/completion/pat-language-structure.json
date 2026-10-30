@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-10-30T01:54:04.629493+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "startingPoint": "83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)",
+    "includeModels": true,
+    "includeDependencies": true,
+    "includeRootNodes": true,
+    "includeNodes": false
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-5640735349576691110.json\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

@@ -11,6 +11,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="zg3i" ref="r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)" />
+    <import index="fl0q" ref="r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -24,11 +25,18 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
@@ -268,10 +276,20 @@
             <property role="lacIc" value="{&quot;literal&quot;:" />
           </node>
           <node concept="l9hG8" id="2fKtARxBo2B" role="lcghm">
-            <node concept="2OqwBi" id="2fKtARxBo2D" role="lb14g">
-              <node concept="117lpO" id="2fKtARxBo2G" role="2Oq$k0" />
-              <node concept="3TrcHB" id="2fKtARxBo2H" role="2OqNvi">
-                <ref role="3TsBF5" to="zg3i:2fKtARxBmm_" resolve="value" />
+            <node concept="2YIFZM" id="2fKtARxFc87" role="lb14g">
+              <ref role="1Pybhc" to="fl0q:2fKtARxD_AE" resolve="QuestionnaireNativeDiagnostics" />
+              <ref role="37wK5l" to="fl0q:2fKtARxElQB" resolve="literalJson" />
+              <node concept="2OqwBi" id="2fKtARxFc88" role="37wK5m">
+                <node concept="117lpO" id="2fKtARxFc8b" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2fKtARxFc8c" role="2OqNvi">
+                  <ref role="3TsBF5" to="zg3i:2fKtARxBmm_" resolve="value" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2fKtARxFc8d" role="37wK5m">
+                <node concept="117lpO" id="2fKtARxFc8g" role="2Oq$k0" />
+                <node concept="3TrcHB" id="2fKtARxFc8h" role="2OqNvi">
+                  <ref role="3TsBF5" to="zg3i:2fKtARxBmmA" resolve="literalType" />
+                </node>
               </node>
             </node>
           </node>

@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-10-29T22:42:29.925Z",
+  "browser": "Microsoft Edge headless",
+  "page": "http://127.0.0.1:4197/",
+  "questionnaire": "solutions\\QuestionnaireExample\\source_gen\\QuestionnaireExample\\BenefitSurvey.json",
+  "interaction": {
+    "title": "BenefitSurvey",
+    "controls": {
+      "boolean": "checkbox",
+      "integer": "number",
+      "text": "text",
+      "nestedBoolean": "checkbox"
+    },
+    "initialHomeTypeHidden": true,
+    "initialGardenHidden": true,
+    "homeTypeVisible": true,
+    "gardenHiddenWithoutResidents": true,
+    "gardenHiddenBelowThreshold": true,
+    "gardenVisibleAboveThreshold": true,
+    "computedValue": "9",
+    "unaryValue": "false"
+  },
+  "downloadedFile": "benchmark\\evidence\\browser-downloads\\BenefitSurvey-answers.json",
+  "answers": {
+    "form": "BenefitSurvey",
+    "answers": {
+      "ownsHome": true,
+      "residents": 4,
+      "annualCost": 9,
+      "homeType": "townhouse",
+      "hasGarden": true,
+      "notHomeowner": false
+    }
+  }
+}

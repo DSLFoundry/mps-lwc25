@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-30T01:53:26.875903+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "conceptRefs": "[\"jetbrains.mps.lang.typesystem.structure.NonTypesystemRule\", \"jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition\", \"jetbrains.mps.lang.typesystem.structure.ReportErrorStatement\", \"jetbrains.mps.lang.typesystem.structure.ReportWarningStatement\", \"jetbrains.mps.lang.typesystem.structure.ReportErrorStatementAnnotation\", \"jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference\"]"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-15877466076169915153.json\",\"details\":{\"unresolved\":[{\"ref\":\"jetbrains.mps.lang.typesystem.structure.ReportWarningStatement\",\"kind\":\"concept\",\"suggestions\":[{\"qualifiedName\":\"jetbrains.mps.lang.typesystem.structure.WarningStatement\",\"conceptReference\":\"c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1207055528241:jetbrains.mps.lang.typesystem.structure.WarningStatement\"}]}]},\"warnings\":[\"Could not resolve conceptRef 'jetbrains.mps.lang.typesystem.structure.ReportWarningStatement' — see details.unresolved for suggestions\"]}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

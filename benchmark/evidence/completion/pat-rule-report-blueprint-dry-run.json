@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-30T02:04:39.102416+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "ADD",
+    "kind": "CHILD",
+    "nodeReference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468786",
+    "childRole": "statement",
+    "position": -1,
+    "childJson": "{\"concept\": \"jetbrains.mps.lang.typesystem.structure.ReportErrorStatement\", \"children\": [{\"role\": \"errorString\", \"nodes\": [{\"concept\": \"jetbrains.mps.baseLanguage.structure.StringLiteral\", \"properties\": [{\"name\": \"value\", \"value\": \"Questionnaire has native diagnostics\"}]}]}, {\"role\": \"nodeToReport\", \"nodes\": [{\"concept\": \"jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference\", \"references\": [{\"role\": \"applicableNode\", \"target\": \"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468770\"}]}]}]}",
+    "dryRun": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"dryRun\":true,\"message\":\"Dry run successful for node addition\"}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

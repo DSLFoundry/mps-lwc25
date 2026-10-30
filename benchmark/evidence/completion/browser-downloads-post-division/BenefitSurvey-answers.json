@@ -1,0 +1,11 @@
+{
+  "form": "BenefitSurvey",
+  "answers": {
+    "ownsHome": true,
+    "residents": 4,
+    "annualCost": 9,
+    "homeType": "townhouse",
+    "hasGarden": true,
+    "notHomeowner": false
+  }
+}

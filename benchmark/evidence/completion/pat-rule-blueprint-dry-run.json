@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-30T01:59:54.219562+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "modelReference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)",
+    "json": "{\"concept\": \"NonTypesystemRule\", \"properties\": [{\"name\": \"name\", \"value\": \"checkQuestionnaireNativeSemantics\"}], \"children\": [{\"role\": \"applicableNode\", \"nodes\": [{\"concept\": \"ConceptReference\", \"properties\": [{\"name\": \"name\", \"value\": \"form\"}], \"references\": [{\"role\": \"concept\", \"target\": \"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788\"}]}]}, {\"role\": \"body\", \"nodes\": [{\"concept\": \"StatementList\"}]}]}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":false,\"error\":\"Failed to instantiate node from JSON: Unknown property 'name' at $.children[0].nodes[0].properties[0]: concept 'ConceptReference' has no such property\",\"code\":\"INVALID_REQUEST\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

@@ -1,0 +1,174 @@
+UTC START 2026-10-30T02:35:44.1600807Z
+
+=== Live PAT native diagnostics ===
+{
+  "result": "PASS",
+  "assertionCount": 23,
+  "report": "C:\\Sources\\mps-lwc25\\benchmark\\evidence\\completion\\native-diagnostics-assertions.json"
+}
+
+=== Frozen 20-case acceptance suite ===
+PASS all six question types preserve typed answers
+PASS unanswered values stay undefined
+PASS computed dependencies propagate undefined
+PASS arithmetic operators produce expected values
+PASS all comparison operators work for true and false cases
+PASS boolean operators evaluate both truth outcomes
+PASS undefined remains undefined through boolean expressions
+PASS computed values update transitively
+PASS forward references compute independently of display order
+PASS undefined and false conditions hide questions
+PASS nested visibility requires every enclosing condition
+PASS date and string comparisons preserve their value domains
+PASS JSON export contains form identity and typed answers
+PASS valid form has no diagnostics
+PASS duplicate identifiers are diagnosed across nested groups
+PASS unresolved references are diagnosed
+PASS nonboolean conditions are diagnosed
+PASS incompatible computed result types are diagnosed
+PASS invalid arithmetic and boolean operands are diagnosed
+PASS direct and indirect cycles are diagnosed
+20/20 passed
+
+=== Generated invalid fixture runtime validation ===
+{
+  "timestamp": "2026-10-30T02:35:44.750Z",
+  "source": "solutions\\QuestionnaireExample\\source_gen\\QuestionnaireExample\\InvalidNativeFixtures.json",
+  "diagnostics": [
+    {
+      "code": "duplicate",
+      "id": "duplicate",
+      "message": "Duplicate question identifier: duplicate"
+    },
+    {
+      "code": "duplicate",
+      "id": "duplicate",
+      "message": "Duplicate question identifier: duplicate"
+    },
+    {
+      "code": "type",
+      "message": "badArithmetic: + requires numeric operands or two strings."
+    },
+    {
+      "code": "type",
+      "id": "badArithmetic",
+      "message": "badArithmetic: computed result integer does not match boolean."
+    },
+    {
+      "code": "unresolved",
+      "id": "missing",
+      "message": "unresolved: unresolved question missing."
+    },
+    {
+      "code": "type",
+      "id": "conditional",
+      "message": "Condition for conditional must be boolean."
+    },
+    {
+      "code": "unresolved",
+      "id": "absentFromForm",
+      "message": "unresolvedNative: unresolved question absentFromForm."
+    },
+    {
+      "code": "type",
+      "id": "badResult",
+      "message": "badResult: computed result integer does not match boolean."
+    },
+    {
+      "code": "type",
+      "message": "badLogical: && requires boolean operands."
+    },
+    {
+      "code": "type",
+      "message": "badUnary: ! requires a boolean operand."
+    },
+    {
+      "code": "type",
+      "message": "badComparison: > compares incompatible operands."
+    },
+    {
+      "code": "unresolved",
+      "id": "outsideQuestion",
+      "message": "externalReference: unresolved question outsideQuestion."
+    },
+    {
+      "code": "type",
+      "message": "badSubtract: - requires numeric operands."
+    },
+    {
+      "code": "type",
+      "message": "badMultiply: * requires numeric operands."
+    },
+    {
+      "code": "type",
+      "message": "badDivide: / requires numeric operands."
+    },
+    {
+      "code": "type",
+      "message": "badOr: || requires boolean operands."
+    },
+    {
+      "code": "type",
+      "message": "badEqual: == compares incompatible operands."
+    },
+    {
+      "code": "type",
+      "message": "badNotEqual: != compares incompatible operands."
+    },
+    {
+      "code": "type",
+      "message": "badLess: < compares incompatible operands."
+    },
+    {
+      "code": "type",
+      "message": "badGreaterEqual: >= compares incompatible operands."
+    },
+    {
+      "code": "type",
+      "message": "badLessEqual: <= compares incompatible operands."
+    },
+    {
+      "code": "type",
+      "message": "badUnaryMinus: unary - requires a numeric operand."
+    },
+    {
+      "code": "type",
+      "message": "Conditional expression must be boolean."
+    },
+    {
+      "code": "cycle",
+      "id": "cycleA",
+      "message": "Computed dependency cycle: cycleA -> cycleB -> cycleA"
+    },
+    {
+      "code": "cycle",
+      "id": "directCycle",
+      "message": "Computed dependency cycle: directCycle -> directCycle"
+    }
+  ],
+  "codes": [
+    "cycle",
+    "duplicate",
+    "type",
+    "unresolved"
+  ],
+  "requiredCodes": [
+    "cycle",
+    "duplicate",
+    "type",
+    "unresolved"
+  ],
+  "complete": true
+}
+
+=== Native generated expressions ===
+{"result":"PASS","form":"ReferenceTargetForm","stringLiteral":"He said \"hi\"\nC:\\path","stringConcatenation":"He said hello","unaryMinus":-4,"division":2}
+
+=== Generated native JSON parsing ===
+BenefitSurvey.json BenefitSurvey 5
+InvalidNativeFixtures.json InvalidNativeFixtures 26
+ReferenceTargetForm.json ReferenceTargetForm 5
+
+BenefitSurvey source_gen SHA256=56B96968C74B4D3A83420ECEB08FE81C4827B0E2349118D82FA42A27C1EABBBC
+BenefitSurvey checked-in SHA256=56B96968C74B4D3A83420ECEB08FE81C4827B0E2349118D82FA42A27C1EABBBC
+UTC END 2026-10-30T02:35:44.9849022Z; all checks passed

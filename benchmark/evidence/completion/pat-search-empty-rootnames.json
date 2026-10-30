@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-30T01:58:40.781408+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "scope": "editable",
+    "names": "[]"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":[]}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

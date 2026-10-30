@@ -1,0 +1,1424 @@
+{
+  "ok": true,
+  "data": {
+    "name": "InvalidNativeFixtures",
+    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753",
+    "concept": "Form",
+    "doc": "",
+    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736788:QuestionnaireLanguage.structure.Form",
+    "problems": [
+      {
+        "severity": "error",
+        "message": "Error: [QL_DUPLICATE_ID] duplicate identifier \u0027duplicate\u0027 on Duplicate one (duplicate) and Duplicate two (duplicate)\n[QL_DUPLICATE_ID] duplicate identifier \u0027duplicate\u0027 on Duplicate one (duplicate) and Nested duplicate (duplicate)\n[QL_REFERENCE_UNRESOLVED] reference \u0027missing\u0027 does not resolve\n[QL_REFERENCE_UNRESOLVED] reference \u0027absentFromForm\u0027 does not resolve\n[QL_REFERENCE_OUT_OF_FORM] reference \u0027outsideQuestion\u0027 targets a question outside this form\n[QL_OPERAND_TYPE] + requires two numeric operands or two strings, got string and integer\n[QL_RESULT_TYPE] computed question \u0027badResult\u0027 declares boolean but its expression produces integer\n[QL_OPERAND_TYPE] \u0026\u0026 requires boolean operands, got boolean and integer\n[QL_OPERAND_TYPE] unary ! requires boolean, got integer\n[QL_OPERAND_TYPE] \u003e requires compatible ordered operands, got string and integer\n[QL_CONDITION_TYPE] branch condition must be boolean, got integer\n[QL_DEPENDENCY_CYCLE] cycleA -\u003e cycleB -\u003e cycleA\n[QL_DEPENDENCY_CYCLE] directCycle -\u003e directCycle"
+      }
+    ],
+    "properties": [
+      {
+        "name": "title",
+        "type": "string",
+        "doc": "",
+        "value": "InvalidNativeFixtures",
+        "problems": []
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "doc": "",
+        "value": "InvalidNativeFixtures",
+        "problems": []
+      }
+    ],
+    "references": [],
+    "children": [
+      {
+        "role": "items",
+        "type": "Item",
+        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736789:QuestionnaireLanguage.structure.Item",
+        "cardinality": "0..n",
+        "doc": "",
+        "problems": [],
+        "nodes": [
+          {
+            "name": "question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166106",
+            "concept": "Question",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+            "problems": [],
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "value": "Duplicate one",
+                "problems": []
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "value": "string",
+                "problems": []
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "value": "duplicate",
+                "problems": []
+              }
+            ],
+            "references": [],
+            "children": []
+          },
+          {
+            "name": "question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166107",
+            "concept": "Question",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+            "problems": [],
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "value": "Duplicate two",
+                "problems": []
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "value": "integer",
+                "problems": []
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "value": "duplicate",
+                "problems": []
+              }
+            ],
+            "references": [],
+            "children": []
+          },
+          {
+            "name": "question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166108",
+            "concept": "Question",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+            "problems": [],
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "value": "String source",
+                "problems": []
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "value": "string",
+                "problems": []
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "value": "stringSource",
+                "problems": []
+              }
+            ],
+            "references": [],
+            "children": []
+          },
+          {
+            "name": "computed question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166109",
+            "concept": "Calculated",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "problems": [],
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "value": "badArithmetic",
+                "problems": []
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "value": "boolean",
+                "problems": []
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "value": "badArithmetic",
+                "problems": []
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "binary",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166111",
+                    "concept": "Binary",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736795:QuestionnaireLanguage.structure.Binary",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "operator",
+                        "type": "string",
+                        "doc": "",
+                        "value": "+",
+                        "problems": []
+                      }
+                    ],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "left",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "problems": [],
+                        "nodes": [
+                          {
+                            "name": "ref",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166114",
+                            "concept": "Reference",
+                            "doc": "",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+                            "problems": [],
+                            "properties": [
+                              {
+                                "name": "targetId",
+                                "type": "string",
+                                "doc": "",
+                                "value": "stringSource",
+                                "problems": []
+                              }
+                            ],
+                            "references": [
+                              {
+                                "role": "target",
+                                "type": "Question",
+                                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                                "cardinality": "1",
+                                "doc": "",
+                                "target": "question",
+                                "targetReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166108",
+                                "problems": []
+                              }
+                            ],
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "role": "right",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "problems": [],
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166115",
+                            "concept": "Literal",
+                            "doc": "",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "problems": [],
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "value": "2",
+                                "problems": []
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "value": "integer",
+                                "problems": []
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166116",
+            "concept": "Calculated",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "problems": [],
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "value": "cycleA",
+                "problems": []
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "value": "integer",
+                "problems": []
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "value": "cycleA",
+                "problems": []
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "ref",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166118",
+                    "concept": "Reference",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "targetId",
+                        "type": "string",
+                        "doc": "",
+                        "value": "cycleB",
+                        "problems": []
+                      }
+                    ],
+                    "references": [
+                      {
+                        "role": "target",
+                        "type": "Question",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                        "cardinality": "1",
+                        "doc": "",
+                        "target": "computed question",
+                        "targetReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166119",
+                        "problems": []
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166119",
+            "concept": "Calculated",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "problems": [],
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "value": "cycleB",
+                "problems": []
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "value": "integer",
+                "problems": []
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "value": "cycleB",
+                "problems": []
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "ref",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166121",
+                    "concept": "Reference",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "targetId",
+                        "type": "string",
+                        "doc": "",
+                        "value": "cycleA",
+                        "problems": []
+                      }
+                    ],
+                    "references": [
+                      {
+                        "role": "target",
+                        "type": "Question",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                        "cardinality": "1",
+                        "doc": "",
+                        "target": "computed question",
+                        "targetReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166116",
+                        "problems": []
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166122",
+            "concept": "Calculated",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "problems": [],
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "value": "unresolved",
+                "problems": []
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "value": "integer",
+                "problems": []
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "value": "unresolved",
+                "problems": []
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "ref",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166124",
+                    "concept": "Reference",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "targetId",
+                        "type": "string",
+                        "doc": "",
+                        "value": "missing",
+                        "problems": []
+                      }
+                    ],
+                    "references": [
+                      {
+                        "role": "target",
+                        "type": "Question",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                        "cardinality": "1",
+                        "doc": "",
+                        "problems": [
+                          {
+                            "severity": "error",
+                            "message": "No reference in the obligatory role \u0027target\u0027"
+                          }
+                        ]
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "when",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166125",
+            "concept": "Branch",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736791:QuestionnaireLanguage.structure.Branch",
+            "problems": [],
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "condition",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "literal",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166127",
+                    "concept": "Literal",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "value",
+                        "type": "string",
+                        "doc": "",
+                        "value": "42",
+                        "problems": []
+                      },
+                      {
+                        "name": "literalType",
+                        "type": "string",
+                        "doc": "",
+                        "value": "integer",
+                        "problems": []
+                      }
+                    ],
+                    "references": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "role": "items",
+                "type": "Item",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736789:QuestionnaireLanguage.structure.Item",
+                "cardinality": "0..n",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "question",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166128",
+                    "concept": "Question",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "label",
+                        "type": "string",
+                        "doc": "",
+                        "value": "Inside invalid condition",
+                        "problems": []
+                      },
+                      {
+                        "name": "valueType",
+                        "type": "string",
+                        "doc": "",
+                        "value": "string",
+                        "problems": []
+                      },
+                      {
+                        "name": "id",
+                        "type": "string",
+                        "doc": "",
+                        "value": "conditional",
+                        "problems": []
+                      }
+                    ],
+                    "references": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047322244",
+            "concept": "Calculated",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "problems": [],
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "value": "Missing native target",
+                "problems": []
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "value": "integer",
+                "problems": []
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "value": "unresolvedNative",
+                "problems": []
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "ref",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047322246",
+                    "concept": "Reference",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "targetId",
+                        "type": "string",
+                        "doc": "",
+                        "value": "absentFromForm",
+                        "problems": []
+                      }
+                    ],
+                    "references": [
+                      {
+                        "role": "target",
+                        "type": "Question",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                        "cardinality": "1",
+                        "doc": "",
+                        "problems": [
+                          {
+                            "severity": "error",
+                            "message": "No reference in the obligatory role \u0027target\u0027"
+                          }
+                        ]
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "when",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521153",
+            "concept": "Branch",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736791:QuestionnaireLanguage.structure.Branch",
+            "problems": [],
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "condition",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "literal",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521155",
+                    "concept": "Literal",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "value",
+                        "type": "string",
+                        "doc": "",
+                        "value": "true",
+                        "problems": []
+                      },
+                      {
+                        "name": "literalType",
+                        "type": "string",
+                        "doc": "",
+                        "value": "boolean",
+                        "problems": []
+                      }
+                    ],
+                    "references": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "role": "items",
+                "type": "Item",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736789:QuestionnaireLanguage.structure.Item",
+                "cardinality": "0..n",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "question",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521156",
+                    "concept": "Question",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "label",
+                        "type": "string",
+                        "doc": "",
+                        "value": "Nested duplicate",
+                        "problems": []
+                      },
+                      {
+                        "name": "valueType",
+                        "type": "string",
+                        "doc": "",
+                        "value": "string",
+                        "problems": []
+                      },
+                      {
+                        "name": "id",
+                        "type": "string",
+                        "doc": "",
+                        "value": "duplicate",
+                        "problems": []
+                      }
+                    ],
+                    "references": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521157",
+            "concept": "Calculated",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "problems": [],
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "value": "Result type mismatch",
+                "problems": []
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "value": "boolean",
+                "problems": []
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "value": "badResult",
+                "problems": []
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "binary",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521159",
+                    "concept": "Binary",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736795:QuestionnaireLanguage.structure.Binary",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "operator",
+                        "type": "string",
+                        "doc": "",
+                        "value": "+",
+                        "problems": []
+                      }
+                    ],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "left",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "problems": [],
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521162",
+                            "concept": "Literal",
+                            "doc": "",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "problems": [],
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "value": "1",
+                                "problems": []
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "value": "integer",
+                                "problems": []
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "role": "right",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "problems": [],
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521163",
+                            "concept": "Literal",
+                            "doc": "",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "problems": [],
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "value": "2",
+                                "problems": []
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "value": "integer",
+                                "problems": []
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521164",
+            "concept": "Calculated",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "problems": [],
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "value": "Logical operand mismatch",
+                "problems": []
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "value": "boolean",
+                "problems": []
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "value": "badLogical",
+                "problems": []
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "binary",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521166",
+                    "concept": "Binary",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736795:QuestionnaireLanguage.structure.Binary",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "operator",
+                        "type": "string",
+                        "doc": "",
+                        "value": "\u0026\u0026",
+                        "problems": []
+                      }
+                    ],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "left",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "problems": [],
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521169",
+                            "concept": "Literal",
+                            "doc": "",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "problems": [],
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "value": "true",
+                                "problems": []
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "value": "boolean",
+                                "problems": []
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "role": "right",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "problems": [],
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521170",
+                            "concept": "Literal",
+                            "doc": "",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "problems": [],
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "value": "0",
+                                "problems": []
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "value": "integer",
+                                "problems": []
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521171",
+            "concept": "Calculated",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "problems": [],
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "value": "Unary operand mismatch",
+                "problems": []
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "value": "boolean",
+                "problems": []
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "value": "badUnary",
+                "problems": []
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "unary",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521173",
+                    "concept": "Unary",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736796:QuestionnaireLanguage.structure.Unary",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "operator",
+                        "type": "string",
+                        "doc": "",
+                        "value": "!",
+                        "problems": []
+                      }
+                    ],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "operand",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "problems": [],
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521175",
+                            "concept": "Literal",
+                            "doc": "",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "problems": [],
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "value": "1",
+                                "problems": []
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "value": "integer",
+                                "problems": []
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521176",
+            "concept": "Calculated",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "problems": [],
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "value": "Comparison operand mismatch",
+                "problems": []
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "value": "boolean",
+                "problems": []
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "value": "badComparison",
+                "problems": []
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "binary",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521178",
+                    "concept": "Binary",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736795:QuestionnaireLanguage.structure.Binary",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "operator",
+                        "type": "string",
+                        "doc": "",
+                        "value": "\u003e",
+                        "problems": []
+                      }
+                    ],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "left",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "problems": [],
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521181",
+                            "concept": "Literal",
+                            "doc": "",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "problems": [],
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "value": "x",
+                                "problems": []
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "value": "string",
+                                "problems": []
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "role": "right",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "problems": [],
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521182",
+                            "concept": "Literal",
+                            "doc": "",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "problems": [],
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "value": "1",
+                                "problems": []
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "value": "integer",
+                                "problems": []
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521183",
+            "concept": "Calculated",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "problems": [],
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "value": "Direct self dependency",
+                "problems": []
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "value": "integer",
+                "problems": []
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "value": "directCycle",
+                "problems": []
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "ref",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521185",
+                    "concept": "Reference",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "targetId",
+                        "type": "string",
+                        "doc": "",
+                        "value": "directCycle",
+                        "problems": []
+                      }
+                    ],
+                    "references": [
+                      {
+                        "role": "target",
+                        "type": "Question",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                        "cardinality": "1",
+                        "doc": "",
+                        "target": "computed question",
+                        "targetReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521183",
+                        "problems": []
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521186",
+            "concept": "Calculated",
+            "doc": "",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "problems": [],
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "value": "Out of form dependency",
+                "problems": []
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "value": "string",
+                "problems": []
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "value": "externalReference",
+                "problems": []
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "ref",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521188",
+                    "concept": "Reference",
+                    "doc": "",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+                    "problems": [],
+                    "properties": [
+                      {
+                        "name": "targetId",
+                        "type": "string",
+                        "doc": "",
+                        "value": "outsideQuestion",
+                        "problems": []
+                      }
+                    ],
+                    "references": [
+                      {
+                        "role": "target",
+                        "type": "Question",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                        "cardinality": "1",
+                        "doc": "",
+                        "target": "question",
+                        "targetReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521152",
+                        "problems": []
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

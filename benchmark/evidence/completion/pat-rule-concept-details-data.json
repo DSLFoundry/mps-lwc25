@@ -1,0 +1,601 @@
+{
+  "ok": true,
+  "data": [
+    {
+      "name": "NonTypesystemRule",
+      "qualifiedName": "jetbrains.mps.lang.typesystem.structure.NonTypesystemRule",
+      "conceptAlias": "Checking Rule",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1195214364922:jetbrains.mps.lang.typesystem.structure.NonTypesystemRule",
+      "languageReference": "l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem",
+      "superConcept": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1195213580585:jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule",
+      "superInterfaces": [
+        "i:7a5dda62-9140-4668-ab76-d5ed1746f2b2/4484478261143582584:jetbrains.mps.lang.typesystem.structure.IRuleWithOneNode",
+        "i:ceab5195-25ea-4f22-9b92-103b95ca8c0c/3734116213129792499:jetbrains.mps.lang.core.structure.ScopeProvider"
+      ],
+      "superInterfaceDetails": [
+        {
+          "name": "IRuleWithOneNode",
+          "reference": "i:7a5dda62-9140-4668-ab76-d5ed1746f2b2/4484478261143582584:jetbrains.mps.lang.typesystem.structure.IRuleWithOneNode"
+        },
+        {
+          "name": "ScopeProvider",
+          "reference": "i:ceab5195-25ea-4f22-9b92-103b95ca8c0c/3734116213129792499:jetbrains.mps.lang.core.structure.ScopeProvider"
+        }
+      ],
+      "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/1195214364922",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": true,
+      "virtualFolder": "definition.rule",
+      "present": true,
+      "properties": [
+        {
+          "name": "doNotApplyOnTheFly",
+          "type": "boolean",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/1195214364922/7181286126212894140",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/7181286126212894140",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "overrides",
+          "type": "boolean",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/1195213580585/1195213689297",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/1195213689297",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194664001",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "overridenRules",
+          "targetConcept": "jetbrains.mps.lang.typesystem.structure.CheckingRuleReference",
+          "cardinality": "0..n",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/1195214364922/2329696648448631592",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/2329696648448631592",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "body",
+          "targetConcept": "jetbrains.mps.baseLanguage.structure.StatementList",
+          "cardinality": "1",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/1195213580585/1195213635060",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/1195213635060",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "methodDeclaration",
+          "targetConcept": "jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration",
+          "cardinality": "0..n",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/1195213580585/2034032467076006154",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/2034032467076006154",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "overridesFun_old",
+          "targetConcept": "jetbrains.mps.lang.typesystem.structure.OverridesConceptFunction",
+          "cardinality": "0..1",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/1195213580585/1766949807893591548",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/1766949807893591548",
+          "doc": "",
+          "deprecated": "true: The link was moved to concept \"jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule\""
+        },
+        {
+          "name": "applicableNode",
+          "targetConcept": "jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition",
+          "cardinality": "1",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174648085619/1174648101952",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/1174648101952",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.lang.typesystem.structure.NonTypesystemRule",
+        "properties": [
+          {
+            "name": "doNotApplyOnTheFly",
+            "value": "true"
+          },
+          {
+            "name": "overrides",
+            "value": "true"
+          },
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          },
+          {
+            "name": "name",
+            "value": "NonTypesystemRule"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "overridenRules",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.typesystem.structure.CheckingRuleReference or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "body",
+            "nodes": [
+              "/* Instances of jetbrains.mps.baseLanguage.structure.StatementList or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "methodDeclaration",
+            "nodes": [
+              "/* Instances of jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "overridesFun_old",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.typesystem.structure.OverridesConceptFunction or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "applicableNode",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ApplicableNodeReference",
+      "qualifiedName": "jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference",
+      "conceptAlias": "",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174650418652:jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference",
+      "languageReference": "l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem",
+      "superConcept": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068431790191:jetbrains.mps.baseLanguage.structure.Expression",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/1174650418652",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "definition.expression",
+      "present": true,
+      "properties": [
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [
+        {
+          "name": "applicableNode",
+          "targetConcept": "jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition",
+          "cardinality": "1",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174650418652/1174650432090",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/1174650432090",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "children": [
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference",
+        "properties": [
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [
+          {
+            "role": "applicableNode",
+            "target": "/* Reference to jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition */"
+          }
+        ],
+        "children": [
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ApplicableNodeCondition",
+      "qualifiedName": "jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition",
+      "conceptAlias": "",
+      "shortDescription": "",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174642743670:jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition",
+      "languageReference": "l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem",
+      "superConcept": "c:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626:jetbrains.mps.lang.core.structure.BaseConcept",
+      "superInterfaces": [
+        "i:f3061a53-9226-4cc5-a443-f952ceaf5816/1212170275853:jetbrains.mps.baseLanguage.structure.IValidIdentifier",
+        "i:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1319728274784973096:jetbrains.mps.lang.core.structure.InterfacePart"
+      ],
+      "superInterfaceDetails": [
+        {
+          "name": "IValidIdentifier",
+          "reference": "i:f3061a53-9226-4cc5-a443-f952ceaf5816/1212170275853:jetbrains.mps.baseLanguage.structure.IValidIdentifier"
+        },
+        {
+          "name": "InterfacePart",
+          "reference": "i:ceab5195-25ea-4f22-9b92-103b95ca8c0c/1319728274784973096:jetbrains.mps.lang.core.structure.InterfacePart"
+        }
+      ],
+      "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/1174642743670",
+      "isAbstract": true,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "definition.expression",
+      "present": true,
+      "properties": [
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1169194664001",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition",
+        "properties": [
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          },
+          {
+            "name": "name",
+            "value": "ApplicableNodeCondition"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReportErrorStatement",
+      "qualifiedName": "jetbrains.mps.lang.typesystem.structure.ReportErrorStatement",
+      "conceptAlias": "error",
+      "shortDescription": "report typesystem error",
+      "doc": "",
+      "deprecated": "false",
+      "conceptReference": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1175517767210:jetbrains.mps.lang.typesystem.structure.ReportErrorStatement",
+      "languageReference": "l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem",
+      "superConcept": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/3937244445246642777:jetbrains.mps.lang.typesystem.structure.AbstractReportStatement",
+      "superInterfaces": [],
+      "superInterfaceDetails": [],
+      "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/1175517767210",
+      "isAbstract": false,
+      "isInterfaceConcept": false,
+      "isRootable": false,
+      "virtualFolder": "definition.statement",
+      "present": true,
+      "properties": [
+        {
+          "name": "shortDescription",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1156234966388",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1156234966388",
+          "doc": "",
+          "deprecated": "true: since 3.5: This property should not be used. Override ISmartReferent#getDescriptionText(context) to customize description text "
+        },
+        {
+          "name": "virtualPackage",
+          "type": "string",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/1193676396447",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/1193676396447",
+          "doc": "makes sense only for root nodes",
+          "deprecated": "false"
+        }
+      ],
+      "references": [],
+      "children": [
+        {
+          "name": "errorString",
+          "targetConcept": "jetbrains.mps.baseLanguage.structure.Expression",
+          "cardinality": "1",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/1175517767210/1175517851849",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/1175517851849",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "nodeToReport",
+          "targetConcept": "jetbrains.mps.baseLanguage.structure.Expression",
+          "cardinality": "1",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/3937244445246642777/3937244445246642781",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/3937244445246642781",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "helginsIntention",
+          "targetConcept": "jetbrains.mps.lang.typesystem.structure.TypesystemIntention",
+          "cardinality": "0..n",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/3937244445246642777/3937244445246643221",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/3937244445246643221",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "messageTarget",
+          "targetConcept": "jetbrains.mps.lang.typesystem.structure.MessageTarget",
+          "cardinality": "0..1",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/3937244445246642777/3937244445246643443",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/3937244445246643443",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "foreignMessageSource",
+          "targetConcept": "jetbrains.mps.baseLanguage.structure.Expression",
+          "cardinality": "0..1",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/3937244445246642777/3937244445246643666",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/3937244445246643666",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "issueType",
+          "targetConcept": "jetbrains.mps.lang.typesystem.structure.IssueTypeSpec",
+          "cardinality": "0..1",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/3937244445246642777/4151386225412414934",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/4151386225412414934",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "smodelAttribute",
+          "targetConcept": "jetbrains.mps.lang.core.structure.Attribute",
+          "cardinality": "0..n",
+          "featureId": "ceab5195-25ea-4f22-9b92-103b95ca8c0c/1133920641626/5169995583184591170",
+          "sourceNode": "r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)/5169995583184591170",
+          "doc": "",
+          "deprecated": "false"
+        },
+        {
+          "name": "nodeToReport_old",
+          "targetConcept": "jetbrains.mps.baseLanguage.structure.Expression",
+          "cardinality": "0..1",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/1227096774658/1227096802790",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/1227096802790",
+          "doc": "",
+          "deprecated": "true: The link was moved to concept \"jetbrains.mps.lang.typesystem.structure.AbstractReportStatement\""
+        },
+        {
+          "name": "helginsIntention_old",
+          "targetConcept": "jetbrains.mps.lang.typesystem.structure.TypesystemIntention",
+          "cardinality": "0..n",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/1227096774658/1227096802791",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/1227096802791",
+          "doc": "",
+          "deprecated": "true: The link was moved to concept \"jetbrains.mps.lang.typesystem.structure.AbstractReportStatement\""
+        },
+        {
+          "name": "messageTarget_old",
+          "targetConcept": "jetbrains.mps.lang.typesystem.structure.MessageTarget",
+          "cardinality": "0..1",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/1227096774658/1227096836496",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/1227096836496",
+          "doc": "",
+          "deprecated": "true: The link was moved to concept \"jetbrains.mps.lang.typesystem.structure.AbstractReportStatement\""
+        },
+        {
+          "name": "foreignMessageSource_old",
+          "targetConcept": "jetbrains.mps.baseLanguage.structure.Expression",
+          "cardinality": "0..1",
+          "featureId": "7a5dda62-9140-4668-ab76-d5ed1746f2b2/1227096774658/4008603303335354465",
+          "sourceNode": "r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)/4008603303335354465",
+          "doc": "",
+          "deprecated": "true: The link was moved to concept \"jetbrains.mps.lang.typesystem.structure.AbstractReportStatement\""
+        }
+      ],
+      "sampleNode": {
+        "concept": "jetbrains.mps.lang.typesystem.structure.ReportErrorStatement",
+        "properties": [
+          {
+            "name": "shortDescription",
+            "value": "example"
+          },
+          {
+            "name": "virtualPackage",
+            "value": "example"
+          }
+        ],
+        "references": [],
+        "children": [
+          {
+            "role": "errorString",
+            "nodes": [
+              "/* Instances of jetbrains.mps.baseLanguage.structure.Expression or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "nodeToReport",
+            "nodes": [
+              "/* Instances of jetbrains.mps.baseLanguage.structure.Expression or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "helginsIntention",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.typesystem.structure.TypesystemIntention or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "messageTarget",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.typesystem.structure.MessageTarget or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "foreignMessageSource",
+            "nodes": [
+              "/* Instances of jetbrains.mps.baseLanguage.structure.Expression or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "issueType",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.typesystem.structure.IssueTypeSpec or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "smodelAttribute",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.core.structure.Attribute or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "nodeToReport_old",
+            "nodes": [
+              "/* Instances of jetbrains.mps.baseLanguage.structure.Expression or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "helginsIntention_old",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.typesystem.structure.TypesystemIntention or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "messageTarget_old",
+            "nodes": [
+              "/* Instances of jetbrains.mps.lang.typesystem.structure.MessageTarget or its sub-concepts are expected here */"
+            ]
+          },
+          {
+            "role": "foreignMessageSource_old",
+            "nodes": [
+              "/* Instances of jetbrains.mps.baseLanguage.structure.Expression or its sub-concepts are expected here */"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

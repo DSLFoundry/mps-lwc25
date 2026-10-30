@@ -1,0 +1,1380 @@
+{
+  "ok": true,
+  "data": {
+    "name": "InvalidNativeFixtures",
+    "concept": "Form",
+    "doc": "",
+    "deprecated": "false",
+    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736788:QuestionnaireLanguage.structure.Form",
+    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753",
+    "properties": [
+      {
+        "name": "title",
+        "type": "string",
+        "doc": "",
+        "deprecated": "false",
+        "value": "InvalidNativeFixtures"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "doc": "",
+        "deprecated": "false",
+        "value": "InvalidNativeFixtures"
+      }
+    ],
+    "references": [],
+    "children": [
+      {
+        "role": "items",
+        "type": "Item",
+        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736789:QuestionnaireLanguage.structure.Item",
+        "cardinality": "0..n",
+        "doc": "",
+        "deprecated": "false",
+        "nodes": [
+          {
+            "name": "question",
+            "concept": "Question",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166106",
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Duplicate one"
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "string"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "duplicate"
+              }
+            ],
+            "references": [],
+            "children": []
+          },
+          {
+            "name": "question",
+            "concept": "Question",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166107",
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Duplicate two"
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "integer"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "duplicate"
+              }
+            ],
+            "references": [],
+            "children": []
+          },
+          {
+            "name": "question",
+            "concept": "Question",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166108",
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "String source"
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "string"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "stringSource"
+              }
+            ],
+            "references": [],
+            "children": []
+          },
+          {
+            "name": "computed question",
+            "concept": "Calculated",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166109",
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "badArithmetic"
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "boolean"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "badArithmetic"
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "binary",
+                    "concept": "Binary",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736795:QuestionnaireLanguage.structure.Binary",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166111",
+                    "properties": [
+                      {
+                        "name": "operator",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "+"
+                      }
+                    ],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "left",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "ref",
+                            "concept": "Reference",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166114",
+                            "properties": [
+                              {
+                                "name": "targetId",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "stringSource"
+                              }
+                            ],
+                            "references": [
+                              {
+                                "role": "target",
+                                "type": "Question",
+                                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                                "cardinality": "1",
+                                "doc": "",
+                                "deprecated": "false",
+                                "target": "question",
+                                "targetReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166108"
+                              }
+                            ],
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "role": "right",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "concept": "Literal",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166115",
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "2"
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "integer"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "concept": "Calculated",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166116",
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "cycleA"
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "integer"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "cycleA"
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "ref",
+                    "concept": "Reference",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166118",
+                    "properties": [
+                      {
+                        "name": "targetId",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "cycleB"
+                      }
+                    ],
+                    "references": [
+                      {
+                        "role": "target",
+                        "type": "Question",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "computed question",
+                        "targetReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166119"
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "concept": "Calculated",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166119",
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "cycleB"
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "integer"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "cycleB"
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "ref",
+                    "concept": "Reference",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166121",
+                    "properties": [
+                      {
+                        "name": "targetId",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "cycleA"
+                      }
+                    ],
+                    "references": [
+                      {
+                        "role": "target",
+                        "type": "Question",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "computed question",
+                        "targetReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166116"
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "concept": "Calculated",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166122",
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "unresolved"
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "integer"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "unresolved"
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "ref",
+                    "concept": "Reference",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166124",
+                    "properties": [
+                      {
+                        "name": "targetId",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "missing"
+                      }
+                    ],
+                    "references": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "when",
+            "concept": "Branch",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736791:QuestionnaireLanguage.structure.Branch",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166125",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "condition",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "literal",
+                    "concept": "Literal",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166127",
+                    "properties": [
+                      {
+                        "name": "value",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "42"
+                      },
+                      {
+                        "name": "literalType",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "integer"
+                      }
+                    ],
+                    "references": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "role": "items",
+                "type": "Item",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736789:QuestionnaireLanguage.structure.Item",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "question",
+                    "concept": "Question",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047166128",
+                    "properties": [
+                      {
+                        "name": "label",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "Inside invalid condition"
+                      },
+                      {
+                        "name": "valueType",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "string"
+                      },
+                      {
+                        "name": "id",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "conditional"
+                      }
+                    ],
+                    "references": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "concept": "Calculated",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047322244",
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Missing native target"
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "integer"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "unresolvedNative"
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "ref",
+                    "concept": "Reference",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047322246",
+                    "properties": [
+                      {
+                        "name": "targetId",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "absentFromForm"
+                      }
+                    ],
+                    "references": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "when",
+            "concept": "Branch",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736791:QuestionnaireLanguage.structure.Branch",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521153",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "condition",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "literal",
+                    "concept": "Literal",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521155",
+                    "properties": [
+                      {
+                        "name": "value",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "true"
+                      },
+                      {
+                        "name": "literalType",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "boolean"
+                      }
+                    ],
+                    "references": [],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "role": "items",
+                "type": "Item",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736789:QuestionnaireLanguage.structure.Item",
+                "cardinality": "0..n",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "question",
+                    "concept": "Question",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521156",
+                    "properties": [
+                      {
+                        "name": "label",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "Nested duplicate"
+                      },
+                      {
+                        "name": "valueType",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "string"
+                      },
+                      {
+                        "name": "id",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "duplicate"
+                      }
+                    ],
+                    "references": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "concept": "Calculated",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521157",
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Result type mismatch"
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "boolean"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "badResult"
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "binary",
+                    "concept": "Binary",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736795:QuestionnaireLanguage.structure.Binary",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521159",
+                    "properties": [
+                      {
+                        "name": "operator",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "+"
+                      }
+                    ],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "left",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "concept": "Literal",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521162",
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "1"
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "integer"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "role": "right",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "concept": "Literal",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521163",
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "2"
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "integer"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "concept": "Calculated",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521164",
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Logical operand mismatch"
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "boolean"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "badLogical"
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "binary",
+                    "concept": "Binary",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736795:QuestionnaireLanguage.structure.Binary",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521166",
+                    "properties": [
+                      {
+                        "name": "operator",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "\u0026\u0026"
+                      }
+                    ],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "left",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "concept": "Literal",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521169",
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "true"
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "boolean"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "role": "right",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "concept": "Literal",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521170",
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "0"
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "integer"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "concept": "Calculated",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521171",
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Unary operand mismatch"
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "boolean"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "badUnary"
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "unary",
+                    "concept": "Unary",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736796:QuestionnaireLanguage.structure.Unary",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521173",
+                    "properties": [
+                      {
+                        "name": "operator",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "!"
+                      }
+                    ],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "operand",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "concept": "Literal",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521175",
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "1"
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "integer"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "concept": "Calculated",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521176",
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Comparison operand mismatch"
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "boolean"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "badComparison"
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "binary",
+                    "concept": "Binary",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736795:QuestionnaireLanguage.structure.Binary",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521178",
+                    "properties": [
+                      {
+                        "name": "operator",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "\u003e"
+                      }
+                    ],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "left",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "concept": "Literal",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521181",
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "x"
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "string"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "role": "right",
+                        "type": "Expression",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "literal",
+                            "concept": "Literal",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736793:QuestionnaireLanguage.structure.Literal",
+                            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521182",
+                            "properties": [
+                              {
+                                "name": "value",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "1"
+                              },
+                              {
+                                "name": "literalType",
+                                "type": "string",
+                                "doc": "",
+                                "deprecated": "false",
+                                "value": "integer"
+                              }
+                            ],
+                            "references": [],
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "concept": "Calculated",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521183",
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Direct self dependency"
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "integer"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "directCycle"
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "ref",
+                    "concept": "Reference",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521185",
+                    "properties": [
+                      {
+                        "name": "targetId",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "directCycle"
+                      }
+                    ],
+                    "references": [],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "computed question",
+            "concept": "Calculated",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated",
+            "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521186",
+            "properties": [
+              {
+                "name": "label",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "Out of form dependency"
+              },
+              {
+                "name": "valueType",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "string"
+              },
+              {
+                "name": "id",
+                "type": "string",
+                "doc": "",
+                "deprecated": "false",
+                "value": "externalReference"
+              }
+            ],
+            "references": [],
+            "children": [
+              {
+                "role": "computed",
+                "type": "Expression",
+                "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736792:QuestionnaireLanguage.structure.Expression",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "ref",
+                    "concept": "Reference",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736794:QuestionnaireLanguage.structure.Reference",
+                    "reference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521188",
+                    "properties": [
+                      {
+                        "name": "targetId",
+                        "type": "string",
+                        "doc": "",
+                        "deprecated": "false",
+                        "value": "outsideQuestion"
+                      }
+                    ],
+                    "references": [
+                      {
+                        "role": "target",
+                        "type": "Question",
+                        "typeReference": "c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046736790:QuestionnaireLanguage.structure.Question",
+                        "cardinality": "1",
+                        "doc": "",
+                        "deprecated": "false",
+                        "target": "question",
+                        "targetReference": "r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521152"
+                      }
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

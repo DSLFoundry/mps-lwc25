@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-10-30T02:38:05.511844+00:00",
+  "arguments": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "startingPoint": null,
+    "includeModels": true,
+    "includeDependencies": false,
+    "includeRootNodes": true,
+    "includeNodes": true,
+    "includeStubModules": false
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-9529178198110694703.json\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

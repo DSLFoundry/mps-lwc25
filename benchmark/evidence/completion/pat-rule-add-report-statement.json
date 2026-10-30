@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-10-30T02:04:43.754990+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "ADD",
+    "kind": "CHILD",
+    "nodeReference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468786",
+    "childRole": "statement",
+    "position": -1,
+    "childJson": "{\"concept\": \"jetbrains.mps.lang.typesystem.structure.ReportErrorStatement\", \"children\": [{\"role\": \"errorString\", \"nodes\": [{\"concept\": \"jetbrains.mps.baseLanguage.structure.StringLiteral\", \"properties\": [{\"name\": \"value\", \"value\": \"Questionnaire has native diagnostics\"}]}]}, {\"role\": \"nodeToReport\", \"nodes\": [{\"concept\": \"jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference\", \"references\": [{\"role\": \"applicableNode\", \"target\": \"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468770\"}]}]}]}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"name\":\"error\",\"concept\":\"ReportErrorStatement\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1175517767210:jetbrains.mps.lang.typesystem.structure.ReportErrorStatement\",\"reference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468936\",\"parentReference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468786\",\"rootReference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468767\",\"rootName\":\"checkQuestionnaireNativeSemantics\",\"modelReference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)\",\"moduleReference\":\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":0,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"All references are already correctly resolved\"}}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

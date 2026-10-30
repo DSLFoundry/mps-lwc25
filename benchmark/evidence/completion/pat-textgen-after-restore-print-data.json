@@ -1,0 +1,235 @@
+{
+  "ok": true,
+  "data": {
+    "name": "Literal",
+    "concept": "ConceptTextGenDeclaration",
+    "doc": "",
+    "deprecated": "false",
+    "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233670071145:jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration",
+    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743712",
+    "properties": [
+      {
+        "name": "name",
+        "type": "string",
+        "doc": "",
+        "deprecated": "false",
+        "value": "Literal_TextGen"
+      }
+    ],
+    "references": [
+      {
+        "role": "conceptDeclaration",
+        "type": "ConceptDeclaration",
+        "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640:jetbrains.mps.lang.structure.structure.ConceptDeclaration",
+        "cardinality": "1",
+        "doc": "",
+        "deprecated": "false",
+        "target": "Literal",
+        "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736793"
+      }
+    ],
+    "children": [
+      {
+        "role": "textGenBlock",
+        "type": "GenerateTextDeclaration",
+        "typeReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233749247888:jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration",
+        "cardinality": "0..1",
+        "doc": "",
+        "deprecated": "false",
+        "nodes": [
+          {
+            "name": "do generate text",
+            "concept": "GenerateTextDeclaration",
+            "doc": "",
+            "deprecated": "false",
+            "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233749247888:jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration",
+            "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743713",
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "body",
+                "type": "StatementList",
+                "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136:jetbrains.mps.baseLanguage.structure.StatementList",
+                "cardinality": "1",
+                "doc": "",
+                "deprecated": "false",
+                "nodes": [
+                  {
+                    "name": "StatementList",
+                    "concept": "StatementList",
+                    "doc": "",
+                    "deprecated": "false",
+                    "conceptReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136:jetbrains.mps.baseLanguage.structure.StatementList",
+                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743715",
+                    "properties": [],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "statement",
+                        "type": "Statement",
+                        "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement",
+                        "cardinality": "0..n",
+                        "doc": "",
+                        "deprecated": "false",
+                        "nodes": [
+                          {
+                            "name": "append",
+                            "concept": "AppendOperation",
+                            "doc": "",
+                            "deprecated": "false",
+                            "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237306079178:jetbrains.mps.lang.textGen.structure.AppendOperation",
+                            "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743716",
+                            "properties": [],
+                            "references": [],
+                            "children": [
+                              {
+                                "role": "part",
+                                "type": "AbstractAppendPart",
+                                "typeReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305115734:jetbrains.mps.lang.textGen.structure.AbstractAppendPart",
+                                "cardinality": "1..n",
+                                "doc": "",
+                                "deprecated": "false",
+                                "nodes": [
+                                  {
+                                    "name": "constant",
+                                    "concept": "ConstantStringAppendPart",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305557638:jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart",
+                                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743718",
+                                    "properties": [
+                                      {
+                                        "name": "value",
+                                        "type": "string",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "value": "{\"literal\":"
+                                      }
+                                    ],
+                                    "references": [],
+                                    "children": []
+                                  },
+                                  {
+                                    "name": "${",
+                                    "concept": "NodeAppendPart",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305334312:jetbrains.mps.lang.textGen.structure.NodeAppendPart",
+                                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743719",
+                                    "properties": [],
+                                    "references": [],
+                                    "children": [
+                                      {
+                                        "role": "value",
+                                        "type": "Expression",
+                                        "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068431790191:jetbrains.mps.baseLanguage.structure.Expression",
+                                        "cardinality": "1",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "nodes": [
+                                          {
+                                            "name": "DotExpression",
+                                            "concept": "DotExpression",
+                                            "doc": "",
+                                            "deprecated": "false",
+                                            "conceptReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1197027756228:jetbrains.mps.baseLanguage.structure.DotExpression",
+                                            "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000047743467",
+                                            "properties": [],
+                                            "references": [],
+                                            "children": [
+                                              {
+                                                "role": "operand",
+                                                "type": "Expression",
+                                                "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068431790191:jetbrains.mps.baseLanguage.structure.Expression",
+                                                "cardinality": "1",
+                                                "doc": "",
+                                                "deprecated": "false",
+                                                "nodes": [
+                                                  {
+                                                    "name": "node",
+                                                    "concept": "NodeParameter",
+                                                    "doc": "",
+                                                    "deprecated": "false",
+                                                    "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1233748055915:jetbrains.mps.lang.textGen.structure.NodeParameter",
+                                                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000047743470",
+                                                    "properties": [],
+                                                    "references": [],
+                                                    "children": []
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "role": "operation",
+                                                "type": "IOperation",
+                                                "typeReference": "i:f3061a53-9226-4cc5-a443-f952ceaf5816/1197027803184:jetbrains.mps.baseLanguage.structure.IOperation",
+                                                "cardinality": "1",
+                                                "doc": "",
+                                                "deprecated": "false",
+                                                "nodes": [
+                                                  {
+                                                    "name": "value",
+                                                    "concept": "SPropertyAccess",
+                                                    "doc": "",
+                                                    "deprecated": "false",
+                                                    "conceptReference": "c:7866978e-a0f0-4cc7-81bc-4d213d9375e1/1138056022639:jetbrains.mps.lang.smodel.structure.SPropertyAccess",
+                                                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000047743471",
+                                                    "properties": [],
+                                                    "references": [
+                                                      {
+                                                        "role": "property",
+                                                        "type": "PropertyDeclaration",
+                                                        "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1071489288299:jetbrains.mps.lang.structure.structure.PropertyDeclaration",
+                                                        "cardinality": "1",
+                                                        "doc": "",
+                                                        "deprecated": "false",
+                                                        "target": "value",
+                                                        "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736805"
+                                                      }
+                                                    ],
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "constant",
+                                    "concept": "ConstantStringAppendPart",
+                                    "doc": "",
+                                    "deprecated": "false",
+                                    "conceptReference": "c:b83431fe-5c8f-40bc-8a36-65e25f4dd253/1237305557638:jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart",
+                                    "reference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743726",
+                                    "properties": [
+                                      {
+                                        "name": "value",
+                                        "type": "string",
+                                        "doc": "",
+                                        "deprecated": "false",
+                                        "value": "}"
+                                      }
+                                    ],
+                                    "references": [],
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

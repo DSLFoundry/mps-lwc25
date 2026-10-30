@@ -9,12 +9,17 @@ The `QuestionnaireLanguage` module defines `Form`, `Question`, `Calculated`,
 `Branch`, `Literal`, `Reference`, `Binary`, and `Unary` concepts with
 projectional editors. A form contains ordered questions and nested branches.
 Question value types are `boolean`, `string`, `integer`, `decimal`, `money`,
-and `date`. The runtime supports `&&`, `||`, `!`, comparisons, and arithmetic;
-unanswered values and dependent computations remain undefined.
+and `date`. The runtime supports `&&`, `||`, `!`, unary numeric negation,
+comparisons, numeric arithmetic, and string concatenation; unanswered values
+and dependent computations remain undefined.
 
-The native `QuestionnaireExample` model contains the `BenefitSurvey` form. Its
-MPS text-generation rules produce a computed unary value and a nested
-conditional as well as the typed questions. They produce:
+The native `QuestionnaireExample` model contains the `BenefitSurvey`,
+`ReferenceTargetForm`, and `InvalidNativeFixtures` forms. `BenefitSurvey`
+exercises the GUI and nested conditions. The valid `ReferenceTargetForm`
+exercises escaped string literals, string concatenation, unary numeric
+negation, and integer division with a decimal result. `InvalidNativeFixtures`
+exercises native diagnostics. MPS
+text-generation rules produce JSON for all three forms, including:
 
 ```text
 solutions\QuestionnaireExample\source_gen\QuestionnaireExample\BenefitSurvey.json
@@ -72,19 +77,35 @@ Run the fixed runtime acceptance suite with:
 node benchmark\acceptance.cjs
 ```
 
-The native `InvalidNativeFixtures` form is generated from MPS and exercises
-duplicate IDs, unresolved IDs, invalid operand/result and condition types, and
-dependency cycles in the production runtime:
+The MPS `QuestionnaireLanguage.typesystem` aspect contains a native
+`NonTypesystemRule` for `Form` nodes. Its model checker reports duplicate IDs
+across nested groups, unresolved and out-of-form references, expression
+operand/result and branch-condition type errors for each supported operator,
+and direct or indirect calculation cycles. `InvalidNativeFixtures` includes
+valid and invalid native examples for these cases; `BenefitSurvey` and
+`ReferenceTargetForm` are checked as clean forms.
+
+With the MPS project open and the PAT server running, verify the live native
+model-check diagnostics and their fixture assertions with:
+
+```powershell
+python benchmark\tools\verify-native-diagnostics.py
+```
+
+This calls PAT's `mps_mcp_check_root_node_problems` API directly. It is separate
+from the production runtime validator. The generated `InvalidNativeFixtures`
+form is also checked against the production runtime with:
 
 ```powershell
 node benchmark\tools\validate-native-fixture.cjs
+node benchmark\tools\validate-native-generated-expressions.cjs
 ```
 
-The production runtime validator reports all four required diagnostic codes.
-The native MPS checker reports missing mandatory `Reference.target` links for
-the fixture's unresolved references. It does not report duplicate-ID,
-expression-type, condition-type, or dependency-cycle diagnostics; those are
-runtime checks, not native editor-time type-system rules.
+The production runtime validator reports the duplicate, unresolved-reference,
+type, and cycle diagnostic codes. The string-literal check round-trips a value
+containing quotes, a backslash, and a newline from native TextGen output through
+the production runtime, along with string concatenation, unary negation, and
+integer division's decimal result type.
 
 For a real browser check (Microsoft Edge on Windows), serve the fresh MPS
 output in one terminal:

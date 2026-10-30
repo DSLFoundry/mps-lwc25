@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-30T01:57:31.191103+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "conceptRefs": "[\"jetbrains.mps.lang.typesystem.structure.NonTypesystemRule\", \"jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference\", \"jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition\", \"jetbrains.mps.lang.typesystem.structure.ReportErrorStatement\", \"jetbrains.mps.lang.typesystem.structure.ApplicableNode\"]"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-13941305945083805237.json\",\"details\":{\"unresolved\":[{\"ref\":\"jetbrains.mps.lang.typesystem.structure.ApplicableNode\",\"kind\":\"concept\",\"suggestions\":[{\"qualifiedName\":\"jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition\",\"conceptReference\":\"c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174642743670:jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition\"},{\"qualifiedName\":\"jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference\",\"conceptReference\":\"c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174650418652:jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference\"}]}]},\"warnings\":[\"Could not resolve conceptRef 'jetbrains.mps.lang.typesystem.structure.ApplicableNode' — see details.unresolved for suggestions\"]}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "ok": true,
+  "data": {
+    "name": "checkQuestionnaireNativeSemantics",
+    "reference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468767",
+    "concept": "NonTypesystemRule",
+    "doc": "",
+    "conceptReference": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1195214364922:jetbrains.mps.lang.typesystem.structure.NonTypesystemRule",
+    "problems": [],
+    "properties": [
+      {
+        "name": "name",
+        "type": "string",
+        "doc": "",
+        "value": "checkQuestionnaireNativeSemantics",
+        "problems": []
+      }
+    ],
+    "references": [],
+    "children": [
+      {
+        "role": "body",
+        "type": "StatementList",
+        "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136:jetbrains.mps.baseLanguage.structure.StatementList",
+        "cardinality": "1",
+        "doc": "",
+        "problems": [],
+        "nodes": [
+          {
+            "name": "StatementList",
+            "reference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468771",
+            "concept": "StatementList",
+            "doc": "",
+            "conceptReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136:jetbrains.mps.baseLanguage.structure.StatementList",
+            "problems": [],
+            "properties": [],
+            "references": [],
+            "children": [
+              {
+                "role": "statement",
+                "type": "Statement",
+                "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement",
+                "cardinality": "0..n",
+                "doc": "",
+                "problems": [],
+                "nodes": [
+                  {
+                    "name": "if",
+                    "reference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468782",
+                    "concept": "IfStatement",
+                    "doc": "",
+                    "conceptReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement",
+                    "problems": [],
+                    "properties": [],
+                    "references": [],
+                    "children": [
+                      {
+                        "role": "condition",
+                        "type": "Expression",
+                        "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068431790191:jetbrains.mps.baseLanguage.structure.Expression",
+                        "cardinality": "1",
+                        "doc": "",
+                        "problems": [],
+                        "nodes": [
+                          {
+                            "name": "QuestionnaireNativeDiagnostics.hasErrors(SNode):boolean",
+                            "reference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468788",
+                            "concept": "StaticMethodCall",
+                            "doc": "",
+                            "conceptReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700937:jetbrains.mps.baseLanguage.structure.StaticMethodCall",
+                            "problems": [],
+                            "properties": [],
+                            "references": [
+                              {
+                                "role": "classConcept",
+                                "type": "Classifier",
+                                "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1107461130800:jetbrains.mps.baseLanguage.structure.Classifier",
+                                "cardinality": "1",
+                                "doc": "",
+                                "target": "QuestionnaireNativeDiagnostics",
+                                "targetReference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047323562",
+                                "problems": []
+                              },
+                              {
+                                "role": "baseMethodDeclaration",
+                                "type": "BaseMethodDeclaration",
+                                "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123132:jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration",
+                                "cardinality": "1",
+                                "doc": "",
+                                "target": "hasErrors",
+                                "targetReference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047324722",
+                                "problems": []
+                              }
+                            ],
+                            "children": [
+                              {
+                                "role": "actualArgument",
+                                "type": "Expression",
+                                "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068431790191:jetbrains.mps.baseLanguage.structure.Expression",
+                                "cardinality": "0..n",
+                                "doc": "",
+                                "problems": [],
+                                "nodes": [
+                                  {
+                                    "name": "form",
+                                    "reference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468831",
+                                    "concept": "ApplicableNodeReference",
+                                    "doc": "",
+                                    "conceptReference": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174650418652:jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference",
+                                    "problems": [],
+                                    "properties": [],
+                                    "references": [
+                                      {
+                                        "role": "applicableNode",
+                                        "type": "ApplicableNodeCondition",
+                                        "typeReference": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174642743670:jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition",
+                                        "cardinality": "1",
+                                        "doc": "",
+                                        "target": "form",
+                                        "targetReference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468770",
+                                        "problems": []
+                                      }
+                                    ],
+                                    "children": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "role": "ifTrue",
+                        "type": "StatementList",
+                        "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136:jetbrains.mps.baseLanguage.structure.StatementList",
+                        "cardinality": "1",
+                        "doc": "",
+                        "problems": [],
+                        "nodes": [
+                          {
+                            "name": "StatementList",
+                            "reference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468786",
+                            "concept": "StatementList",
+                            "doc": "",
+                            "conceptReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136:jetbrains.mps.baseLanguage.structure.StatementList",
+                            "problems": [],
+                            "properties": [],
+                            "references": [],
+                            "children": [
+                              {
+                                "role": "statement",
+                                "type": "Statement",
+                                "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement",
+                                "cardinality": "0..n",
+                                "doc": "",
+                                "problems": [],
+                                "nodes": [
+                                  {
+                                    "name": "error",
+                                    "reference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468936",
+                                    "concept": "ReportErrorStatement",
+                                    "doc": "",
+                                    "conceptReference": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1175517767210:jetbrains.mps.lang.typesystem.structure.ReportErrorStatement",
+                                    "problems": [],
+                                    "properties": [],
+                                    "references": [],
+                                    "children": [
+                                      {
+                                        "role": "errorString",
+                                        "type": "Expression",
+                                        "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068431790191:jetbrains.mps.baseLanguage.structure.Expression",
+                                        "cardinality": "1",
+                                        "doc": "",
+                                        "problems": [],
+                                        "nodes": [
+                                          {
+                                            "name": "QuestionnaireNativeDiagnostics.diagnostics(SNode):String",
+                                            "reference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468950",
+                                            "concept": "StaticMethodCall",
+                                            "doc": "",
+                                            "conceptReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700937:jetbrains.mps.baseLanguage.structure.StaticMethodCall",
+                                            "problems": [],
+                                            "properties": [],
+                                            "references": [
+                                              {
+                                                "role": "classConcept",
+                                                "type": "Classifier",
+                                                "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1107461130800:jetbrains.mps.baseLanguage.structure.Classifier",
+                                                "cardinality": "1",
+                                                "doc": "",
+                                                "target": "QuestionnaireNativeDiagnostics",
+                                                "targetReference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047323562",
+                                                "problems": []
+                                              },
+                                              {
+                                                "role": "baseMethodDeclaration",
+                                                "type": "BaseMethodDeclaration",
+                                                "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123132:jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration",
+                                                "cardinality": "1",
+                                                "doc": "",
+                                                "target": "diagnostics",
+                                                "targetReference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047324316",
+                                                "problems": [
+                                                  {
+                                                    "severity": "error",
+                                                    "message": "Error: Dynamic reference",
+                                                    "quickFixes": [
+                                                      {
+                                                        "id": "jetbrains.mps.baseLanguage.typesystem.makeReferenceStatic_QuickFix",
+                                                        "description": "Make reference static",
+                                                        "autoApplicable": true
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "children": [
+                                              {
+                                                "role": "actualArgument",
+                                                "type": "Expression",
+                                                "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068431790191:jetbrains.mps.baseLanguage.structure.Expression",
+                                                "cardinality": "0..n",
+                                                "doc": "",
+                                                "problems": [],
+                                                "nodes": [
+                                                  {
+                                                    "name": "form",
+                                                    "reference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468970",
+                                                    "concept": "ApplicableNodeReference",
+                                                    "doc": "",
+                                                    "conceptReference": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174650418652:jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference",
+                                                    "problems": [],
+                                                    "properties": [],
+                                                    "references": [
+                                                      {
+                                                        "role": "applicableNode",
+                                                        "type": "ApplicableNodeCondition",
+                                                        "typeReference": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174642743670:jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition",
+                                                        "cardinality": "1",
+                                                        "doc": "",
+                                                        "target": "form",
+                                                        "targetReference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468770",
+                                                        "problems": []
+                                                      }
+                                                    ],
+                                                    "children": []
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "role": "nodeToReport",
+                                        "type": "Expression",
+                                        "typeReference": "c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068431790191:jetbrains.mps.baseLanguage.structure.Expression",
+                                        "cardinality": "1",
+                                        "doc": "",
+                                        "problems": [],
+                                        "nodes": [
+                                          {
+                                            "name": "form",
+                                            "reference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468940",
+                                            "concept": "ApplicableNodeReference",
+                                            "doc": "",
+                                            "conceptReference": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174650418652:jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference",
+                                            "problems": [],
+                                            "properties": [],
+                                            "references": [
+                                              {
+                                                "role": "applicableNode",
+                                                "type": "ApplicableNodeCondition",
+                                                "typeReference": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174642743670:jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition",
+                                                "cardinality": "1",
+                                                "doc": "",
+                                                "target": "form",
+                                                "targetReference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468770",
+                                                "problems": []
+                                              }
+                                            ],
+                                            "children": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "applicableNode",
+        "type": "ApplicableNodeCondition",
+        "typeReference": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174642743670:jetbrains.mps.lang.typesystem.structure.ApplicableNodeCondition",
+        "cardinality": "1",
+        "doc": "",
+        "problems": [],
+        "nodes": [
+          {
+            "name": "form",
+            "reference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047468770",
+            "concept": "ConceptReference",
+            "doc": "",
+            "conceptReference": "c:7a5dda62-9140-4668-ab76-d5ed1746f2b2/1174642788531:jetbrains.mps.lang.typesystem.structure.ConceptReference",
+            "problems": [],
+            "properties": [
+              {
+                "name": "name",
+                "type": "string",
+                "doc": "",
+                "value": "form",
+                "problems": []
+              }
+            ],
+            "references": [
+              {
+                "role": "concept",
+                "type": "AbstractConceptDeclaration",
+                "typeReference": "c:c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135:jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration",
+                "cardinality": "1",
+                "doc": "",
+                "target": "Form",
+                "targetReference": "r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788",
+                "problems": []
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

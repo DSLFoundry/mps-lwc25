@@ -1,0 +1,138 @@
+{
+  "timestamp": "2026-10-30T02:21:45.191962+00:00",
+  "count": 11,
+  "results": [
+    {
+      "id": "badSubtract",
+      "result": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"name\":\"computed question\",\"concept\":\"Calculated\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated\",\"reference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047901455\",\"parentReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootName\":\"InvalidNativeFixtures\",\"modelReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\",\"moduleReference\":\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":16,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"No references found\"}}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "badMultiply",
+      "result": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"name\":\"computed question\",\"concept\":\"Calculated\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated\",\"reference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047901462\",\"parentReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootName\":\"InvalidNativeFixtures\",\"modelReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\",\"moduleReference\":\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":17,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"No references found\"}}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "badDivide",
+      "result": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"name\":\"computed question\",\"concept\":\"Calculated\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated\",\"reference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047901469\",\"parentReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootName\":\"InvalidNativeFixtures\",\"modelReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\",\"moduleReference\":\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":18,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"No references found\"}}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "badOr",
+      "result": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"name\":\"computed question\",\"concept\":\"Calculated\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated\",\"reference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047901476\",\"parentReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootName\":\"InvalidNativeFixtures\",\"modelReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\",\"moduleReference\":\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":19,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"No references found\"}}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "badEqual",
+      "result": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"name\":\"computed question\",\"concept\":\"Calculated\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated\",\"reference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047901483\",\"parentReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootName\":\"InvalidNativeFixtures\",\"modelReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\",\"moduleReference\":\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":20,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"No references found\"}}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "badNotEqual",
+      "result": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"name\":\"computed question\",\"concept\":\"Calculated\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated\",\"reference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047901490\",\"parentReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootName\":\"InvalidNativeFixtures\",\"modelReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\",\"moduleReference\":\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":21,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"No references found\"}}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "badLess",
+      "result": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"name\":\"computed question\",\"concept\":\"Calculated\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated\",\"reference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047901497\",\"parentReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootName\":\"InvalidNativeFixtures\",\"modelReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\",\"moduleReference\":\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":22,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"No references found\"}}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "badGreaterEqual",
+      "result": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"name\":\"computed question\",\"concept\":\"Calculated\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated\",\"reference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047901504\",\"parentReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootName\":\"InvalidNativeFixtures\",\"modelReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\",\"moduleReference\":\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":23,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"No references found\"}}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "badLessEqual",
+      "result": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"name\":\"computed question\",\"concept\":\"Calculated\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated\",\"reference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047901511\",\"parentReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootName\":\"InvalidNativeFixtures\",\"modelReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\",\"moduleReference\":\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":24,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"No references found\"}}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "badUnaryMinus",
+      "result": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"name\":\"computed question\",\"concept\":\"Calculated\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated\",\"reference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047901518\",\"parentReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047014753\",\"rootName\":\"InvalidNativeFixtures\",\"modelReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\",\"moduleReference\":\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":25,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"No references found\"}}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      }
+    },
+    {
+      "id": "stringConcat",
+      "result": {
+        "content": [
+          {
+            "text": "{\"ok\":true,\"data\":{\"name\":\"computed question\",\"concept\":\"Calculated\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:83a543da-6367-4b94-9df8-b626b1b2132c/2589700000046740212:QuestionnaireLanguage.structure.Calculated\",\"reference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047901523\",\"parentReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521151\",\"rootReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)/2589700000047521151\",\"rootName\":\"ReferenceTargetForm\",\"modelReference\":\"r:30d1f7ef-ee36-4bbf-a5bc-da6b15e2da30(QuestionnaireExample)\",\"moduleReference\":\"ef6af690-2cee-43c3-a17c-b2badcbcc436(QuestionnaireExample)\",\"virtualFolder\":\"\",\"isRoot\":false,\"present\":true,\"index\":2,\"fixReferences\":{\"fixed\":0,\"repointed\":0,\"stillBroken\":0,\"message\":\"No references found\"}}}",
+            "type": "text"
+          }
+        ],
+        "isError": false
+      }
+    }
+  ]
+}

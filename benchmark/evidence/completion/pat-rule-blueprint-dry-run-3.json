@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-30T02:00:20.392556+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "modelReference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)",
+    "json": "{\"concept\": \"jetbrains.mps.lang.typesystem.structure.NonTypesystemRule\", \"properties\": [{\"name\": \"name\", \"value\": \"checkQuestionnaireNativeSemantics\"}], \"children\": [{\"role\": \"applicableNode\", \"nodes\": [{\"concept\": \"jetbrains.mps.lang.typesystem.structure.ConceptReference\", \"name\": \"form\", \"references\": [{\"role\": \"concept\", \"target\": \"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736788\"}]}]}, {\"role\": \"body\", \"nodes\": [{\"concept\": \"jetbrains.mps.baseLanguage.structure.StatementList\"}]}]}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"dryRun\":true,\"message\":\"Dry run successful for root node insertion\"}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

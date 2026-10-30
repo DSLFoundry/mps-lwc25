@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-30T02:01:49.031275+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "nodeReference": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047322247",
+    "operation": "DELETE"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"reference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047322247\",\"deleted\":true}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

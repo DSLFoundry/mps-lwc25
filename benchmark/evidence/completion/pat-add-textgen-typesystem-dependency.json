@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-30T02:18:58.605550+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "ADD",
+    "modelReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)",
+    "targetModels": "r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"added\":1,\"alreadyPresent\":0}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

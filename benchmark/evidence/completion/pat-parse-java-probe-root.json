@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-30T01:58:11.072263+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "parameters": "{\"code\": \"public class QuestionnaireNativeDiagnostics { public static boolean hasErrors(org.jetbrains.mps.openapi.model.SNode form) { return false; } }\", \"featureKind\": \"CLASS\", \"insert\": {\"mode\": \"root\", \"modelRef\": \"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)\"}, \"postProcess\": {\"importUsedLanguages\": true}}"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"inserted\":[{\"name\":\"QuestionnaireNativeDiagnostics\",\"concept\":\"ClassConcept\",\"conceptDoc\":\"\",\"conceptDeprecated\":\"false\",\"conceptReference\":\"c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468198:jetbrains.mps.baseLanguage.structure.ClassConcept\",\"reference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047322247\",\"parentReference\":\"\",\"rootReference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047322247\",\"modelReference\":\"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)\",\"moduleReference\":\"83a543da-6367-4b94-9df8-b626b1b2132c(QuestionnaireLanguage)\",\"virtualFolder\":\"\",\"isRoot\":true,\"present\":true}],\"package\":null,\"languages\":[],\"problems\":[],\"errorMsg\":null}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-10-30T02:18:49.197930+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "nodeReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743712",
+    "deep": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":\"C:\\\\Users\\\\hmon\\\\AppData\\\\Local\\\\Temp\\\\mps-node-6209341031633565063.json\"}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

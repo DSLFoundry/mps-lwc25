@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-10-30T02:19:14.114669+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25",
+    "operation": "SET",
+    "kind": "CHILD",
+    "nodeReference": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000046743719",
+    "childRole": "value",
+    "childNodeRef": "r:3a2e8b24-b1fd-4488-a8fb-eb722e24ac5d(QuestionnaireLanguage.textGen)/2589700000047743467",
+    "childJson": "{\"concept\": \"jetbrains.mps.baseLanguage.structure.StaticMethodCall\", \"references\": [{\"role\": \"classConcept\", \"target\": \"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047323562\"}, {\"role\": \"baseMethodDeclaration\", \"target\": \"r:028a00d3-4a07-43d5-b8af-6952ab7a827e(QuestionnaireLanguage.typesystem)/2589700000047521191\"}], \"children\": [{\"role\": \"actualArgument\", \"nodes\": [{\"concept\": \"jetbrains.mps.baseLanguage.structure.DotExpression\", \"children\": [{\"role\": \"operand\", \"nodes\": [{\"concept\": \"jetbrains.mps.lang.textGen.structure.NodeParameter\", \"name\": \"node\"}]}, {\"role\": \"operation\", \"nodes\": [{\"concept\": \"jetbrains.mps.lang.smodel.structure.SPropertyAccess\", \"name\": \"value\", \"references\": [{\"role\": \"property\", \"target\": \"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736805\"}]}]}]}]}, {\"role\": \"actualArgument\", \"nodes\": [{\"concept\": \"jetbrains.mps.baseLanguage.structure.DotExpression\", \"children\": [{\"role\": \"operand\", \"nodes\": [{\"concept\": \"jetbrains.mps.lang.textGen.structure.NodeParameter\", \"name\": \"node\"}]}, {\"role\": \"operation\", \"nodes\": [{\"concept\": \"jetbrains.mps.lang.smodel.structure.SPropertyAccess\", \"name\": \"literalType\", \"references\": [{\"role\": \"property\", \"target\": \"r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)/2589700000046736806\"}]}]}]}]}]}",
+    "dryRun": true
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"ok\":true,\"data\":{\"dryRun\":true,\"message\":\"Dry run successful for node replacement\"}}",
+        "type": "text"
+      }
+    ],
+    "isError": false
+  }
+}

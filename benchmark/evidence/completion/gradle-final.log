@@ -1,0 +1,134 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by net.rubygrapefruit.platform.internal.NativeLibraryLoader in an unnamed module (file:/C:/Users/hmon/.gradle/wrapper/dists/gradle-8.7-all/aan3ydargesu18aqyqjwhr3pc/gradle-8.7/lib/native-platform-0.22-milestone-25.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+
+> Task :buildAllScripts
+Buildfile: C:\Sources\mps-lwc25\build\QuestionnaireLanguage.allScripts\build.xml
+Trying to override old definition of datatype module
+
+clean:
+   [delete] Deleting directory C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage
+   [delete] Deleting directory C:\Sources\mps-lwc25\artifacts\QuestionnaireLanguage
+
+declare-mps-tasks:
+
+fetchDependencies:
+
+generate:
+     [echo] generating
+ [generate] 2026-10-30 03:24:06,026 WARNING - jetbrains.mps.classloading.ModulesWatcher - 11 modules are marked as invalid roots for class loading out of 393 modules totally in the CL graph
+ [generate] 2026-10-30 03:24:06,030 WARNING - jetbrains.mps.classloading.ModulesWatcher - com.mbeddr.mpsutil.editor.querylist.runtime: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-30 03:24:06,031 WARNING - jetbrains.mps.classloading.ModulesWatcher - com.mbeddr.mpsutil.grammarcells.runtime: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-30 03:24:06,031 WARNING - jetbrains.mps.classloading.ModulesWatcher - de.itemis.stubs.batik: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-30 03:24:06,031 WARNING - jetbrains.mps.classloading.ModulesWatcher - jetbrains.mps.ide.devkit.editor: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-30 03:24:06,031 WARNING - jetbrains.mps.classloading.ModulesWatcher - com.mbeddr.mpsutil.refactoring.rt: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-30 03:24:06,032 WARNING - jetbrains.mps.classloading.ModulesWatcher - de.itemis.mps.editor.bool.runtime: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-30 03:24:06,032 WARNING - jetbrains.mps.classloading.ModulesWatcher - jetbrains.mps.lang.editor.tooltips.runtime: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-30 03:24:06,033 WARNING - jetbrains.mps.classloading.ModulesWatcher - nl.f1re.mps.editor.swing.runtime: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-30 03:24:06,033 WARNING - jetbrains.mps.classloading.ModulesWatcher - com.mbeddr.mpsutil.targetchooser: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-30 03:24:06,033 WARNING - jetbrains.mps.classloading.ModulesWatcher - de.itemis.mps.editor.diagram.runtime: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] 2026-10-30 03:24:06,033 WARNING - jetbrains.mps.classloading.ModulesWatcher - de.itemis.stubs.xml: not tracked for classloading (no respective module facet or absent in a repository)
+
+java.compile.QuestionnaireLanguage.build:
+    [mkdir] Created dir: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\java\out\QuestionnaireLanguage.build
+     [copy] Copying 2 files to C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\java\out\QuestionnaireLanguage.build
+
+compileJava:
+
+processResources:
+
+classes:
+
+declare-mps-tasks:
+
+assemble:
+    [mkdir] Created dir: C:\Sources\mps-lwc25\artifacts\QuestionnaireLanguage
+
+BUILD SUCCESSFUL
+Total time: 41 seconds
+
+> Task :buildQuestionnaireLanguage
+Buildfile: C:\Sources\mps-lwc25\build\QuestionnaireLanguage\build.xml
+Trying to override old definition of datatype module
+
+clean:
+   [delete] Deleting directory C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage
+   [delete] Deleting directory C:\Sources\mps-lwc25\artifacts\QuestionnaireLanguage
+
+declare-mps-tasks:
+
+fetchDependencies:
+
+generate:
+     [echo] generating
+ [generate] 2026-10-30 03:25:10,571 WARNING - jetbrains.mps.classloading.ModulesWatcher - 1 modules are marked as invalid roots for class loading out of 661 modules totally in the CL graph
+ [generate] 2026-10-30 03:25:10,577 WARNING - jetbrains.mps.classloading.ModulesWatcher - jetbrains.mps.ide.devkit.editor: not tracked for classloading (no respective module facet or absent in a repository)
+ [generate] Found bootstrap chunk [C:\Sources\mps-lwc25\languages\QuestionnaireLanguage\QuestionnaireLanguage.mpl]. Generation may be impossible.
+
+fetchDependencies:
+
+java.compile.QuestionnaireLanguage:
+    [mkdir] Created dir: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\java\out\QuestionnaireLanguage
+    [javac] Compiling 34 source files to C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\java\out\QuestionnaireLanguage
+    [javac] Note: C:\Sources\mps-lwc25\languages\QuestionnaireLanguage\source_gen\QuestionnaireLanguage\typesystem\QuestionnaireNativeDiagnostics.java uses or overrides a deprecated API that is marked for removal.
+    [javac] Note: Recompile with -Xlint:removal for details.
+     [copy] Copying 14 files to C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\java\out\QuestionnaireLanguage
+     [copy] Copied 1 empty directory to 1 empty directory under C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\java\out\QuestionnaireLanguage
+
+java.compile.QuestionnaireLanguage.generator:
+    [mkdir] Created dir: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\java\out\QuestionnaireLanguage.generator
+    [javac] Compiling 2 source files to C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\java\out\QuestionnaireLanguage.generator
+     [copy] Copying 2 files to C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\java\out\QuestionnaireLanguage.generator
+
+compileJava:
+
+processResources:
+
+classes:
+
+declare-mps-tasks:
+
+assemble:
+    [mkdir] Created dir: C:\Sources\mps-lwc25\artifacts\QuestionnaireLanguage
+    [mkdir] Created dir: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage.zip
+    [mkdir] Created dir: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage.zip\QuestionnaireLanguage
+    [mkdir] Created dir: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage.zip\QuestionnaireLanguage\lib
+    [mkdir] Created dir: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage.jar
+    [mkdir] Created dir: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage.jar\META-INF
+      [jar] Building jar: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage.zip\QuestionnaireLanguage\lib\QuestionnaireLanguage.jar
+    [mkdir] Created dir: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage.zip\QuestionnaireLanguage\languages
+    [mkdir] Created dir: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage.zip\QuestionnaireLanguage\languages\QuestionnaireLanguage
+    [mkdir] Created dir: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage.jar1
+    [mkdir] Created dir: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage.jar1\META-INF
+      [jar] Building jar: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage.zip\QuestionnaireLanguage\languages\QuestionnaireLanguage\QuestionnaireLanguage.jar
+      [jar] QuestionnaireLanguage/constraints/aspectcps-descriptorclasses.mps already added, skipping
+      [jar] QuestionnaireLanguage/constraints/checkpoints already added, skipping
+      [jar] QuestionnaireLanguage/constraints/trace.info already added, skipping
+      [jar] QuestionnaireLanguage/editor/trace.info already added, skipping
+      [jar] QuestionnaireLanguage/structure/aspectcps-descriptorclasses.mps already added, skipping
+      [jar] QuestionnaireLanguage/structure/checkpoints already added, skipping
+      [jar] QuestionnaireLanguage/structure/trace.info already added, skipping
+      [jar] QuestionnaireLanguage/textGen/aspectcps-descriptorclasses.mps already added, skipping
+      [jar] QuestionnaireLanguage/textGen/checkpoints already added, skipping
+      [jar] QuestionnaireLanguage/textGen/trace.info already added, skipping
+      [jar] QuestionnaireLanguage/trace.info already added, skipping
+      [jar] QuestionnaireLanguage/typesystem/aspectcps-descriptorclasses.mps already added, skipping
+      [jar] QuestionnaireLanguage/typesystem/checkpoints already added, skipping
+      [jar] QuestionnaireLanguage/typesystem/trace.info already added, skipping
+    [mkdir] Created dir: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage-generator.jar
+    [mkdir] Created dir: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage-generator.jar\META-INF
+      [jar] Building jar: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage.zip\QuestionnaireLanguage\languages\QuestionnaireLanguage\QuestionnaireLanguage-generator.jar
+      [jar] QuestionnaireLanguage/generator/templates/trace.info already added, skipping
+      [jar] QuestionnaireLanguage/generator/trace.info already added, skipping
+[copyModels] Copying 6 files to C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\customProcessors\copyModels\languages-QuestionnaireLanguage-models
+[copyModels] Copying 1 file to C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\customProcessors\copyModels\languages-QuestionnaireLanguage-generator-templates
+      [jar] Building jar: C:\Sources\mps-lwc25\tmp\QuestionnaireLanguage\default\QuestionnaireLanguage.zip\QuestionnaireLanguage\languages\QuestionnaireLanguage\QuestionnaireLanguage-src.jar
+      [zip] Building zip: C:\Sources\mps-lwc25\artifacts\QuestionnaireLanguage\QuestionnaireLanguage.zip
+
+BUILD SUCCESSFUL
+Total time: 1 minute 23 seconds
+
+BUILD SUCCESSFUL in 2m 5s
+2 actionable tasks: 2 executed

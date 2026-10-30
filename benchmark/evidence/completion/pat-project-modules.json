@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-10-30T01:58:40.751344+00:00",
+  "args": {
+    "projectPath": "C:\\Sources\\mps-lwc25"
+  },
+  "result": {
+    "content": [
+      {
+        "text": "{\"modules\":[]}",
+        "type": "text"
+      }
+    ],
+    "isError": false,
+    "structuredContent": {
+      "modules": []
+    }
+  }
+}
