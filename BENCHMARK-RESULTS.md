@@ -266,3 +266,21 @@ MPS messages are category-specific but navigation is coarse. The helper also
 retains the seven deprecated API warnings noted above. No broader QLS/SAT
 scope is claimed. Provider/tool call counts for this follow-up were not
 automatically exposed and are not inferred.
+
+### Coordinator verification and separate follow-up telemetry
+
+After the completion freeze at `6a2a2a0`, the coordinator independently reran
+`node benchmark\native-checks.cjs` and the unchanged runtime suite. The native
+assertions passed all six diagnostic categories, clean-valid-model checking,
+isolated computed-result/complex-condition checking, and direct/indirect cycle
+checks; the runtime suite passed **20/20**. Original evidence was preserved.
+
+Exact agent-ID telemetry filtered to this follow-up records **167 model
+requests, 193 tool calls, 1 transport-level failure, 18,787,627 input tokens,
+106,016 output tokens, and 27.6085 AIU**. The complete follow-up agent-event
+span, including reporting, is **34.560 minutes**. See
+`benchmark\evidence\completion\harness-telemetry.json`.
+These counters are independent of, and must not be added into or substituted
+for, the original timed-run scores. Cache counters retain ledger semantics;
+transport failures are not native validation failures; AIU is not a monetary
+price. Coordinator verification and publishing are excluded from these counters.
