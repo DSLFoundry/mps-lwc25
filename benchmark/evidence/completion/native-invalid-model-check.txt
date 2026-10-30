@@ -1,0 +1,11 @@
+error	Error: A conditional question reference must target a boolean question	<unnamed>	QuestionnaireLanguage.structure.Conditional	r:d38310d7-e2d7-445d-9e37-03c515a7c638(Sandbox.QLInvalid)/7318089407678485379
+error	Error: QL-DIAG-COMPUTED: computed results must match their declared question type	<unnamed>	QuestionnaireLanguage.structure.Questionnaire	r:d38310d7-e2d7-445d-9e37-03c515a7c638(Sandbox.QLInvalid)/7318089407678485373
+error	Error: QL-DIAG-DUPLICATE: question identifiers must be unique	<unnamed>	QuestionnaireLanguage.structure.Questionnaire	r:d38310d7-e2d7-445d-9e37-03c515a7c638(Sandbox.QLInvalid)/7318089407678485373
+error	Error: QL-DIAG-UNRESOLVED: references must target questions in this questionnaire	<unnamed>	QuestionnaireLanguage.structure.Questionnaire	r:d38310d7-e2d7-445d-9e37-03c515a7c638(Sandbox.QLInvalid)/7318089407678485373
+error	Error: QL-DIAG-OPERAND: expression operands must have compatible types	<unnamed>	QuestionnaireLanguage.structure.Questionnaire	r:d38310d7-e2d7-445d-9e37-03c515a7c638(Sandbox.QLInvalid)/7318089407678485373
+error	Error: QL-DIAG-CONDITION: conditional expressions must be boolean	<unnamed>	QuestionnaireLanguage.structure.Questionnaire	r:d38310d7-e2d7-445d-9e37-03c515a7c638(Sandbox.QLInvalid)/7318089407678485373
+error	Error: QL-DIAG-CYCLE: computed question dependencies must be acyclic	<unnamed>	QuestionnaireLanguage.structure.Questionnaire	r:d38310d7-e2d7-445d-9e37-03c515a7c638(Sandbox.QLInvalid)/7318089407678485373
+error	Error: �&&� cannot be applied to types �boolean� and �number[5]{0}�	<unnamed>	org.iets3.core.expr.base.structure.LogicalAndExpression	r:d38310d7-e2d7-445d-9e37-03c515a7c638(Sandbox.QLInvalid)/8969729801260858411
+error	The reference  Question (question) is out of search scope	<unnamed>	QuestionnaireLanguage.structure.QuestionReference	r:d38310d7-e2d7-445d-9e37-03c515a7c638(Sandbox.QLInvalid)/8969729801260858417
+error	Error: �+� cannot be applied to types �boolean� and �number[1]{0}�	<unnamed>	org.iets3.core.expr.base.structure.PlusExpression	r:d38310d7-e2d7-445d-9e37-03c515a7c638(Sandbox.QLInvalid)/7318089407678485375
+# 10 errors, 0 warnings, 0 infos

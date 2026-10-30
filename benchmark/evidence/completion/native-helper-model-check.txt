@@ -1,0 +1,41 @@
+warning	Warning: getQualifiedName():String is deprecated (
+)
+	<unnamed>	jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801260037867
+warning	Warning: getQualifiedName():String is deprecated (
+)
+	<unnamed>	jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801260037842
+warning	Warning: getQualifiedName():String is deprecated (
+)
+	<unnamed>	jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801260037825
+warning	Warning: getQualifiedName():String is deprecated (
+)
+	<unnamed>	jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801260037775
+warning	Warning: getQualifiedName():String is deprecated (
+)
+	<unnamed>	jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801260037800
+warning	Warning: getQualifiedName():String is deprecated (
+)
+	<unnamed>	jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801260037750
+warning	Warning: getQualifiedName():String is deprecated (
+)
+	<unnamed>	jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801260037733
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979249
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979420
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979912
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979529
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979401
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979526
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979768
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979254
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979917
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979240
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979335
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979746
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979220
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979278
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979776
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979551
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979628
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801260034934
+info	Info: It's recommended to use string type	<unnamed>	jetbrains.mps.baseLanguage.structure.ClassifierType	r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)/8969729801259979413
+# 0 errors, 7 warnings, 19 infos

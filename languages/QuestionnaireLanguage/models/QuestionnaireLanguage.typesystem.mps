@@ -6,7 +6,10 @@
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
-    <import index="zg3i" ref="r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)" implicit="true" />
+    <import index="t0ln" ref="r:cee5efea-9d7f-4e31-8759-341651497586(QuestionnaireLanguage.checks)" />
+    <import index="zg3i" ref="r:e8876d31-137a-458a-aef5-06f967861a7c(QuestionnaireLanguage.structure)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -17,12 +20,19 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -167,6 +177,147 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="7LUSrG7mPO7">
+    <property role="TrG5h" value="check_QuestionnaireSemantics" />
+    <node concept="1YaCAy" id="7LUSrG7mPO8" role="1YuTPh">
+      <property role="TrG5h" value="questionnaire" />
+      <ref role="1YaFvo" to="zg3i:6mf4SGrdOod" resolve="Questionnaire" />
+    </node>
+    <node concept="3clFbS" id="7LUSrG7mPO9" role="18ibNy">
+      <node concept="3clFbJ" id="7LUSrG7mPS5" role="3cqZAp">
+        <node concept="2YIFZM" id="7LUSrG7mPSe" role="3clFbw">
+          <ref role="1Pybhc" to="t0ln:7LUSrG7lx6_" resolve="QLNativeChecks" />
+          <ref role="37wK5l" to="t0ln:7LUSrG7lxfu" resolve="hasIssue" />
+          <node concept="1YBJjd" id="7LUSrG7mPS$" role="37wK5m">
+            <ref role="1YBMHb" node="7LUSrG7mPO8" resolve="questionnaire" />
+          </node>
+          <node concept="Xl_RD" id="7LUSrG7mPSg" role="37wK5m">
+            <property role="Xl_RC" value="duplicate" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="7LUSrG7mPSa" role="3clFbx">
+          <node concept="2MkqsV" id="7LUSrG7mPS_" role="3cqZAp">
+            <node concept="Xl_RD" id="7LUSrG7mPSA" role="2MkJ7o">
+              <property role="Xl_RC" value="QL-DIAG-DUPLICATE: question identifiers must be unique" />
+            </node>
+            <node concept="1YBJjd" id="7LUSrG7mPSB" role="1urrMF">
+              <ref role="1YBMHb" node="7LUSrG7mPO8" resolve="questionnaire" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="7LUSrG7mPSD" role="3cqZAp">
+        <node concept="2YIFZM" id="7LUSrG7mPSM" role="3clFbw">
+          <ref role="1Pybhc" to="t0ln:7LUSrG7lx6_" resolve="QLNativeChecks" />
+          <ref role="37wK5l" to="t0ln:7LUSrG7lxfu" resolve="hasIssue" />
+          <node concept="1YBJjd" id="7LUSrG7mPT8" role="37wK5m">
+            <ref role="1YBMHb" node="7LUSrG7mPO8" resolve="questionnaire" />
+          </node>
+          <node concept="Xl_RD" id="7LUSrG7mPSO" role="37wK5m">
+            <property role="Xl_RC" value="unresolved" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="7LUSrG7mPSI" role="3clFbx">
+          <node concept="2MkqsV" id="7LUSrG7mPT9" role="3cqZAp">
+            <node concept="Xl_RD" id="7LUSrG7mPTa" role="2MkJ7o">
+              <property role="Xl_RC" value="QL-DIAG-UNRESOLVED: references must target questions in this questionnaire" />
+            </node>
+            <node concept="1YBJjd" id="7LUSrG7mPTb" role="1urrMF">
+              <ref role="1YBMHb" node="7LUSrG7mPO8" resolve="questionnaire" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="7LUSrG7mPTd" role="3cqZAp">
+        <node concept="2YIFZM" id="7LUSrG7mPTm" role="3clFbw">
+          <ref role="1Pybhc" to="t0ln:7LUSrG7lx6_" resolve="QLNativeChecks" />
+          <ref role="37wK5l" to="t0ln:7LUSrG7lxfu" resolve="hasIssue" />
+          <node concept="1YBJjd" id="7LUSrG7mPTG" role="37wK5m">
+            <ref role="1YBMHb" node="7LUSrG7mPO8" resolve="questionnaire" />
+          </node>
+          <node concept="Xl_RD" id="7LUSrG7mPTo" role="37wK5m">
+            <property role="Xl_RC" value="condition" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="7LUSrG7mPTi" role="3clFbx">
+          <node concept="2MkqsV" id="7LUSrG7mPTH" role="3cqZAp">
+            <node concept="Xl_RD" id="7LUSrG7mPTI" role="2MkJ7o">
+              <property role="Xl_RC" value="QL-DIAG-CONDITION: conditional expressions must be boolean" />
+            </node>
+            <node concept="1YBJjd" id="7LUSrG7mPTJ" role="1urrMF">
+              <ref role="1YBMHb" node="7LUSrG7mPO8" resolve="questionnaire" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="7LUSrG7mPTL" role="3cqZAp">
+        <node concept="2YIFZM" id="7LUSrG7mPTU" role="3clFbw">
+          <ref role="1Pybhc" to="t0ln:7LUSrG7lx6_" resolve="QLNativeChecks" />
+          <ref role="37wK5l" to="t0ln:7LUSrG7lxfu" resolve="hasIssue" />
+          <node concept="1YBJjd" id="7LUSrG7mPUg" role="37wK5m">
+            <ref role="1YBMHb" node="7LUSrG7mPO8" resolve="questionnaire" />
+          </node>
+          <node concept="Xl_RD" id="7LUSrG7mPTW" role="37wK5m">
+            <property role="Xl_RC" value="operand" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="7LUSrG7mPTQ" role="3clFbx">
+          <node concept="2MkqsV" id="7LUSrG7mPUh" role="3cqZAp">
+            <node concept="Xl_RD" id="7LUSrG7mPUi" role="2MkJ7o">
+              <property role="Xl_RC" value="QL-DIAG-OPERAND: expression operands must have compatible types" />
+            </node>
+            <node concept="1YBJjd" id="7LUSrG7mPUj" role="1urrMF">
+              <ref role="1YBMHb" node="7LUSrG7mPO8" resolve="questionnaire" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="7LUSrG7mPUl" role="3cqZAp">
+        <node concept="2YIFZM" id="7LUSrG7mPUu" role="3clFbw">
+          <ref role="1Pybhc" to="t0ln:7LUSrG7lx6_" resolve="QLNativeChecks" />
+          <ref role="37wK5l" to="t0ln:7LUSrG7lxfu" resolve="hasIssue" />
+          <node concept="1YBJjd" id="7LUSrG7mPUO" role="37wK5m">
+            <ref role="1YBMHb" node="7LUSrG7mPO8" resolve="questionnaire" />
+          </node>
+          <node concept="Xl_RD" id="7LUSrG7mPUw" role="37wK5m">
+            <property role="Xl_RC" value="computed" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="7LUSrG7mPUq" role="3clFbx">
+          <node concept="2MkqsV" id="7LUSrG7mPUP" role="3cqZAp">
+            <node concept="Xl_RD" id="7LUSrG7mPUQ" role="2MkJ7o">
+              <property role="Xl_RC" value="QL-DIAG-COMPUTED: computed results must match their declared question type" />
+            </node>
+            <node concept="1YBJjd" id="7LUSrG7mPUR" role="1urrMF">
+              <ref role="1YBMHb" node="7LUSrG7mPO8" resolve="questionnaire" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="7LUSrG7mPUT" role="3cqZAp">
+        <node concept="2YIFZM" id="7LUSrG7mPV2" role="3clFbw">
+          <ref role="1Pybhc" to="t0ln:7LUSrG7lx6_" resolve="QLNativeChecks" />
+          <ref role="37wK5l" to="t0ln:7LUSrG7lxfu" resolve="hasIssue" />
+          <node concept="1YBJjd" id="7LUSrG7mPVo" role="37wK5m">
+            <ref role="1YBMHb" node="7LUSrG7mPO8" resolve="questionnaire" />
+          </node>
+          <node concept="Xl_RD" id="7LUSrG7mPV4" role="37wK5m">
+            <property role="Xl_RC" value="cycle" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="7LUSrG7mPUY" role="3clFbx">
+          <node concept="2MkqsV" id="7LUSrG7mPVp" role="3cqZAp">
+            <node concept="Xl_RD" id="7LUSrG7mPVq" role="2MkJ7o">
+              <property role="Xl_RC" value="QL-DIAG-CYCLE: computed question dependencies must be acyclic" />
+            </node>
+            <node concept="1YBJjd" id="7LUSrG7mPVr" role="1urrMF">
+              <ref role="1YBMHb" node="7LUSrG7mPO8" resolve="questionnaire" />
             </node>
           </node>
         </node>

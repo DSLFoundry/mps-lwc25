@@ -1,0 +1,1 @@
+{"generated":"C:\\Sources\\mps-lwc25-ql-mops\\benchmark\\generated-form.json","provider":"MPS native generator output","name":"Household questionnaire","itemCount":8}

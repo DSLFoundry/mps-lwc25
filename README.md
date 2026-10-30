@@ -77,19 +77,35 @@ the production UI and passed to the production runtime. During native-
 generation verification, probes changed a native label and a native expression
 literal, regenerated, and confirmed those changes in the generated JSON and
 runtime computed value; the authored sample was then restored.
-`QuestionnaireLanguage.typesystem` includes an editor-time MPS rule that
-checks a direct `QuestionReference` used as a conditional condition and
-requires its target question to be boolean. IETS3 checks the types of other
-expression forms. `check-native.groovy` additionally checks the native QL
-models for duplicate identifiers, unresolved references, expression types,
-and computed-dependency cycles; those extended checks run in mops Code Mode.
-`Sandbox.QLInvalid` intentionally contains a reference to a string question
-in a condition and ill-typed arithmetic. The native MPS model checker reports
-both the conditional rule violation and the IETS3 arithmetic error; the Code
-Mode checker reports five findings, including the duplicate identifier,
-non-boolean condition, invalid computed expression, and dependency cycle.
-To see the native MPS checker's expected failures directly, run this command
-separately (exit code 1 is expected for this committed invalid fixture):
+`QuestionnaireLanguage.typesystem` includes native editor-time MPS rules for
+conditional and questionnaire-wide semantics. The form-level rule invokes the
+BaseLanguage helper in `QuestionnaireLanguage.checks` and checks nested
+question identifiers, unresolved or out-of-form references, expression
+operand types, computed-result compatibility, all boolean conditional
+expressions, and direct or indirect computed-dependency cycles. IETS3 also
+provides its native expression typing rules.
+
+`Sandbox.QLBasic` includes a valid nested `LogicalAndExpression` condition and
+must remain clean. `Sandbox.QLInvalid` intentionally covers duplicate IDs
+across nested conditionals, an out-of-form reference, a non-boolean nested
+condition, incompatible operands, computed-result mismatch, and direct and
+indirect cycles. Verify all native diagnostic categories and the clean fixture
+with the machine-checkable assertions:
+
+```powershell
+node benchmark\native-checks.cjs
+```
+
+The script runs the native MPS model checker; it does not replace it with a
+Code Mode or JavaScript validator. It writes the command outputs and assertion
+summary under `benchmark\evidence\completion`. It also checks isolated
+`Sandbox.QLNativeBooleanCondition`, `Sandbox.QLNativeComputedMismatch`,
+`Sandbox.QLNativeDirectCycle`, and `Sandbox.QLNativeIndirectCycle` models so
+recursive condition typing, declared result compatibility, and both cycle
+forms are independently asserted. These diagnostic-only models are marked
+non-generatable to avoid producing duplicate Java class names. To see the
+invalid model's expected MPS errors directly, run this command separately
+(exit code 1 is expected):
 
 ```powershell
 .\build\mopsw.cmd check model Sandbox.QLInvalid --format jsonl --limit 0

@@ -1,0 +1,40 @@
+Untimed provider-completion follow-up
+Repository: C:\Sources\mps-lwc25-ql-mops
+Branch: benchmark/ql-mops
+Coordinator revision at follow-up start: e8b4929
+No push, branch switch, amend, delegation, or edits to shared benchmark protocol.
+
+2026-10-30T01:51:54.0035475Z  Follow-up start recorded in prior continuation context.
+2026-10-30T02:11:34.6979128Z  Current continuation began; UTC recorded by Get-Date -AsUTC.
+2026-10-30T02:14:33.828Z     Native runtime verifier reported computed value 5.
+2026-10-30T02:18:35.533Z     Native MPS fixture assertions completed; all six categories and both cycle forms verified.
+2026-10-30T02:17:42.503Z     A later native runtime verifier reported computed value 5; the fixed 20-case suite then passed 20/20.
+2026-10-30T02:21:23.3002989Z Isolated Gradle build and preceding validation had completed successfully; current UTC recorded.
+2026-10-30T02:23:37.045Z     Final native runtime verifier reported computed value 5; the subsequent fixed suite passed 20/20.
+2026-10-30T02:24:14.8237261Z Final native checks, generated output, acceptance output, model counts, JavaScript syntax, and whitespace checks were captured.
+
+Provider operations and tool calls are not automatically exposed as a complete
+count for this continuation; no inferred count is reported. The original
+benchmark operation accounting and harness telemetry remain frozen in the
+preceding results sections.
+
+Validation commands:
+- .\build\mopsw.cmd make module QuestionnaireLanguage
+- .\build\mopsw.cmd make module QuestionnaireLanguage.generator
+- .\build\mopsw.cmd make module Sandbox
+- node benchmark\native-checks.cjs
+- .\build\mopsw.cmd code run benchmark\verify-native-generation.groovy
+- .\build\mopsw.cmd code run benchmark\generate.groovy
+- node benchmark\verify-native-runtime.cjs
+- node benchmark\acceptance.cjs
+- .\gradlew.bat --console=plain buildQuestionnaireLanguage -x resolveMps -x resolveMpsArtifacts --project-cache-dir build\completion-gradle-cache
+
+The helper model check returns 0 errors, 7 deprecated-API warnings, and 19
+informational String-type recommendations. The nullability warning found in
+the initial helper was corrected; the current model check reports no possible
+null dereference. The helper is compiled by the successful Gradle build.
+
+The fixed runtime suite and native-generation outputs are stored separately
+under this completion directory. The frozen original benchmark artifacts
+benchmark\evidence\acceptance.json, benchmark\evidence\native-runtime.json,
+and benchmark\generated-form.json were restored unchanged after reruns.

@@ -1,0 +1,51 @@
+{
+  "checkedAtUtc": "2026-10-30T02:23:35.065Z",
+  "commands": [
+    ".\\build\\mopsw.cmd check model Sandbox.QLBasic --limit 0",
+    ".\\build\\mopsw.cmd check model Sandbox.QLInvalid --limit 0",
+    ".\\build\\mopsw.cmd check model Sandbox.QLNativeDirectCycle --limit 0",
+    ".\\build\\mopsw.cmd check model Sandbox.QLNativeIndirectCycle --limit 0",
+    ".\\build\\mopsw.cmd check model Sandbox.QLNativeComputedMismatch --limit 0",
+    ".\\build\\mopsw.cmd check model Sandbox.QLNativeBooleanCondition --limit 0"
+  ],
+  "valid": {
+    "model": "Sandbox.QLBasic",
+    "exitCode": 0,
+    "clean": true
+  },
+  "invalid": {
+    "model": "Sandbox.QLInvalid",
+    "exitCode": 1,
+    "categories": [
+      "DUPLICATE",
+      "UNRESOLVED",
+      "CONDITION",
+      "OPERAND",
+      "COMPUTED",
+      "CYCLE"
+    ],
+    "cycleDiagnostics": 1,
+    "nestedBooleanExpressionChecked": true
+  },
+  "directCycle": {
+    "model": "Sandbox.QLNativeDirectCycle",
+    "exitCode": 1,
+    "reported": true
+  },
+  "indirectCycle": {
+    "model": "Sandbox.QLNativeIndirectCycle",
+    "exitCode": 1,
+    "reported": true
+  },
+  "computedMismatch": {
+    "model": "Sandbox.QLNativeComputedMismatch",
+    "exitCode": 1,
+    "reported": true
+  },
+  "complexCondition": {
+    "model": "Sandbox.QLNativeBooleanCondition",
+    "exitCode": 1,
+    "reported": true
+  },
+  "totalCycleDiagnostics": 3
+}

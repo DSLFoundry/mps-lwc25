@@ -1,0 +1,11 @@
+The first completion attempt placed QLNativeChecks in the behavior aspect
+model. That made mops make and the isolated Gradle build fail because the
+generated Language.java referenced a missing
+QuestionnaireLanguage.behavior.BehaviorAspectDescriptor.
+
+The class was moved using mops to the language-local
+QuestionnaireLanguage.checks model, and the behavior aspect was restored to
+its empty state. The QuestionnaireLanguage module then made successfully;
+the isolated Gradle language build later succeeded and compiled the helper.
+The failed attempt is retained here rather than represented as a successful
+build.

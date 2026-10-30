@@ -8,6 +8,7 @@
   <imports />
   <registry>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="5115872837156724025" name="org.iets3.core.expr.base.structure.LogicalAndExpression" flags="ng" index="30deo4" />
       <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
@@ -15,6 +16,7 @@
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
@@ -88,6 +90,17 @@
       <property role="1rmZpX" value="startDate" />
       <property role="1rmZpW" value="Start date" />
       <property role="1rmZpV" value="date" />
+    </node>
+    <node concept="1rmZpT" id="7LUSrG7oRK$" role="1rmZpO">
+      <node concept="30deo4" id="7LUSrG7oRK_" role="1rmZpS">
+        <node concept="2vmpnb" id="7LUSrG7oRKB" role="30dEs_" />
+        <node concept="2vmpnb" id="7LUSrG7oRR4" role="30dEsF" />
+      </node>
+      <node concept="1rmZpY" id="7LUSrG7oRKC" role="1rmZpR">
+        <property role="1rmZpX" value="nestedValid" />
+        <property role="1rmZpW" value="Nested valid" />
+        <property role="1rmZpV" value="string" />
+      </node>
     </node>
   </node>
 </model>

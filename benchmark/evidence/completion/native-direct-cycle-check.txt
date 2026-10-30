@@ -1,0 +1,2 @@
+error	Error: QL-DIAG-CYCLE: computed question dependencies must be acyclic	<unnamed>	QuestionnaireLanguage.structure.Questionnaire	r:3306a8f4-4f0f-42bd-a9bd-336923466b60(Sandbox.QLNativeDirectCycle)/8969729801260859029
+# 1 error, 0 warnings, 0 infos

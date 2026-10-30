@@ -1,0 +1,2 @@
+error	Error: QL-DIAG-COMPUTED: computed results must match their declared question type	<unnamed>	QuestionnaireLanguage.structure.Questionnaire	r:13d6fcc3-c902-428e-84fb-1f4b2878aeb4(Sandbox.QLNativeComputedMismatch)/8969729801261164597
+# 1 error, 0 warnings, 0 infos

@@ -1,0 +1,4 @@
+error	Error: �&&� cannot be applied to types �boolean� and �number[9]{0}�	<unnamed>	org.iets3.core.expr.base.structure.LogicalAndExpression	r:0147a6a6-9193-49e5-9738-436f22f41f70(Sandbox.QLNativeBooleanCondition)/8969729801261164602
+error	Error: QL-DIAG-CONDITION: conditional expressions must be boolean	<unnamed>	QuestionnaireLanguage.structure.Questionnaire	r:0147a6a6-9193-49e5-9738-436f22f41f70(Sandbox.QLNativeBooleanCondition)/8969729801261164600
+error	Error: QL-DIAG-OPERAND: expression operands must have compatible types	<unnamed>	QuestionnaireLanguage.structure.Questionnaire	r:0147a6a6-9193-49e5-9738-436f22f41f70(Sandbox.QLNativeBooleanCondition)/8969729801261164600
+# 3 errors, 0 warnings, 0 infos

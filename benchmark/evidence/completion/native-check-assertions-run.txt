@@ -1,0 +1,1 @@
+Native MPS checks passed: valid model clean; all 6 categories reported; direct and indirect cycle fixtures diagnosed.
