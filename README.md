@@ -10,8 +10,9 @@ assistance and was also migrated to MPS 2026.1 with AI assistance.
 An AI-assisted, from-scaffold comparison of **mops versus PAT** on MPS 2026.1.1
 is documented in [the benchmark comparison](doc/QL-Benchmark-Comparison.md),
 with links to the common scaffold, both implementation branches, and their
-measured results. Both pass the shared runtime suite; neither completes all
-required native semantic checks.
+measured results. Both passed the timed runtime suite but initially lacked
+native semantic checks; a separately documented untimed follow-up completed
+those checks on both branches without changing the original benchmark scores.
 
 The original JetBrains MPS QL implementation is in the repository https://github.com/DSLFoundry/mps-lwc14, which in turn is based on https://github.com/DSLFoundry/mps-lwc13.
 

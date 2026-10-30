@@ -2,6 +2,11 @@
 
 ## Result
 
+**Update, 30 October 2026:** both branches now include separately authorized,
+untimed completion of the missing native semantic checks. See the
+[completion addendum](#untimed-completion-addendum--30-october-2026).
+The original timed-run results below remain unchanged.
+
 **Both implementations pass the fixed 20-case runtime suite and demonstrate
 native MPS generation, a working browser GUI, and downloadable JSON answers.
 Neither completes the required native semantic diagnostics.**
@@ -19,7 +24,9 @@ Both began from **`ebb9a686670577120e0a228a79a3afb33cbc5de2`**.
 The frozen implementation/report revisions before coordinator measurement
 supplements are mops **`d3cbd8c0c5bf7847d36e199d7688f630c34f37a4`**
 and PAT **`d8817058f10ed935c50ad8da926363165c45d7fa`**.
-Later commits add measurements and timing corrections, not implementation repairs.
+The initial coordinator supplements add measurements and timing corrections,
+not implementation repairs. The separately identified completion revisions
+in the addendum below are later implementation work.
 
 ## Comparable measurements
 
@@ -122,3 +129,65 @@ compactness and transport-level reliability. Runtime behavior tied on the
 fixed suite. Full native semantic completeness was achieved by neither, so
 there is no justified overall winner or claim of statistically established
 tool superiority.
+
+## Untimed completion addendum — 30 October 2026
+
+At the user's request, each implementation was completed on its existing branch
+using **its own original provider**. No combined implementation was created.
+The same retained agents resumed their own work in parallel, without a new time
+cap. This is a completion follow-up, **not another controlled benchmark run**;
+none of its work changes the original timed G2 scores, timings, or conclusions.
+
+| Follow-up | mops | PAT |
+|---|---|---|
+| Starting revision | `e8b4929` | `d099b51` |
+| Implementation revision | `5fe6e56d8deb5c379f9201b21d721526cb162771` | `baed29bd573ce6f0f35dd4ac7942eadce25c4cae` |
+| Native diagnostic outcome | All six categories; clean valid fixture; isolated computed/complex-condition and direct/indirect-cycle assertions | 23 assertions, including two clean valid forms and operator-by-operator invalid fixtures |
+| Fixed runtime suite | 20/20 | 20/20 |
+| Complete follow-up agent-event span | 34.560 min | 53.713 min |
+| Model requests | 167 | 266 |
+| Harness tool calls | 193 | 297 |
+| Transport-level tool failures | 1 | 3 |
+| Input tokens (ledger counter) | 18,787,627 | 31,208,335 |
+| Output tokens | 106,016 | 219,945 |
+| AIU | 27.6085 | 48.0274 |
+
+Both branches now implement native MPS `NonTypesystemRule` checking for nested
+duplicate identifiers, unresolved and out-of-form references, invalid expression
+operands, incompatible declared computed results, non-boolean conditions, and
+direct/indirect computation cycles. These diagnostics are produced by the native
+MPS checker, not merely by JavaScript or provider-side validation scripts.
+The coordinator independently reran each branch's native assertion runner and
+the unchanged 20-case runtime suite; all passed.
+
+mops preserves its KernelF-based expression architecture and native Java-backed
+JSON generation. The completion helper checks recursive expression types;
+isolated native fixtures demonstrate complex-condition checking, computed type
+mismatch, and each cycle form. Language make, isolated Gradle build, and native
+generation/runtime verification passed. Summary diagnostics attach to the
+questionnaire root rather than every offending descendant; its native checker
+helper retains seven deprecated-API warnings.
+
+PAT preserves its custom expression concepts and TextGen architecture. Native
+fixtures cover every required operator, nested duplicates, both reference
+failure forms, and both cycle forms. Completion also corrected string-literal
+JSON escaping and aligned native/runtime support for concatenation, numeric
+negation, and division typing. The coordinator independently verified generated
+expression round-trips. The final Gradle build, fresh native output, and actual
+Edge GUI/download checks passed in retained completion evidence.
+
+Each branch's `BENCHMARK-RESULTS.md` has a dated addendum with real timestamps,
+reproduction commands, native diagnostics, limitations, and separate
+`benchmark/evidence/completion` artifacts. Original timed reports and evidence
+remain intact. Both now satisfy the previously missing native-semantic gate for
+the agreed base-QL scope; optional QLS and SAT/determinism remain excluded.
+This statement applies to the completion revisions, not the frozen experiment.
+
+The follow-up counters above are coordinator-captured ledger values filtered by
+exact agent ID **and completion-phase UTC boundary**. They exclude original-run
+usage and coordinator verification/publication. They must not be substituted
+into the original scores. AIU/token/failure caveats remain the same as above.
+Parallel execution, retained context, different starting gaps and additional
+PAT expression fixes mean these follow-up times/costs do not establish another
+tool ranking. They document the additional observed work needed to close the
+remaining gaps.
