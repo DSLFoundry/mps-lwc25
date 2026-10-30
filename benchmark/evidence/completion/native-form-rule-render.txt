@@ -1,0 +1,31 @@
+checking rule check_QuestionnaireSemantics {
+  applicable for concept = Questionnaire as questionnaire
+  overrides <none>
+  do not apply on the fly false
+
+  do {
+    if (QLNativeChecks.hasIssue(questionnaire, "duplicate")) {
+  error "QL-DIAG-DUPLICATE: question identifiers must be unique" -> questionnaire;
+}
+if (QLNativeChecks.hasIssue(questionnaire, "unresolved")) {
+  error "QL-DIAG-UNRESOLVED: references must target questions in this questionnaire" -> questionnaire;
+}
+if (QLNativeChecks.hasIssue(questionnaire, "condition")) {
+  error "QL-DIAG-CONDITION: conditional expressions must be boolean" -> questionnaire;
+}
+if (QLNativeChecks.hasIssue(questionnaire, "operand")) {
+  error "QL-DIAG-OPERAND: expression operands must have compatible types" -> questionnaire;
+}
+if (QLNativeChecks.hasIssue(questionnaire, "computed")) {
+  error "QL-DIAG-COMPUTED: computed results must match their declared question type" -> questionnaire;
+}
+if (QLNativeChecks.hasIssue(questionnaire, "cycle")) {
+  error "QL-DIAG-CYCLE: computed question dependencies must be acyclic" -> questionnaire;
+}
+  }
+
+  additional methods
+
+  << ... >>
+
+}

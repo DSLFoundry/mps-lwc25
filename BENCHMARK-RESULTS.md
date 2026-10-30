@@ -190,3 +190,79 @@ switch was performed. The final results-document commit records this freeze;
 no work exceeded the original hard stop. G2 remains explicitly partial as
 global semantic diagnostics are not editor-time native rules; this is not
 reported as a complete assignment.
+
+## Untimed native-semantic completion follow-up
+
+This addendum records the separately authorized completion work; it does not
+rewrite or retroactively rescore the frozen timed benchmark above. The
+follow-up started at `2026-10-30T01:51:54.0035475Z` from coordinator revision
+`e8b4929` and implementation/validation/evidence capture ended at
+`2026-10-30T02:25:16.7866924Z` (33m 22.783s elapsed). A report-only commit
+followed. Implementation is committed as
+`5fe6e56d8deb5c379f9201b21d721526cb162771`. No push, branch switch, amend, or
+delegation was performed. The original G2 score remains **Partial** in the
+frozen section; this addendum records the later native-check completion.
+
+`QuestionnaireLanguage.typesystem` now has a native `NonTypesystemRule`
+applicable to `Questionnaire`. Its rendered rule explicitly says “do not apply
+on the fly false” and invokes the compiled BaseLanguage helper in the new
+`QuestionnaireLanguage.checks` model. The helper traverses nested questionnaire
+nodes and checks duplicate question IDs, unresolved/out-of-form references,
+recursive boolean-condition typing, expression operand types, declared
+computed-result compatibility, and dependency cycles. The prior direct
+conditional-reference rule remains in place. These are native MPS diagnostics
+reported by `mops check model`, not Code Mode/JavaScript-only validation.
+
+Native fixtures include:
+
+- `Sandbox.QLBasic`, clean with a nested valid `LogicalAndExpression`.
+- `Sandbox.QLInvalid`, with a duplicate ID occurring only between a top-level
+  question and a nested question, an out-of-form link, a nested invalid
+  boolean condition, incompatible expression operands, computed type errors,
+  and cycles.
+- `Sandbox.QLNativeBooleanCondition` and
+  `Sandbox.QLNativeComputedMismatch`, isolating a non-boolean complex condition
+  and a type-valid numeric expression declared as a string result.
+- `Sandbox.QLNativeDirectCycle` and `Sandbox.QLNativeIndirectCycle`, isolating
+  each cycle form. These diagnostic-only models are marked non-generatable so
+  they do not add duplicate generated Java units.
+
+`node benchmark\\native-checks.cjs` runs the MPS model checker against these
+fixtures. It asserts that the valid model is clean, all six `QL-DIAG-*`
+categories appear in the invalid fixture, and the isolated complex-condition,
+computed-mismatch, direct-cycle, and indirect-cycle models each report their
+expected category. It passed. The captured invalid-model output contains
+`DUPLICATE`, `UNRESOLVED`, `CONDITION`, `OPERAND`, `COMPUTED`, and `CYCLE`;
+the distinct direct/indirect models each produce a native cycle error.
+
+Validation also passed:
+
+- Mops make for `QuestionnaireLanguage`, its generator, and `Sandbox`; no
+  duplicate generated-unit warnings remain.
+- Native model checks for the behavior aspect, typesystem, valid fixture, and
+  helper model. The helper reports **0 errors, 7 deprecated-API warnings, and
+  19 informational String-type recommendations**; its earlier possible-null
+  warning was corrected.
+- The isolated Gradle language build with dependency-resolution tasks excluded.
+  Third-party class-loading/restricted-access warnings and Java deprecation
+  notes remain, but the build succeeds.
+- Native generator verification/extraction still yields the valid
+  questionnaire-specific form and computed value `5`; the production runtime
+  has no diagnostics. The unchanged `benchmark\\acceptance.cjs` passes **20/20**.
+  The original browser/UI evidence is unchanged; production UI code was not
+  modified in this follow-up.
+
+Completion-specific command output, the rendered native rule, helper/type
+model checks, invalid-category assertions, direct/indirect cycle checks,
+isolated semantic fixtures, model counts, generated JSON, Gradle log, and
+runtime-suite output are in `benchmark\\evidence\\completion`. The original
+`benchmark\\evidence\\acceptance.json`,
+`benchmark\\evidence\\native-runtime.json`, and
+`benchmark\\generated-form.json` were restored unchanged after reruns.
+
+Diagnostics currently attach the cross-question summary to the enclosing
+`Questionnaire` root rather than pinpointing every offending descendant; the
+MPS messages are category-specific but navigation is coarse. The helper also
+retains the seven deprecated API warnings noted above. No broader QLS/SAT
+scope is claimed. Provider/tool call counts for this follow-up were not
+automatically exposed and are not inferred.
