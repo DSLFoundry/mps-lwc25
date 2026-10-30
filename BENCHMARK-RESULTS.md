@@ -234,3 +234,22 @@ Base QL is complete for the requested scope; QLS and SAT/determinism extensions
 remain excluded. The final Gradle/MPS build succeeded with non-fatal restricted
 native-access, third-party classloading/bootstrap, and deprecated-API warnings.
 No applicable CI normalization/dirty-files gate was found in the frozen scope.
+
+### Coordinator verification and separate follow-up telemetry
+
+After freezing at `baed29bd573ce6f0f35dd4ac7942eadce25c4cae`, the coordinator
+independently reran `verify-native-diagnostics.py`: **23 assertions passed**,
+including two clean valid forms, all operand/result/condition categories,
+unresolved/out-of-form references, nested duplicates, and both cycle forms.
+The generated-expression round-trip also passed (escaped string,
+concatenation, unary negation, and division), and the unchanged runtime suite
+passed **20/20**. Original evidence was preserved.
+
+Exact agent-ID telemetry filtered to this untimed phase records **266 model
+requests, 297 tool calls, 3 transport-level failures, 31,208,335 input tokens,
+219,945 output tokens, and 48.0274 AIU**. The complete agent-event span,
+including reporting, is **53.713 minutes**. See
+`benchmark/evidence/completion/harness-telemetry.json`.
+These counters are separate from the original timed-run scores. Cache counters
+retain ledger semantics; transport failures are not native validation failures;
+AIU is not a monetary price. Coordinator verification and publishing are excluded.
